@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Filter to remove white background from the embedded PNG -->
+    <filter id="remove-white">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        -1 -1 -1 3.2 -0.2
+      "/>
+    </filter>
+
+    <!-- High-quality drop shadows -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="5" flood-opacity="0.2"/>
+    </filter>
+    <filter id="post-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Metallic post gradients -->
+    <linearGradient id="uChannelBack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="uChannelRib" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="boltHead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="80%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <!-- Reflection overlay gradient -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="35.1%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Metal U-Channel Post (Sitting behind the sign) -->
+  <g filter="url(#post-shadow)">
+    <!-- Main Center Back Channel -->
+    <rect x="193" y="15" width="14" height="370" fill="url(#uChannelBack)"/>
+    <!-- Left Raised Flange Rib -->
+    <rect x="187" y="15" width="6" height="370" fill="url(#uChannelRib)"/>
+    <!-- Right Raised Flange Rib -->
+    <rect x="207" y="15" width="6" height="370" fill="url(#uChannelRib)"/>
+
+    <!-- Pre-drilled Holes in the Channel (spaced out) -->
+    <g fill="#020617">
+      <circle cx="200" cy="30" r="2.5"/>
+      <circle cx="200" cy="60" r="2.5"/>
+      <circle cx="200" cy="90" r="2.5"/>
+      <circle cx="200" cy="120" r="2.5"/>
+      <circle cx="200" cy="150" r="2.5"/>
+      <circle cx="200" cy="180" r="2.5"/>
+      <circle cx="200" cy="210" r="2.5"/>
+      <circle cx="200" cy="240" r="2.5"/>
+      <circle cx="200" cy="270" r="2.5"/>
+      <circle cx="200" cy="300" r="2.5"/>
+      <circle cx="200" cy="330" r="2.5"/>
+      <circle cx="200" cy="360" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Aluminum Sign Board Panel with Drop Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Raw cut aluminum core side edge (3D thickness effect) -->
+    <rect x="99.5" y="70.5" width="201" height="201" rx="12" fill="#94a3b8"/>
+    <!-- White Sign Face -->
+    <rect x="100" y="70" width="200" height="200" rx="11" fill="#ffffff"/>
+
+    <!-- Custom Sign Graphic Overlay -->
+    <image href="/images/products/alum_sign_std.png" x="104" y="74" width="192" height="192" filter="url(#remove-white)"/>
+
+    <!-- Glossy reflection overlay -->
+    <path d="M100,70 L220,70 L100,190 Z" fill="url(#glossGrad)" pointer-events="none"/>
+  </g>
+
+  <!-- Hex Mounting Bolts in Center Channel (Sitting in front of the sign) -->
+  <g filter="url(#post-shadow)">
+    <!-- Top Bolt and Washer -->
+    <!-- Washer -->
+    <circle cx="200" cy="100" r="8" fill="#475569" opacity="0.6"/>
+    <circle cx="200" cy="100" r="7.5" fill="url(#boltHead)" stroke="#64748b" stroke-width="0.5"/>
+    <!-- Hex Head (represented as polygon) -->
+    <polygon points="200,95 204.3,97.5 204.3,102.5 200,105 195.7,102.5 195.7,97.5" fill="url(#boltHead)" stroke="#475569" stroke-width="0.5"/>
+    <!-- Center Bolt Pin -->
+    <circle cx="200" cy="100" r="1.5" fill="#334155"/>
+
+    <!-- Bottom Bolt and Washer -->
+    <!-- Washer -->
+    <circle cx="200" cy="240" r="8" fill="#475569" opacity="0.6"/>
+    <circle cx="200" cy="240" r="7.5" fill="url(#boltHead)" stroke="#64748b" stroke-width="0.5"/>
+    <!-- Hex Head -->
+    <polygon points="200,235 204.3,237.5 204.3,242.5 200,245 195.7,242.5 195.7,237.5" fill="url(#boltHead)" stroke="#475569" stroke-width="0.5"/>
+    <!-- Center Bolt Pin -->
+    <circle cx="200" cy="240" r="1.5" fill="#334155"/>
+  </g>
+</svg>

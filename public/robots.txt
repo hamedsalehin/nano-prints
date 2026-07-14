@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /account/
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+Sitemap: https://nano-signs.com/sitemap.xml

@@ -1,0 +1,16 @@
+name: Supabase Heartbeat
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase Database
+        run: |
+          curl -s -X GET "https://wpbfwgwxxcplaclkdbzi.supabase.co/rest/v1/quote_requests?select=id&limit=1" \
+            -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndwYmZ3Z3d4eGNwbGFjbGtkYnppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5Mzc2NDksImV4cCI6MjA5NjUxMzY0OX0.iuFihrtyg393FXcXBr2usKVlKqnfWto0p-HJ2xmv8mw" \
+            -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndwYmZ3Z3d4eGNwbGFjbGtkYnppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5Mzc2NDksImV4cCI6MjA5NjUxMzY0OX0.iuFihrtyg393FXcXBr2usKVlKqnfWto0p-HJ2xmv8mw"
