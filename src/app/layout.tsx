@@ -72,7 +72,7 @@ export default function RootLayout({
       <head>
         {/* Google tag (gtag.js) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-C0T0585G3W"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE"
           strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="lazyOnload">
@@ -80,7 +80,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-C0T0585G3W');
+            gtag('config', 'G-8N8L6WV8RE');
           `}
         </Script>
         {/* Local Business Schema Markup */}
