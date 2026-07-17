@@ -18,7 +18,7 @@ const favorites = [
   {
     name: "Programmable LED Signs",
     image: "/images/products/led_sign_welcome.png",
-    href: "/programmable-led-signs",
+    href: "/led-display-signs/programmable-led-sign",
     rating: 5,
   },
   {

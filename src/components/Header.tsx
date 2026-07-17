@@ -34,7 +34,7 @@ const navItems = [
   { name: "Neon Signs", href: "https://neonFL.com", isExternal: true },
   {
     name: "Programmable LED Signs",
-    href: "/programmable-led-signs",
+    href: "/led-display-signs",
   },
 ];
 
