@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
+import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nano-signs.com";
@@ -65,5 +66,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return [...corePages, ...categoryPages, ...productPages];
+  const locationPages: MetadataRoute.Sitemap = [];
+  for (const locationId of Object.keys(LOCATIONS_REGISTRY)) {
+    locationPages.push({
+      url: `${baseUrl}/locations/${locationId}`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    });
+  }
+
+  return [...corePages, ...categoryPages, ...productPages, ...locationPages];
 }
