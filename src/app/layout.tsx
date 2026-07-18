@@ -3,6 +3,7 @@ import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
+import { CanonicalTag } from "@/components/CanonicalTag";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -33,9 +34,7 @@ export const metadata: Metadata = {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
   },
-  alternates: {
-    canonical: "https://nano-signs.com",
-  },
+  metadataBase: new URL("https://nano-signs.com"),
   openGraph: {
     title: "Custom Signs, Banners & LED Signage | Nano Signs",
     description: "Order custom signs, LED signage, banners & marketing materials in Fort Lauderdale FL. Fastest turnaround in Broward County.",
@@ -70,6 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${openSans.variable} ${poppins.variable}`}>
       <head>
+        <CanonicalTag />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FJ30HE8KYQ"

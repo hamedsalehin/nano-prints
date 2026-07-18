@@ -38,7 +38,7 @@ export const BLOG_REGISTRY: Record<string, BlogPost> = {
     slug: "neon-signs-for-restaurants",
     title: "Why Neon LED Signs Are the #1 Restaurant Marketing Tool in 2026",
     excerpt: "Social media has changed everything. Discover why custom neon signs are the highest ROI piece of décor a restaurant can invest in today.",
-    image: "/images/products/neon/nano-signs-cocktails-neon-canada.webp",
+    image: "/images/products/neon/nano-signs-cocktails-neon-usa.webp",
     category: "Neon Signs",
     date: "July 3, 2026",
     readTime: "4 min read",

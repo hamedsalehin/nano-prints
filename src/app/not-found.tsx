@@ -17,7 +17,7 @@ const featuredProducts = [
   {
     name: "Neon LED Signs",
     href: "/neon-signs",
-    image: "/images/products/neon/nano-signs-bar-neon-canada.webp",
+    image: "/images/products/neon/nano-signs-bar-neon-usa.webp",
     description: "Custom glowing neon signs for any space",
   },
   {

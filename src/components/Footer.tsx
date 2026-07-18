@@ -10,31 +10,50 @@ import {
   Phone,
 } from "lucide-react";
 
+function Pinterest(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      stroke="none"
+    >
+      <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.182 0 7.436 2.981 7.436 6.963 0 4.156-2.618 7.502-6.257 7.502-1.221 0-2.37-.635-2.763-1.385l-.754 2.875c-.272 1.037-1.01 2.336-1.506 3.125 1.185.363 2.449.559 3.761.559 6.621 0 11.988-5.368 11.988-11.988C24.035 5.367 18.638 0 12.017 0z"/>
+    </svg>
+  );
+}
+
 const footerLinks = {
   helpCenter: {
     title: "Help Center",
     links: [
       { name: "Contact Us", href: "/contact-us" },
-      { name: "Frequently Asked Questions", href: "#" },
-      { name: "Corporate Pricing", href: "#" },
+      { name: "Frequently Asked Questions", href: "/faq" },
+      { name: "Corporate Pricing", href: "/corporate-pricing" },
+      { name: "Get a Quote", href: "/get-a-quote" },
     ],
   },
   company: {
     title: "Company",
     links: [
       { name: "About Us", href: "/about-us" },
-      { name: "Our Services", href: "#" },
-      { name: "Portfolio", href: "#" },
-      { name: "Testimonials", href: "#" },
+      { name: "Locations", href: "/locations" },
+      { name: "Projects", href: "/projects" },
+      { name: "Blog", href: "/blog" },
     ],
   },
   products: {
     title: "Products",
     links: [
       { name: "Custom Signs", href: "/custom-signs" },
-      { name: "Banners", href: "/custom-banners" },
-      { name: "Vehicle Wraps", href: "#" },
-      { name: "Decals & Stickers", href: "#" },
+      { name: "Programmable LED Signs", href: "/custom-signs/programmable-led-sign" },
+      { name: "Neon Signs", href: "/neon-signs" },
+      { name: "Roll Up Banners", href: "/custom-banners/roll-up-banners" },
+      { name: "Vehicle Signs", href: "/vehicle-signs" },
+      { name: "Decals", href: "/custom-decals" },
     ],
   },
 };
@@ -59,17 +78,15 @@ const paymentMethods = [
 ];
 
 const bottomLinks = [
-  { name: "Privacy Policy", href: "#" },
-  { name: "Terms of Service", href: "#" },
   { name: "Return Policy", href: "/return-policy" },
-  { name: "Accessibility", href: "#" },
 ];
 
 const socialIcons = [
   { Icon: Facebook, name: "Facebook", href: "https://facebook.com/signsnano" },
   { Icon: Instagram, name: "Instagram", href: "https://instagram.com/nanosigns" },
   { Icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/company/nano-signs" },
-  { Icon: Youtube, name: "YouTube", href: "#" },
+  { Icon: Pinterest, name: "Pinterest", href: "https://www.pinterest.com/nanosigns" },
+  { Icon: Youtube, name: "YouTube", href: "https://www.youtube.com/@NanoSignsPrint" },
   { Icon: Twitter, name: "X", href: "https://x.com/nanosigns1" },
 ];
 

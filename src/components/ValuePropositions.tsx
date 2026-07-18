@@ -84,7 +84,7 @@ export function ValuePropositions() {
                     <>
                       {" "}
                       <Link
-                        href="/contact"
+                        href="/contact-us"
                         className="font-semibold hover:underline text-[#ff2d78]"
                         aria-label={`${prop.link} about ${prop.title}`}
                       >

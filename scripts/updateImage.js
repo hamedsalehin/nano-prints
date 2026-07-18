@@ -3,7 +3,7 @@ const fs = require('fs');
 let data = fs.readFileSync('src/lib/productsRegistry.ts', 'utf8');
 
 // Replace the image url for programmable led signs
-const oldImage = '/images/products/main-page/banners_hero_image-toronto-printing-ca.png';
+const oldImage = '/images/products/main-page/banners_hero_image-oakland-park-printing-ca.png';
 const newImage = '/images/products/led_sign_welcome.png';
 
 // Since the old image might be used by banners too, we ONLY want to replace it inside the programmable-led-signs and custom-signs blocks.

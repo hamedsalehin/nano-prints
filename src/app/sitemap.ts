@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
+import { BLOG_POSTS } from "@/lib/blogRegistry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nano-signs.com";
@@ -37,6 +38,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/projects`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/locations`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/design`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/corporate-pricing`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     },
   ];
 
@@ -76,5 +113,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  return [...corePages, ...categoryPages, ...productPages, ...locationPages];
+  const blogPages: MetadataRoute.Sitemap = [];
+  for (const slug of Object.keys(BLOG_POSTS)) {
+    blogPages.push({
+      url: `${baseUrl}/blog/${slug}`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    });
+  }
+
+  return [...corePages, ...categoryPages, ...productPages, ...locationPages, ...blogPages];
 }

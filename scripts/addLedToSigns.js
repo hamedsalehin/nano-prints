@@ -29,7 +29,7 @@ const productConfig = {
   id: 'programmable-led-sign',
   name: 'Programmable LED Sign',
   description: 'Custom Programmable LED display.',
-  image: '/images/products/main-page/banners_hero_image-toronto-printing-ca.png',
+  image: '/images/products/main-page/banners_hero_image-oakland-park-printing-ca.png',
   price: 'Starting at $100/sqft',
   badge: 'New',
   config: {
@@ -39,7 +39,7 @@ const productConfig = {
     breadcrumb: 'Programmable LED Signs',
     breadcrumbHref: '/programmable-led-signs',
     promoText: 'CUSTOM LED SIGNS - FREE SHIPPING',
-    image: '/images/products/main-page/banners_hero_image-toronto-printing-ca.png',
+    image: '/images/products/main-page/banners_hero_image-oakland-park-printing-ca.png',
     ratingCount: '42',
     ratingScore: '4.8',
     sizes: [
