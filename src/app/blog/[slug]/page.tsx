@@ -8,8 +8,9 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { BLOG_REGISTRY } from "@/lib/blogRegistry";
 import { Metadata } from "next";
 
+// Next.js 15: params is now a Promise
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -17,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const post = BLOG_REGISTRY[params.slug];
+  const { slug } = await params;
+  const post = BLOG_REGISTRY[slug];
   if (!post) return { title: "Post Not Found" };
 
   return {
@@ -32,8 +34,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const post = BLOG_REGISTRY[params.slug];
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const post = BLOG_REGISTRY[slug];
 
   if (!post) {
     notFound();
