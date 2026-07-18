@@ -16,6 +16,10 @@ import {
   ChevronDown,
   Info,
   Home,
+  Sparkles,
+  BookOpen,
+  LayoutGrid,
+  MapPin,
 } from "lucide-react";
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
@@ -117,12 +121,44 @@ export function Header() {
       <div className="bg-white border-b border-gray-150 text-gray-500 text-xs py-1.5 font-medium">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-end gap-4 md:gap-6">
           <Link
+            href="/PrintDesignExperience/Load"
+            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            aria-label="Design Online"
+          >
+            <Sparkles className="w-4 h-4" />
+            <span className="hidden sm:inline">Design Online</span>
+          </Link>
+          <Link
             href="/about-us"
             className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
             aria-label="About Us"
           >
             <Info className="w-4 h-4" />
             <span className="hidden sm:inline">About Us</span>
+          </Link>
+          <Link
+            href="/blog"
+            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            aria-label="Blog"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span className="hidden sm:inline">Blog</span>
+          </Link>
+          <Link
+            href="/projects"
+            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            aria-label="Projects"
+          >
+            <LayoutGrid className="w-4 h-4" />
+            <span className="hidden sm:inline">Projects</span>
+          </Link>
+          <Link
+            href="/locations"
+            className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
+            aria-label="Locations"
+          >
+            <MapPin className="w-4 h-4" />
+            <span className="hidden sm:inline">Locations</span>
           </Link>
           <a
             href="mailto:info@nano-signs.com"
@@ -518,7 +554,7 @@ export function Header() {
                           >
                             {item.name}
                           </Link>
-                          {hasProducts && (
+                          {(hasProducts) && (
                             <button
                               onClick={(e) => {
                                 e.preventDefault();

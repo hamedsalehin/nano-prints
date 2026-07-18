@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const valueProps = [
   {
@@ -82,13 +83,13 @@ export function ValuePropositions() {
                   {prop.link && (
                     <>
                       {" "}
-                      <a
-                        href="#"
+                      <Link
+                        href="/contact"
                         className="font-semibold hover:underline text-[#ff2d78]"
                         aria-label={`${prop.link} about ${prop.title}`}
                       >
                         {prop.link}
-                      </a>
+                      </Link>
                     </>
                   )}
                 </p>

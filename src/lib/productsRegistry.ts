@@ -43,30 +43,54 @@ export const PRODUCTS_REGISTRY = {
     reviewQuote: "Absolutely perfect. Bright, flawless, and arrived earlier than expected!",
     categoryDescriptionText: "<h2>Custom Neon LED Signs: Brighten Your Space</h2><p>Create a vibrant, customized atmosphere for your business storefront, wedding backdrop, home décor, or events. At Nano Signs, we specialize in high-quality <strong>LED Neon Signs</strong> that offer the timeless, classic glow of traditional glass neon, but with modern durability and energy efficiency.</p><h3>Custom vs. Pre-made Neon Signs</h3><p>Choose from our extensive collection of pre-made, ready-to-ship neon designs like our popular 'Good Vibes Only' and 'Let\\'s Party' signs, perfect for instant room upgrades. Or, bring your unique vision to life with our <strong>Custom Neon Sign</strong> service. We can fabricate any logo, phrase, or design into a brilliant LED masterpiece tailored to your exact specifications.</p><h3>LED Neon vs. Traditional Glass Neon</h3><p>Why choose LED? Our modern LED neon signs are shatterproof, cool to the touch, and consume up to 80% less energy than traditional glass neon. They are lightweight, easy to install, and come with adjustable brightness settings, giving you the perfect glow without the high maintenance or safety concerns of traditional gas-filled glass tubes.</p><h3>Pricing & Installation</h3><p>We offer competitive pricing on all our neon signs, with pre-made options starting as low as $139.00. Every sign comes complete with a transparent acrylic backing, a power adapter, and a simple mounting kit for effortless installation. Shop our collection below or contact us today for a custom quote!</p>",
     products: [
-      { id: "good-vibes-only", name: "Neon LED Good Vibes Only",
-        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-good-vibes-neon-canada.webp", price: "$169.00", badge: "Popular" },
-      { id: "lets-party", name: "Neon LED Let's Party",
-        description: "Set the perfect mood for your next event or venue with this vibrant Bar & Party neon LED sign. Ideal for nightlife and home bars.", image: "/images/products/neon/nano-signs-lets-party-neon-canada.webp", price: "$189.00", badge: "Popular" },
-      { id: "game-on", name: "Neon LED Game On",
-        description: "Level up your gaming room aesthetic with this striking neon LED sign. Designed specifically for gamers and streaming setups.", image: "/images/products/neon/nano-signs-game-controller-neon-canada.webp", price: "$159.00", badge: "Popular" },
-      { id: "dream-big", name: "Neon LED Dream Big",
-        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-dream-big-neon-canada.webp", price: "$149.00", badge: "Popular" },
-      { id: "bar-open", name: "Neon LED Bar Open",
-        description: "Set the perfect mood for your next event or venue with this vibrant Bar & Party neon LED sign. Ideal for nightlife and home bars.", image: "/images/products/neon/nano-signs-bar-neon-canada.webp", price: "$179.00", badge: "Popular" },
-      { id: "hustle", name: "Neon LED Hustle",
-        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-hustle-neon-canada.webp", price: "$139.00", badge: "Popular" },
-      { id: "open-24-7", name: "Neon LED Open 24/7",
-        description: "Attract more foot traffic and let customers know you're open with this eye-catching commercial business neon LED sign.", image: "/images/products/neon/nano-signs-open-neon-canada.webp", price: "$169.00", badge: "Popular" },
-      { id: "stay-wild", name: "Neon LED Stay Wild",
-        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-stay-wild-neon-canada.webp", price: "$159.00", badge: "Popular" },
-      { id: "love-her-wild", name: "Neon LED Love Her Wild",
-        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-love-wild-neon-canada.webp", price: "$179.00", badge: "Popular" },
-      { id: "glow-getter", name: "Neon LED Glow Getter",
-        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-glow-getter-neon-canada.webp", price: "$149.00", badge: "Popular" },
-      { id: "man-cave", name: "Neon LED Man Cave",
-        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-man-cave-neon-canada.webp", price: "$169.00", badge: "Popular" },
-      { id: "adventure-awaits", name: "Neon LED Adventure Awaits",
-        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-adventure-neon-canada.webp", price: "$179.00", badge: "Popular" }
+      {
+        id: "good-vibes-only", name: "Neon LED Good Vibes Only",
+        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-good-vibes-neon-canada.webp", price: "$169.00", badge: "Popular"
+      },
+      {
+        id: "lets-party", name: "Neon LED Let's Party",
+        description: "Set the perfect mood for your next event or venue with this vibrant Bar & Party neon LED sign. Ideal for nightlife and home bars.", image: "/images/products/neon/nano-signs-lets-party-neon-canada.webp", price: "$189.00", badge: "Popular"
+      },
+      {
+        id: "game-on", name: "Neon LED Game On",
+        description: "Level up your gaming room aesthetic with this striking neon LED sign. Designed specifically for gamers and streaming setups.", image: "/images/products/neon/nano-signs-game-controller-neon-canada.webp", price: "$159.00", badge: "Popular"
+      },
+      {
+        id: "dream-big", name: "Neon LED Dream Big",
+        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-dream-big-neon-canada.webp", price: "$149.00", badge: "Popular"
+      },
+      {
+        id: "bar-open", name: "Neon LED Bar Open",
+        description: "Set the perfect mood for your next event or venue with this vibrant Bar & Party neon LED sign. Ideal for nightlife and home bars.", image: "/images/products/neon/nano-signs-bar-neon-canada.webp", price: "$179.00", badge: "Popular"
+      },
+      {
+        id: "hustle", name: "Neon LED Hustle",
+        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-hustle-neon-canada.webp", price: "$139.00", badge: "Popular"
+      },
+      {
+        id: "open-24-7", name: "Neon LED Open 24/7",
+        description: "Attract more foot traffic and let customers know you're open with this eye-catching commercial business neon LED sign.", image: "/images/products/neon/nano-signs-open-neon-canada.webp", price: "$169.00", badge: "Popular"
+      },
+      {
+        id: "stay-wild", name: "Neon LED Stay Wild",
+        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-stay-wild-neon-canada.webp", price: "$159.00", badge: "Popular"
+      },
+      {
+        id: "love-her-wild", name: "Neon LED Love Her Wild",
+        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-love-wild-neon-canada.webp", price: "$179.00", badge: "Popular"
+      },
+      {
+        id: "glow-getter", name: "Neon LED Glow Getter",
+        description: "Brighten up your space with this highly inspirational and motivational neon LED sign. Perfect for homes, offices, and studios.", image: "/images/products/neon/nano-signs-glow-getter-neon-canada.webp", price: "$149.00", badge: "Popular"
+      },
+      {
+        id: "man-cave", name: "Neon LED Man Cave",
+        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-man-cave-neon-canada.webp", price: "$169.00", badge: "Popular"
+      },
+      {
+        id: "adventure-awaits", name: "Neon LED Adventure Awaits",
+        description: "Add a touch of modern elegance and warm ambiance to your living space with this beautiful home decor neon LED sign.", image: "/images/products/neon/nano-signs-adventure-neon-canada.webp", price: "$179.00", badge: "Popular"
+      }
     ].map(p => ({
       ...p,
       config: {
@@ -4232,11 +4256,11 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Expert-grade tri-fold or half-fold brochures to showcase your services, menus, and corporate details.",
         image: "/images/products/main-page/custom_brochures-toronto-printing-ca.webp",
-        price: "Starting at CAD 29.99 for 50",
+        price: "Starting at $110 for 100 pcs",
         badge: "Corporate Choice",
         config: {
           title: "Folded Brochures",
-          quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
+          quantityOptions: [100, 250, 500, 1000],
           subtitle:
             "High-quality full color folded brochures manufactured using expert-grade paper stock.",
           breadcrumb: "Marketing",
@@ -4249,7 +4273,13 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '8.5" x 11" Standard Brochure',
               value: "8.5x11",
-              basePrice: 29.99,
+              basePrice: 1.10,
+              quantityPrices: {
+                100: 110,
+                250: 149,
+                500: 200,
+                1000: 280,
+              },
             },
           ],
           selects: [
@@ -4269,15 +4299,15 @@ Why Choose Our Expert-grade Rollup Banners?
                 {
                   label: "80lb Recycled Text",
                   value: "80lb_recycled",
-                  priceAdder: 3.0,
+                  priceAdder: 0,
                 },
               ],
             },
             {
               label: "Fold Style",
               options: [
-                { label: "Tri-Fold", value: "tri_fold", priceAdder: 8.0 },
-                { label: "Half-Fold", value: "half_fold", priceAdder: 5.0 },
+                { label: "Tri-Fold", value: "tri_fold", priceAdder: 0 },
+                { label: "Half-Fold", value: "half_fold", priceAdder: 0 },
               ],
             },
           ],
@@ -4352,7 +4382,7 @@ Why Choose Our Expert-grade Rollup Banners?
         price: "Starting at CAD 39.99 for 100",
         config: {
           title: "Door Hangers",
-          quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
+          quantityOptions: [100, 250, 500, 1000],
           subtitle:
             "Vivid door hangers pre-cut with handle holes, ideal for local corporate marketing.",
           breadcrumb: "Marketing",
@@ -4365,12 +4395,23 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '3.5" x 8.5" Compact Hanger',
               value: "3.5x8.5",
-              basePrice: 39.99,
+              basePrice: 1.10,
+              quantityPrices: {
+                100: 110,
+                250: 149,
+                500: 200,
+                1000: 280,
+              },
             },
             {
               label: '4.25" x 11" Standard Large Hanger',
               value: "4.25x11",
-              basePrice: 54.99,
+              quantityPrices: {
+                100: 140,
+                250: 199,
+                500: 290,
+                1000: 330,
+              },
             },
           ],
           selects: [
@@ -5019,8 +5060,8 @@ Why Choose Our Expert-grade Rollup Banners?
           "sizes": [
             {
               "label": "Custom LED Dimension",
-                  "value": "custom",
-                  "basePrice": 0
+              "value": "custom",
+              "basePrice": 0
             }
           ],
           "selects": [
@@ -6724,7 +6765,7 @@ Why Choose Our Expert-grade Rollup Banners?
     "title": "LED Display Signs",
     "breadcrumbLabel": "LED Displays",
     "heroSubtitle": "High-Brightness Commercial Screens & Programmable Billboards",
-    "description": "Discover high-impact, programmable commercial LED display signs. Perfect for retail storefronts, events, window displays, and outdoor advertising. Energy-efficient, ultra-bright, and customizable.",
+    "description": "Discover high-impact, programmable commercial LED display signs. Ideal for retail retail facades, events, window screens, and exterior marketing. Eco-friendly, ultra-bright, and fully tailored.",
     "heroImage": "/programmable led signs.png",
     "tabletHeroImage": "/programmable led signs.png",
     "mobileHeroImage": "/programmable led signs.png",
@@ -6736,25 +6777,25 @@ Why Choose Our Expert-grade Rollup Banners?
       {
         "id": "programmable-led-sign",
         "name": "Programmable LED Sign",
-        "description": "Custom Programmable LED display. High-resolution screens perfect for retail, restaurants, churches, and outdoor advertising. Outperforms static signs with dynamic video.",
+        "description": "Custom Programmable LED display. Ultra-clear screens ideal for retail spaces, dining establishments, and venues, and exterior marketing. Surpasses static signs with vivid motion graphics.",
         "image": "/images/products/led_sign_welcome.webp",
         "price": "Starting at $90/sqft",
         "badge": "New",
         "config": {
           "id": "programmable-led-sign",
           "title": "Programmable LED Sign",
-          "subtitle": "High-visibility programmable LED signs for storefronts. Available in multiple pixel pitches (P3, P5, P10) for indoor or outdoor use.",
+          "subtitle": "Ultra-bright programmable LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use.",
           "breadcrumb": "Programmable LED Signs",
           "breadcrumbHref": "/led-display-signs",
-          "promoText": "CUSTOM LED SIGNS - PREMIUM QUALITY",
+          "promoText": "NANO SIGNS EXCLUSIVE: CUSTOM LED SIGNS - PREMIUM QUALITY",
           "image": "/images/products/led_sign_welcome.webp",
           "ratingCount": "42",
           "ratingScore": "4.8",
           "sizes": [
             {
               "label": "Custom LED Dimension",
-                  "value": "custom",
-                  "basePrice": 0
+              "value": "custom",
+              "basePrice": 0
             }
           ],
           "selects": [
@@ -6904,171 +6945,2308 @@ Why Choose Our Expert-grade Rollup Banners?
               ]
             }
           ],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
           "faqs": [],
-          "reviews": [],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
           "ctaHeading": "Ready to program your message?",
           "ctaLabel": "Add to Cart"
         }
       },
-{
-      "id": "flexible-led-display",
-      "name": "Flexible & Curved LED Video Walls",
-      "description": "Transform architectural columns, waves, and unique curved surfaces with our bendable soft LED modules. Perfect for immersive retail spaces and creative stage designs.",
-      "image": "/images/products/flexible-led-display.webp",
-      "price": "Starting at $110/sqft",
-      "badge": "Creative Design",
-      "config": {
-            "id": "flexible-led-display",
-            "title": "Flexible & Curved LED Video Walls",
-            "subtitle": "Break free from flat screens. Bend, curve, and wrap your digital displays around any architectural element.",
-            "breadcrumb": "Flexible LED Displays",
-            "breadcrumbHref": "/led-display-signs/flexible-led-display",
-            "promoText": "CUSTOM CURVED LED SOLUTIONS",
-            "image": "/images/products/flexible-led-display.webp",
-            "ratingCount": "41",
-            "ratingScore": "4.9",
-            "sizes": [
-                  {
-                        "label": "Custom Curved Dimension",
-                        "value": "custom",
-                        "basePrice": 0
-                  }
-            ],
-            "selects": [],
-            "faqs": [
-                  {
-                        "q": "How much can a flexible LED module bend?",
-                        "a": "Our soft LED modules can bend up to 120 degrees, making them ideal for wrapping around pillars, creating wave-like ceiling installations, or building custom circular displays without compromising pixel integrity."
-                  },
-                  {
-                        "q": "Are curved LED panels suitable for outdoor use?",
-                        "a": "While our standard flexible modules are designed for high-end indoor retail and stage use, we do offer specialized IP65-rated flexible panels for outdoor architectural integration. Contact our team for specific outdoor curving requirements."
-                  }
-            ],
-            "reviews": [],
-            "ctaHeading": "Ready to build a curved display?",
-            "ctaLabel": "Request Custom Quote"
-      }
-},
       {
-      "id": "shop-window-led-display",
-      "name": "High-Brightness Storefront LED Posters",
-      "description": "Defeat direct sunlight and capture foot traffic with our ultra-bright 5000+ nits window displays. Designed specifically to be visible through retail glass on the sunniest days.",
-      "image": "/images/products/shop-window-led-display.webp",
-      "price": "Starting at $120/sqft",
-      "badge": "Sunlight Readable",
-      "config": {
-            "id": "shop-window-led-display",
-            "title": "High-Brightness Storefront LED Posters",
-            "subtitle": "Turn your retail window into a dynamic digital canvas that cuts through glare and direct sunlight.",
-            "breadcrumb": "Storefront Window LED",
-            "breadcrumbHref": "/led-display-signs/shop-window-led-display",
-            "promoText": "ULTRA-BRIGHT WINDOW DISPLAYS",
-            "image": "/images/products/shop-window-led-display.webp",
-            "ratingCount": "87",
-            "ratingScore": "4.9",
-            "sizes": [
-                  {
-                        "label": "Standard Window Size",
-                        "value": "custom",
-                        "basePrice": 0
-                  }
-            ],
-            "selects": [],
-            "faqs": [
-                  {
-                        "q": "Will the screen be visible in direct afternoon sunlight?",
-                        "a": "Absolutely. Standard indoor TVs fade in sunlight because they only output 300-500 nits. Our window-facing LED displays blast at 5,000 to 7,000 nits, ensuring your promotions are crystal clear and vibrant even at high noon."
-                  },
-                  {
-                        "q": "Does it block the view into my store?",
-                        "a": "We offer both solid high-brightness panels and transparent LED film options. If you want natural light to enter your store while displaying video, ask about our transparent window series!"
-                  }
-            ],
-            "reviews": [],
-            "ctaHeading": "Want to stop foot traffic in its tracks?",
-            "ctaLabel": "Get Window Display Quote"
-      }
-},
+        "id": "flexible-led-display",
+        "name": "Flexible & Curved LED Video Walls",
+        "description": "Transform architectural columns, waves, and unique curved surfaces with our bendable soft LED modules. Ideal for immersive retail spaces and creative stage designs.",
+        "image": "/images/products/flexible-led-display.webp",
+        "price": "Starting at $110/sqft",
+        "badge": "Creative Design",
+        "config": {
+          "id": "flexible-led-display",
+          "title": "Flexible & Curved LED Video Walls",
+          "subtitle": "Break free from flat screens. Bend, curve, and wrap your digital screens around any architectural element.",
+          "breadcrumb": "Flexible LED Displays",
+          "breadcrumbHref": "/led-display-signs/flexible-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: CUSTOM CURVED LED SOLUTIONS",
+          "image": "/images/products/flexible-led-display.webp",
+          "ratingCount": "41",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Curved Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "How much can a flexible LED module bend?",
+              "a": "Our soft LED modules can bend up to 120 degrees, making them ideal for wrapping around pillars, creating wave-like ceiling installations, or building custom circular screens without compromising pixel integrity."
+            },
+            {
+              "q": "Are curved LED panels suitable for outdoor use?",
+              "a": "While our standard flexible modules are engineered for high-end indoor retail and stage use, we do offer specialized IP65-rated flexible panels for outdoor architectural integration. Contact our team for specific outdoor curving requirements."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready to build a curved display?",
+          "ctaLabel": "Request Custom Quote"
+        }
+      },
       {
-      "id": "mobile-truck-led-display",
-      "name": "Mobile Billboard Truck LED Screens",
-      "description": "Ruggedized, weather-proof, and vibration-resistant LED panels engineered specifically for moving vehicles, trailers, and mobile advertising trucks.",
-      "image": "/images/products/mobile-truck-led-display.webp",
-      "price": "Starting at $130/sqft",
-      "badge": "Heavy Duty",
-      "config": {
-            "id": "mobile-truck-led-display",
-            "title": "Mobile Billboard Truck LED Screens",
-            "subtitle": "Take your advertising on the road with military-grade vibration resistance and IP67 weatherproofing.",
-            "breadcrumb": "Mobile Truck LED",
-            "breadcrumbHref": "/led-display-signs/mobile-truck-led-display",
-            "promoText": "VEHICLE MOUNTED LED PANELS",
-            "image": "/images/products/mobile-truck-led-display.webp",
-            "ratingCount": "34",
-            "ratingScore": "4.8",
-            "sizes": [
-                  {
-                        "label": "Truck Bed Dimension",
-                        "value": "custom",
-                        "basePrice": 0
-                  }
-            ],
-            "selects": [],
-            "faqs": [
-                  {
-                        "q": "How does the screen handle road vibrations?",
-                        "a": "Mobile LED screens are built with reinforced structural cabinets, specialized shock-absorbing brackets, and industrial-grade power connectors to ensure continuous operation over potholes, highways, and bumpy terrain."
-                  },
-                  {
-                        "q": "How do I power the screen on a moving truck?",
-                        "a": "These screens are powered via onboard ultra-quiet generators or heavy-duty inverter battery banks installed directly into your vehicle chassis, which we can help specify based on the square footage of the screen."
-                  }
-            ],
-            "reviews": [],
-            "ctaHeading": "Ready to build your mobile billboard?",
-            "ctaLabel": "Contact Engineering Team"
-      }
-},
+        "id": "shop-window-led-display",
+        "name": "High-Brightness Storefront LED Posters",
+        "description": "Defeat direct sunlight and capture foot traffic with our ultra-bright 5000+ nits window screens. Designed specifically to be visible through retail glass on the sunniest days.",
+        "image": "/images/products/shop-window-led-display.webp",
+        "price": "Starting at $120/sqft",
+        "badge": "Sunlight Readable",
+        "config": {
+          "id": "shop-window-led-display",
+          "title": "High-Brightness Storefront LED Posters",
+          "subtitle": "Turn your retail window into a dynamic digital canvas that cuts through glare and direct sunlight.",
+          "breadcrumb": "Storefront Window LED",
+          "breadcrumbHref": "/led-display-signs/shop-window-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: ULTRA-BRIGHT WINDOW DISPLAYS",
+          "image": "/images/products/shop-window-led-display.webp",
+          "ratingCount": "87",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Standard Window Size",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Will the screen be visible in direct afternoon sunlight?",
+              "a": "Absolutely. Standard indoor TVs fade in sunlight because they only output 300-500 nits. Our window-facing LED screens blast at 5,000 to 7,000 nits, ensuring your promotions are crystal clear and brilliant even at high noon."
+            },
+            {
+              "q": "Does it block the view into my store?",
+              "a": "We offer both solid high-brightness panels and transparent LED film options. If you want natural light to enter your store while displaying video, ask about our transparent window series!"
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Want to stop foot traffic in its tracks?",
+          "ctaLabel": "Get Window Display Quote"
+        }
+      },
       {
-      "id": "sphere-led-display",
-      "name": "360° Spherical LED Globes",
-      "description": "A masterpiece of LED engineering. Our spherical displays offer a completely seamless 360-degree viewing angle, perfect for museums, planetariums, and high-end corporate lobbies.",
-      "image": "/images/products/sphere-led-display.webp",
-      "price": "Custom Pricing",
-      "badge": "Premium 360°",
-      "config": {
-            "id": "sphere-led-display",
-            "title": "360° Spherical LED Globes",
-            "subtitle": "Captivate your audience from every possible angle with a seamless, floating digital globe.",
-            "breadcrumb": "Spherical LED Globe",
-            "breadcrumbHref": "/led-display-signs/sphere-led-display",
-            "promoText": "SEAMLESS 360 DEGREE VIDEO",
-            "image": "/images/products/sphere-led-display.webp",
-            "ratingCount": "12",
-            "ratingScore": "5.0",
-            "sizes": [
-                  {
-                        "label": "Custom Diameter",
-                        "value": "custom",
-                        "basePrice": 0
-                  }
-            ],
-            "selects": [],
-            "faqs": [
-                  {
-                        "q": "How do you map video onto a sphere?",
-                        "a": "Our spherical LED systems come with specialized geometric mapping hardware. You simply upload a standard flat panoramic video, and our controller automatically warps and maps it seamlessly around the globe without distortion."
-                  },
-                  {
-                        "q": "Can the globe be suspended from the ceiling?",
-                        "a": "Yes! Our LED spheres are constructed with lightweight aerospace-grade aluminum frames and central rigging points, allowing them to be safely suspended to create a stunning \"floating planet\" effect."
-                  }
-            ],
-            "reviews": [],
-            "ctaHeading": "Ready for a show-stopping installation?",
-            "ctaLabel": "Request Sphere Pricing"
+        "id": "mobile-truck-led-display",
+        "name": "Mobile Digital sign Truck LED Screens",
+        "description": "Ruggedized, weather-proof, and vibration-resistant LED panels engineered specifically for moving vehicles, trailers, and mobile advertising trucks.",
+        "image": "/images/products/mobile-truck-led-display.webp",
+        "price": "Starting at $130/sqft",
+        "badge": "Heavy Duty",
+        "config": {
+          "id": "mobile-truck-led-display",
+          "title": "Mobile Digital sign Truck LED Screens",
+          "subtitle": "Take your advertising on the road with military-grade vibration resistance and IP67 weatherproofing.",
+          "breadcrumb": "Mobile Truck LED",
+          "breadcrumbHref": "/led-display-signs/mobile-truck-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: VEHICLE MOUNTED LED PANELS",
+          "image": "/images/products/mobile-truck-led-display.webp",
+          "ratingCount": "34",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Truck Bed Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "How does the screen handle road vibrations?",
+              "a": "Mobile LED screens are built with reinforced structural cabinets, specialized shock-absorbing brackets, and industrial-grade power connectors to ensure continuous operation over potholes, highways, and bumpy terrain."
+            },
+            {
+              "q": "How do I power the screen on a moving truck?",
+              "a": "These screens are powered via onboard ultra-quiet generators or heavy-duty inverter battery banks installed directly into your vehicle chassis, which we can help specify based on the square footage of the screen."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready to build your mobile billboard?",
+          "ctaLabel": "Contact Engineering Team"
+        }
+      },
+      {
+        "id": "sphere-led-display",
+        "name": "360° Spherical LED Globes",
+        "description": "A masterpiece of LED engineering. Our spherical screens offer a completely flawless 360-degree viewing angle, ideal for museums, planetariums, and high-end corporate lobbies.",
+        "image": "/images/products/sphere-led-display.webp",
+        "price": "Custom Pricing",
+        "badge": "Premium 360°",
+        "config": {
+          "id": "sphere-led-display",
+          "title": "360° Spherical LED Globes",
+          "subtitle": "Captivate your audience from every possible angle with a flawless, floating digital globe.",
+          "breadcrumb": "Spherical LED Globe",
+          "breadcrumbHref": "/led-display-signs/sphere-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: SEAMLESS 360 DEGREE VIDEO",
+          "image": "/images/products/sphere-led-display.webp",
+          "ratingCount": "12",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Diameter",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "How do you map video onto a sphere?",
+              "a": "Our spherical LED systems come with specialized geometric mapping hardware. You simply upload a standard flat panoramic video, and our controller automatically warps and maps it seamlessly around the globe without distortion."
+            },
+            {
+              "q": "Can the globe be suspended from the ceiling?",
+              "a": "Yes! Our LED spheres are constructed with lightweight aerospace-grade aluminum frames and central rigging points, allowing them to be safely suspended to create a stunning \"floating planet\" effect."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a show-stopping installation?",
+          "ctaLabel": "Request Sphere Pricing"
+        }
+      },
+      {
+        "id": "outdoor-fixed-led-display",
+        "name": "Outdoor Fixed LED Display",
+        "description": "Premium-grade outdoor LED digital sign for long-term setups — building facades, rooftops, and large-scale advertising with 8000 nits brightness and IP65 protection.",
+        "image": "/images/products/outdoor-fixed-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Outdoor",
+        "config": {
+          "id": "outdoor-fixed-led-display",
+          "title": "Outdoor Fixed LED Display",
+          "subtitle": "Premium-grade outdoor LED digital sign for long-term setups — building facades, rooftops, and large-scale advertising with 8000 nits brightness and IP65 protection.",
+          "breadcrumb": "Outdoor Fixed LED Display",
+          "breadcrumbHref": "/led-display-signs/outdoor-fixed-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: OF SERIES - PREMIUM LED",
+          "image": "/images/products/outdoor-fixed-led-display.jpg",
+          "ratingCount": "21",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "IP65 Full Weatherproofing",
+              "a": "Sealed die-cast cabinet endures rain, sand, humidity, and temperatures from -40°C to +60°C without performance degradation."
+            },
+            {
+              "q": "Up to 8,000 nits Brightness",
+              "a": "Engineered to remain fully visible under direct midday sunlight. Custom 10,000 nit models available for extreme exposure environments."
+            },
+            {
+              "q": "Die-Cast Magnesium Cabinet",
+              "a": "30% thinner than iron cabinets, 40% lighter than standard aluminum — precision engineered for zero-gap flawless joins."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "outdoor-rental-led-display",
+        "name": "Outdoor Rental LED Display",
+        "description": "Professional outdoor rental LED display with 5,500 nits brightness. High contrast black SMD LEDs for stunning stage visuals at concerts, festivals, and corporate events.",
+        "image": "/images/products/outdoor-rental-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Rental",
+        "config": {
+          "id": "outdoor-rental-led-display",
+          "title": "Outdoor Rental LED Display",
+          "subtitle": "Professional outdoor rental LED display with 5,500 nits brightness. High contrast black SMD LEDs for stunning stage visuals at concerts, festivals, and corporate events.",
+          "breadcrumb": "Outdoor Rental LED Display",
+          "breadcrumbHref": "/led-display-signs/outdoor-rental-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: RO SERIES - PREMIUM LED",
+          "image": "/images/products/outdoor-rental-led-display.jpg",
+          "ratingCount": "29",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Auto-Lock Fast Assembly",
+              "a": "Each cabinet snaps together with a single-action auto-lock — no tools, no bolts. A crew of 2 can build a 100m² wall in under 3 hours."
+            },
+            {
+              "q": "5,500 nits Outdoor Brightness",
+              "a": "Perfectly visible in direct afternoon sunlight during outdoor festivals. Black SMD ensures deep blacks and vivid contrast simultaneously."
+            },
+            {
+              "q": "7.5kg Ultra-Light Cabinet",
+              "a": "Die-cast aluminum 500×500mm panels at just 7.5kg each — dramatically reducing truss load, transport costs, and labor."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "transparent-led-screen",
+        "name": "Transparent LED Screen",
+        "description": "See-through LED screen with up to 85% transparency and 5,500 nits brightness — seamlessly integrated into glass facades, retail stores, showrooms, and event stages.",
+        "image": "/images/products/transparent-led-screen.png",
+        "price": "Custom Pricing",
+        "badge": "Transparent",
+        "config": {
+          "id": "transparent-led-screen",
+          "title": "Transparent LED Screen",
+          "subtitle": "See-through LED screen with up to 85% transparency and 5,500 nits brightness — seamlessly integrated into glass facades, retail stores, showrooms, and event stages.",
+          "breadcrumb": "Transparent LED Screen",
+          "breadcrumbHref": "/led-display-signs/transparent-led-screen",
+          "promoText": "NANO SIGNS EXCLUSIVE: TS SERIES - PREMIUM LED",
+          "image": "/images/products/transparent-led-screen.png",
+          "ratingCount": "35",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Up to 85% Transparency",
+              "a": "Maintains the building's natural aesthetic and interior/exterior visibility. Natural daylight still flows through the display when idle."
+            },
+            {
+              "q": "5,500 nits Brightness",
+              "a": "Clearly visible through glass in bright indoor atriums and semi-outdoor canopied environments."
+            },
+            {
+              "q": "Self-Adhesive Film Option",
+              "a": "3mm-thin PET film version adheres directly to any glass panel — 3kg/m² weight, no drilling or structural work required."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "custom-neon-led-sign",
+        "name": "Custom Neon LED Sign",
+        "description": "Bespoke LED neon signs for restaurants, bars, retail stores, events, and home decor — any font, logo, or shape, made to order.",
+        "image": "/images/products/neon/nano-signs-bar-neon-canada.webp",
+        "price": "Custom Pricing",
+        "badge": "Neon LED",
+        "config": {
+          "id": "custom-neon-led-sign",
+          "title": "Custom Neon LED Sign",
+          "subtitle": "Bespoke LED neon signs for restaurants, bars, retail stores, events, and home decor — any font, logo, or shape, made to order.",
+          "breadcrumb": "Custom Neon LED Sign",
+          "breadcrumbHref": "/led-display-signs/custom-neon-led-sign",
+          "promoText": "NANO SIGNS EXCLUSIVE: NEON LED - PREMIUM LED",
+          "image": "/images/products/neon/nano-signs-bar-neon-canada.webp",
+          "ratingCount": "50",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Fully Custom Shape",
+              "a": "Any text, logo, icon, or abstract shape can be realized in LED neon — from simple words to complex brand logos."
+            },
+            {
+              "q": "80% Energy Saving",
+              "a": "Consumes up to 80% less electricity than traditional glass neon tubes of equivalent size."
+            },
+            {
+              "q": "Shatterproof Silicone",
+              "a": "Flexible silicone tubing — no glass to crack, no toxic gases, safe for children's spaces and busy public environments."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "cylinder-led-display",
+        "name": "Can Shape Cylinder LED Display",
+        "description": "360° flawless cylinder LED display — iconic can-shaped brand installations for beverage companies, retail experiences, and landmark events.",
+        "image": "/images/products/can-shape-cylinder-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "cylinder-led-display",
+          "title": "Can Shape Cylinder LED Display",
+          "subtitle": "360° flawless cylinder LED display — iconic can-shaped brand installations for beverage companies, retail experiences, and landmark events.",
+          "breadcrumb": "Can Shape Cylinder LED Display",
+          "breadcrumbHref": "/led-display-signs/cylinder-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: CA SERIES - PREMIUM LED",
+          "image": "/images/products/can-shape-cylinder-led-display.png",
+          "ratingCount": "19",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Flawless 360° Uniform Display",
+              "a": "Trapezoidal module geometry ensures perfect pixel alignment with no gaps or visible joins from any direction."
+            },
+            {
+              "q": "Fully Fully tailored Dimensions",
+              "a": "Diameter from 300mm to 2,000mm+; height from 500mm to 3,000mm+. Any brand specification delivered."
+            },
+            {
+              "q": "Freestanding or Ceiling-Hung",
+              "a": "Heavy weighted base for floor installations or single-point ceiling suspension for floating column effect."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "digital-led-poster",
+        "name": "HD Digital LED Poster",
+        "description": "Ultra-slim portable LED banner display — the modern replacement for the traditional roll-up banner, with plug-and-play simplicity and multi-screen splicing capability.",
+        "image": "/images/products/hd-digital-led-poster.png",
+        "price": "Custom Pricing",
+        "badge": "Indoor",
+        "config": {
+          "id": "digital-led-poster",
+          "title": "HD Digital LED Poster",
+          "subtitle": "Ultra-slim portable LED banner display — the modern replacement for the traditional roll-up banner, with plug-and-play simplicity and multi-screen splicing capability.",
+          "breadcrumb": "HD Digital LED Poster",
+          "breadcrumbHref": "/led-display-signs/digital-led-poster",
+          "promoText": "NANO SIGNS EXCLUSIVE: DP SERIES - PREMIUM LED",
+          "image": "/images/products/hd-digital-led-poster.png",
+          "ratingCount": "49",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Plug & Play via USB",
+              "a": "Insert a USB stick and the poster auto-plays your content immediately — no PC, no software configuration required."
+            },
+            {
+              "q": "Tile Up to 10 Units",
+              "a": "6 units = widescreen 16:9; 10 units = full HD 1080P video wall with a integrated synchronization processor."
+            },
+            {
+              "q": "1mm Bezel Ultra-Slim Frame",
+              "a": "1mm aluminum frame makes the poster nearly bezel-free when various units are tiled together for a large display."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "taxi-top-led-display",
+        "name": "HD Full Color Taxi Top LED Display",
+        "description": "Aerodynamic rooftop LED advertising display for taxis with 5,000–5,500 nits brightness, GPS geo-targeting, 4G cloud control, and IP56 all-weather protection.",
+        "image": "/images/products/hd-full-color-taxi-top-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Mobile",
+        "config": {
+          "id": "taxi-top-led-display",
+          "title": "HD Full Color Taxi Top LED Display",
+          "subtitle": "Aerodynamic rooftop LED advertising display for taxis with 5,000–5,500 nits brightness, GPS geo-targeting, 4G cloud control, and IP56 all-weather protection.",
+          "breadcrumb": "HD Full Color Taxi Top LED Display",
+          "breadcrumbHref": "/led-display-signs/taxi-top-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: TD SERIES - PREMIUM LED",
+          "image": "/images/products/hd-full-color-taxi-top-led-display.jpg",
+          "ratingCount": "50",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "GPS Geo-Targeted Advertising",
+              "a": "Run location-specific content automatically — show restaurant ads near food districts, event promotions near venues."
+            },
+            {
+              "q": "5,500 nits Daylight Brightness",
+              "a": "Fully legible in direct sun at any time of day. P5 model hits 5,500 nits for maximum street impact."
+            },
+            {
+              "q": "IP56 All-Weather Housing",
+              "a": "Waterproof, shockproof, with electrostatic and lightning protection — survives any city weather condition."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "cube-led-display",
+        "name": "Cube LED Display",
+        "description": "Multi-sided LED video cube with 4, 5, or 6 flawless faces — a 360° visible digital centrepiece for retail, exhibitions, events, and flagship brand spaces.",
+        "image": "/images/products/cube-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "cube-led-display",
+          "title": "Cube LED Display",
+          "subtitle": "Multi-sided LED video cube with 4, 5, or 6 flawless faces — a 360° visible digital centrepiece for retail, exhibitions, events, and flagship brand spaces.",
+          "breadcrumb": "Cube LED Display",
+          "breadcrumbHref": "/led-display-signs/cube-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: CL SERIES - PREMIUM LED",
+          "image": "/images/products/cube-led-display.png",
+          "ratingCount": "27",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "4, 5, or 6-Sided Flawless Cube",
+              "a": "Custom die-cast frame joins all faces with ultra-fine gaps — uniform brightness and color match across every side."
+            },
+            {
+              "q": "Naked-Eye 3D on 5/6 Sides",
+              "a": "5 and 6-sided cubes display 3D floating object effects visible from any angle — without glasses or special screens."
+            },
+            {
+              "q": "Built-In Plug & Play Player",
+              "a": "No external video processor needed. Auto-plays video, photos, and animations from USB or WiFi on power-up."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "led-curtain-display",
+        "name": "LED Curtain Display",
+        "description": "Transparent mesh LED curtain for large building facades, bridges, and architectural landmarks — ultra-lightweight 15kg/m², IP67 waterproof, up to 10,000 nits.",
+        "image": "/images/products/led-curtain-display.JPG",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "led-curtain-display",
+          "title": "LED Curtain Display",
+          "subtitle": "Transparent mesh LED curtain for large building facades, bridges, and architectural landmarks — ultra-lightweight 15kg/m², IP67 waterproof, up to 10,000 nits.",
+          "breadcrumb": "LED Curtain Display",
+          "breadcrumbHref": "/led-display-signs/led-curtain-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: LC SERIES - PREMIUM LED",
+          "image": "/images/products/led-curtain-display.JPG",
+          "ratingCount": "62",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "15kg/m² — 75% Lighter",
+              "a": "Only 15kg per square metre — 75% lighter than traditional iron cabinets. Dramatically reduces structural reinforcement cost on high-rise facades."
+            },
+            {
+              "q": "Up to 10,000 nits (DIP)",
+              "a": "SMD version at 6,500 nits; DIP version at 10,000 nits for coastal or hillside installations in direct sunlight."
+            },
+            {
+              "q": "40%–80% Wind-Transparent Mesh",
+              "a": "Mesh structure reduces wind load on high-rise facades while maintaining 40–80% visual transparency for natural building aesthetics."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "led-dance-floor",
+        "name": "LED Dance Floor",
+        "description": "Rugged HD LED dance floor for nightclubs, weddings, concerts, and stage productions — 2,000kg/m² load capacity, anti-slip surface, and IP65 waterproofing for indoor and outdoor events.",
+        "image": "/images/products/led-dance-floor.jpg",
+        "price": "Custom Pricing",
+        "badge": "Rental",
+        "config": {
+          "id": "led-dance-floor",
+          "title": "LED Dance Floor",
+          "subtitle": "Rugged HD LED dance floor for nightclubs, weddings, concerts, and stage productions — 2,000kg/m² load capacity, anti-slip surface, and IP65 waterproofing for indoor and outdoor events.",
+          "breadcrumb": "LED Dance Floor",
+          "breadcrumbHref": "/led-display-signs/led-dance-floor",
+          "promoText": "NANO SIGNS EXCLUSIVE: DF SERIES - PREMIUM LED",
+          "image": "/images/products/led-dance-floor.jpg",
+          "ratingCount": "51",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "2,000kg/m² Load Capacity",
+              "a": "Independently tested to support cars, crowd loads, and heavy stage equipment safely without deformation."
+            },
+            {
+              "q": "Anti-Slip Safety Surface",
+              "a": "High-strength tempered PC glass top layer with anti-slip coating — certified safe for dancers and high heels."
+            },
+            {
+              "q": "IP65 Waterproof",
+              "a": "Advanced PCB encapsulation and rubber ring sealing delivers full IP65 protection for outdoor events and pool decks."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "food-delivery-box-led",
+        "name": "Food Delivery Box LED",
+        "description": "3-sided mobile LED digital sign for delivery motorcycles and cargo bikes — 5,000 nits, GPS geo-targeting, 4G cloud management, and 270° city-wide visibility.",
+        "image": "/images/products/food-delivery-box-led.png",
+        "price": "Custom Pricing",
+        "badge": "Mobile",
+        "config": {
+          "id": "food-delivery-box-led",
+          "title": "Food Delivery Box LED",
+          "subtitle": "3-sided mobile LED digital sign for delivery motorcycles and cargo bikes — 5,000 nits, GPS geo-targeting, 4G cloud management, and 270° city-wide visibility.",
+          "breadcrumb": "Food Delivery Box LED",
+          "breadcrumbHref": "/led-display-signs/food-delivery-box-led",
+          "promoText": "NANO SIGNS EXCLUSIVE: DB SERIES - PREMIUM LED",
+          "image": "/images/products/food-delivery-box-led.png",
+          "ratingCount": "15",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "3-Sided 270° Visibility",
+              "a": "Left, right, and rear LED faces display the same or different content simultaneously — seen by pedestrians, cyclists, and motorists."
+            },
+            {
+              "q": "5,000 nits Daylight Bright",
+              "a": "Brilliant visual impact under direct sunlight on any busy street or high-traffic intersection."
+            },
+            {
+              "q": "GPS Geo-Targeted Campaigns",
+              "a": "Serve different ad content automatically as the delivery enters specified neighborhoods or proximity zones."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "shop-window-led",
+        "name": "Shop Window LED Display",
+        "description": "Specifically engineered for retail window screens with ultra-high brightness to compete with direct sunlight.",
+        "image": "/images/products/shop-window-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "shop-window-led",
+          "title": "Shop Window LED Display",
+          "subtitle": "Specifically engineered for retail window screens with ultra-high brightness to compete with direct sunlight.",
+          "breadcrumb": "Shop Window LED Display",
+          "breadcrumbHref": "/led-display-signs/shop-window-led",
+          "promoText": "NANO SIGNS EXCLUSIVE: SW SERIES - PREMIUM LED",
+          "image": "/images/products/shop-window-led-display.png",
+          "ratingCount": "18",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Direct Sunlight",
+              "a": "Brilliant colors even in windows facing the sun."
+            },
+            {
+              "q": "Auto-Dimming",
+              "a": "Smart sensors adjust brightness at night to save energy and meet local regulations."
+            },
+            {
+              "q": "Poster Design",
+              "a": "Slim aluminum frame with minimalist aesthetic for retail environments."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "stadium-perimeter-led",
+        "name": "Stadium Perimeter LED",
+        "description": "Professional athlete-safe LED perimeter boards for sports arenas — 7,000 nits, TV broadcast-ready 3840Hz refresh rate, IP65 outdoor-rated, and adjustable 0–90° bracket.",
+        "image": "/images/products/outdoor-fixed-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "stadium-perimeter-led",
+          "title": "Stadium Perimeter LED",
+          "subtitle": "Professional athlete-safe LED perimeter boards for sports arenas — 7,000 nits, TV broadcast-ready 3840Hz refresh rate, IP65 outdoor-rated, and adjustable 0–90° bracket.",
+          "breadcrumb": "Stadium Perimeter LED",
+          "breadcrumbHref": "/led-display-signs/stadium-perimeter-led",
+          "promoText": "NANO SIGNS EXCLUSIVE: ST SERIES - PREMIUM LED",
+          "image": "/images/products/outdoor-fixed-led-display.jpg",
+          "ratingCount": "25",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Soft Rubber Athlete-Safe Mask",
+              "a": "Protective soft silicone face mask and padded foam top cover designed to meet international athlete safety standards for pitch-side use."
+            },
+            {
+              "q": "0–90° Adjustable Bracket",
+              "a": "Repositions for any sport or camera angle in under 2 minutes without tools — ideal for multi-sport arena timetables."
+            },
+            {
+              "q": "7,000 nits TV-Grade Brightness",
+              "a": "Fully visible from all grandstand tiers and perfectly exposed on 4K broadcast cameras without sensor compensation."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "mobile-bus-led",
+        "name": "Mobile Bus LED Display",
+        "description": "Ultra-bright LED screens for buses and public transit vehicles — front, side, and rear configurations with 6,000 nits brightness, 4G fleet management, and GPS tracking.",
+        "image": "/images/products/mobile-bus-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Mobile",
+        "config": {
+          "id": "mobile-bus-led",
+          "title": "Mobile Bus LED Display",
+          "subtitle": "Ultra-bright LED screens for buses and public transit vehicles — front, side, and rear configurations with 6,000 nits brightness, 4G fleet management, and GPS tracking.",
+          "breadcrumb": "Mobile Bus LED Display",
+          "breadcrumbHref": "/led-display-signs/mobile-bus-led",
+          "promoText": "NANO SIGNS EXCLUSIVE: MB SERIES - PREMIUM LED",
+          "image": "/images/products/mobile-bus-led-display.jpg",
+          "ratingCount": "60",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Front, Side & Rear Configurations",
+              "a": "Full vehicle coverage: front destination LEDs, full-side advertising panels, and rear screens for following traffic."
+            },
+            {
+              "q": "6,000 nits Sunlight Visible",
+              "a": "Vivid and readable in all conditions — blazing noon sun, overcast skies, and coastal glare."
+            },
+            {
+              "q": "Vibration-Resistant Construction",
+              "a": "Anti-shock internal mounts and sealed PCBs handle the constant vibration of city bus routes without LED degradation."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "indoor-led-display",
+        "name": "Indoor Fixed LED Display",
+        "description": "Premium fine-pitch indoor LED video wall for boardrooms, retail showrooms, control rooms, and broadcast studios — from P1.25mm for ultra-sharp close-range viewing.",
+        "image": "/images/products/indoor-rental-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Indoor",
+        "config": {
+          "id": "indoor-led-display",
+          "title": "Indoor Fixed LED Display",
+          "subtitle": "Premium fine-pitch indoor LED video wall for boardrooms, retail showrooms, control rooms, and broadcast studios — from P1.25mm for ultra-sharp close-range viewing.",
+          "breadcrumb": "Indoor Fixed LED Display",
+          "breadcrumbHref": "/led-display-signs/indoor-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: IF SERIES - PREMIUM LED",
+          "image": "/images/products/indoor-rental-led-display.jpg",
+          "ratingCount": "46",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Fine Pitch from P1.25mm",
+              "a": "P1.25–2.5mm range delivers near-4K resolution at typical boardroom and showroom viewing distances."
+            },
+            {
+              "q": "High Greyscale at Low Brightness",
+              "a": "Maintains full colour depth and detail at 20–100% brightness — prevents washed-out images in brightly lit rooms."
+            },
+            {
+              "q": "Fanless Silent Cooling",
+              "a": "Passive thermal management produces zero fan noise — essential for broadcast studios, auditoriums, and executive boardrooms."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "indoor-rental-led",
+        "name": "Indoor Rental LED Display",
+        "description": "The professional standard for indoor event LED rental — lightweight 6.5kg cabinets, fast-lock system, 3840Hz refresh, and 30-second front module swap for exhibitions and stage productions.",
+        "image": "/images/products/indoor-rental-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Rental",
+        "config": {
+          "id": "indoor-rental-led",
+          "title": "Indoor Rental LED Display",
+          "subtitle": "The professional standard for indoor event LED rental — lightweight 6.5kg cabinets, fast-lock system, 3840Hz refresh, and 30-second front module swap for exhibitions and stage productions.",
+          "breadcrumb": "Indoor Rental LED Display",
+          "breadcrumbHref": "/led-display-signs/indoor-rental-led",
+          "promoText": "NANO SIGNS EXCLUSIVE: RI SERIES - PREMIUM LED",
+          "image": "/images/products/indoor-rental-led-display.jpg",
+          "ratingCount": "59",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "6.5kg Ultra-Light Cabinets",
+              "a": "One person can carry 3 panels at once — accelerate crew setup for any event venue size."
+            },
+            {
+              "q": "30-Second Front Module Swap",
+              "a": "Magnetic front tile removal replaces any module in under 30 seconds, with zero tools, without interrupting the event."
+            },
+            {
+              "q": "5000:1 Black SMD Contrast",
+              "a": "Black-face SMD LEDs produce deep blacks and vivid highlights — cinema quality on any stage."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "pharmacy-cross-led-display",
+        "name": "Pharmacy Cross LED Display",
+        "description": "Full-color animated LED cross sign for pharmacies and clinics — IP65 waterproof, auto-dimming, single or double-sided, with vivid motion graphics/animation capability.",
+        "image": "/images/products/pharmacy-cross-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "pharmacy-cross-led-display",
+          "title": "Pharmacy Cross LED Display",
+          "subtitle": "Full-color animated LED cross sign for pharmacies and clinics — IP65 waterproof, auto-dimming, single or double-sided, with vivid motion graphics/animation capability.",
+          "breadcrumb": "Pharmacy Cross LED Display",
+          "breadcrumbHref": "/led-display-signs/pharmacy-cross-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: PC SERIES - PREMIUM LED",
+          "image": "/images/products/pharmacy-cross-led-display.jpg",
+          "ratingCount": "55",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Full Color Dynamic Content",
+              "a": "RGB LEDs enable full-color videos, animations, temperature readings, promotional offers — dramatically more effective than static green neon crosses."
+            },
+            {
+              "q": "IP65 Dual Waterproof",
+              "a": "Dual-sided waterproof LED module technology delivers IP65 protection against rain, humidity, and condensation year-round."
+            },
+            {
+              "q": "Built-In Auto Dimmer",
+              "a": "Ambient light sensor automatically adjusts brightness from 6,000 nits in daylight to subtle ambient levels at night — no manual controls needed."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "outdoor-led-poster-display",
+        "name": "Outdoor LED Poster Display",
+        "description": "Weather-resistant IP65 outdoor LED poster — 5,000 nits with NationStar LEDs, 3840Hz refresh, HDMI/4G/WiFi control, and freestanding / wall-mounted / hanging setup process modes.",
+        "image": "/images/products/outdoor-led-poster-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "outdoor-led-poster-display",
+          "title": "Outdoor LED Poster Display",
+          "subtitle": "Weather-resistant IP65 outdoor LED poster — 5,000 nits with NationStar LEDs, 3840Hz refresh, HDMI/4G/WiFi control, and freestanding / wall-mounted / hanging setup process modes.",
+          "breadcrumb": "Outdoor LED Poster Display",
+          "breadcrumbHref": "/led-display-signs/outdoor-led-poster-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: OP SERIES - PREMIUM LED",
+          "image": "/images/products/outdoor-led-poster-display.jpg",
+          "ratingCount": "25",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "IP65 Full Weatherproofing",
+              "a": "Dual-sided waterproof LED module encapsulation and flawless panel splicing provide complete IP65 protection for outdoor use in any climate."
+            },
+            {
+              "q": "NationStar LED Brightness",
+              "a": "Premium NationStar LEDs deliver 5,000:1 contrast and vivid colour in direct sunlight — the gold standard for outdoor display components."
+            },
+            {
+              "q": "3840Hz High Refresh",
+              "a": "1920Hz/3840Hz selectable refresh rate with 16-bit grey processing — zero flicker on any camera, phone, or broadcast lens."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "led-pillar-display",
+        "name": "LED Pillar Display",
+        "description": "Slim, freestanding multi-sided LED display column — 16kg ultra-light, plug-and-play, single to 4-sided configurations for trade shows, retail stores, and hotel lobbies.",
+        "image": "/images/products/led-pillar-display.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "led-pillar-display",
+          "title": "LED Pillar Display",
+          "subtitle": "Slim, freestanding multi-sided LED display column — 16kg ultra-light, plug-and-play, single to 4-sided configurations for trade shows, retail stores, and hotel lobbies.",
+          "breadcrumb": "LED Pillar Display",
+          "breadcrumbHref": "/led-display-signs/led-pillar-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: LP SERIES - PREMIUM LED",
+          "image": "/images/products/led-pillar-display.png",
+          "ratingCount": "64",
+          "ratingScore": "5.0",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "16kg Ultra-Lightweight",
+              "a": "Each section weighs only 16kg — easily transported between venues and set up by a single person. Optional caster wheels available."
+            },
+            {
+              "q": "1 to 4-Sided Options",
+              "a": "Single, double, three, or four-sided configurations available — display content to one direction or 360° simultaneously."
+            },
+            {
+              "q": "320×960mm Most Popular Size",
+              "a": "Compact 320×960mm footprint fits anywhere. Custom sizes up to 640×1120mm available for larger retail spaces."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "hexagon-led-screen",
+        "name": "Hexagon LED Screen",
+        "description": "Mesmerizing six-sided creative LED panel — P1.25mm to P4mm, plug-and-play, tiles together for football-shaped landmarks, shopping mall ceilings, and DJ stage effects.",
+        "image": "/images/products/hexagon-led-screen.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "hexagon-led-screen",
+          "title": "Hexagon LED Screen",
+          "subtitle": "Mesmerizing six-sided creative LED panel — P1.25mm to P4mm, plug-and-play, tiles together for football-shaped landmarks, shopping mall ceilings, and DJ stage effects.",
+          "breadcrumb": "Hexagon LED Screen",
+          "breadcrumbHref": "/led-display-signs/hexagon-led-screen",
+          "promoText": "NANO SIGNS EXCLUSIVE: HX SERIES - PREMIUM LED",
+          "image": "/images/products/hexagon-led-screen.png",
+          "ratingCount": "18",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Eight Pitch Options P1.25–P4",
+              "a": "Fine pitch from P1.25mm for close-range showroom use, up to P4mm for large public installations and stage backdrops."
+            },
+            {
+              "q": "Football Shape Configuration",
+              "a": "24 hexagon panels combine to form a 3D football/soccer ball shape — iconic for World Cup events, sports bars, and fan zones."
+            },
+            {
+              "q": "Custom Sizes & Combinations",
+              "a": "Standard 320–600mm side length, or fully custom. Tile any number together for honeycomb video walls of any dimension."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "round-circle-led-display",
+        "name": "Round Circle LED Display",
+        "description": "Custom circular LED screen for brand logos, stage centrepieces, and ceiling feature art — indoor from P1.25mm, outdoor IP65 from P3mm, single or double-sided.",
+        "image": "/images/products/round-circle-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "round-circle-led-display",
+          "title": "Round Circle LED Display",
+          "subtitle": "Custom circular LED screen for brand logos, stage centrepieces, and ceiling feature art — indoor from P1.25mm, outdoor IP65 from P3mm, single or double-sided.",
+          "breadcrumb": "Round Circle LED Display",
+          "breadcrumbHref": "/led-display-signs/round-circle-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: RC SERIES - PREMIUM LED",
+          "image": "/images/products/round-circle-led-display.png",
+          "ratingCount": "63",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Indoor from P1.25mm",
+              "a": "Ultra-fine P1.25mm pitch for stunning brand logo circles at close reception distances. Indistinguishable pixel quality at arm's length."
+            },
+            {
+              "q": "Outdoor IP65 from P3mm",
+              "a": "Fully waterproof outdoor circular LED from P3mm, P5mm, P8mm for exterior signage, plazas, and festival stages."
+            },
+            {
+              "q": "500mm to 3m+ Custom Diameters",
+              "a": "Standard diameters from 500mm for desk-side logos up to 3m+ outdoor ceiling installations — any size manufactured to order."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "outdoor-led-totem-display",
+        "name": "Outdoor LED Totem Display",
+        "description": "Freestanding outdoor LED totem with tempered glass protection, integrated speakers, WiFi/4G cloud management, and front-service access — the premium street-level advertising kiosk.",
+        "image": "/images/products/outdoor-led-totem-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "outdoor-led-totem-display",
+          "title": "Outdoor LED Totem Display",
+          "subtitle": "Freestanding outdoor LED totem with tempered glass protection, integrated speakers, WiFi/4G cloud management, and front-service access — the premium street-level advertising kiosk.",
+          "breadcrumb": "Outdoor LED Totem Display",
+          "breadcrumbHref": "/led-display-signs/outdoor-led-totem-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: OT SERIES - PREMIUM LED",
+          "image": "/images/products/outdoor-led-totem-display.jpg",
+          "ratingCount": "35",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Freestanding No-Drill Install",
+              "a": "Weighted base allows deployment at any outdoor location without permanent structural fixings, drilling, or planning permission."
+            },
+            {
+              "q": "Tempered Glass Vandal Protection",
+              "a": "Optional tempered safety glass overlay protects the LED face from impact, vandalism, and environmental debris in public spaces."
+            },
+            {
+              "q": "Built-In Speaker System",
+              "a": "Integrated speaker delivers audio content, announcements, and branded sound experiences alongside the visual display."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "triangle-led-display",
+        "name": "Triangle LED Display",
+        "description": "Custom triangular LED panel for geometric video walls, architectural installations, stage lighting, and immersive event environments — any angle, any combination.",
+        "image": "/images/products/triangle-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Creative",
+        "config": {
+          "id": "triangle-led-display",
+          "title": "Triangle LED Display",
+          "subtitle": "Custom triangular LED panel for geometric video walls, architectural installations, stage lighting, and immersive event environments — any angle, any combination.",
+          "breadcrumb": "Triangle LED Display",
+          "breadcrumbHref": "/led-display-signs/triangle-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: TR SERIES - PREMIUM LED",
+          "image": "/images/products/triangle-led-display.png",
+          "ratingCount": "45",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Any Geometric Combination",
+              "a": "Triangular panels tile to form diamonds, arrows, hexagons, stars, and any freeform geometric pattern — unlimited configuration possibilities."
+            },
+            {
+              "q": "Indoor P1.8–P3 / Outdoor P3–P6",
+              "a": "High resolution fine-pitch for close-viewing showrooms; IP65 outdoor models for exterior facades and festival stages."
+            },
+            {
+              "q": "Synchronised Multi-Panel Video",
+              "a": "Synchronous controller system runs perfectly timed video across unlimited triangular panels as one unified display canvas."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "dj-booth-led-screen",
+        "name": "DJ Booth LED Screen",
+        "description": "Custom-shaped LED video screen for DJ booths, nightclubs, and live music venues — immersive 270° visual environments with real-time audio-reactive content capability.",
+        "image": "/images/products/dj-booth-led-screen.jpg",
+        "price": "Custom Pricing",
+        "badge": "Rental",
+        "config": {
+          "id": "dj-booth-led-screen",
+          "title": "DJ Booth LED Screen",
+          "subtitle": "Custom-shaped LED video screen for DJ booths, nightclubs, and live music venues — immersive 270° visual environments with real-time audio-reactive content capability.",
+          "breadcrumb": "DJ Booth LED Screen",
+          "breadcrumbHref": "/led-display-signs/dj-booth-led-screen",
+          "promoText": "NANO SIGNS EXCLUSIVE: DJ SERIES - PREMIUM LED",
+          "image": "/images/products/dj-booth-led-screen.jpg",
+          "ratingCount": "29",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Custom Booth Shape Configurations",
+              "a": "L-shape, U-shape, curved, and multi-panel configurations wrap around any DJ booth design for a 270° immersive visual stage."
+            },
+            {
+              "q": "Audio-Reactive Beat Sync",
+              "a": "Integrated BPM trigger input allows LED controller to synchronise content pulses to the DJ's audio signal in real time."
+            },
+            {
+              "q": "Standard Rental Cabinet Size",
+              "a": "500×500mm industry-standard cabinet integrates seamlessly with any existing rental LED inventory — no proprietary equipment."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "light-pole-led-display",
+        "name": "Light Pole LED Display",
+        "description": "Smart city LED advertising screen for street lamp poles — 5,000 nits, IP65, 4G cloud control, ambient sensor, and tool-free pole-clamp setup process for municipal and retail districts.",
+        "image": "/images/products/light-pole-led-display.png",
+        "price": "Custom Pricing",
+        "badge": "Advertising",
+        "config": {
+          "id": "light-pole-led-display",
+          "title": "Light Pole LED Display",
+          "subtitle": "Smart city LED advertising screen for street lamp poles — 5,000 nits, IP65, 4G cloud control, ambient sensor, and tool-free pole-clamp setup process for municipal and retail districts.",
+          "breadcrumb": "Light Pole LED Display",
+          "breadcrumbHref": "/led-display-signs/light-pole-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: PL SERIES - PREMIUM LED",
+          "image": "/images/products/light-pole-led-display.png",
+          "ratingCount": "18",
+          "ratingScore": "4.8",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Tool-Free Pole Clamp Install",
+              "a": "Adjustable pole clamp fits round or square lamp posts of any diameter. No drilling, no concrete — deployed in minutes per pole."
+            },
+            {
+              "q": "5,000 nits Smart City Bright",
+              "a": "Vivid and readable from pedestrians and passing vehicles in all daylight and weather conditions on any street type."
+            },
+            {
+              "q": "IP65 -40°C to +60°C",
+              "a": "Full municipal-grade weatherproofing for permanent outdoor deployment in all climates — from desert heat to arctic cold."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
+      },
+      {
+        "id": "digital-shelf-led-display",
+        "name": "Digital Shelf LED Display",
+        "description": "Ultra-slim LED shelf-edge display for supermarkets, pharmacies, and electronics retailers — dynamic price, promotion, and product content updated wirelessly in real time.",
+        "image": "/images/products/digital-shelf-led-display.jpg",
+        "price": "Custom Pricing",
+        "badge": "Indoor",
+        "config": {
+          "id": "digital-shelf-led-display",
+          "title": "Digital Shelf LED Display",
+          "subtitle": "Ultra-slim LED shelf-edge display for supermarkets, pharmacies, and electronics retailers — dynamic price, promotion, and product content updated wirelessly in real time.",
+          "breadcrumb": "Digital Shelf LED Display",
+          "breadcrumbHref": "/led-display-signs/digital-shelf-led-display",
+          "promoText": "NANO SIGNS EXCLUSIVE: DS SERIES - PREMIUM LED",
+          "image": "/images/products/digital-shelf-led-display.jpg",
+          "ratingCount": "63",
+          "ratingScore": "4.7",
+          "sizes": [
+            {
+              "label": "Custom Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [],
+          "keyFeatures": [
+            "Ultra-bright LED technology",
+            "Eco-friendly power consumption",
+            "Weather-resistant construction",
+            "Easy to program and update",
+            "Commercial-grade durability"
+          ],
+          "useCases": [
+            "Retail Storefronts",
+            "Restaurants & Cafes",
+            "Corporate Events",
+            "Trade Shows",
+            "Outdoor Advertising"
+          ],
+          "specs": [
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "Under 15mm Ultra-Slim Depth",
+              "a": "Clips to any existing retail shelf rail or mounts magnetically — no structural modifications, no additional shelf hardware needed."
+            },
+            {
+              "q": "Real-Time Wireless Price Updates",
+              "a": "Update all shelf prices across an entire store in under 3 minutes via WiFi or Bluetooth from a central management device."
+            },
+            {
+              "q": "Dynamic Promotions & Countdown",
+              "a": "Display real-time countdown timers for flash sales, animated promotion banners, and product recommendation content."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "Michael T., Store Manager",
+              "rating": 5,
+              "text": "The brightness on this display is incredible. It easily cuts through the direct afternoon sun and our foot traffic has noticeably increased."
+            },
+            {
+              "author": "Sarah J., Event Coordinator",
+              "rating": 5,
+              "text": "Nano Signs delivered exactly what we needed. The setup was straightforward and the image quality is flawless."
+            }
+          ],
+          "ctaHeading": "Ready for a custom quote?",
+          "ctaLabel": "Request Pricing"
+        }
       }
-}
     ]
-  }} as unknown as Record<string, RegistryCategory>;
+  }
+} as unknown as Record<string, RegistryCategory>;

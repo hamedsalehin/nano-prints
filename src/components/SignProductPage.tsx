@@ -184,13 +184,13 @@ function ShippingCountdown() {
 
 function RelatedProducts({ breadcrumbHref, currentTitle }: { breadcrumbHref: string, currentTitle: string }) {
   if (!breadcrumbHref) return null;
-  const categorySlug = breadcrumbHref.replace(/^\//, "");
+  const categorySlug = breadcrumbHref.replace(/^\//, "").split("/")[0];
   const categoryData = PRODUCTS_REGISTRY[categorySlug];
   if (!categoryData) return null;
 
   const related = categoryData.products
     .filter(p => p.name !== currentTitle)
-    .slice(0, 4);
+    .slice(0, 8);
 
   if (related.length === 0) return null;
 
@@ -251,6 +251,17 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
           {cfg.subtitle && ` ${cfg.subtitle}`} Our state-of-the-art printing technology ensures that your {productName.toLowerCase()} will feature vibrant colors and crisp details that capture attention.
         </p>
 
+        {cfg.description && (
+          <>
+            <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
+              Product Overview
+            </h3>
+            <p className="whitespace-pre-line">
+              {cfg.description}
+            </p>
+          </>
+        )}
+
         <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
           Why Choose Our {productName}?
         </h3>
@@ -273,6 +284,22 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
               Our clients frequently utilize this product for <strong>{cfg.useCases.join(", ")}</strong>. 
               By integrating these custom {categoryName.toLowerCase()} into your marketing strategy, you can effectively communicate your message to your target audience and drive engagement.
             </p>
+          </>
+        )}
+
+        {cfg.faqs && cfg.faqs.length > 0 && (
+          <>
+            <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
+              Common Questions About {productName}
+            </h3>
+            <div className="space-y-4">
+              {cfg.faqs.map((faq, idx) => (
+                <div key={idx}>
+                  <strong className="block text-slate-700">{faq.q}</strong>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </div>
           </>
         )}
 
