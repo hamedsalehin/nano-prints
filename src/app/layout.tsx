@@ -73,11 +73,11 @@ export default function RootLayout({
         {/* Preconnect to external asset CDN — saves 300ms per PageSpeed */}
         <link rel="preconnect" href="https://ext.same-assets.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://ext.same-assets.com" />
-        {/* Preload the LCP hero image */}
+        {/* Preload the LCP hero image — must match src in HeroSection exactly */}
         <link
           rel="preload"
           as="image"
-          href="/images/hero-image.jpeg"
+          href="/images/hero-image.webp"
           fetchPriority="high"
         />
         {/* Google tag (gtag.js) */}

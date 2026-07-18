@@ -13,14 +13,15 @@ export function HeroSection() {
       </h1>
       <div className="relative w-full aspect-[2164/727] overflow-hidden bg-slate-950">
         {/* First image renders server-side — LCP fires immediately */}
+        {/* unoptimized=true bypasses /_next/image API so preload URL matches exactly */}
         <Image
-          src="/images/hero-image.jpeg"
+          src="/images/hero-image.webp"
           alt="Nano Signs — Custom banners, yard signs, roll-up displays and more"
           fill
           sizes="100vw"
-          quality={80}
           priority
           fetchPriority="high"
+          unoptimized
           className="object-cover object-center"
         />
         {/* Second slide loads client-side after hydration */}
