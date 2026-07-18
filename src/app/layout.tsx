@@ -78,7 +78,7 @@ export default function RootLayout({
           rel="preload"
           as="image"
           href="/images/hero-image.jpeg"
-          fetchPriority="high" as="image"
+          fetchPriority="high"
         />
         {/* Google tag (gtag.js) */}
         <Script
