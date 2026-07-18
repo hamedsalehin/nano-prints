@@ -197,7 +197,7 @@ export function CustomerHighlights() {
                 src={photo.image}
                 alt={`Customer highlight ${index + 1}`}
                 fill
-                sizes="(max-width: 768px) 33vw, (max-width: 1200px) 33vw, 550px"
+                sizes="(max-width: 640px) 30vw, (max-width: 1024px) 25vw, 200px"
                 quality={95}
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
