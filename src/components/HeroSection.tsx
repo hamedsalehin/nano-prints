@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import dynamic from "next/dynamic";
+import { HeroCarousel } from "./HeroCarousel";
 
-// Client-only: second slide loads AFTER first paint so it never blocks LCP
-const HeroCarousel = dynamic(
-  () => import("./HeroCarousel").then((m) => m.HeroCarousel),
-  { ssr: false }
-);
+// HeroCarousel has "use client" — Next.js handles the client boundary automatically.
+// The first <Image priority> renders server-side for fast LCP.
 
 export function HeroSection() {
   return (
