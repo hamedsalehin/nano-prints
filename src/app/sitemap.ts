@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
-import { BLOG_POSTS } from "@/lib/blogRegistry";
+import { BLOG_REGISTRY } from "@/lib/blogRegistry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nano-signs.com";
@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   const blogPages: MetadataRoute.Sitemap = [];
-  for (const slug of Object.keys(BLOG_POSTS)) {
+  for (const slug of Object.keys(BLOG_REGISTRY)) {
     blogPages.push({
       url: `${baseUrl}/blog/${slug}`,
       lastModified: currentDate,
