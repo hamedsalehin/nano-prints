@@ -82,16 +82,16 @@ export default function RootLayout({
         />
         {/* Google tag (gtag.js) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-FJ30HE8KYQ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE"
           strategy="lazyOnload"
         />
         <Script id="google-analytics" strategy="lazyOnload">
-          {`
+          {\`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-FJ30HE8KYQ');
-          `}
+            gtag('config', 'G-8N8L6WV8RE');
+          \`}
         </Script>
         {/* Local Business Schema Markup */}
         <script
