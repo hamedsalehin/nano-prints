@@ -7,9 +7,9 @@ import { Metadata } from "next";
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sign Industry Blog | Nano Signs",
+  title: "Sign Shop Blog Oakland Park FL | LED Signs, Neon & Banners Tips | Nano Signs",
   description:
-    "Tips, inspiration, and expert insights on custom signage, LED displays, neon signs, and branding for businesses in Fort Lauderdale & Broward County.",
+    "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Oakland Park's local sign shop in Broward County.",
   alternates: { canonical: "https://nano-signs.com/blog" },
 };
 

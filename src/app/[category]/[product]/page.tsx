@@ -20,10 +20,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const productData = categoryData.products.find((p) => p.id === decodedProduct);
   if (!productData) return {};
   
-  const title = `${productData.name} | Nano Signs`;
+  // Category-specific keyword suffixes for accurate product titles
+  const categorySuffixes: Record<string, string> = {
+    "neon-signs": "Custom LED Neon Signs Oakland Park FL",
+    "custom-banners": "Vinyl Banner Printing Oakland Park FL",
+    "custom-flags": "Custom Flag Printing Oakland Park FL",
+    "custom-signs": "Custom Business Signs Oakland Park FL",
+    "led-display-signs": "Digital Signage Oakland Park FL",
+    "custom-decals": "Vehicle Wraps & Decals Oakland Park FL",
+    "trade-show": "Trade Show Displays Oakland Park FL",
+    "marketing-materials": "Commercial Printing Oakland Park FL",
+  };
+
+  const suffix = categorySuffixes[decodedCategory] || `Custom ${categoryData.title} Oakland Park FL`;
+  const isDuplicate = productData.name.toLowerCase().includes("led") && suffix.toLowerCase().includes("led");
+  const title = productData.name.includes("Oakland Park") || productData.name.includes("FL")
+    ? `${productData.name} | Nano Signs`
+    : isDuplicate
+    ? `${productData.name} Oakland Park FL | Nano Signs`
+    : `${productData.name} | ${suffix}`;
   const description = productData.description
-    ? `Design custom ${productData.name.toLowerCase()} in Broward County. ${productData.description}`
-    : `Custom ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Call 305-967-1005!`;
+    ? `Custom ${productData.name} in Oakland Park FL. ${productData.description} Call 305-967-1005 for a free quote.`
+    : `High-quality ${productData.name} printing in Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;
 
   let primaryCategory = decodedCategory;
   for (const [catSlug, catData] of Object.entries(PRODUCTS_REGISTRY)) {

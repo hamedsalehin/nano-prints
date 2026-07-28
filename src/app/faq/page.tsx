@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Nano Signs",
-  description: "Have questions about custom signs, turnaround times, or shipping? Find all the answers you need in the Nano Signs FAQ.",
+  title: "FAQ — Sign Shop & Banner Printing Oakland Park FL | Nano Signs",
+  description: "Answers to your questions about custom signs, banner printing, LED signs & neon signs in Oakland Park FL. Pricing, turnaround, design & shipping info. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/faq",
   }

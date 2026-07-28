@@ -3,9 +3,17 @@ import React, { Suspense } from "react";
 import DesignPage from "../../design/page";
 
 export const metadata: Metadata = {
+  title: "Design Studio | Nano Signs",
   robots: {
     index: false,
     follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+  alternates: {
+    canonical: "https://nano-signs.com/design",
   },
 };
 

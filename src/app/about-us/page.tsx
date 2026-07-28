@@ -1,6 +1,21 @@
-"use client";
-
+import type { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+  description:
+    "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+  alternates: {
+    canonical: "https://nano-signs.com/about-us",
+  },
+  openGraph: {
+    title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+    description:
+      "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+    url: "https://nano-signs.com/about-us",
+    type: "website",
+  },
+};
 import Link from "next/link";
 import Image from "next/image";
 import { Header } from "@/components/Header";

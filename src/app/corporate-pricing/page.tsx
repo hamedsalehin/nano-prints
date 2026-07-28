@@ -6,8 +6,8 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Corporate & Wholesale Pricing | Nano Signs",
-  description: "Get exclusive corporate pricing, dedicated account management, and bulk discounts for all your business signage needs at Nano Signs.",
+  title: "Corporate & Bulk Sign Pricing Oakland Park FL | Volume Discounts | Nano Signs",
+  description: "Bulk pricing on custom signs, banner printing & marketing materials for Oakland Park FL businesses. Dedicated account manager, volume discounts & fast turnaround. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/corporate-pricing",
   }

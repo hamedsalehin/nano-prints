@@ -7,9 +7,9 @@ import { Metadata } from "next";
 import { MapPin, ArrowRight, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Projects | Nano Signs — Custom Signs Fort Lauderdale",
+  title: "Completed Signage Projects Oakland Park FL | Portfolio | Nano Signs",
   description:
-    "Explore Nano Signs' portfolio of completed signage projects — LED displays, neon signs, vehicle wraps, banners, and more across South Florida.",
+    "Explore Nano Signs' portfolio of completed custom business signs, LED displays, neon signs, banner printing & vehicle wraps in Oakland Park FL.",
   alternates: { canonical: "https://nano-signs.com/projects" },
 };
 

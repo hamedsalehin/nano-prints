@@ -83,6 +83,28 @@ const nextConfig = {
         destination: "/custom-banners/:path*",
         permanent: true,
       },
+      {
+        source: "/led-signs-for-sale",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      // Legacy URL seen in GSC — /contactus/ (without hyphen)
+      {
+        source: "/contactus",
+        destination: "/contact-us",
+        permanent: true,
+      },
+      {
+        source: "/contactus/",
+        destination: "/contact-us",
+        permanent: true,
+      },
+      // Trailing-slash variant seen in GSC
+      {
+        source: "/led-signs-for-sale/",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
     ];
   },
 };

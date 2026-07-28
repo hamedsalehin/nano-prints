@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Custom Print Shop Oakland Park FL | Nano Signs",
-  description: "Learn about Nano Signs, your local Oakland Park & Fort Lauderdale printing workshop for high-quality custom signs, banners, and marketing products.",
+  title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+  description: "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
   alternates: {
     canonical: "https://nano-signs.com/about-us",
   },
   openGraph: {
-    title: "About Us | Custom Print Shop Oakland Park FL | Nano Signs",
-    description: "Learn about Nano Signs, your local Oakland Park & Fort Lauderdale printing workshop for high-quality custom signs, banners, and marketing products.",
+    title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+    description: "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
     url: "https://nano-signs.com/about-us",
     type: "website",
     siteName: "Nano Signs",

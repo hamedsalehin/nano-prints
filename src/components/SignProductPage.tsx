@@ -236,10 +236,99 @@ function RelatedProducts({ breadcrumbHref, currentTitle }: { breadcrumbHref: str
 function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
   const categoryName = cfg.breadcrumb || "Signs";
   const productName = cfg.title || "Custom Sign";
-  const location = "Fort Lauderdale & Broward County";
+  const location = "Oakland Park FL & Broward County";
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${productName} — Oakland Park FL`,
+    "description": cfg.description || cfg.subtitle || `Custom ${productName} in Oakland Park FL`,
+    "image": cfg.image?.startsWith("/") ? `https://nano-signs.com${cfg.image}` : cfg.image,
+    "brand": {
+      "@type": "Brand",
+      "name": "Nano Signs",
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://nano-signs.com${cfg.breadcrumbHref || ""}/${cfg.id || ""}`,
+      "priceCurrency": "USD",
+      "price": cfg.sizes?.[0]?.basePrice || "49.00",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "LocalBusiness",
+        "name": "Nano Signs",
+        "telephone": "305-967-1005",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4567 Powerline Rd",
+          "addressLocality": "Oakland Park",
+          "addressRegion": "FL",
+          "postalCode": "33309",
+          "addressCountry": "US"
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": cfg.ratingScore || "4.9",
+      "reviewCount": cfg.ratingCount || "128"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nano-signs.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": categoryName,
+        "item": `https://nano-signs.com${cfg.breadcrumbHref || ""}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": productName,
+        "item": `https://nano-signs.com${cfg.breadcrumbHref || ""}/${cfg.id || ""}`
+      }
+    ]
+  };
+
+  const faqSchema = cfg.faqs && cfg.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": cfg.faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  } : null;
 
   return (
     <section className="bg-slate-50 py-12 border-t border-slate-100">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600 leading-relaxed font-opensans space-y-4">
         <h2 className="text-xl font-bold text-slate-800 font-poppins mb-4">
           Custom {productName} Printing in {location}

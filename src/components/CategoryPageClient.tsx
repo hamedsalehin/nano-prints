@@ -28,6 +28,7 @@ interface CategoryPageClientProps {
   heroImage: string;
   tabletHeroImage?: string;
   mobileHeroImage?: string;
+  heroVariant?: "neon" | "default";
   products: ProductItem[];
   categoryDescriptionText?: string;
   categorySecondaryImage?: string;
@@ -98,6 +99,7 @@ export function CategoryPageClient({
   heroImage,
   tabletHeroImage,
   mobileHeroImage,
+  heroVariant = "default",
   products,
   categoryDescriptionText,
   categorySecondaryImage,
@@ -113,6 +115,94 @@ export function CategoryPageClient({
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
+
+  // ── Neon-style full-width hero (split layout) ──────────────────────────────
+  const NeonHero = (
+    <section
+      className="w-full relative overflow-hidden"
+      style={{ background: "linear-gradient(135deg, #050a10 0%, #0d1a0f 50%, #050810 100%)" }}
+    >
+      {/* Grid overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff04_1px,transparent_1px),linear-gradient(to_bottom,#ffffff04_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-0 flex flex-col lg:flex-row items-center gap-8 lg:gap-0 min-h-[420px] lg:min-h-[520px]">
+        {/* Left — Text */}
+        <div className="flex-1 z-10 flex flex-col justify-center py-10 lg:py-16">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#ff2d78] mb-4 font-poppins">
+            ✦ Handcrafted &amp; Premium
+          </span>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight font-poppins mb-4">
+            Custom LED Neon Signs<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d78] via-[#ff9900] to-[#00e5ff]">
+              &amp; Logo Lights
+            </span>
+          </h1>
+          <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-md mb-2 font-opensans">
+            {heroSubtitle} Create a vibrant, customized atmosphere for your business storefront, wedding backdrop, home décor, or events.
+          </p>
+          <p className="text-sm text-gray-400 mb-8 font-opensans">
+            Built by hand using energy-efficient, safe-to-touch LED neon flex technology.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {ctaProduct1 && (
+              <Link
+                href={ctaProduct1.href}
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white font-bold text-sm font-poppins shadow-lg hover:scale-105 transition-transform"
+                style={{ background: "linear-gradient(135deg, #ff2d78, #b020ff)" }}
+              >
+                {ctaProduct1.name} →
+              </Link>
+            )}
+            <Link
+              href="/get-a-quote"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold text-sm font-poppins border-2 border-[#00e5ff] text-[#00e5ff] hover:bg-[#00e5ff]/10 transition-colors"
+            >
+              Upload Design &amp; Get Quote ↑
+            </Link>
+          </div>
+          <p className="text-xs text-gray-500 mt-3 font-opensans">⏱ Get your quote under 12 hours</p>
+        </div>
+
+        {/* Right — Hero Image */}
+        <div className="flex-1 flex items-center justify-center lg:justify-end relative z-10">
+          <div className="relative w-full max-w-[500px] lg:max-w-none aspect-[4/3] lg:h-[520px] lg:w-[580px]">
+            {/* Glow effect */}
+            <div className="absolute inset-0 blur-3xl opacity-30 rounded-3xl"
+              style={{ background: "radial-gradient(ellipse at center, #ff2d78 0%, #00e5ff 50%, transparent 70%)" }}
+            />
+            <Image
+              src={heroImage}
+              alt="Custom LED Neon Signs by Nano Signs"
+              fill
+              className="object-cover rounded-2xl"
+              priority
+              sizes="(max-width: 1024px) 100vw, 580px"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Trust badges bar */}
+      <div className="border-t border-white/10 bg-black/30 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { icon: "🎨", title: "12H Free Proof", desc: "Digital design proof within 12 hours" },
+            { icon: "🚚", title: "Fast Delivery", desc: "Express shipping to your doorstep in 3–7 days" },
+            { icon: "💬", title: "24/7 Support", desc: "Round-the-clock expert customer service" },
+            { icon: "🏆", title: "7+ Yrs Experience", desc: "Crafting premium custom neon signs since 2017" },
+          ].map((badge) => (
+            <div key={badge.title} className="flex items-start gap-3">
+              <span className="text-2xl flex-shrink-0">{badge.icon}</span>
+              <div>
+                <p className="text-white text-sm font-bold font-poppins">{badge.title}</p>
+                <p className="text-gray-400 text-xs leading-tight font-opensans">{badge.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
@@ -132,94 +222,95 @@ export function CategoryPageClient({
           </div>
         </div>
 
-        {/* Hero Section Banner */}
-        <section className="relative w-full lg:px-[48px] 3xl:px-[96px] pt-1">
-          <div className="relative overflow-hidden rounded-xl">
-            <picture>
-              {tabletHeroImage && (
-                <source srcSet={heroImage} media="(min-width: 992px)" />
-              )}
-              {tabletHeroImage && (
-                <source srcSet={tabletHeroImage} media="(min-width: 481px)" />
-              )}
-              <img
-                className="w-full h-[220px] lg:h-[480px] object-cover object-top pointer-events-none"
-                src={mobileHeroImage || tabletHeroImage || heroImage}
-                alt={`${title} Banner`}
-                width={1200}
-                height={480}
-              />
-            </picture>
+        {/* Hero — conditional on variant */}
+        {heroVariant === "neon" ? NeonHero : (
+          <section className="relative w-full lg:px-[48px] 3xl:px-[96px] pt-1">
+            <div className="relative overflow-hidden rounded-xl">
+              <picture>
+                {tabletHeroImage && (
+                  <source srcSet={heroImage} media="(min-width: 992px)" />
+                )}
+                {tabletHeroImage && (
+                  <source srcSet={tabletHeroImage} media="(min-width: 481px)" />
+                )}
+                <img
+                  className="w-full h-[220px] lg:h-[480px] object-cover object-top pointer-events-none"
+                  src={mobileHeroImage || tabletHeroImage || heroImage}
+                  alt={`${title} Banner`}
+                  width={1200}
+                  height={480}
+                />
+              </picture>
 
-
-            {/* Desktop Card Overlay */}
-            <div className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-[48px] z-10">
-              <div className="bg-white rounded-xl shadow-xl p-10 flex flex-col items-center justify-center w-[450px] border border-gray-100">
-                <div className="text-center font-poppins mb-6">
-                  <h1 className="text-3xl font-extrabold text-gray-900 mb-2 leading-none">
-                    {title}
-                  </h1>
-                  <p className="text-lg text-gray-700 font-semibold leading-normal">
-                    {heroSubtitle}
-                  </p>
-                </div>
-                <div className="flex gap-3 w-full">
-                  {ctaProduct1 && (
-                    <Link
-                      href={ctaProduct1.href}
-                      className="flex-1 text-white font-extrabold px-5 py-3.5 rounded-lg text-center text-sm font-poppins shadow-md hover:opacity-90 transition-opacity"
-                      style={{
-                        background: "linear-gradient(135deg, #ff2d78, #b020ff)",
-                      }}
-                    >
-                      {ctaProduct1.name}
-                    </Link>
-                  )}
-                  {ctaProduct2 && (
-                    <Link
-                      href={ctaProduct2.href}
-                      className="flex-1 border-2 font-extrabold px-5 py-3.5 rounded-lg text-center transition-colors text-sm font-poppins"
-                      style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
-                    >
-                      {ctaProduct2.name}
-                    </Link>
-                  )}
+              {/* Desktop Card Overlay */}
+              <div className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-[48px] z-10">
+                <div className="bg-white rounded-xl shadow-xl p-10 flex flex-col items-center justify-center w-[450px] border border-gray-100">
+                  <div className="text-center font-poppins mb-6">
+                    <h1 className="text-3xl font-extrabold text-gray-900 mb-2 leading-none">
+                      {title}
+                    </h1>
+                    <p className="text-lg text-gray-700 font-semibold leading-normal">
+                      {heroSubtitle}
+                    </p>
+                  </div>
+                  <div className="flex gap-3 w-full">
+                    {ctaProduct1 && (
+                      <Link
+                        href={ctaProduct1.href}
+                        className="flex-1 text-white font-extrabold px-5 py-3.5 rounded-lg text-center text-sm font-poppins shadow-md hover:opacity-90 transition-opacity"
+                        style={{
+                          background: "linear-gradient(135deg, #ff2d78, #b020ff)",
+                        }}
+                      >
+                        {ctaProduct1.name}
+                      </Link>
+                    )}
+                    {ctaProduct2 && (
+                      <Link
+                        href={ctaProduct2.href}
+                        className="flex-1 border-2 font-extrabold px-5 py-3.5 rounded-lg text-center transition-colors text-sm font-poppins"
+                        style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
+                      >
+                        {ctaProduct2.name}
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="lg:hidden w-full bg-white p-5 text-center border-b">
-            <h1 className="text-2xl font-bold font-poppins text-gray-900 mb-1">
-              {title}
-            </h1>
-            <p className="text-base text-gray-600 font-semibold font-poppins mb-4">
-              {heroSubtitle}
-            </p>
-            <div className="flex gap-3 max-w-sm mx-auto">
-              {ctaProduct1 && (
-                <Link
-                  href={ctaProduct1.href}
-                  className="flex-1 text-white font-bold px-4 py-3 rounded-lg text-center text-sm font-poppins shadow hover:opacity-90 transition-opacity"
-                  style={{
-                    background: "linear-gradient(135deg, #ff2d78, #b020ff)",
-                  }}
-                >
-                  {ctaProduct1.name}
-                </Link>
-              )}
-              {ctaProduct2 && (
-                <Link
-                  href={ctaProduct2.href}
-                  className="flex-1 border-2 font-bold px-4 py-3 rounded-lg text-center transition-colors text-sm font-poppins"
-                  style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
-                >
-                  {ctaProduct2.name}
-                </Link>
-              )}
+            <div className="lg:hidden w-full bg-white p-5 text-center border-b">
+              <h1 className="text-2xl font-bold font-poppins text-gray-900 mb-1">
+                {title}
+              </h1>
+              <p className="text-base text-gray-600 font-semibold font-poppins mb-4">
+                {heroSubtitle}
+              </p>
+              <div className="flex gap-3 max-w-sm mx-auto">
+                {ctaProduct1 && (
+                  <Link
+                    href={ctaProduct1.href}
+                    className="flex-1 text-white font-bold px-4 py-3 rounded-lg text-center text-sm font-poppins shadow hover:opacity-90 transition-opacity"
+                    style={{
+                      background: "linear-gradient(135deg, #ff2d78, #b020ff)",
+                    }}
+                  >
+                    {ctaProduct1.name}
+                  </Link>
+                )}
+                {ctaProduct2 && (
+                  <Link
+                    href={ctaProduct2.href}
+                    className="flex-1 border-2 font-bold px-4 py-3 rounded-lg text-center transition-colors text-sm font-poppins"
+                    style={{ borderColor: "#00e5ff", color: "#00e5ff" }}
+                  >
+                    {ctaProduct2.name}
+                  </Link>
+                )}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Browse Products Grid */}
         <section className="w-full px-[20px] lg:px-[48px] 3xl:px-[96px] py-10">

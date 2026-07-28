@@ -35,9 +35,10 @@ export const PRODUCTS_REGISTRY = {
     breadcrumbLabel: "Neon Signs",
     heroSubtitle: "Vibrant. Custom. Built to Last.",
     description: "Design premium, bespoke illuminated neon displays for business backdrops, storefronts, and offices.",
-    heroImage: "/images/products/neon/nano-signs-good-vibes-neon-usa.webp",
-    tabletHeroImage: "/images/products/neon/nano-signs-good-vibes-neon-usa.webp",
-    mobileHeroImage: "/images/products/neon/nano-signs-good-vibes-neon-usa.webp",
+    heroImage: "/images/products/neon/nano-signs-cocktails-neon-usa.webp",
+    tabletHeroImage: "/images/products/neon/nano-signs-cocktails-neon-usa.webp",
+    mobileHeroImage: "/images/products/neon/nano-signs-cocktails-neon-usa.webp",
+    heroVariant: "neon",
     reviewRating: "4.9",
     reviewCount: "184",
     reviewQuote: "Absolutely perfect. Bright, flawless, and arrived earlier than expected!",
@@ -2172,6 +2173,104 @@ Why Choose Our Expert-grade Rollup Banners?
           ctaHeading: "Ready to make an impression?",
         },
       },
+      {
+        id: "roll-up-banners",
+        name: "Roll Up Banners",
+        description:
+          "Our Roll Up Banners are premium portable stand displays for trade shows, conferences, retail checkouts, and promotional events in Oakland Park FL. The high-resolution banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Includes carrying bag for effortless transport.",
+        image: "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
+        price: "Starting at $89.00",
+        badge: "Popular",
+        config: {
+          title: "Roll Up Banners",
+          subtitle:
+            "Portable roll up banner stand & custom printed graphic. Pulls up in seconds for high-impact trade show advertising in Oakland Park FL.",
+          breadcrumb: "Roll Up Banners",
+          breadcrumbHref: "/trade-show",
+          promoText: "25% OFF ROLL UP BANNER STANDS",
+          image:
+            "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
+          ratingCount: "980",
+          ratingScore: "4.9",
+          sizes: [
+            {
+              label: '33" x 80" Standard Stand Size',
+              value: "33x80",
+              basePrice: 89.00,
+            },
+            {
+              label: '36" x 92" Deluxe Wide Stand Size',
+              value: "36x92",
+              basePrice: 129.00,
+            },
+            {
+              label: '48" x 92" Extra Wide Stand Size',
+              value: "48x92",
+              basePrice: 179.00,
+            },
+          ],
+          selects: [
+            {
+              label: "Stand Option",
+              options: [
+                {
+                  label: "Standard Silver Cassette Stand",
+                  value: "standard_stand",
+                  priceAdder: 0,
+                },
+                {
+                  label: "Heavy Duty Premium Stand Base",
+                  value: "heavy_duty_stand",
+                  priceAdder: 35.0,
+                },
+              ],
+            },
+          ],
+          keyFeatures: [
+            "Heavy-Duty Anodized Aluminum Roll Up Base",
+            "Anti-Curl Premium Blockout Film Graphic",
+            "Includes Padded Zippered Travel Carrying Bag",
+            "Tool-Free 30-Second Assembly",
+            "Vivid UV-Resistant High Resolution Printing",
+          ],
+          useCases: [
+            "Trade Show Booths & Expo Displays",
+            "Retail Storefront & Checkout Promotions",
+            "Corporate Lobbies & Conference Rooms",
+            "Grand Openings & Special Event Signage",
+            "Church & Community Announcement Boards",
+          ],
+          specs: [
+            { key: "Graphic Material", value: "Anti-Curl Poly Film / 13oz Blockout Vinyl" },
+            { key: "Hardware", "value": "Anodized Aluminum Roll Up Cassette & Pole" },
+            { key: "Case", value: "Padded Nylon Travel Bag Included" },
+            { key: "Turnaround", value: "Standard 4-5 days / Rush 1-2 days" },
+          ],
+          faqs: [
+            {
+              q: "How does a Roll Up Banner work?",
+              a: "The printed graphic is stored inside the protective aluminum base on a spring-loaded roller mechanism. To set up, simply pull the banner up from the base and hook it onto the vertical support pole in seconds.",
+            },
+            {
+              q: "Does the Roll Up Banner come with a carrying bag?",
+              a: "Yes! Every roll up banner system includes a high-quality padded zippered travel case with shoulder straps.",
+            },
+            {
+              q: "Can I pick up my Roll Up Banner in Oakland Park FL?",
+              a: "Yes! Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. You can order online and pick up at our Oakland Park shop or select delivery.",
+            },
+          ],
+          reviews: [
+            {
+              author: "Elena M., Marketing Manager",
+              rating: 5,
+              text: "The Roll Up Banner was so easy to assemble at our Oakland Park trade show booth. Colors are vibrant and the stand is very solid!",
+            },
+          ],
+          ctaHeading: "Order Your Roll Up Banner Today",
+        },
+      },
+
       {
         id: "x-banner-stand",
         name: "X-Banners",
@@ -6776,15 +6875,15 @@ Why Choose Our Expert-grade Rollup Banners?
     "products": [
       {
         "id": "programmable-led-sign",
-        "name": "Programmable LED Sign",
-        "description": "Custom Programmable LED display. Ultra-clear screens ideal for retail spaces, dining establishments, and venues, and exterior marketing. Surpasses static signs with vivid motion graphics.",
+        "name": "Programmable LED Signs",
+        "description": "Custom programmable LED signs in Oakland Park FL. Ultra-clear outdoor & indoor electronic message centers for retail storefronts, restaurants, and business advertising. Surpasses static signs with dynamic scrolling text & vivid motion graphics.",
         "image": "/images/products/led_sign_welcome.webp",
         "price": "Starting at $90/sqft",
         "badge": "New",
         "config": {
           "id": "programmable-led-sign",
-          "title": "Programmable LED Sign",
-          "subtitle": "Ultra-bright programmable LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use.",
+          "title": "Programmable LED Signs",
+          "subtitle": "Ultra-bright programmable & scrolling LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use in Oakland Park FL.",
           "breadcrumb": "Programmable LED Signs",
           "breadcrumbHref": "/led-display-signs",
           "promoText": "NANO SIGNS EXCLUSIVE: CUSTOM LED SIGNS - PREMIUM QUALITY",
@@ -6946,27 +7045,48 @@ Why Choose Our Expert-grade Rollup Banners?
             }
           ],
           "keyFeatures": [
-            "Ultra-bright LED technology",
-            "Eco-friendly power consumption",
-            "Weather-resistant construction",
-            "Easy to program and update",
-            "Commercial-grade durability"
+            "WiFi & USB Wireless Scrolling Text Control",
+            "Ultra-Bright 6,500+ Nits Daylight Readable LEDs",
+            "IP65 All-Weather Waterproof Aluminum Housing",
+            "Full Color & RGB Motion Animation Capabilities",
+            "High Resolution P3, P5 & P10 Pixel Pitches"
           ],
           "useCases": [
-            "Retail Storefronts",
-            "Restaurants & Cafes",
-            "Corporate Events",
-            "Trade Shows",
-            "Outdoor Advertising"
+            "Retail Storefront Promotions & Sale Signs",
+            "Restaurant Daily Specials & Hours Display",
+            "Gas Station & Convenience Store Message Centers",
+            "Medical Office & Pharmacy Window Displays",
+            "Church, School & Community Announcement Boards"
           ],
           "specs": [
-            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Adjustable)" },
+            { "key": "Brightness", "value": "5,000 - 8,000 Nits (Sunlight Readable)" },
             { "key": "Pixel Pitch", "value": "Available in P3, P5, P8, P10" },
-            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Models)" },
-            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "IP Rating", "value": "IP65 Waterproof (Outdoor Sealed)" },
+            { "key": "Lifespan", "value": "100,000+ Hours (10+ Years)" },
             { "key": "Warranty", "value": "3-Year Limited Warranty" }
           ],
-          "faqs": [],
+          "faqs": [
+            {
+              "q": "How do I program text and messages on my scrolling LED sign?",
+              "a": "You can easily update scrolling text, graphics, special offers, and animations via our free mobile app (iOS & Android) over WiFi, or using a USB drive connected to your computer. Updates take seconds!"
+            },
+            {
+              "q": "Are these programmable LED signs waterproof for outdoor use in Florida?",
+              "a": "Yes! Our outdoor models feature heavy-duty IP65 sealed weatherproof aluminum cabinets, silicone sealed LED modules, and UV-resistant masks built to withstand South Florida heat, rain, and humidity."
+            },
+            {
+              "q": "What pixel pitch (P3, P5, P10) should I choose for my Oakland Park business?",
+              "a": "Choose P3 for high-resolution close-up viewing (under 10 feet), P5 for medium viewing distances (10 to 30 feet, ideal for window displays), and P10 for long-distance roadside viewing (30+ feet)."
+            },
+            {
+              "q": "Can I display moving logos, animations, and time/date on this LED display?",
+              "a": "Yes! Our full-color RGB programmable LED displays support multi-line scrolling text, custom logos, moving animations, countdown timers, temperature, and date/time displays."
+            },
+            {
+              "q": "Where is Nano Signs located for local pickup and service in Broward County?",
+              "a": "Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. We offer local pickup, expedited South Florida delivery, and dedicated customer support. Call 305-967-1005."
+            }
+          ],
           "reviews": [
             {
               "author": "Michael T., Store Manager",
@@ -6981,6 +7101,115 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           "ctaHeading": "Ready to program your message?",
           "ctaLabel": "Add to Cart"
+        }
+      },
+      {
+        "id": "scrolling-led-sign",
+        "name": "Scrolling LED Signs",
+        "description": "Custom scrolling LED signs & moving message displays in Oakland Park FL. Ultra-bright LED scrolling text displays & digital tickers for store windows, commercial facades, and retail advertising.",
+        "image": "/images/products/led_sign_welcome.webp",
+        "price": "Starting at $90/sqft",
+        "badge": "Popular",
+        "config": {
+          "id": "scrolling-led-sign",
+          "title": "Scrolling LED Signs",
+          "subtitle": "High-visibility scrolling LED text signs & message displays. Control moving announcements via mobile WiFi or USB in Oakland Park FL.",
+          "breadcrumb": "Scrolling LED Signs",
+          "breadcrumbHref": "/led-display-signs",
+          "promoText": "NANO SIGNS EXCLUSIVE: SCROLLING LED MESSAGE SIGNS",
+          "image": "/images/products/led_sign_welcome.webp",
+          "ratingCount": "58",
+          "ratingScore": "4.9",
+          "sizes": [
+            {
+              "label": "Custom LED Dimension",
+              "value": "custom",
+              "basePrice": 0
+            }
+          ],
+          "selects": [
+            {
+              "label": "Width",
+              "options": [
+                { "label": "28.35\" (72 cm)", "value": "w_72cm", "priceMultiplier": 2.3625, "priceAdder": 0 },
+                { "label": "40.94\" (104 cm)", "value": "w_104cm", "priceMultiplier": 3.4116, "priceAdder": 0 },
+                { "label": "53.54\" (136 cm)", "value": "w_136cm", "priceMultiplier": 4.4616, "priceAdder": 0 },
+                { "label": "66.14\" (168 cm)", "value": "w_168cm", "priceMultiplier": 5.5116, "priceAdder": 0 },
+                { "label": "78.74\" (200 cm)", "value": "w_200cm", "priceMultiplier": 6.5616, "priceAdder": 0 }
+              ]
+            },
+            {
+              "label": "Height",
+              "options": [
+                { "label": "15.75\" (40 cm)", "value": "h_40cm", "priceMultiplier": 1.3125, "priceAdder": 0 },
+                { "label": "22.05\" (56 cm)", "value": "h_56cm", "priceMultiplier": 1.8375, "priceAdder": 0 },
+                { "label": "28.35\" (72 cm)", "value": "h_72cm", "priceMultiplier": 2.3625, "priceAdder": 0 }
+              ]
+            },
+            {
+              "label": "Model",
+              "options": [
+                { "label": "P10 (Standard for medium/far view)", "value": "p10", "priceAdder": 90, "priceMultiplier": 1 },
+                { "label": "P5 (High resolution for storefront view)", "value": "p5", "priceAdder": 145, "priceMultiplier": 1 },
+                { "label": "P3 (Ultra HD resolution for close view)", "value": "p3", "priceAdder": 220, "priceMultiplier": 1 }
+              ]
+            },
+            {
+              "label": "Waterproof",
+              "options": [
+                { "label": "No (Indoor Window)", "value": "no", "priceMultiplier": 1 },
+                { "label": "Yes (IP65 Outdoor Sealed)", "value": "yes", "priceAdder": 20, "priceMultiplier": 1 }
+              ]
+            }
+          ],
+          "keyFeatures": [
+            "Moving Text & Multi-Line Scrolling Messages",
+            "Wireless WiFi & App Message Updates",
+            "Sunlight Readable 6,500+ Nits LED Brightness",
+            "Heavy-Duty IP65 Outdoor Weatherproof Casing",
+            "Energy Efficient & 100,000+ Hour Lifespan"
+          ],
+          "useCases": [
+            "Retail Storefront Ticker Announcements",
+            "Restaurant Special Offers & Menu Prices",
+            "Real Estate & Office Window Advertising",
+            "Event & Exhibition Directional Signage",
+            "Auto Dealership & Gas Station Promotion Signs"
+          ],
+          "specs": [
+            { "key": "Display Type", "value": "Scrolling Text & Graphic LED" },
+            { "key": "Connectivity", "value": "WiFi / USB / Mobile App" },
+            { "key": "Brightness", "value": "6,500 Nits (Daylight Readable)" },
+            { "key": "Lifespan", "value": "100,000+ Hours" },
+            { "key": "Warranty", "value": "3-Year Limited Warranty" }
+          ],
+          "faqs": [
+            {
+              "q": "How does text scroll on a scrolling LED sign?",
+              "a": "You can type any message into our mobile app or desktop software and select scrolling directions (left, right, up, down), speed, and special entrance effects like flashing or fading."
+            },
+            {
+              "q": "What is the difference between a programmable LED sign and a scrolling LED sign?",
+              "a": "A scrolling LED sign specializes in moving text announcements and ticker messages, whereas programmable LED signs can handle full video, graphics, and static or scrolling text."
+            },
+            {
+              "q": "Can I schedule scrolling messages to change at specific times of day?",
+              "a": "Yes! You can program scheduled messages, such as breakfast specials in the morning and dinner offers in the evening."
+            },
+            {
+              "q": "Can I pick up my scrolling LED sign locally in Oakland Park FL?",
+              "a": "Yes! Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. You can order online and pick up at our Oakland Park facility or request delivery."
+            }
+          ],
+          "reviews": [
+            {
+              "author": "David R., Restaurant Owner",
+              "rating": 5,
+              "text": "Our scrolling LED sign brought in so many walk-in customers! Updating daily specials takes 10 seconds on my phone."
+            }
+          ],
+          "ctaHeading": "Order Your Custom Scrolling LED Sign",
+          "ctaLabel": "Configure Now"
         }
       },
       {
