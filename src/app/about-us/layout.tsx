@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Nano Signs | Local Sign Shop Oakland Park FL",
-  description: "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+  title: "About Nano Signs | 5.0★ Local Sign Shop Fort Lauderdale FL",
+  description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
   alternates: {
     canonical: "https://nano-signs.com/about-us",
   },
   openGraph: {
-    title: "About Nano Signs | Local Sign Shop Oakland Park FL",
-    description: "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+    title: "About Nano Signs | 5.0★ Local Sign Shop Fort Lauderdale FL",
+    description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
     url: "https://nano-signs.com/about-us",
     type: "website",
     siteName: "Nano Signs",
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "About Nano Signs | 5.0★ Local Sign Shop Fort Lauderdale FL",
+    description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
     images: ["https://nano-signs.com/images/nano%20logo%20complete.png"],
   },
 };

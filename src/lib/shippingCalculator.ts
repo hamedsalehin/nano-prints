@@ -240,7 +240,7 @@ export function calculateShippingRates(
       name: "Free Local Pickup",
       price: 0.0,
       deliveryEstimate: "Next Business Day",
-      description: "Pick up at our Fort Lauderdale / Oakland Park headquarters: 4567 Powerline Rd",
+      description: "Pick up at our Fort Lauderdale / Fort Lauderdale headquarters: 4567 Powerline Rd",
     },
   ];
 

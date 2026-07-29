@@ -2177,14 +2177,14 @@ Why Choose Our Expert-grade Rollup Banners?
         id: "roll-up-banners",
         name: "Roll Up Banners",
         description:
-          "Our Roll Up Banners are premium portable stand displays for trade shows, conferences, retail checkouts, and promotional events in Oakland Park FL. The high-resolution banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Includes carrying bag for effortless transport.",
+          "Our Roll Up Banners are premium portable stand displays for trade shows, conferences, retail checkouts, and promotional events in Fort Lauderdale FL. The high-resolution banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Includes carrying bag for effortless transport.",
         image: "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
         price: "Starting at $89.00",
         badge: "Popular",
         config: {
           title: "Roll Up Banners",
           subtitle:
-            "Portable roll up banner stand & custom printed graphic. Pulls up in seconds for high-impact trade show advertising in Oakland Park FL.",
+            "Portable roll up banner stand & custom printed graphic. Pulls up in seconds for high-impact trade show advertising in Fort Lauderdale FL.",
           breadcrumb: "Roll Up Banners",
           breadcrumbHref: "/trade-show",
           promoText: "25% OFF ROLL UP BANNER STANDS",
@@ -2256,15 +2256,15 @@ Why Choose Our Expert-grade Rollup Banners?
               a: "Yes! Every roll up banner system includes a high-quality padded zippered travel case with shoulder straps.",
             },
             {
-              q: "Can I pick up my Roll Up Banner in Oakland Park FL?",
-              a: "Yes! Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. You can order online and pick up at our Oakland Park shop or select delivery.",
+              q: "Can I pick up my Roll Up Banner in Fort Lauderdale FL?",
+              a: "Yes! Nano Signs is located at 4567 Powerline Rd, Fort Lauderdale FL 33309. You can order online and pick up at our Fort Lauderdale shop or select delivery.",
             },
           ],
           reviews: [
             {
               author: "Elena M., Marketing Manager",
               rating: 5,
-              text: "The Roll Up Banner was so easy to assemble at our Oakland Park trade show booth. Colors are vibrant and the stand is very solid!",
+              text: "The Roll Up Banner was so easy to assemble at our Fort Lauderdale trade show booth. Colors are vibrant and the stand is very solid!",
             },
           ],
           ctaHeading: "Order Your Roll Up Banner Today",
@@ -3066,7 +3066,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               author: "Tina M., Sales Rep",
               rating: 5,
-              text: "Used these as handout spec sheets for our trade show in Oakland Park. Colors are bright, and the 14pt stock feels very thick and expensive. Highly recommended local print shop!",
+              text: "Used these as handout spec sheets for our trade show in Fort Lauderdale. Colors are bright, and the 14pt stock feels very thick and expensive. Highly recommended local print shop!",
             },
             {
               author: "Robert G., General Contractor",
@@ -3767,9 +3767,9 @@ Why Choose Our Expert-grade Rollup Banners?
       "The flyers and folded menus turned out absolutely gorgeous! Perfect color alignment with our corporate branding guidelines and the paper quality is very thick.",
     categoryDescriptionText:
       `<div class="space-y-4">
-        <h3 class="text-xl font-bold text-slate-900">Elevate Your Brand in Oakland Park with High-quality Marketing Materials</h3>
+        <h3 class="text-xl font-bold text-slate-900">Elevate Your Brand in Fort Lauderdale with High-quality Marketing Materials</h3>
         <p class="text-sm text-gray-700 leading-relaxed">
-          At <strong>Nano Signs</strong>, we deliver industry-leading commercial printing and sign services designed to grab attention and convert leads. Serving <strong>Oakland Park</strong>, <strong>Mississauga</strong>, and the wider <strong>Greater Oakland Park Area</strong>, we specialize in high-definition print collateral that represents your business with distinction. Whether you need standard business cards for networking events, door hangers for targeted local neighbourhood mailings, or folded brochures to pitch complex services, our state-of-the-art print production facilities ensure crisp details, harmonious colors, and high-quality paper weights.
+          At <strong>Nano Signs</strong>, we deliver industry-leading commercial printing and sign services designed to grab attention and convert leads. Serving <strong>Fort Lauderdale</strong>, <strong>Mississauga</strong>, and the wider <strong>Greater Fort Lauderdale Area</strong>, we specialize in high-definition print collateral that represents your business with distinction. Whether you need standard business cards for networking events, door hangers for targeted local neighbourhood mailings, or folded brochures to pitch complex services, our state-of-the-art print production facilities ensure crisp details, harmonious colors, and high-quality paper weights.
         </p>
         <p class="text-sm text-gray-700 leading-relaxed">
           Our complete suite of marketing collateral includes high-quality business cards (including our 14pt semi-gloss profit maximizer), postcards and direct mailers, vivid flyers and folded brochures, and pre-cut door hangers. We print on heavy cardstock and high-density text papers using advanced offset lithography. Plus, with our local facility advantages, we support next-day shipping throughout Florida, ensuring you never show up empty-handed to your next client pitch or local tradeshow event.
@@ -3945,12 +3945,12 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">High-quality Business Cards Printed in Oakland Park</h3>
+              <h3 class="text-lg font-bold text-slate-900">High-quality Business Cards Printed in Fort Lauderdale</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Make a striking expert-grade statement with business cards from Nano Signs. Serving Oakland Park, Mississauga, and the Greater Oakland Park Area, we specialize in high-definition offset business card printing that sets your brand apart. Our cards are manufactured using ultra-sturdy 14pt semi-gloss cardstock (our profit maximizer option) or heavy-weight 16pt stock, ensuring they never feel flimsy or cheap. Choose between a glossy UV protective coating for high vivid contrast, or a smooth matte coating for a sophisticated, writable surface.
+                Make a striking expert-grade statement with business cards from Nano Signs. Serving Fort Lauderdale, Mississauga, and the Greater Fort Lauderdale Area, we specialize in high-definition offset business card printing that sets your brand apart. Our cards are manufactured using ultra-sturdy 14pt semi-gloss cardstock (our profit maximizer option) or heavy-weight 16pt stock, ensuring they never feel flimsy or cheap. Choose between a glossy UV protective coating for high vivid contrast, or a smooth matte coating for a sophisticated, writable surface.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Whether you are an independent contractor in the GTA, a startup founder in Mississauga, or a real estate agent in Oakland Park, having a pocket full of pristine, double-sided business cards ensures you are always ready to network. Customize yours with raised foil accents, shapes, or painted edges to leave a memorable physical impression.
+                Whether you are an independent contractor in the GTA, a startup founder in Mississauga, or a real estate agent in Fort Lauderdale, having a pocket full of pristine, double-sided business cards ensures you are always ready to network. Customize yours with raised foil accents, shapes, or painted edges to leave a memorable physical impression.
               </p>
             </div>`,
           faqs: [
@@ -4134,9 +4134,9 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Printed Postcards in Oakland Park & Mississauga</h3>
+              <h3 class="text-lg font-bold text-slate-900">Printed Postcards in Fort Lauderdale & Mississauga</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Take your local direct mail marketing or client handouts to the next level with high-quality postcards from Nano Signs. Serving the Greater Oakland Park Area, Oakland Park, and Mississauga, ON, we offer crisp, full-color postcard printing that is ideal for neighbourhood outreach, retail promotions, coupons, and corporate invitations. Our postcards are cut with square corners to comply with standard USA Post specifications, guaranteeing a clean and simple product-focused aesthetic.
+                Take your local direct mail marketing or client handouts to the next level with high-quality postcards from Nano Signs. Serving the Greater Fort Lauderdale Area, Fort Lauderdale, and Mississauga, ON, we offer crisp, full-color postcard printing that is ideal for neighbourhood outreach, retail promotions, coupons, and corporate invitations. Our postcards are cut with square corners to comply with standard USA Post specifications, guaranteeing a clean and simple product-focused aesthetic.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
                 Choose between high-shine glossy finish that accentuates photographic imagery and makes colors pop, or smooth matte cardstock for a non-glare, writeable finish. With single-sided or double-sided printing options, you can design your postcard layout to showcase striking graphics on the front while keeping the back clear for address, postage, and local corporate details.
@@ -4168,7 +4168,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               author: "Elena R., Boutique Owner",
               rating: 5,
-              text: "The matte postcards were ideal for our summer collection mailer! They feel very high-quality and the printing is incredibly sharp. Excellent Oakland Park local service.",
+              text: "The matte postcards were ideal for our summer collection mailer! They feel very high-quality and the printing is incredibly sharp. Excellent Fort Lauderdale local service.",
             },
             {
               author: "Jason L., Realtor",
@@ -4304,12 +4304,12 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Flyer Printing in Oakland Park</h3>
+              <h3 class="text-lg font-bold text-slate-900">Flyer Printing in Fort Lauderdale</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Promote your next corporate event, local restaurant menu, or real estate open house with flyers from Nano Signs. Serving Mississauga, Oakland Park, and all of the Greater Oakland Park Area, we specialize in high-definition offset flyer printing with fast turnarounds. Manufactured using high-quality 100lb glossy text paper (which makes colors pop with photographic vibrance) or smooth matte text paper (ideal for a sophisticated, glare-free readable finish), our flyers offer a thick, substantial feel.
+                Promote your next corporate event, local restaurant menu, or real estate open house with flyers from Nano Signs. Serving Mississauga, Fort Lauderdale, and all of the Greater Fort Lauderdale Area, we specialize in high-definition offset flyer printing with fast turnarounds. Manufactured using high-quality 100lb glossy text paper (which makes colors pop with photographic vibrance) or smooth matte text paper (ideal for a sophisticated, glare-free readable finish), our flyers offer a thick, substantial feel.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Choose single or double-sided layouts and orientation options (horizontal or vertical) to match your campaign goals. Hand them out at local Oakland Park events, display them at front desks, or mail them directly to neighbourhood prospects.
+                Choose single or double-sided layouts and orientation options (horizontal or vertical) to match your campaign goals. Hand them out at local Fort Lauderdale events, display them at front desks, or mail them directly to neighbourhood prospects.
               </p>
             </div>`,
           faqs: [
@@ -4338,7 +4338,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               author: "Kevin M., Event Coordinator",
               rating: 5,
-              text: "The glossy 100lb text flyers looked stunning under the venue lighting. Very fast local pickup in Oakland Park.",
+              text: "The glossy 100lb text flyers looked stunning under the venue lighting. Very fast local pickup in Fort Lauderdale.",
             },
             {
               author: "Maria S., Restaurant Owner",
@@ -4430,7 +4430,7 @@ Why Choose Our Expert-grade Rollup Banners?
             `<div class="space-y-4">
               <h3 class="text-lg font-bold text-slate-900">Folded Brochures in Florida</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Present your products, services, or menu items in an elegant, structured format with folded brochures from Nano Signs. Serving businesses in Oakland Park, Mississauga, and neighbouring Florida cities, we provide high-definition brochure printing with clean scoring and machine-folding. Our standard 8.5" x 11" brochures are available in standard Tri-Fold or Half-Fold configurations, ensuring your layouts line up perfectly.
+                Present your products, services, or menu items in an elegant, structured format with folded brochures from Nano Signs. Serving businesses in Fort Lauderdale, Mississauga, and neighbouring Florida cities, we provide high-definition brochure printing with clean scoring and machine-folding. Our standard 8.5" x 11" brochures are available in standard Tri-Fold or Half-Fold configurations, ensuring your layouts line up perfectly.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
                 Customize your print run with high-quality 100lb glossy text paper (vivid and striking), 100lb matte text paper (sophisticated, smudge-resistant), or 80lb recycled text paper for green-focused branding. Organize complex corporate information, portfolios, or restaurant menu items into readable panels that encourage prospective customers to learn more.
@@ -4563,9 +4563,9 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           description:
             `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Door Hanger Printing in Oakland Park & Mississauga</h3>
+              <h3 class="text-lg font-bold text-slate-900">Door Hanger Printing in Fort Lauderdale & Mississauga</h3>
               <p class="text-sm text-gray-700 leading-relaxed">
-                Connect directly with local neighbourhoods using door hangers from Nano Signs. Highly popular for landscaping, pressure washing, pest control, roofing, plumbing, and local restaurant delivery campaigns, door hangers provide a guaranteed physical touchpoint on the front doors of Oakland Park, Mississauga, and GTA homes. Manufactured using heavy 14pt cardstock, these hangers hold up against Florida's exterior weather without curling.
+                Connect directly with local neighbourhoods using door hangers from Nano Signs. Highly popular for landscaping, pressure washing, pest control, roofing, plumbing, and local restaurant delivery campaigns, door hangers provide a guaranteed physical touchpoint on the front doors of Fort Lauderdale, Mississauga, and GTA homes. Manufactured using heavy 14pt cardstock, these hangers hold up against Florida's exterior weather without curling.
               </p>
               <p class="text-sm text-gray-700 leading-relaxed">
                 Our door hangers are pre-cut with a circular hole and a slit (or curved arch hook) at the top, sliding effortlessly onto any standard handle. Design your door hangers with double-sided printing: use the front for bold, high-gloss promos and contact details, and the back for detailed service pricing or client reviews.
@@ -6876,14 +6876,14 @@ Why Choose Our Expert-grade Rollup Banners?
       {
         "id": "programmable-led-sign",
         "name": "Programmable LED Signs",
-        "description": "Custom programmable LED signs in Oakland Park FL. Ultra-clear outdoor & indoor electronic message centers for retail storefronts, restaurants, and business advertising. Surpasses static signs with dynamic scrolling text & vivid motion graphics.",
+        "description": "Custom programmable LED signs in Fort Lauderdale FL. Ultra-clear outdoor & indoor electronic message centers for retail storefronts, restaurants, and business advertising. Surpasses static signs with dynamic scrolling text & vivid motion graphics.",
         "image": "/images/products/led_sign_welcome.webp",
         "price": "Starting at $90/sqft",
         "badge": "New",
         "config": {
           "id": "programmable-led-sign",
           "title": "Programmable LED Signs",
-          "subtitle": "Ultra-bright programmable & scrolling LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use in Oakland Park FL.",
+          "subtitle": "Ultra-bright programmable & scrolling LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use in Fort Lauderdale FL.",
           "breadcrumb": "Programmable LED Signs",
           "breadcrumbHref": "/led-display-signs",
           "promoText": "NANO SIGNS EXCLUSIVE: CUSTOM LED SIGNS - PREMIUM QUALITY",
@@ -7075,7 +7075,7 @@ Why Choose Our Expert-grade Rollup Banners?
               "a": "Yes! Our outdoor models feature heavy-duty IP65 sealed weatherproof aluminum cabinets, silicone sealed LED modules, and UV-resistant masks built to withstand South Florida heat, rain, and humidity."
             },
             {
-              "q": "What pixel pitch (P3, P5, P10) should I choose for my Oakland Park business?",
+              "q": "What pixel pitch (P3, P5, P10) should I choose for my Fort Lauderdale business?",
               "a": "Choose P3 for high-resolution close-up viewing (under 10 feet), P5 for medium viewing distances (10 to 30 feet, ideal for window displays), and P10 for long-distance roadside viewing (30+ feet)."
             },
             {
@@ -7084,7 +7084,7 @@ Why Choose Our Expert-grade Rollup Banners?
             },
             {
               "q": "Where is Nano Signs located for local pickup and service in Broward County?",
-              "a": "Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. We offer local pickup, expedited South Florida delivery, and dedicated customer support. Call 305-967-1005."
+              "a": "Nano Signs is located at 4567 Powerline Rd, Fort Lauderdale FL 33309. We offer local pickup, expedited South Florida delivery, and dedicated customer support. Call 305-967-1005."
             }
           ],
           "reviews": [
@@ -7106,14 +7106,14 @@ Why Choose Our Expert-grade Rollup Banners?
       {
         "id": "scrolling-led-sign",
         "name": "Scrolling LED Signs",
-        "description": "Custom scrolling LED signs & moving message displays in Oakland Park FL. Ultra-bright LED scrolling text displays & digital tickers for store windows, commercial facades, and retail advertising.",
+        "description": "Custom scrolling LED signs & moving message displays in Fort Lauderdale FL. Ultra-bright LED scrolling text displays & digital tickers for store windows, commercial facades, and retail advertising.",
         "image": "/images/products/led_sign_welcome.webp",
         "price": "Starting at $90/sqft",
         "badge": "Popular",
         "config": {
           "id": "scrolling-led-sign",
           "title": "Scrolling LED Signs",
-          "subtitle": "High-visibility scrolling LED text signs & message displays. Control moving announcements via mobile WiFi or USB in Oakland Park FL.",
+          "subtitle": "High-visibility scrolling LED text signs & message displays. Control moving announcements via mobile WiFi or USB in Fort Lauderdale FL.",
           "breadcrumb": "Scrolling LED Signs",
           "breadcrumbHref": "/led-display-signs",
           "promoText": "NANO SIGNS EXCLUSIVE: SCROLLING LED MESSAGE SIGNS",
@@ -7197,8 +7197,8 @@ Why Choose Our Expert-grade Rollup Banners?
               "a": "Yes! You can program scheduled messages, such as breakfast specials in the morning and dinner offers in the evening."
             },
             {
-              "q": "Can I pick up my scrolling LED sign locally in Oakland Park FL?",
-              "a": "Yes! Nano Signs is located at 4567 Powerline Rd, Oakland Park FL 33309. You can order online and pick up at our Oakland Park facility or request delivery."
+              "q": "Can I pick up my scrolling LED sign locally in Fort Lauderdale FL?",
+              "a": "Yes! Nano Signs is located at 4567 Powerline Rd, Fort Lauderdale FL 33309. You can order online and pick up at our Fort Lauderdale facility or request delivery."
             }
           ],
           "reviews": [

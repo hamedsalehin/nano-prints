@@ -6,11 +6,19 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Corporate & Bulk Sign Pricing Oakland Park FL | Volume Discounts | Nano Signs",
-  description: "Bulk pricing on custom signs, banner printing & marketing materials for Oakland Park FL businesses. Dedicated account manager, volume discounts & fast turnaround. Call 305-967-1005.",
+  title: "Corporate & Bulk Sign Pricing in Fort Lauderdale | Nano Signs",
+  description:
+    "Volume discounts on custom signs & printing for Fort Lauderdale & Oakland Park FL businesses. Dedicated account manager & fast turnaround. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/corporate-pricing",
-  }
+  },
+  openGraph: {
+    title: "Corporate & Bulk Sign Pricing in Fort Lauderdale | Nano Signs",
+    description:
+      "Volume discounts on custom signs & printing for Fort Lauderdale & Oakland Park FL businesses. Dedicated account manager & fast turnaround. Call 305-967-1005.",
+    url: "https://nano-signs.com/corporate-pricing",
+    type: "website",
+  },
 };
 
 const benefits = [

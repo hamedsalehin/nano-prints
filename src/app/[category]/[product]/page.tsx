@@ -22,26 +22,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   // Category-specific keyword suffixes for accurate product titles
   const categorySuffixes: Record<string, string> = {
-    "neon-signs": "Custom LED Neon Signs Oakland Park FL",
-    "custom-banners": "Vinyl Banner Printing Oakland Park FL",
-    "custom-flags": "Custom Flag Printing Oakland Park FL",
-    "custom-signs": "Custom Business Signs Oakland Park FL",
-    "led-display-signs": "Digital Signage Oakland Park FL",
-    "custom-decals": "Vehicle Wraps & Decals Oakland Park FL",
-    "trade-show": "Trade Show Displays Oakland Park FL",
-    "marketing-materials": "Commercial Printing Oakland Park FL",
+    "neon-signs": "Custom LED Neon Signs Fort Lauderdale FL",
+    "custom-banners": "Vinyl Banner Printing Fort Lauderdale FL",
+    "custom-flags": "Custom Flag Printing Fort Lauderdale FL",
+    "custom-signs": "Custom Business Signs Fort Lauderdale FL",
+    "led-display-signs": "Digital Signage Fort Lauderdale FL",
+    "custom-decals": "Vehicle Wraps & Decals Fort Lauderdale FL",
+    "trade-show": "Trade Show Displays Fort Lauderdale FL",
+    "marketing-materials": "Commercial Printing Fort Lauderdale FL",
   };
 
-  const suffix = categorySuffixes[decodedCategory] || `Custom ${categoryData.title} Oakland Park FL`;
+  const suffix = categorySuffixes[decodedCategory] || `Custom ${categoryData.title} Fort Lauderdale FL`;
   const isDuplicate = productData.name.toLowerCase().includes("led") && suffix.toLowerCase().includes("led");
-  const title = productData.name.includes("Oakland Park") || productData.name.includes("FL")
+  const title = productData.name.includes("Fort Lauderdale") || productData.name.includes("FL")
     ? `${productData.name} | Nano Signs`
     : isDuplicate
-    ? `${productData.name} Oakland Park FL | Nano Signs`
+    ? `${productData.name} Fort Lauderdale FL | Nano Signs`
     : `${productData.name} | ${suffix}`;
   const description = productData.description
-    ? `Custom ${productData.name} in Oakland Park FL. ${productData.description} Call 305-967-1005 for a free quote.`
-    : `High-quality ${productData.name} printing in Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;
+    ? `Custom ${productData.name} in Fort Lauderdale FL. ${productData.description} Call 305-967-1005 for a free quote.`
+    : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;
 
   let primaryCategory = decodedCategory;
   for (const [catSlug, catData] of Object.entries(PRODUCTS_REGISTRY)) {

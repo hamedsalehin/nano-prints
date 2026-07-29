@@ -22,14 +22,38 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = BLOG_REGISTRY[slug];
   if (!post) return { title: "Post Not Found" };
 
+  const description = post.excerpt.slice(0, 155);
+  const canonicalUrl = `https://nano-signs.com/blog/${slug}`;
+
   return {
     title: `${post.title} | Nano Signs Blog`,
-    description: post.excerpt,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
-      images: [post.image],
+      description,
+      url: canonicalUrl,
+      images: [
+        {
+          url: post.image.startsWith("/")
+            ? `https://nano-signs.com${post.image}`
+            : post.image,
+          alt: post.title,
+        },
+      ],
       type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: [
+        post.image.startsWith("/")
+          ? `https://nano-signs.com${post.image}`
+          : post.image,
+      ],
     },
   };
 }

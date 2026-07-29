@@ -78,7 +78,7 @@ export default function ContactUsPage() {
             How Can We Help You?
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Have a question about a custom print or want to check progress? Reach out to us via direct chat, phone, email, or visit our Oakland Park office.
+            Have a question about a custom print or want to check progress? Reach out to us via direct chat, phone, email, or visit our Fort Lauderdale office.
           </p>
         </div>
       </section>
@@ -338,7 +338,7 @@ export default function ContactUsPage() {
                       Headquarters
                     </h4>
                     <p className="text-sm font-bold text-slate-700">
-                      4567 Powerline Rd, Oakland Park, FL 33309
+                      4567 Powerline Rd, Fort Lauderdale, FL 33309
                     </p>
                   </div>
                 </div>
@@ -395,7 +395,7 @@ export default function ContactUsPage() {
           </div>
           <div className="rounded-2xl overflow-hidden h-[350px] border border-gray-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Oakland%20Park%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Fort%20Lauderdale%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}

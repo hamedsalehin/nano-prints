@@ -379,7 +379,7 @@ export default function CheckoutPage() {
                       required
                       value={shippingAddress.city}
                       onChange={(e) => setShippingAddress({ ...shippingAddress, city: e.target.value })}
-                      placeholder="Oakland Park"
+                      placeholder="Fort Lauderdale"
                       className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
                     />
                   </div>

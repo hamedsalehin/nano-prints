@@ -7,10 +7,23 @@ import { Metadata } from "next";
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sign Shop Blog Oakland Park FL | LED Signs, Neon & Banners Tips | Nano Signs",
+  title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
   description:
-    "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Oakland Park's local sign shop in Broward County.",
+    "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
   alternates: { canonical: "https://nano-signs.com/blog" },
+  openGraph: {
+    title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
+    description:
+      "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
+    url: "https://nano-signs.com/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
+    description:
+      "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop.",
+  },
 };
 
 import { BLOG_REGISTRY } from "@/lib/blogRegistry";

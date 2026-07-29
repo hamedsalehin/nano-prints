@@ -4,12 +4,21 @@ import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ — Sign Shop & Banner Printing Oakland Park FL | Nano Signs",
-  description: "Answers to your questions about custom signs, banner printing, LED signs & neon signs in Oakland Park FL. Pricing, turnaround, design & shipping info. Call 305-967-1005.",
+  title: "FAQ — Sign Shop print shop Fort Lauderdale FL | Nano Signs",
+  description:
+    "Answers to your questions about signs, banner , LED signs & neon sign in Fort Lauderdale & Oakland Park FL. Pricing, turnaround & design info. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/faq",
-  }
+  },
+  openGraph: {
+    title: "FAQ — Sign Shop print shop Fort Lauderdale FL | Nano Signs",
+    description:
+      "Answers to your questions about signs, banner , LED signs & neon sign in Fort Lauderdale & Oakland Park FL. Pricing, turnaround & design info. Call 305-967-1005.",
+    url: "https://nano-signs.com/faq",
+    type: "website",
+  },
 };
+
 
 const faqs = [
   {

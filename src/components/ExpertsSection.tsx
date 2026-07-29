@@ -30,7 +30,7 @@ export function ExpertsSection() {
             Welcome to Nano Signs, the print shop with the fastest turnaround times in Broward.
             Whether you want to design and order online or visit us in person, we are your
             premier source for custom signs, LED signs, retractable banners, business cards,
-            and all other marketing materials. Serving Fort Lauderdale, Oakland Park, and the
+            and all other marketing materials. Serving Fort Lauderdale, Fort Lauderdale, and the
             wider Broward County area, our custom print and design experts ensure fast, professional
             production to elevate your brand presence.
           </p>

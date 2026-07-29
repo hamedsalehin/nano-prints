@@ -7,10 +7,23 @@ import { Metadata } from "next";
 import { MapPin, ArrowRight, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Completed Signage Projects Oakland Park FL | Portfolio | Nano Signs",
+  title: "Sign & Print shop Portfolio Fort Lauderdale FL | Nano Signs",
   description:
-    "Explore Nano Signs' portfolio of completed custom business signs, LED displays, neon signs, banner printing & vehicle wraps in Oakland Park FL.",
+    "Explore Nano Signs' portfolio of completed custom business signs, LED displays, neon led signs, large format banner printing & vehicle wraps in Fort Lauderdale .",
   alternates: { canonical: "https://nano-signs.com/projects" },
+  openGraph: {
+    title: "Sign & Print shop Portfolio Fort Lauderdale FL | Nano Signs",
+    description:
+      "Explore Nano Signs' portfolio of completed custom business signs, LED displays, neon led signs, large format banner printing & vehicle wraps in Fort Lauderdale .",
+    url: "https://nano-signs.com/projects",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sign & Print shop Portfolio Fort Lauderdale FL | Nano Signs",
+    description:
+      "Explore Nano Signs' portfolio of completed custom business signs, LED displays, neon led signs, large format banner printing & vehicle wraps in Fort Lauderdale .",
+  },
 };
 
 const projects = [

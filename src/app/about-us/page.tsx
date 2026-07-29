@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+  title: "About Nano Signs | Local Sign Shop Fort Lauderdale FL",
   description:
-    "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+    "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Fort Lauderdale FL.",
   alternates: {
     canonical: "https://nano-signs.com/about-us",
   },
   openGraph: {
-    title: "About Nano Signs | Local Sign Shop Oakland Park FL",
+    title: "About Nano Signs | Local Sign Shop Fort Lauderdale FL",
     description:
-      "Oakland Park's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Oakland Park FL.",
+      "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Fort Lauderdale FL.",
     url: "https://nano-signs.com/about-us",
     type: "website",
   },
@@ -51,7 +51,7 @@ export default function AboutUsPage() {
             We Print Everything.
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300 font-medium">
-            Nano Signs is Oakland Park's premier custom signage and digital printing workshop. We turn your visual ideas into high-impact reality, fast.
+            Nano Signs is Fort Lauderdale's premier custom signage and digital printing workshop. We turn your visual ideas into high-impact reality, fast.
           </p>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function AboutUsPage() {
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-2xl md:text-3xl font-poppins font-black text-slate-800 tracking-tight leading-tight">
-              Oakland Park's Local Printing Experts
+              Fort Lauderdale's Local Printing Experts
             </h2>
             <p className="text-sm md:text-base text-slate-650 leading-relaxed font-medium">
               Established with a single goal in mind—to deliver premium quality commercial printing with lightning-fast turnaround times—Nano Signs has grown to serve real estate agents, contractors, political campaigns, and retail shops across Broward County.

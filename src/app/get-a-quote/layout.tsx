@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Get a Free Sign Quote Oakland Park FL | Nano Signs",
-  description: "Request a free quote for custom business signs, banner printing, LED displays & neon signs in Oakland Park FL. Fast 12-hour response. Call 305-967-1005.",
+  title: "Get a Free Sign & print Quote Fort Lauderdale | Nano Signs",
+  description: "Request a free quote for custom signs & print, banner printing, LED signs & neon signs in Fort Lauderdale & Oakland Park FL. Fast response. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/get-a-quote",
   },
   openGraph: {
-    title: "Get a Free Sign Quote Oakland Park FL | Nano Signs",
-    description: "Request a free quote for custom business signs, banner printing, LED displays & neon signs in Oakland Park FL. Fast 12-hour response. Call 305-967-1005.",
+    title: "Get a Free Sign & print Quote Fort Lauderdale | Nano Signs",
+    description: "Request a free quote for custom signs & print, banner printing, LED signs & neon signs in Fort Lauderdale & Oakland Park FL. Fast response. Call 305-967-1005.",
     url: "https://nano-signs.com/get-a-quote",
     type: "website",
     siteName: "Nano Signs",
@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "Get a Free Sign & print Quote Fort Lauderdale | Nano Signs",
+    description: "Request a free quote for custom signs & print, banner printing, LED signs & neon signs in Fort Lauderdale & Oakland Park FL. Fast response. Call 305-967-1005.",
     images: ["https://nano-signs.com/images/nano%20logo%20complete.png"],
   },
 };

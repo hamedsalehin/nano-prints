@@ -64,7 +64,7 @@ export const BLOG_REGISTRY: Record<string, BlogPost> = {
   "outdoor-signs-broward-county": {
     slug: "outdoor-signs-broward-county",
     title: "Complete Guide to Outdoor Signage Permits in Broward County",
-    excerpt: "Before you order that big outdoor sign, you need the right permit. We break down the rules for Fort Lauderdale, Oakland Park, and surrounding cities.",
+    excerpt: "Before you order that big outdoor sign, you need the right permit. We break down the rules for Fort Lauderdale, Fort Lauderdale, and surrounding cities.",
     image: "/images/products/led_sign_welcome.webp",
     category: "Local Guides",
     date: "June 25, 2026",
@@ -74,7 +74,7 @@ export const BLOG_REGISTRY: Record<string, BlogPost> = {
       <h2>Why You Need a Sign Permit</h2>
       <p>Installing a commercial sign in Broward County without a permit can result in heavy fines and the forced removal of your expensive new signage. Local municipalities heavily regulate outdoor signage to ensure structural safety (especially regarding hurricane wind loads) and to maintain community aesthetics.</p>
       
-      <h2>The Permitting Process in Fort Lauderdale and Oakland Park</h2>
+      <h2>The Permitting Process in Fort Lauderdale and Fort Lauderdale</h2>
       <p>While each city has its own specific ordinances, the general permitting process looks like this:</p>
       <ol>
         <li><strong>Design and Engineering:</strong> You must submit scaled architectural drawings of the proposed sign. For large pylon or monument signs, these drawings must be stamped by a Florida-licensed engineer certifying they can withstand local wind loads.</li>

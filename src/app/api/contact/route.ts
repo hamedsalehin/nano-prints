@@ -97,7 +97,7 @@ export async function POST(req: NextRequest) {
               </div>
             </div>
             <div style="background: #f8fafc; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
-              <p style="font-size: 12px; color: #94a3b8; margin: 0;">Nano Signs • Oakland Park, FL</p>
+              <p style="font-size: 12px; color: #94a3b8; margin: 0;">Nano Signs • Fort Lauderdale, FL</p>
             </div>
           </div>
         `

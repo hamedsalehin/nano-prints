@@ -5,8 +5,10 @@ import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Search Results | Nano Signs",
-  description: "Search for custom signs, banners, and printing products.",
+  title: "Search | Nano Signs",
+  description:
+    "Search Nano Signs' catalog of custom signs, LED displays, neon signs, banners, vehicle wraps & printing products in Fort Lauderdale FL.",
+  robots: { index: false, follow: false },
 };
 
 interface SearchPageProps {

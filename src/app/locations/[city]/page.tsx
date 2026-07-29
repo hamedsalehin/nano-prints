@@ -65,7 +65,7 @@ export default async function LocationPage({ params }: PageProps) {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4567 Powerline Rd",
-      "addressLocality": "Oakland Park",
+      "addressLocality": "Fort Lauderdale",
       "addressRegion": "FL",
       "postalCode": "33309",
       "addressCountry": "US"
@@ -186,7 +186,7 @@ export default async function LocationPage({ params }: PageProps) {
               <p className="text-gray-700 text-sm leading-relaxed">
                 <strong>Nano Signs</strong><br />
                 4567 Powerline Rd<br />
-                Oakland Park, FL 33309<br /><br />
+                Fort Lauderdale, FL 33309<br /><br />
                 <strong>Hours:</strong> Mon–Fri 9am–6pm<br />
                 <strong>Phone:</strong> <a href="tel:3059671005" className="text-[#ff2d78] font-semibold hover:underline">305-967-1005</a>
               </p>

@@ -124,7 +124,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               />
             </div>
             <p className={`text-sm mb-6 leading-relaxed ${light ? "text-slate-500" : "text-gray-400"}`}>
-              Your trusted custom printing expert in Oakland Park, FL. Quality
+              Your trusted custom printing expert in Fort Lauderdale, FL. Quality
               signs, banners, and more.
             </p>
 
@@ -160,7 +160,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <MapPin
                   className={`w-4 h-4 mt-0.5 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
-                <span>4567 Powerline Rd, Oakland Park, FL 33309</span>
+                <span>4567 Powerline Rd, Fort Lauderdale, FL 33309</span>
               </div>
             </div>
 
@@ -258,7 +258,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
         {/* Google Maps Location Embed */}
         <div className={`mt-12 rounded-2xl overflow-hidden shadow-lg h-[250px] w-full border ${light ? "border-slate-200" : "border-gray-800"}`}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Oakland%20Park%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7160.8801455159755!2d-80.15735434976504!3d26.182359067699164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88d903da421a5ec5%3A0xdd627ecbac01c685!2s4567%20Powerline%20Rd%2C%20Fort%20Lauderdale%2C%20FL%2033309!3m2!1d26.1835062!2d-80.1554943!5e0!3m2!1sen!2sus!4v1781380571760!5m2!1sen!2sus"
             width="100%"
             height="100%"
             className="border-0"

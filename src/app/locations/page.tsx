@@ -7,11 +7,19 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 
 export const metadata: Metadata = {
-  title: "Sign Shop Service Areas | Oakland Park FL & Broward County | Nano Signs",
+  title: "Sign print Shop Service Areas Broward County FL | Nano Signs",
   description:
-    "Nano Signs serves Oakland Park, Pompano Beach, Plantation, Deerfield Beach & all Broward County FL with custom signs, banner printing, LED signs & neon. Call 305-967-1005.",
+    "Nano Signs serves Fort Lauderdale, Oakland Park & Broward County FL with custom signs, banners printing , LED signs & neon signs. Same-day quote. 305-967-1005.",
   alternates: { canonical: "https://nano-signs.com/locations" },
+  openGraph: {
+    title: "Sign print Shop Service Areas Broward County FL | Nano Signs",
+    description:
+      "Nano Signs serves Fort Lauderdale, Oakland Park & Broward County FL with custom signs, banners printing , LED signs & neon signs. Same-day quote. 305-967-1005.",
+    url: "https://nano-signs.com/locations",
+    type: "website",
+  },
 };
+
 
 export default function LocationsPage() {
   const locations = Object.values(LOCATIONS_REGISTRY);

@@ -26,21 +26,21 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Sign Company Oakland Park FL | Custom Signs, Banners & LED Signs | Nano Signs",
+  title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
   description:
-    "Nano Signs — Oakland Park's #1 sign shop & print company. Custom signs, banner printing, LED display signs, neon signs & vehicle wraps. Same-day quotes. Call 305-967-1005.",
+    "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
   icons: {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
   },
   metadataBase: new URL("https://nano-signs.com"),
   alternates: {
-    canonical: "https://nano-signs.com",
+    canonical: "https://nano-signs.com/",
   },
   openGraph: {
-    title: "Sign Company Oakland Park FL | Custom Signs, Banners & LED Signs | Nano Signs",
-    description: "Nano Signs — Oakland Park's #1 sign shop & print company. Custom signs, banner printing, LED display signs, neon signs & vehicle wraps. Same-day quotes. Call 305-967-1005.",
-    url: "https://nano-signs.com",
+    title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
+    description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
+    url: "https://nano-signs.com/",
     siteName: "Nano Signs",
     images: [
       {
@@ -55,13 +55,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sign Company Oakland Park & Fort Lauderdale FL | Nano Signs",
-    description: "#1 sign shop in Oakland Park & Fort Lauderdale FL. Custom signs, banners, LED displays, neon signs & printing. Same-day quotes. Call 305-967-1005.",
+    title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
+    description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
     images: [
       "https://nano-signs.com/images/nano%20logo%20complete.png",
     ],
   },
 };
+
 
 type RootLayoutProps = Readonly<{
   children: React.ReactNode;
@@ -105,7 +106,7 @@ export default function RootLayout({
               "@type": ["LocalBusiness", "PrintShop"],
               "name": "Nano Signs",
               "alternateName": "Nano Signs & Printing",
-              "description": "Oakland Park's premier sign company and print shop. We specialize in custom signs, banners, LED displays, neon signs, vehicle wraps, and marketing materials for businesses across Broward County and Fort Lauderdale FL.",
+              "description": "Fort Lauderdale's premier sign company and print shop. We specialize in custom signs, banners, LED displays, neon signs, vehicle wraps, and marketing materials for businesses across Broward County and Fort Lauderdale FL.",
               "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
               "logo": "https://nano-signs.com/images/nano%20logo%20complete.png",
               "@id": "https://nano-signs.com/#localbusiness",
@@ -118,7 +119,7 @@ export default function RootLayout({
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4567 Powerline Rd",
-                "addressLocality": "Oakland Park",
+                "addressLocality": "Fort Lauderdale",
                 "addressRegion": "FL",
                 "postalCode": "33309",
                 "addressCountry": "US"
@@ -128,10 +129,10 @@ export default function RootLayout({
                 "latitude": 26.1835062,
                 "longitude": -80.1554943
               },
-              "hasMap": "https://maps.google.com/?q=Nano+Signs+4567+Powerline+Rd+Oakland+Park+FL+33309",
+              "hasMap": "https://maps.google.com/?q=Nano+Signs+4567+Powerline+Rd+Fort+Lauderdale+FL+33309",
               "areaServed": [
-                {"@type": "City", "name": "Oakland Park", "addressRegion": "FL"},
-                {"@type": "City", "name": "Fort Lauderdale", "addressRegion": "FL"},
+                {"@type": "City", "name": "Fort Lauderdale & Oakland Park", "addressRegion": "FL"},
+                {"@type": "City", "name": "Fort Lauderdale & Oakland Park", "addressRegion": "FL"},
                 {"@type": "City", "name": "Pompano Beach", "addressRegion": "FL"},
                 {"@type": "City", "name": "Deerfield Beach", "addressRegion": "FL"},
                 {"@type": "City", "name": "Hollywood", "addressRegion": "FL"},
@@ -155,9 +156,9 @@ export default function RootLayout({
                 "LED Signs",
                 "Neon Signs",
                 "Vehicle Wraps",
-                "Banner Printing Oakland Park",
+                "Banner Printing Fort Lauderdale",
                 "Sign Company Fort Lauderdale",
-                "Print Shop Oakland Park FL"
+                "Print Shop Fort Lauderdale FL"
               ]
             })
           }}
