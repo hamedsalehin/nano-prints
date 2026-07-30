@@ -49,6 +49,13 @@ export default function ContactUsPage() {
       }
 
       setSubmitSuccess(true);
+      if (typeof window !== "undefined" && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
+        (window as unknown as { gtag: (...args: unknown[]) => void }).gtag(
+          "event",
+          "conversion_event_request_quote",
+          {}
+        );
+      }
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err: any) {
       console.error("Failed to send contact message:", err);

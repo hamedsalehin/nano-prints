@@ -11,35 +11,35 @@ interface PageProps {
 // Per-category SEO keyword map — focused on Fort Lauderdale FL
 const categoryMeta: Record<string, { title: string; description: string }> = {
   "neon-signs": {
-    title: "Custom Neon Signs Fort Lauderdale FL | LED Neon Signs | Nano Signs",
+    title: "Nano Signs | Custom Neon Signs & LED Neon Fort Lauderdale FL",
     description: "Custom LED neon signs for businesses, restaurants & home décor in Fort Lauderdale & Oakland Park FL. Any color, font or shape. Indoor & outdoor. Fast turnaround. Free quote: 305-967-1005.",
   },
   "custom-banners": {
-    title: "Banner Printing Fort Lauderdale FL | Vinyl & Mesh Banners | Nano Signs",
+    title: "Nano Signs | Banner Printing – Vinyl & Mesh Banners Fort Lauderdale FL",
     description: "Professional banner printing in Fort Lauderdale FL. Vinyl banners, mesh banners, fabric banners & retractable banners. Same-week turnaround. Call 305-967-1005.",
   },
   "custom-flags": {
-    title: "Custom Flags Fort Lauderdale FL | Feather Flags & Flag Printing | Nano Signs",
+    title: "Nano Signs | Custom Flags & Feather Flag Printing Fort Lauderdale FL",
     description: "Custom flags, feather flags & teardrop flags printed in Fort Lauderdale & Oakland Park FL. Perfect for business events, grand openings & storefronts. Fast printing. Call 305-967-1005.",
   },
   "custom-signs": {
-    title: "Custom Business Signs Fort Lauderdale FL | Sign Shop | Nano Signs",
+    title: "Nano Signs | Custom Business & Storefront Signs FL",
     description: "Custom business signs, storefront signs, yard signs & real estate signs in Fort Lauderdale & Oakland Park FL. Full-service sign shop. Same-day quotes. Call 305-967-1005.",
   },
   "led-display-signs": {
-    title: "LED Display Signs Fort Lauderdale FL | Programmable LED Signs | Nano Signs",
+    title: "Nano Signs | LED Display & Programmable Signs FL",
     description: "Programmable LED display signs & digital signage for businesses in Fort Lauderdale & Oakland Park FL. Outdoor & indoor LED signs. Installation included. Free quote: 305-967-1005.",
   },
   "custom-decals": {
-    title: "Vehicle Wraps & Decals Fort Lauderdale FL | Window Graphics | Nano Signs",
+    title: "Nano Signs | Vehicle Wraps & Window Decals FL",
     description: "Custom vehicle wraps, car decals, window graphics & stickers in Fort Lauderdale & Oakland Park FL. Full & partial wraps. UV-resistant inks. Fast turnaround. Call 305-967-1005.",
   },
   "trade-show": {
-    title: "Trade Show Displays Fort Lauderdale FL | Roll-Up Banners & Booths | Nano Signs",
+    title: "Nano Signs | Trade Show Displays & Banners FL",
     description: "Trade show displays, roll-up banners, pop-up booths & retractable banners in Fort Lauderdale & Oakland Park FL. Professional quality, fast print. Call 305-967-1005.",
   },
   "marketing-materials": {
-    title: "Business Cards & Marketing Print Fort Lauderdale FL | Nano Signs",
+    title: "Nano Signs | Business Cards & Marketing Print Fort Lauderdale FL",
     description: "Business cards, flyers, brochures, postcards & marketing materials printed in Fort Lauderdale & Oakland Park FL. Premium paper stocks, fast turnaround. Call 305-967-1005.",
   },
 };
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!categoryData) return {};
 
   const meta = categoryMeta[decodedCategory];
-  const title = meta?.title ?? `Custom ${categoryData.title} Fort Lauderdale FL | Nano Signs`;
+  const title = meta?.title ?? `Nano Signs | Custom ${categoryData.title} Fort Lauderdale FL`;
   const description = meta?.description ?? `High-quality custom ${categoryData.title.toLowerCase()} in Fort Lauderdale & Oakland Park FL. Fast turnaround in Broward County. Same-day quotes. Call 305-967-1005.`;
 
   const ogImageUrl = categoryData.heroImage.startsWith("/") 

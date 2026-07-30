@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
+  title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
   description:
     "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
   icons: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: "https://nano-signs.com/",
   },
   openGraph: {
-    title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
+    title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
     description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
     url: "https://nano-signs.com/",
     siteName: "Nano Signs",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom LED Signs , Neon Sign Fort Lauderdale FL | Nano Signs",
+    title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
     description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
     images: [
       "https://nano-signs.com/images/nano%20logo%20complete.png",

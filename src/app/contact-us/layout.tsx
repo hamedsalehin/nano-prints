@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Nano Signs | Fort Lauderdale Sign Shop| 305-967-1005",
+  title: "Nano Signs | Contact Us – Fort Lauderdale Sign Shop | 305-967-1005",
   description:
     "Reach 2026 Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL 33309. Call 305-967-1005 for custom signs, banner printing, LED & neon signs. Mon–Fri 9am–6pm.",
   alternates: {
     canonical: "https://nano-signs.com/contact-us",
   },
   openGraph: {
-    title: "Contact Nano Signs | Fort Lauderdale Sign Shop| 305-967-1005",
+    title: "Nano Signs | Contact Us – Fort Lauderdale Sign Shop | 305-967-1005",
     description:
       "Reach 2026 Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL 33309. Call 305-967-1005 for custom signs, banner printing, LED & neon signs. Mon–Fri 9am–6pm.",
     url: "https://nano-signs.com/contact-us",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Nano Signs | Fort Lauderdale Sign Shop| 305-967-1005",
+    title: "Nano Signs | Contact Us – Fort Lauderdale Sign Shop | 305-967-1005",
     description:
       "Reach 2026 Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL 33309. Call 305-967-1005 for custom signs, banner printing, LED & neon signs. Mon–Fri 9am–6pm.",
     images: ["https://nano-signs.com/images/nano%20logo%20complete.png"],

@@ -5,14 +5,15 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
+import { getMarkdownBlogPosts } from "@/lib/blogUtils";
 
 export const metadata: Metadata = {
-  title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
+  title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
   description:
     "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
   alternates: { canonical: "https://nano-signs.com/blog" },
   openGraph: {
-    title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
+    title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
     description:
       "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
     url: "https://nano-signs.com/blog",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sign & Print Tips Blog LED sign , Neon & Banner | Nano Signs",
+    title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
     description:
       "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop.",
   },
@@ -28,11 +29,19 @@ export const metadata: Metadata = {
 
 import { BLOG_REGISTRY } from "@/lib/blogRegistry";
 
-const blogPosts = Object.values(BLOG_REGISTRY);
-
 const categories = ["All", "LED Signs", "Neon Signs", "Print & Signs", "Vehicle Signs", "Local Guides"];
 
+export const dynamic = "force-dynamic";
+
 export default function BlogPage() {
+  // Merge markdown posts (admin-published) with static registry posts.
+  // Markdown posts come first so newly published articles appear at the top.
+  const markdownPosts = getMarkdownBlogPosts();
+  const markdownSlugs = new Set(markdownPosts.map((p) => p.slug));
+  const registryPosts = Object.values(BLOG_REGISTRY).filter(
+    (p) => !markdownSlugs.has(p.slug)
+  );
+  const blogPosts = [...markdownPosts, ...registryPosts];
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 font-opensans">
       <Header />
@@ -92,10 +101,10 @@ export default function BlogPage() {
                   alt={post.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                <span className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                   <Tag className="w-3 h-3" />
                   {post.category}
                 </span>
@@ -110,7 +119,9 @@ export default function BlogPage() {
                 <h2 className="text-lg font-bold text-gray-900 font-poppins leading-snug mb-3 group-hover:text-[#ff2d78] transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-4">{post.excerpt}</p>
+                <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-4">
+                  {("excerpt" in post ? post.excerpt : (post as {description?: string}).description) ?? ""}
+                </p>
                 <Link
                   href={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-2 text-sm font-bold text-[#ff2d78] hover:gap-3 transition-all font-poppins"

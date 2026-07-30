@@ -140,6 +140,13 @@ export default function QuotePageClient() {
         customer: data.customerEmailError || null,
       });
       setSubmitSuccess(true);
+      if (typeof window !== "undefined" && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
+        (window as unknown as { gtag: (...args: unknown[]) => void }).gtag(
+          "event",
+          "conversion_event_request_quote",
+          {}
+        );
+      }
     } catch (err) {
       console.error("Quote submission failed:", err);
       setSubmitError(

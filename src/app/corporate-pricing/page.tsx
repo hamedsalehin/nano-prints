@@ -6,14 +6,14 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Corporate & Bulk Sign Pricing in Fort Lauderdale | Nano Signs",
+  title: "Nano Signs | Corporate & Bulk Sign Pricing Fort Lauderdale FL",
   description:
     "Volume discounts on custom signs & printing for Fort Lauderdale & Oakland Park FL businesses. Dedicated account manager & fast turnaround. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/corporate-pricing",
   },
   openGraph: {
-    title: "Corporate & Bulk Sign Pricing in Fort Lauderdale | Nano Signs",
+    title: "Nano Signs | Corporate & Bulk Sign Pricing Fort Lauderdale FL",
     description:
       "Volume discounts on custom signs & printing for Fort Lauderdale & Oakland Park FL businesses. Dedicated account manager & fast turnaround. Call 305-967-1005.",
     url: "https://nano-signs.com/corporate-pricing",
