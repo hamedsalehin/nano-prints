@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!locationData) return {};
 
-  const title = `Nano Signs | Sign & Print Shop in ${locationData.city}, FL`;
+  const title = `Nano Signs | Sign & Print Shop in ${locationData.title}, FL`;
 
   return {
     title,

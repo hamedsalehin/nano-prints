@@ -120,7 +120,7 @@ export default function BlogPage() {
                   {post.title}
                 </h2>
                 <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-4">
-                  {("excerpt" in post ? post.excerpt : (post as {description?: string}).description) ?? ""}
+                  {post.excerpt}
                 </p>
                 <Link
                   href={`/blog/${post.slug}`}

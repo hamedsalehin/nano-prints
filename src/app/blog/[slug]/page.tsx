@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = BLOG_REGISTRY[slug] ?? getMarkdownBlogPost(slug);
   if (!post) return { title: "Post Not Found" };
 
-  const description = ("excerpt" in post ? post.excerpt : post.description ?? "").slice(0, 155);
+  const description = (post.excerpt || "").slice(0, 155);
   const canonicalUrl = `https://nano-signs.com/blog/${slug}`;
 
   return {
