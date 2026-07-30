@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import {
@@ -18,6 +19,7 @@ import {
 } from "lucide-react";
 
 export default function ContactUsPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -56,7 +58,10 @@ export default function ContactUsPage() {
           {}
         );
       }
+      const submittedName = formData.name;
+      const submittedEmail = formData.email;
       setFormData({ name: "", email: "", subject: "", message: "" });
+      router.push(`/thank-you?name=${encodeURIComponent(submittedName.trim())}&email=${encodeURIComponent(submittedEmail.trim())}`);
     } catch (err: any) {
       console.error("Failed to send contact message:", err);
       setSubmitError(err.message || "Failed to submit. Please try again later.");
