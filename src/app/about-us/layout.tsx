@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nano Signs | About Us – 5.0★ Local Sign Shop Fort Lauderdale FL",
-  description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
+  title: "Nano Signs | Local Sign & Print Company Fort Lauderdale FL",
+  description: "Learn about Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL. Local experts in custom storefront signs, banner printing & neon LED displays.",
   alternates: {
     canonical: "https://nano-signs.com/about-us",
   },
   openGraph: {
-    title: "Nano Signs | About Us – 5.0★ Local Sign Shop Fort Lauderdale FL",
-    description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
+    title: "Nano Signs | Local Sign & Print Company Fort Lauderdale FL",
+    description: "Learn about Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL. Local experts in custom storefront signs, banner printing & neon LED displays.",
     url: "https://nano-signs.com/about-us",
     type: "website",
     siteName: "Nano Signs",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nano Signs | About Us – 5.0★ Local Sign Shop Fort Lauderdale FL",
-    description: "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs Fort Lauderdale.",
+    title: "Nano Signs | Local Sign & Print Company Fort Lauderdale FL",
+    description: "Learn about Nano Signs at 4567 Powerline Rd, Fort Lauderdale FL. Local experts in custom storefront signs, banner printing & neon LED displays.",
     images: ["https://nano-signs.com/images/nano%20logo%20complete.png"],
   },
 };

@@ -12,35 +12,35 @@ interface PageProps {
 const categoryMeta: Record<string, { title: string; description: string }> = {
   "neon-signs": {
     title: "Nano Signs | Custom Neon Signs & LED Neon Fort Lauderdale FL",
-    description: "Custom LED neon signs for businesses, restaurants & home décor in Fort Lauderdale & Oakland Park FL. Any color, font or shape. Indoor & outdoor. Fast turnaround. Free quote: 305-967-1005.",
+    description: "Custom LED neon signs for businesses, restaurants & home decor in Fort Lauderdale FL. Energy-efficient, shatterproof & bright. Call 305-967-1005 for free quote.",
   },
   "custom-banners": {
-    title: "Nano Signs | Banner Printing – Vinyl & Mesh Banners Fort Lauderdale FL",
-    description: "Professional banner printing in Fort Lauderdale FL. Vinyl banners, mesh banners, fabric banners & retractable banners. Same-week turnaround. Call 305-967-1005.",
+    title: "Vinyl Banner Printing Fort Lauderdale FL | Nano Signs",
+    description: "Heavy-duty vinyl banner printing in Fort Lauderdale FL. Weatherproof outdoor banners, mesh & retractable roll-up banner stands. Call 305-967-1005 for fast print.",
   },
   "custom-flags": {
-    title: "Nano Signs | Custom Flags & Feather Flag Printing Fort Lauderdale FL",
-    description: "Custom flags, feather flags & teardrop flags printed in Fort Lauderdale & Oakland Park FL. Perfect for business events, grand openings & storefronts. Fast printing. Call 305-967-1005.",
+    title: "Custom Feather Flags & Business Advertising Flags | Nano Signs",
+    description: "Custom feather flags, teardrop flags & event banners printed in Fort Lauderdale FL. Wind-resistant, double-sided printing. Call 305-967-1005 for fast turnaround.",
   },
   "custom-signs": {
     title: "Nano Signs | Custom Business & Storefront Signs FL",
-    description: "Custom business signs, storefront signs, yard signs & real estate signs in Fort Lauderdale & Oakland Park FL. Full-service sign shop. Same-day quotes. Call 305-967-1005.",
+    description: "Custom storefront business signs, channel letters, acrylic & yard signs in Fort Lauderdale FL. Design, fabrication & install. Call 305-967-1005 for a free quote.",
   },
   "led-display-signs": {
     title: "Nano Signs | LED Display & Programmable Signs FL",
-    description: "Programmable LED display signs & digital signage for businesses in Fort Lauderdale & Oakland Park FL. Outdoor & indoor LED signs. Installation included. Free quote: 305-967-1005.",
+    description: "Programmable LED display signs & digital message boards for businesses in Fort Lauderdale FL. Indoor/outdoor bright screens. Call 305-967-1005 for custom quote.",
   },
   "custom-decals": {
     title: "Nano Signs | Vehicle Wraps & Window Decals FL",
-    description: "Custom vehicle wraps, car decals, window graphics & stickers in Fort Lauderdale & Oakland Park FL. Full & partial wraps. UV-resistant inks. Fast turnaround. Call 305-967-1005.",
+    description: "Custom vehicle wraps, car door magnets & storefront window decals in Fort Lauderdale FL. Premium UV vinyl & sleek finish. Call 305-967-1005 for fast quotes.",
   },
   "trade-show": {
     title: "Nano Signs | Trade Show Displays & Banners FL",
-    description: "Trade show displays, roll-up banners, pop-up booths & retractable banners in Fort Lauderdale & Oakland Park FL. Professional quality, fast print. Call 305-967-1005.",
+    description: "Trade show displays, pop-up backdrops & roll-up banner stands printed in Fort Lauderdale FL. Lightweight, portable & vibrant. Call 305-967-1005 for fast delivery.",
   },
   "marketing-materials": {
-    title: "Nano Signs | Business Cards & Marketing Print Fort Lauderdale FL",
-    description: "Business cards, flyers, brochures, postcards & marketing materials printed in Fort Lauderdale & Oakland Park FL. Premium paper stocks, fast turnaround. Call 305-967-1005.",
+    title: "Business Cards, Flyers & Print Services Fort Lauderdale",
+    description: "Premium business cards, flyers, brochures & postcards printed in Fort Lauderdale FL. Heavy cardstock & sharp colors. Call 305-967-1005 for bulk print deals.",
   },
 };
 

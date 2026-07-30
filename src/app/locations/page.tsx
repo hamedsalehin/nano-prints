@@ -7,14 +7,14 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 
 export const metadata: Metadata = {
-  title: "Nano Signs | Service Areas & Sign Shop Locations in Broward County FL",
+  title: "Nano Signs | Sign Shop Service Areas in Broward County FL",
   description:
-    "Nano Signs serves Fort Lauderdale, Oakland Park & Broward County FL with custom signs, banners printing , LED signs & neon signs. Same-day quote. 305-967-1005.",
+    "Serving Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom signs, banner printing & LED neon signs. Call 305-967-1005 for quotes.",
   alternates: { canonical: "https://nano-signs.com/locations" },
   openGraph: {
-    title: "Nano Signs | Service Areas & Sign Shop Locations in Broward County FL",
+    title: "Nano Signs | Sign Shop Service Areas in Broward County FL",
     description:
-      "Nano Signs serves Fort Lauderdale, Oakland Park & Broward County FL with custom signs, banners printing , LED signs & neon signs. Same-day quote. 305-967-1005.",
+      "Serving Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom signs, banner printing & LED neon signs. Call 305-967-1005 for quotes.",
     url: "https://nano-signs.com/locations",
     type: "website",
   },

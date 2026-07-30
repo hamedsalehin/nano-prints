@@ -34,7 +34,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const suffix = categorySuffixes[decodedCategory] || `Custom ${categoryData.title} Fort Lauderdale FL`;
   const isDuplicate = productData.name.toLowerCase().includes("led") && suffix.toLowerCase().includes("led");
-  const title = `${productData.name} Fort Lauderdale FL | Nano Signs`;
+  const title = productData.name.toLowerCase().startsWith("custom")
+    ? `${productData.name} Fort Lauderdale FL | Nano Signs`
+    : `Custom ${productData.name} Fort Lauderdale FL | Nano Signs`;
   const description = productData.description
     ? `Custom ${productData.name} in Fort Lauderdale FL. ${productData.description} Call 305-967-1005 for a free quote.`
     : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;

@@ -26,9 +26,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
+  title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
   description:
-    "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
+    "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
   icons: {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     canonical: "https://nano-signs.com/",
   },
   openGraph: {
-    title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
-    description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
+    title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
+    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
     url: "https://nano-signs.com/",
     siteName: "Nano Signs",
     images: [
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nano Signs | Custom Signs, Banners & LED Signs – Fort Lauderdale, FL",
-    description: "Oakland Park & Fort Lauderdale's #1 sign & print shop. Custom signs, banner printing, LED display signs & custom neon signs. Same-day quotes. Call 305-967-1005.",
+    title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
+    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
     images: [
       "https://nano-signs.com/images/nano%20logo%20complete.png",
     ],
