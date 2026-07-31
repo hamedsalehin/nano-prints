@@ -105,6 +105,53 @@ const nextConfig = {
         destination: "/led-display-signs",
         permanent: true,
       },
+      // Legacy WooCommerce /product/ URL redirects seen in Bing Webmaster Tools
+      {
+        source: "/product/digital-display-screen",
+        destination: "/led-display-signs/digital-display-screen",
+        permanent: true,
+      },
+      {
+        source: "/product/flyer",
+        destination: "/marketing-materials/flyers",
+        permanent: true,
+      },
+      {
+        source: "/product/full-color-custom-led-sign-board",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      {
+        source: "/product/full-color-electronic-signs",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      {
+        source: "/product/full-color-led-display-screen",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      {
+        source: "/product/led-poster",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      {
+        source: "/product/:slug",
+        destination: "/custom-signs",
+        permanent: true,
+      },
+      // Legacy WooCommerce /product-category/ URL redirects
+      {
+        source: "/product-category/led-products",
+        destination: "/led-display-signs",
+        permanent: true,
+      },
+      {
+        source: "/product-category/:slug",
+        destination: "/:slug",
+        permanent: true,
+      },
     ];
   },
 };
