@@ -147,7 +147,7 @@ export default function RootLayout({
                 }
               ],
               "sameAs": [
-                "https://www.facebook.com/nanosigns",
+                "https://facebook.com/signsnano",
                 "https://nano-signs.com"
               ],
               "knowsAbout": [
