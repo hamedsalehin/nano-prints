@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
   description:
-    "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
+    "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
   icons: {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
-    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
+    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
     url: "https://nano-signs.com/",
     siteName: "Nano Signs",
     images: [
