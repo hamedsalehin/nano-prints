@@ -150,6 +150,14 @@ export default function RootLayout({
                 "https://facebook.com/signsnano",
                 "https://nano-signs.com"
               ],
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "license",
+                  "name": "Oakland Park City Business License & Commercial Sign Contractor License"
+                }
+              ],
+              "naics": "541890",
               "knowsAbout": [
                 "Custom Signs",
                 "Banners",

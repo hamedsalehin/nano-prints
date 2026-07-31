@@ -8,6 +8,7 @@ import {
   MapPin,
   Mail,
   Phone,
+  ShieldCheck,
 } from "lucide-react";
 
 function Pinterest(props: any) {
@@ -255,6 +256,27 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           </div>
         </div>
 
+        {/* City Business License & Authority Trust Banner */}
+        <div className={`mt-8 p-5 rounded-2xl border flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-opensans ${light ? "bg-slate-50 border-slate-200 text-slate-700" : "bg-gray-900/60 border-gray-800 text-gray-300"}`}>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-pink-50 border border-pink-200 flex items-center justify-center text-[#ff2d78] shrink-0 font-bold">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <div>
+              <p className="font-black text-sm text-slate-900">City of Oakland Park Licensed &amp; Registered Business</p>
+              <p className="text-slate-500 font-medium">Licensed Commercial Sign Contractor &amp; Print Fabricator • Broward County, FL</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 text-xs font-extrabold shrink-0">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-800 border border-green-200 rounded-xl shadow-xs">
+              ✓ Oakland Park City License
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-800 border border-blue-200 rounded-xl shadow-xs">
+              ✓ Fully Insured &amp; Certified
+            </span>
+          </div>
+        </div>
+
         {/* Google Maps Location Embed */}
         <div className={`mt-12 rounded-2xl overflow-hidden shadow-lg h-[250px] w-full border ${light ? "border-slate-200" : "border-gray-800"}`}>
           <iframe
@@ -288,7 +310,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               ))}
             </div>
             <p className={`text-sm ${light ? "text-slate-400" : "text-gray-600"}`}>
-              Copyright 2025 Nano Signs. All rights reserved.
+              © 2020 – {new Date().getFullYear()} Nano Signs. All rights reserved. | Serving Fort Lauderdale &amp; Broward County Since 2020.
             </p>
           </div>
         </div>
