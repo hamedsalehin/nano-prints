@@ -152,6 +152,78 @@ const nextConfig = {
         destination: "/:slug",
         permanent: true,
       },
+      // Additional legacy WordPress pages seen in Bing Webmaster Tools
+      {
+        source: "/homepage-2",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/about-nano-signs-neon-led-custom-signs-roll-up-signs",
+        destination: "/about-us",
+        permanent: true,
+      },
+      {
+        source: "/blog-best-signs-in-hollywood-printing",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/product-tag/:path*",
+        destination: "/custom-signs",
+        permanent: true,
+      },
+      {
+        source: "/category/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/team-member/:path*",
+        destination: "/about-us",
+        permanent: true,
+      },
+      {
+        source: "/programmable-led-signs",
+        destination: "/locations/programmable-led-signs",
+        permanent: true,
+      },
+      {
+        source: "/programmable-led-signs/:path*",
+        destination: "/locations/programmable-led-signs",
+        permanent: true,
+      },
+      // Specific 404 URLs found in Bing Webmaster Tools Site Explorer
+      {
+        source: "/marketing-materials/presentation-folders",
+        destination: "/marketing-materials",
+        permanent: true,
+      },
+      {
+        source: "/marketing-materials/rack-cards",
+        destination: "/marketing-materials",
+        permanent: true,
+      },
+      {
+        source: "/category/uncategorized",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/custom-signs/lawn-bag-signs",
+        destination: "/custom-signs/plastic-yard-sign",
+        permanent: true,
+      },
+      {
+        source: "/custom-signs/bag-yard-signs",
+        destination: "/custom-signs/plastic-yard-sign",
+        permanent: true,
+      },
+      {
+        source: "/custom-signs/programmable-led-sign",
+        destination: "/locations/programmable-led-signs",
+        permanent: true,
+      },
     ];
   },
 };
