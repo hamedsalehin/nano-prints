@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -39,11 +39,44 @@ export async function GET() {
       }
     }
 
-    // 2. Add BLOG_REGISTRY posts that don't already have a markdown file
-    const markdownSlugs = new Set(markdownPosts.map((p) => p.slug));
+    // 2. Read posts from Supabase DB (persistent across deployments)
+    const dbPosts: typeof markdownPosts = [];
+    try {
+      const { supabase } = await import("@/lib/supabaseClient");
+      const { data: dbData } = await supabase
+        .from("blog_posts")
+        .select("*")
+        .eq("published", true)
+        .order("created_at", { ascending: false });
+
+      if (dbData && dbData.length > 0) {
+        for (const item of dbData) {
+          dbPosts.push({
+            id: item.slug,
+            slug: item.slug,
+            title: item.title,
+            category: item.category || "General Signage",
+            description: item.description || "",
+            image: item.image || "/images/products/outdoor-fixed-led-display.jpg",
+            content: item.content || "",
+            published: true,
+            date: item.date || item.created_at?.split("T")[0] || "",
+            fromRegistry: false,
+          });
+        }
+      }
+    } catch (dbErr) {
+      console.warn("Supabase blog posts fetch notice:", dbErr);
+    }
+
+    // 3. Add BLOG_REGISTRY posts that don't already exist in markdown or DB
+    const existingSlugs = new Set([
+      ...markdownPosts.map((p) => p.slug),
+      ...dbPosts.map((p) => p.slug),
+    ]);
 
     const registryPosts = Object.values(BLOG_REGISTRY)
-      .filter((p) => !markdownSlugs.has(p.slug))
+      .filter((p) => !existingSlugs.has(p.slug))
       .map((p) => ({
         id: p.slug,
         slug: p.slug,
@@ -57,11 +90,15 @@ export async function GET() {
         fromRegistry: true,
       }));
 
-    // 3. Merge: markdown posts first (newest), then registry posts
-    const allPosts = [
-      ...markdownPosts.sort((a, b) => (a.date < b.date ? 1 : -1)),
-      ...registryPosts,
-    ];
+    // Merge: DB posts + Markdown posts + Registry posts
+    const allSlugs = new Set<string>();
+    const allPosts: typeof markdownPosts = [];
+    for (const post of [...dbPosts, ...markdownPosts, ...registryPosts]) {
+      if (!allSlugs.has(post.slug)) {
+        allSlugs.add(post.slug);
+        allPosts.push(post);
+      }
+    }
 
     return NextResponse.json({ posts: allPosts });
   } catch (err: unknown) {

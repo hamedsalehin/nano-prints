@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
@@ -49,7 +49,32 @@ ${content}
 `;
 
     const filePath = path.join(targetDir, `${newSlug}.md`);
-    fs.writeFileSync(filePath, fileContent, "utf8");
+    try {
+      fs.writeFileSync(filePath, fileContent, "utf8");
+    } catch (fsErr) {
+      console.warn("Could not write to local filesystem (read-only environment):", fsErr);
+    }
+
+    // Persist to Supabase Database for cloud survival across Netlify builds
+    try {
+      const { supabase } = await import("@/lib/supabaseClient");
+      await supabase.from("blog_posts").upsert(
+        {
+          slug: newSlug,
+          title,
+          description: description || "",
+          content,
+          image: image || "/images/products/outdoor-fixed-led-display.jpg",
+          category: category || "General Signage",
+          published: true,
+          date: todayDate,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: "slug" }
+      );
+    } catch (dbErr) {
+      console.warn("Supabase blog post sync warning:", dbErr);
+    }
 
     return NextResponse.json({
       success: true,

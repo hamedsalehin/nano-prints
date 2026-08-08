@@ -229,3 +229,30 @@ create policy "Auth users can upload quote attachments"
 create policy "Anyone can read quote attachments"
   on storage.objects for select
   using (bucket_id = 'quote-attachments');
+
+-- ── 10. Dynamic Blog Posts Table ─────────────────────────────
+create table if not exists public.blog_posts (
+  id          uuid        primary key default gen_random_uuid(),
+  slug        text        unique not null,
+  title       text        not null,
+  description text        default '',
+  content     text        not null,
+  image       text        default '',
+  category    text        default 'General Signage',
+  published   boolean     default true,
+  date        text        not null,
+  created_at  timestamptz default now(),
+  updated_at  timestamptz default now()
+);
+
+alter table public.blog_posts enable row level security;
+drop policy if exists "Anyone can read blog posts" on public.blog_posts;
+drop policy if exists "Auth users can manage blog posts" on public.blog_posts;
+
+create policy "Anyone can read blog posts"
+  on public.blog_posts for select
+  using (published = true);
+
+create policy "Auth users can manage blog posts"
+  on public.blog_posts for all
+  using (auth.role() = 'authenticated');

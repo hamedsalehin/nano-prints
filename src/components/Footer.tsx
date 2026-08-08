@@ -50,7 +50,7 @@ const footerLinks = {
     title: "Products",
     links: [
       { name: "Custom Signs", href: "/custom-signs" },
-      { name: "Programmable LED Signs", href: "/locations/programmable-led-signs" },
+      { name: "Programmable LED Signs", href: "/led-display-signs/programmable-led-sign" },
       { name: "Neon Signs", href: "/neon-signs" },
       { name: "Roll Up Banners", href: "/custom-banners/roll-up-banners" },
       { name: "Vehicle Signs", href: "/vehicle-signs" },

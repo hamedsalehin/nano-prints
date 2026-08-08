@@ -221,7 +221,7 @@ const nextConfig = {
       },
       {
         source: "/custom-signs/programmable-led-sign",
-        destination: "/locations/programmable-led-signs",
+        destination: "/led-display-signs/programmable-led-sign",
         permanent: true,
       },
     ];

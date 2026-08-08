@@ -504,7 +504,7 @@ export function Header() {
                               {categoryData.products.map((product) => (
                                 <li key={product.id}>
                                   <Link
-                                    href={`${item.href}/${product.id}`}
+                                    href={product.config?.breadcrumbHref ? `${product.config.breadcrumbHref}/${product.id}` : `${item.href}/${product.id}`}
                                     className="block px-4 py-2.5 text-sm font-semibold text-gray-700 hover:text-[#ff2d78] hover:bg-slate-50 transition-colors duration-150"
                                   >
                                     {product.name}
@@ -572,7 +572,7 @@ export function Header() {
                             {categoryData.products.map((product) => (
                               <li key={product.id}>
                                 <Link
-                                  href={`${item.href}/${product.id}`}
+                                  href={product.config?.breadcrumbHref ? `${product.config.breadcrumbHref}/${product.id}` : `${item.href}/${product.id}`}
                                   onClick={() => setMobileMenuOpen(false)}
                                   className="block px-8 py-2.5 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 transition-colors"
                                 >
