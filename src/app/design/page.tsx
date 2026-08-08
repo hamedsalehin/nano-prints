@@ -3208,6 +3208,13 @@ function DesignPageContent() {
               Design Studio
             </span>
           </div>
+          <nav className="hidden xl:flex items-center gap-3 text-xs text-slate-400 border-l border-slate-800 pl-4">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <Link href="/custom-signs" className="hover:text-white transition-colors">Signs</Link>
+            <Link href="/custom-banners" className="hover:text-white transition-colors">Banners</Link>
+            <Link href="/custom-flags" className="hover:text-white transition-colors">Flags</Link>
+            <Link href="/contact-us" className="hover:text-white transition-colors">Contact</Link>
+          </nav>
         </div>
 
         {/* Action Controls */}

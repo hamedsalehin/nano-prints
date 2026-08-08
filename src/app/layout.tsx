@@ -4,6 +4,8 @@ import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
 
+import { CanonicalTag } from "@/components/CanonicalTag";
+
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -34,6 +36,9 @@ export const metadata: Metadata = {
     apple: "/images/nano logo O.png",
   },
   metadataBase: new URL("https://nano-signs.com"),
+  alternates: {
+    canonical: "https://nano-signs.com/",
+  },
   openGraph: {
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
     description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
@@ -71,6 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={openSans.variable + " " + poppins.variable}>
       <head>
+        <CanonicalTag />
         {/* Preconnect to external asset CDN — saves 300ms per PageSpeed */}
         <link rel="preconnect" href="https://ext.same-assets.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://ext.same-assets.com" />

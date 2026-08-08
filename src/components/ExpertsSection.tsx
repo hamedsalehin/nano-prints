@@ -27,12 +27,7 @@ export function ExpertsSection() {
             Premium Custom Signage, LED Signs &amp; Banners in Fort Lauderdale
           </h2>
           <p className="text-gray-600 text-xs sm:text-sm md:text-base mb-6 md:mb-8 leading-relaxed">
-            Welcome to Nano Signs, the print shop with the fastest turnaround times in Broward.
-            Whether you want to design and order online or visit us in person, we are your
-            premier source for custom signs, LED signs, retractable banners, business cards,
-            and all other marketing materials. Serving Fort Lauderdale, Fort Lauderdale, and the
-            wider Broward County area, our custom print and design experts ensure fast, professional
-            production to elevate your brand presence.
+            Broward County&apos;s go-to print shop for fast, professional signage and marketing materials. Design and order online or visit us in person for custom signs, LED signs, retractable banners, business cards, and more. Proudly serving Fort Lauderdale and the greater Broward County area, our custom print and design experts deliver fast turnaround and standout quality to help your brand get noticed.
           </p>
           <a
             href="tel:305-967-1005"

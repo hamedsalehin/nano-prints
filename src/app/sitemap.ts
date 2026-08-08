@@ -118,8 +118,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const product of category.products) {
       if (!addedProducts.has(product.id)) {
         addedProducts.add(product.id);
+        const productUrl = `${baseUrl}/${categorySlug}/${product.id}`;
+        // Exclude legacy redirected product URLs
+        if (productUrl.includes("/custom-signs/programmable-led-sign")) continue;
         productPages.push({
-          url: `${baseUrl}/${categorySlug}/${product.id}`,
+          url: productUrl,
           lastModified: currentDate,
           changeFrequency: "weekly" as const,
           priority: 0.6,

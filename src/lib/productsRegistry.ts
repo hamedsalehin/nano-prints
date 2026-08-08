@@ -324,16 +324,41 @@ export const PRODUCTS_REGISTRY = {
             "Machine washable and reusable",
           ],
           useCases: [
-            "Lobbies & offices",
-            "Trade show backdrops",
-            "Press releases",
+            "Office lobbies and reception areas",
+            "Trade show booth backdrops",
+            "Press conferences and media walls",
             "Upscale retail window displays",
           ],
           specs: [
             { key: "Material", value: "100% Knit Polyester Fabric" },
             { key: "Printing Type", value: "Dye-Sublimation Heat Transfer" },
           ],
-          faqs: [],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Fabric Banner Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Vinyl banners have their place, but if you're hanging something inside a lobby, a boutique window, or behind a step-and-repeat at a press event, fabric reads as noticeably more upscale. Nano Signs prints fabric banners using dye-sublimation on a wrinkle-resistant knit polyester, giving you a soft matte finish with no glare which also happens to photograph much better than glossy vinyl under event lighting.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Because the ink is infused directly into the fabric rather than coated on top, the graphic won't crack, peel, or flake even after repeated folding, rolling, or machine washing. That makes it a genuinely reusable banner, not a one-event throwaway.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order a custom fabric banner and get a free proof before it goes into production.
+            </p>
+          </div>`,
+          faqs: [
+            {
+              q: "Is fabric banner material washable?",
+              a: "Yes it's machine washable, which is one of the main reasons businesses choose fabric over vinyl for banners they plan to reuse.",
+            },
+            {
+              q: "What sizes are available?",
+              a: "Standard options run from a compact 2' x 6' up to a large 4' x 8', with satin and velvet fabric upgrades available for a more premium look.",
+            },
+            {
+              q: "Does fabric wrinkle after folding?",
+              a: "The polyester knit is specifically engineered to resist wrinkling, so it hangs flat again shortly after unpacking.",
+            },
+          ],
           reviews: [],
           ctaHeading: "Elevate your indoor displays",
         },
@@ -663,10 +688,10 @@ export const PRODUCTS_REGISTRY = {
             "Anti-curl curl-free polyester film",
           ],
           useCases: [
-            "Trade show booths",
-            "Corporate lobbies",
-            "Retail announcements",
-            "Presentations",
+            "Trade show booths and exhibitor spaces",
+            "Corporate lobbies and reception areas",
+            "Retail promotional signage",
+            "Conference presentations and speaking events",
           ],
           specs: [
             { key: "Weight", value: "Approximately 7-10 lbs including stand" },
@@ -676,37 +701,34 @@ export const PRODUCTS_REGISTRY = {
               value: "Anodized aluminum body with fold-out feet",
             },
           ],
-          description: `Elevate your business presence at conventions, retail spaces, and corporate events with our elite Retractable Roll-Up Stands. These self-contained exhibition displays represent the pinnacle of portable advertising, fusing rugged reliability with effortless assembly and striking aesthetics. 
-
-Each unit is delivered fully assembled, housing your bespoke graphics safely within a protective aluminum base. Deployment is incredibly rapid—just raise the telescopic mast, extract the graphic panel, and secure it. From temporary promotional kiosks to permanent lobby directories, these stands deliver enduring performance.
-
-We manufacture these displays using an advanced anti-curl, block-out polyester substrate. This specialized material completely stops edge curling and prevents background light from washing out your design, guaranteeing a crisp, professional look in any lighting environment. With our rapid turnaround times, you'll always be prepared for your next show.
-
-Advantages of our Roll-Up Systems:
-- Superior Anti-Curl Substrate: Engineered to hang perfectly flat without bowing.
-- Heavy-Duty Cassette: Anodized aluminum base with fold-out stabilizing feet for reliable outdoor and indoor standee stability.
-- Effortless Portability: A padded travel carrying case is included with every order, making transportation a breeze.
-- Dynamic Visual Impact: High-resolution UV printing at 1440 DPI delivers vivid, fade-resistant colors that stand out across crowded halls.`,
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Retractable Roll-Up Banners in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              When people search for a "pull-up banner" or "retractable banner stand," this is what they mean: a self-contained display that lives inside an aluminum base, deploys in seconds, and packs back down for the next event. It's the single most-used display format at trade shows for a reason — no assembly, no tools, no separate stand to carry.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs builds these on an anti-curl, block-out polyester that stays flat under lighting and won't let backlighting bleed through your artwork. Every order ships fully assembled with a padded carrying case, so it's ready to travel the same day it arrives.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Build your custom retractable banner and have it ready for your next show.
+            </p>
+          </div>`,
           faqs: [
             {
-              q: "What is the setup process for a pull-up banner?",
-              a: "Assembly is effortless. Simply fold out the base feet, insert the telescopic mast, and pull the graphic upward to hook it onto the top. You'll be ready in seconds.",
+              q: "How do you set up a pull-up banner?",
+              a: "Fold out the base feet, extend the telescoping pole, and pull the graphic up until it locks into the top bracket. It takes under a minute with no tools.",
             },
             {
-              q: "Which substrate is printed on?",
-              a: "We utilize an elite anti-curl polyester with an opaque blockout backing. This guarantees a flawlessly flat display while preventing rear illumination from washing out your artwork.",
+              q: "What substrate is the graphic printed on?",
+              a: "An anti-curl polyester with an opaque blockout layer, which keeps the display flat and prevents light from washing out the print — even under bright booth lighting.",
             },
             {
-              q: "Can I swap the graphics later?",
-              a: "While possible, changing the print requires accessing the tension spring mechanism inside the base. For optimal results, we suggest ordering a complete new unit.",
+              q: "Can I reuse the stand with new graphics later?",
+              a: "Technically yes, but it requires opening the internal tension spring mechanism. Most customers find it simpler and more reliable to order a fresh complete unit.",
             },
             {
-              q: "How do standard and luxury models differ?",
-              a: "Standard units rely on swing-out feet for balance. Our luxury professional models feature an elegant, heavy teardrop base that stands firmly without exposed feet.",
-            },
-            {
-              q: "Are these rated for outdoor use?",
-              a: "These stands are engineered for indoor environments. Wind can easily catch the large graphic panel and topple the unit. For outdoor displays, consider our feather flags or A-frames.",
+              q: "Are these suitable for outdoor use?",
+              a: "No — the large graphic panel catches wind easily and can tip the stand. For outdoor events, a feather flag or A-frame sign is the better call.",
             },
           ],
           reviews: [
@@ -845,13 +867,38 @@ Advantages of our Roll-Up Systems:
             "Glariess matte finish ensures clear photography",
           ],
           useCases: [
-            "Press conferences",
-            "Red carpet arrivals",
-            "Wedding photo booths",
-            "Corporate events",
+            "Press conferences and media walls",
+            "Red carpet and VIP entrance events",
+            "Wedding and event photo booths",
+            "Corporate event branding",
           ],
           specs: [{ key: "Material", value: "15oz Blockout Matte Vinyl" }],
-          faqs: [],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Step and Repeat Backdrop Banners in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              If you've ever seen a red carpet photo with a logo pattern repeating behind the subject, that's a step and repeat banner — and it's become the standard backdrop for press events, red carpet arrivals, and branded photo moments of any kind. Nano Signs prints these as large, seamless backwalls on a matte, glare-free vinyl finish specifically so flash photography doesn't wash out the image.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Pole pockets sewn into the top and bottom make mounting straightforward, and an optional adjustable backdrop stand means you don't need to source separate hardware or truss a wall yourself.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order a custom step and repeat banner built for your next press event or photo activation.
+            </p>
+          </div>`,
+          faqs: [
+            {
+              q: "Why is the finish matte instead of glossy?",
+              a: "Glossy material reflects camera flash and creates hot spots in photos. A matte finish keeps the backdrop evenly lit and legible in every shot.",
+            },
+            {
+              q: "What sizes are available?",
+              a: "An 8' x 8' square works well for standard photo booths; a 10' x 10' size covers larger step-and-repeat walls for bigger events.",
+            },
+            {
+              q: "Do I need a stand, or does it mount to an existing wall?",
+              a: "Both are options — order the banner alone if you already have mounting hardware or truss, or add our adjustable backdrop stand if you need a complete standalone setup.",
+            },
+          ],
           reviews: [],
           ctaHeading: "Create your logo background backdrop",
         },
@@ -1222,12 +1269,34 @@ Advantages of our Roll-Up Systems:
             "Lightweight polyester mesh flys easily",
           ],
           useCases: [
-            "Business flags",
-            "Schools and clubs",
-            "Personal/residential poles",
+            "Business flags outside storefronts or offices",
+            "School and club spirit flags",
+            "Residential and personal flagpoles",
           ],
           specs: [{ key: "Material", value: "115g Polyester Mesh" }],
-          faqs: [],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Standard Flags Printed in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A grommeted flag is the classic choice when you want something that mounts to a standard flagpole or hangs flat against a wall — not the feather-shaped kind that flutters outside a car dealership, but a traditional horizontal flag with a clean, structured look. Nano Signs prints these on lightweight polyester that catches wind easily while a reinforced canvas header and rust-proof brass grommets keep it securely attached through repeated use.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Design your custom flag and get it printed and shipped fast from Fort Lauderdale.
+            </p>
+          </div>`,
+          faqs: [
+            {
+              q: "What sizes do standard flags come in?",
+              a: "2' x 3', 3' x 5' (the most common), and 4' x 6' for larger poles or wall installations.",
+            },
+            {
+              q: "Do I need a pole sleeve or grommets?",
+              a: "Grommets work for most standard poles; a 3-inch pole sleeve is available as an add-on if your setup calls for it instead.",
+            },
+            {
+              q: "How long will the print last outdoors?",
+              a: "The polyester and printing method are built for regular outdoor flagpole use, though like any flag, expect eventual fraying at the fly end with heavy wind exposure over time — that's normal wear, not a defect.",
+            },
+          ],
           reviews: [],
           ctaHeading: "Produce your traditional custom flag",
         },
@@ -1478,24 +1547,40 @@ Advantages of our Roll-Up Systems:
             "Glossy protective laminations",
           ],
           useCases: [
-            "Delivery vans",
-            "Real estate agent vehicles",
-            "Contractors and technicians",
-            "Personal cars used for corporate",
+            "Delivery and service vans",
+            "Real estate agents' personal vehicles",
+            "Contractors and field technicians",
+            "Anyone using a personal car for part-time business use",
           ],
           specs: [
             { key: "Thickness", value: "30mil Magnetic material" },
             { key: "Coating", value: "Gloss UV Protective Finish" },
             { key: "Max Speed Rating", value: "Tested up to 80 MPH" },
           ],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Magnetic Car Signs Printed in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A magnetic car sign turns your own vehicle into a moving advertisement without any permanent decal work — apply it before a job, peel it off after, and your personal car is personal again. It's a go-to option for contractors, delivery drivers, and real estate agents who don't want (or can't get) vinyl wraps on their vehicles.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints on heavyweight 30mil magnetic sheeting, thick enough to hold securely at highway speeds without lifting at the edges. Rounded corners are available specifically to reduce wind catch and prevent peeling on the road, and every sign gets a UV-resistant ink layer with a glossy protective laminate on top.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order custom magnetic car signs and turn your vehicle into a mobile ad in a matter of days.
+            </p>
+          </div>`,
           faqs: [
             {
-              q: "Will this magnet stick to aluminum doors?",
-              a: "No, magnets only stick to steel doors. Please verify your vehicle door panels with a kitchen magnet before purchasing.",
+              q: "Will a magnetic sign stick to any car door?",
+              a: "No, magnets only adhere to steel panels. Many modern vehicles use aluminum doors and fenders, so it's worth testing your door with a small kitchen magnet before ordering.",
             },
             {
-              q: "How often should I clean the magnet?",
-              a: "We recommend removing and wiping down the magnet and car panel weekly to prevent moisture buildup.",
+              q: "How often should I clean the magnet and the panel underneath?",
+              a: "Wipe both down weekly. Moisture and grit trapped between the magnet and the paint can cause issues over time if it's left unchecked.",
+            },
+            {
+              q: "What sizes are available?",
+              a: "From a compact 6\" x 12\" up to a large 18\" x 24\", depending on how much of the door you want to cover.",
             },
           ],
           reviews: [
@@ -1716,10 +1801,10 @@ Advantages of our Roll-Up Systems:
             "Machine washable",
           ],
           useCases: [
-            "Job fairs",
-            "Trade show booths",
-            "School orientations",
-            "Craft shows & market stalls",
+            "Trade show and convention booths",
+            "Job fairs and career expos",
+            "School orientations and registration tables",
+            "Craft shows and vendor market stalls",
           ],
           specs: [
             { key: "Material", value: "300D Polyester Twill" },
@@ -1729,10 +1814,30 @@ Advantages of our Roll-Up Systems:
             },
             { key: "Care", value: "Machine washable, tumble dry low" },
           ],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Printed Tablecloths for Trade Shows in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A folding table with a plain cloth (or no cloth at all) is the fastest way to look like you didn't plan your booth. A custom-printed tablecloth fixes that instantly — full color, edge to edge, with your logo and branding covering every visible inch of your table space.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints on 300D polyester twill using dye-sublimation, which produces a scratch-resistant finish that won't crack or peel with repeated setup and teardown. The fabric is machine washable and flame-retardant, meeting NFPA 701 safety certification — a requirement at many convention centers and trade show venues. Choose a 6' or 8' cloth in either a 4-sided closed-back style or a 3-sided open-back style that leaves room for boxes and storage underneath the table.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order a custom printed tablecloth and give your booth a finished, professional look at your next event.
+            </p>
+          </div>`,
           faqs: [
             {
-              q: "Is the material flame retardant?",
-              a: "Yes, our table fabrics are treated to meet standard trade show safety fire certifications.",
+              q: "Is the fabric flame retardant?",
+              a: "Yes, it's treated to meet NFPA 701 standards, which many venues require for any table or booth fabric.",
+            },
+            {
+              q: "What's the difference between 3-sided and 4-sided?",
+              a: "A 4-sided cloth covers the table completely on all sides for a fully finished look. A 3-sided (open-back) cloth leaves the back open so you can store bags, boxes, or extra inventory underneath during the event.",
+            },
+            {
+              q: "Can it be machine washed between events?",
+              a: "Yes, the polyester twill is fully machine washable, so it's ready to reuse show after show without losing its color or shape.",
             },
           ],
           reviews: [
@@ -2450,12 +2555,38 @@ Why Choose Our Expert-grade Rollup Banners?
             "Dye-sublimation peak printing",
           ],
           useCases: [
-            "Exterior farmers markets",
-            "Festivals & concerts",
-            "Sports events",
+            "Farmers markets and outdoor vendor booths",
+            "Festivals, concerts, and street fairs",
+            "Sports tournaments and sideline sponsor tents",
+            "Trade shows held in parking lots or open-air venues",
           ],
           specs: [{ key: "Dimensions", value: '120" W x 120" D x 135" H max' }],
-          faqs: [],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom 10x10 Canopy Tents Printed in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              If you're setting up outdoors a farmers market booth, a sponsor tent at a 5K, a spot at a street fair, a plain white pop-up doesn't do much for you. A custom-printed canopy turns that same 10' x 10' footprint into a full-color billboard people can see from across the lot.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints canopy tops using dye-sublimation on industrial-strength, UV- and weather-resistant fabric, so the colors stay rich instead of fading after a few weekends in the sun. The frame underneath your choice of commercial steel or lightweight aluminum pops up in minutes and holds steady in real outdoor conditions, not just a showroom.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Get your custom 10x10 canopy tent quote and have it printed and ready for your next event.
+            </p>
+          </div>`,
+          faqs: [
+            {
+              q: "Is a steel or aluminum frame better?",
+              a: "Steel frames are the standard workhorse heavier and very stable. Aluminum frames cost a bit more but weigh significantly less, which matters if you're the one loading and unloading it every weekend.",
+            },
+            {
+              q: "Will the print fade outdoors?",
+              a: "The dye-sublimation process infuses ink directly into the fabric fibers rather than sitting on top, which is why it holds color much longer under UV exposure than standard printed vinyl.",
+            },
+            {
+              q: "How long does it take to set up?",
+              a: "Most customers have the frame and canopy fully deployed in under 10 minutes without tools.",
+            },
+          ],
           reviews: [],
           ctaHeading: "Establish exterior presence",
         },
@@ -3577,12 +3708,38 @@ Why Choose Our Expert-grade Rollup Banners?
             "Contour kiss-cut contours",
           ],
           useCases: [
-            "Product labeling",
-            "Fun office handouts",
-            "Packaging decorations",
+            "Retail product labeling (ingredient lists, pricing, branding)",
+            "Packaging seals and box decoration",
+            "Promotional giveaways at events or in offices",
+            "Classroom rewards, party favors, and small-batch merch",
           ],
           specs: [{ key: "Sheet Count", value: "Custom layouts per sheet" }],
-          faqs: [],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Sheet Stickers Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Need dozens of stickers without ordering dozens of separate rolls? A sticker sheet is exactly what it sounds like: multiple designs, kiss-cut and ready to peel, all printed on one flat 8.5" x 11" page. It's the format most small businesses reach for when they need clean, professional-looking labels fast — no die-cutting machine required, no waiting on individual roll orders.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              At Nano Signs, every sheet is printed on glossy or matte white stock with a strong peel-and-stick adhesive backing that holds up through daily handling. Because the stickers are contour cut (not just scored), each one peels off cleanly with sharp, accurate edges around your artwork.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Ordering is simple — upload your artwork and get custom sheet stickers printed in Fort Lauderdale with a free proof before anything goes to print.
+            </p>
+          </div>`,
+          faqs: [
+            {
+              q: "What's the difference between a sticker sheet and a roll of labels?",
+              a: "A sheet gives you multiple different designs on one flat page — ideal for small batches or variety packs. Rolls are better when you need hundreds or thousands of the same label for high-volume labeling.",
+            },
+            {
+              q: "Can I mix different sticker shapes on one sheet?",
+              a: "Yes — as long as the artwork fits within the sheet size, our kiss-cut process can follow custom contour lines around each individual design.",
+            },
+            {
+              q: "How long does a print order take?",
+              a: "Standard turnaround is 4–5 business days, with rush production available in 1–2 days for tighter deadlines.",
+            },
+          ],
           reviews: [],
           ctaHeading: "Design multi-sticker layouts",
         },
@@ -3934,7 +4091,12 @@ Why Choose Our Expert-grade Rollup Banners?
             "Ultra-thick cardstock options",
             "Easy design templates",
           ],
-          useCases: ["Networking events", "Customer takeaways", "Loyalty stamp cards", "Appointment reminders"],
+          useCases: [
+            "Standard business card size is 3.5\" x 2\", it fits every wallet, holder, and card scanner",
+            "16pt cardstock is noticeably thicker and sturdier than 14pt, if a heavier feel matters to you",
+            "Matte and uncoated cards can be written on with pen or pencil; glossy UV-coated cards resist ink",
+            "Minimum order starts at just 100 cards, with bulk discounts up to 10,000",
+          ],
           specs: [
             { key: "Dimensions", value: '3.5" x 2" (Standard size)' },
             { key: "Standard Stock", value: "14pt semi gloss (profit maximizer)" },
@@ -3943,36 +4105,30 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Specialty Stocks", value: "Painted Edge, Ultra Thick, Clear Plastic" },
             { key: "Standard Turnaround", value: "Next Business Day" },
           ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">High-quality Business Cards Printed in Fort Lauderdale</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Make a striking expert-grade statement with business cards from Nano Signs. Serving Fort Lauderdale, Mississauga, and the Greater Fort Lauderdale Area, we specialize in high-definition offset business card printing that sets your brand apart. Our cards are manufactured using ultra-sturdy 14pt semi-gloss cardstock (our profit maximizer option) or heavy-weight 16pt stock, ensuring they never feel flimsy or cheap. Choose between a glossy UV protective coating for high vivid contrast, or a smooth matte coating for a sophisticated, writable surface.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Whether you are an independent contractor in the GTA, a startup founder in Mississauga, or a real estate agent in Fort Lauderdale, having a pocket full of pristine, double-sided business cards ensures you are always ready to network. Customize yours with raised foil accents, shapes, or painted edges to leave a memorable physical impression.
-              </p>
-            </div>`,
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Business Card Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A business card is still the fastest way to hand someone your contact info at a networking event, on a job site, or across a coffee shop table and a flimsy one undercuts the impression you're trying to make. Nano Signs prints standard 3.5" x 2" cards on true 14pt or 16pt cardstock, thick enough that people notice the quality before they even read the text.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              You get to choose the finish: a glossy UV coating for punchy, saturated colors, or a smooth matte finish that's easy to write on and reads as more understated and professional. Add-ons like rounded corners, painted edges, soft-touch coating, or raised foil accents let you make cards that don't look like everyone else's.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Ready when you are, design and order custom business cards with a free artwork check included on every order.
+            </p>
+          </div>`,
           faqs: [
             {
-              q: "What is the standard size of a business card?",
-              a: 'The standard size for standard business cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
+              q: "What's the standard business card size?",
+              a: '3.5" x 2", the size accepted everywhere from wallets to card readers.',
             },
             {
-              q: "What is the difference between 14 pt and 16 pt cardstock?",
-              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality business cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more high-quality feel.',
+              q: "What's the difference between Pearl and Soft Touch finishes?",
+              a: "Pearl cardstock has natural shimmering fibers baked into the paper itself for a subtle sheen. Soft Touch is a velvety matte coating applied after printing that gives cards a suede-like texture.",
             },
             {
-              q: "Can I write on both matte and glossy business cards?",
-              a: 'You can write on matte and uncoated cards using standard ballpoint pens or pencils. Glossy cards have a slick UV coating that resists ink, making them harder to write on.',
-            },
-            {
-              q: "What is the difference between Pearl and Soft Touch finishes?",
-              a: 'Pearl cardstock uses a specialized paper embedded with natural shimmering fibers that give the entire card a pearlescent sheen. Soft Touch is a velvet-matte protective coating applied after printing that gives the cards a soft, suede-like texture.',
-            },
-            {
-              q: "What is the minimum order quantity for business cards?",
-              a: "Our minimum quantity starts at just 100 cards. We provide significant bulk printing discounts for quantities of 250, 500, 1000, and up to 10,000 cards per order, giving you maximum value.",
+              q: "How fast can I get business cards printed?",
+              a: "Standard production is 4–5 business days; rush orders ship in 1–2 days.",
             },
           ],
           reviews: [
@@ -6536,14 +6692,10 @@ Why Choose Our Expert-grade Rollup Banners?
             "Easy DIY installation",
           ],
           useCases: [
-            "Retail Storefronts",
-            "Restaurant Windows",
-            "Office Branding",
-            "Sales & Promotions",
-            "Privacy Screens",
-            "Vehicle Windows",
-            "Real Estate Listings",
-            "Event Promotion",
+            "Store hours and contact information",
+            "Storefront logos and branding",
+            "Open/Closed signage for entry doors",
+            "Frosted privacy panels for office partitions",
           ],
           specs: [
             { key: "Cling Material", value: "Electrostatic PVC (no adhesive)" },
@@ -6564,10 +6716,30 @@ Why Choose Our Expert-grade Rollup Banners?
             },
             { key: "Turnaround", value: "Next Business Day" },
           ],
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Window Decals for Storefronts in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Your storefront window is one of the most valuable pieces of marketing real estate you own, and most businesses barely use it. A well-placed window decal — hours of operation, your logo, an "Open" sign, seasonal promotions — turns blank glass into something that actually communicates with people walking past.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints window decals on weatherproof vinyl with UV-resistant inks, so the graphic holds its color whether it's applied to the inside or outside of the glass. Choose an opaque white backing for maximum color vibrancy, a clear adhesive for a "printed directly on glass" look, or a frosted etched finish for a more upscale, private feel.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Get custom window decals made for your storefront, office door, or glass partition.
+            </p>
+          </div>`,
           faqs: [
             {
-              q: "What is the difference between a window cling and a decal?",
-              a: "A static cling uses no adhesive — it clings to glass via static electricity and can be removed and reused. A decal uses adhesive to create a more permanent bond.",
+              q: "Can window decals go on the inside of the glass?",
+              a: "Yes — most storefront decals are designed to apply from the inside, which also protects the print from direct weather exposure.",
+            },
+            {
+              q: "What's the difference between opaque and clear vinyl?",
+              a: "Opaque white backing makes colors pop since there's a solid base behind the ink. Clear vinyl lets the glass show through around your design for a more seamless, \"etched\" appearance.",
+            },
+            {
+              q: "Will sun exposure fade the print?",
+              a: "The inks used are UV-resistant and formulated specifically to hold up in direct sunlight over time.",
             },
             {
               q: "Can I see through perforated vinyl?",

@@ -2,7 +2,7 @@
 title: "6 High-Converting Sign Designs for Fort Lauderdale Businesses in 2026"
 date: "2026-07-30"
 description: "Learn how modern LED channel letters and acrylic logo signs dramatically increase walk-in customers across Broward County."
-image: "/uploads/blog/1785382606461_neon-signs.png"
+image: "/uploads/blog/1785382606461_neon-signs.webp"
 category: "General Signage"
 type: "post"
 ---

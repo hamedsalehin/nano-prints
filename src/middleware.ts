@@ -14,9 +14,15 @@ import type { NextRequest } from "next/server";
  * major search engines (Google, Bing, etc.).
  */
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, search, host } = request.nextUrl;
 
-  // Block indexing of all PrintDesignExperience pages
+  // 1. Enforce canonical domain (WWW to non-WWW 301 Permanent Redirect)
+  if (host.startsWith("www.")) {
+    const targetUrl = `https://nano-signs.com${pathname}${search}`;
+    return NextResponse.redirect(targetUrl, 301);
+  }
+
+  // 2. Block indexing of all PrintDesignExperience pages
   if (pathname.startsWith("/PrintDesignExperience")) {
     const response = NextResponse.next();
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
@@ -27,5 +33,13 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/PrintDesignExperience/:path*"],
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    "/((?!_next/static|_next/image|favicon.ico).*)",
+  ],
 };
