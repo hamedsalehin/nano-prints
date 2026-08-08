@@ -2588,17 +2588,22 @@ Why Choose Our Expert-grade Rollup Banners?
             "Trade shows held in parking lots or open-air venues",
           ],
           specs: [{ key: "Dimensions", value: '120" W x 120" D x 135" H max' }],
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom 10x10 Canopy Tents Printed in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              If you're setting up outdoors a farmers market booth, a sponsor tent at a 5K, a spot at a street fair, a plain white pop-up doesn't do much for you. A custom-printed canopy turns that same 10' x 10' footprint into a full-color billboard people can see from across the lot.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Nano Signs prints canopy tops using dye-sublimation on industrial-strength, UV- and weather-resistant fabric, so the colors stay rich instead of fading after a few weekends in the sun. The frame underneath your choice of commercial steel or lightweight aluminum pops up in minutes and holds steady in real outdoor conditions, not just a showroom.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Get your custom 10x10 canopy tent quote and have it printed and ready for your next event.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom 10x10 Canopy Tents Printed in Fort Lauderdale, FL</h2>
+            <p>If you're setting up outdoors , a farmers market booth, a sponsor tent at a 5K, a spot at a street fair , a plain white pop-up doesn't do much for you. A custom-printed canopy turns that same 10' x 10' footprint into a full-color billboard people can see from across the lot.</p>
+            <p>Nano Signs prints canopy tops using dye-sublimation on industrial-strength, UV- and weather-resistant fabric, so the colors stay rich instead of fading after a few weekends in the sun. The frame underneath , your choice of commercial steel or lightweight aluminum , pops up in minutes and holds steady in real outdoor conditions, not just a showroom.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where these tents get used most:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Farmers markets and outdoor vendor booths</li>
+              <li>Festivals, concerts, and street fairs</li>
+              <li>Sports tournaments and sideline sponsor tents</li>
+              <li>Trade shows held in parking lots or open-air venues</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions people ask before ordering</h3>
+            <p><em>Is a steel or aluminum frame better?</em> Steel frames are the standard workhorse , heavier and very stable. Aluminum frames cost a bit more but weigh significantly less, which matters if you're the one loading and unloading it every weekend.</p>
+            <p><em>Will the print fade outdoors?</em> The dye-sublimation process infuses ink directly into the fabric fibers rather than sitting on top, which is why it holds color much longer under UV exposure than standard printed vinyl.</p>
+            <p><em>How long does it take to set up?</em> Most customers have the frame and canopy fully deployed in under 10 minutes without tools.</p>
+            <p class="mt-4">Get your custom 10x10 canopy tent quote and have it printed and ready for your next event.</p>
           </div>`,
           faqs: [
             {
@@ -4166,17 +4171,22 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Specialty Stocks", value: "Painted Edge, Ultra Thick, Clear Plastic" },
             { key: "Standard Turnaround", value: "Next Business Day" },
           ],
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Business Card Printing in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              A business card is still the fastest way to hand someone your contact info at a networking event, on a job site, or across a coffee shop table and a flimsy one undercuts the impression you're trying to make. Nano Signs prints standard 3.5" x 2" cards on true 14pt or 16pt cardstock, thick enough that people notice the quality before they even read the text.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              You get to choose the finish: a glossy UV coating for punchy, saturated colors, or a smooth matte finish that's easy to write on and reads as more understated and professional. Add-ons like rounded corners, painted edges, soft-touch coating, or raised foil accents let you make cards that don't look like everyone else's.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Ready when you are, design and order custom business cards with a free artwork check included on every order.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Business Card Printing in Fort Lauderdale, FL</h2>
+            <p>A business card is still the fastest way to hand someone your contact info at a networking event, on a job site, or across a coffee shop table , and a flimsy one undercuts the impression you're trying to make. Nano Signs prints standard 3.5" x 2" cards on true 14pt or 16pt cardstock, thick enough that people notice the quality before they even read the text.</p>
+            <p>You get to choose the finish: a glossy UV coating for punchy, saturated colors, or a smooth matte finish that's easy to write on and reads as more understated and professional. Add-ons like rounded corners, painted edges, soft-touch coating, or raised foil accents let you make cards that don't look like everyone else's.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Good to know before you order:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Standard business card size is 3.5" x 2" , it fits every wallet, holder, and card scanner</li>
+              <li>16pt cardstock is noticeably thicker and sturdier than 14pt, if a heavier feel matters to you</li>
+              <li>Matte and uncoated cards can be written on with pen or pencil; glossy UV-coated cards resist ink</li>
+              <li>Minimum order starts at just 100 cards, with bulk discounts up to 10,000</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Frequently asked questions</h3>
+            <p><em>What's the standard business card size?</em> 3.5" x 2" , the size accepted everywhere from wallets to card readers.</p>
+            <p><em>What's the difference between Pearl and Soft Touch finishes?</em> Pearl cardstock has natural shimmering fibers baked into the paper itself for a subtle sheen. Soft Touch is a velvety matte coating applied after printing that gives cards a suede-like texture.</p>
+            <p><em>How fast can I get business cards printed?</em> Standard production is 4–5 business days; rush orders ship in 1–2 days.</p>
+            <p class="mt-4">Ready when you are , design and order custom business cards with a free artwork check included on every order.</p>
           </div>`,
           faqs: [
             {
