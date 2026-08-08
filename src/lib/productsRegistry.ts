@@ -272,6 +272,18 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "980",
           ratingScore: "4.9",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Fabric Banner Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Vinyl banners have their place, but if you're hanging something inside a lobby, a boutique window, or behind a step-and-repeat at a press event, fabric reads as noticeably more upscale. Nano Signs prints fabric banners using dye-sublimation on a wrinkle-resistant knit polyester, giving you a soft matte finish with no glare, which also happens to photograph much better than glossy vinyl under event lighting.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Because the ink is infused directly into the fabric rather than coated on top, the graphic won't crack, peel, or flake even after repeated folding, rolling, or machine washing. That makes it a genuinely reusable banner, not a one-event throwaway.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order a custom fabric banner and get a free proof before it goes into production.
+            </p>
+          </div>`,
           sizes: [
             { label: "2' x 6' Small Banner", value: "24x72", basePrice: 65.39 },
             {
@@ -640,6 +652,18 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "1240",
           ratingScore: "4.9",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Retractable Roll-Up Banners, Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              When people search for a "pull-up banner" or "retractable banner stand," this is what they mean: a self-contained display that lives inside an aluminum base, deploys in seconds, and packs back down for the next event. It's the single most-used display format at trade shows for a reason, no assembly, no tools, no separate stand to carry.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs builds these on an anti-curl, block-out polyester that stays flat under lighting and won't let backlighting bleed through your artwork. Every order ships fully assembled with a padded carrying case, so it's ready to travel the same day it arrives.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Build your custom retractable banner and have it ready for your next show.
+            </p>
+          </div>`,
           sizes: [
             {
               label: '33" x 80" Standard Stand Size',
@@ -832,6 +856,18 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "430",
           ratingScore: "4.8",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Step and Repeat Backdrop Banners, Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              If you've ever seen a red carpet photo with a logo pattern repeating behind the subject, that's a step and repeat banner, and it's become the standard backdrop for press events, red carpet arrivals, and branded photo moments of any kind. Nano Signs prints these as large, seamless backwalls on a matte, glare-free vinyl finish specifically so flash photography doesn't wash out the image.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Pole pockets sewn into the top and bottom make mounting straightforward, and an optional adjustable backdrop stand means you don't need to source separate hardware or truss a wall yourself.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order a custom step and repeat banner built for your next press event or photo activation.
+            </p>
+          </div>`,
           sizes: [
             {
               label: "8' x 8' Square Backdrop",
@@ -1236,6 +1272,16 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "612",
           ratingScore: "4.8",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Standard Flags Printed in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A grommeted flag is the classic choice when you want something that mounts to a standard flagpole or hangs flat against a wall, not the feather-shaped kind that flutters outside a car dealership, but a traditional horizontal flag with a clean, structured look. Nano Signs prints these on lightweight polyester that catches wind easily while a reinforced canvas header and rust-proof brass grommets keep it securely attached through repeated use.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Design your custom flag and get it printed and shipped fast from Fort Lauderdale.
+            </p>
+            
+          </div>`,
           sizes: [
             {
               label: "3' x 5' Standard Flag",
@@ -1512,6 +1558,18 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "1530",
           ratingScore: "4.9",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Magnetic Car Signs Printed in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A magnetic car sign turns your own vehicle into a moving advertisement without any permanent decal work, apply it before a job, peel it off after, and your personal car is personal again. It's a go-to option for contractors, delivery drivers, and real estate agents who don't want (or can't get) vinyl wraps on their vehicles.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints on heavyweight 30mil magnetic sheeting, thick enough to hold securely at highway speeds without lifting at the edges. Rounded corners are available specifically to reduce wind catch and prevent peeling on the road, and every sign gets a UV-resistant ink layer with a glossy protective laminate on top.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Order custom magnetic car signs and turn your vehicle into a mobile ad in a matter of days.
+            </p>
+          </div>`,
           sizes: [
             { label: '6" x 12"', value: "6x12", basePrice: 18.99 },
             { label: '12" x 18"', value: "12x18", basePrice: 20.99 },
@@ -3468,6 +3526,18 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingCount: "940",
           ratingScore: "4.9",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Window Decals for Storefronts in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Your storefront window is one of the most valuable pieces of marketing real estate you own, and most businesses barely use it. A well-placed window decal, hours of operation, your logo, an "Open" sign, seasonal promotions, turns blank glass into something that actually communicates with people walking past.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Nano Signs prints window decals on weatherproof vinyl with UV-resistant inks, so the graphic holds its color whether it's applied to the inside or outside of the glass. Choose an opaque white backing for maximum color vibrancy, a clear adhesive for a "printed directly on glass" look, or a frosted etched finish for a more upscale, private feel.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Get custom window decals made for your storefront, office door, or glass partition.
+            </p>
+          </div>`,
           sizes: [
             {
               label: '12" x 18" Small Window Decal',
@@ -3689,6 +3759,18 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingCount: "340",
           ratingScore: "4.8",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Sheet Stickers Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Need dozens of stickers without ordering dozens of separate rolls? A sticker sheet is exactly what it sounds like: multiple designs, kiss-cut and ready to peel, all printed on one flat 8.5" x 11" page. It's the format most small businesses reach for when they need clean, professional-looking labels fast, no die-cutting machine required, no waiting on individual roll orders.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              At Nano Signs, every sheet is printed on glossy or matte white stock with a strong peel-and-stick adhesive backing that holds up through daily handling. Because the stickers are contour cut (not just scored), each one peels off cleanly with sharp, accurate edges around your artwork.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Ordering is simple, upload your artwork and get custom sheet stickers printed in Fort Lauderdale with a free proof before anything goes to print.
+            </p>
+          </div>`,
           sizes: [
             {
               label: '8.5" x 11" Standard Sheet Size',
