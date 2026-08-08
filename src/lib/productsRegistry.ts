@@ -645,17 +645,23 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "1240",
           ratingScore: "4.9",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Retractable Roll-Up Banners, Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              When people search for a "pull-up banner" or "retractable banner stand," this is what they mean: a self-contained display that lives inside an aluminum base, deploys in seconds, and packs back down for the next event. It's the single most-used display format at trade shows for a reason, no assembly, no tools, no separate stand to carry.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Nano Signs builds these on an anti-curl, block-out polyester that stays flat under lighting and won't let backlighting bleed through your artwork. Every order ships fully assembled with a padded carrying case, so it's ready to travel the same day it arrives.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Build your custom retractable banner and have it ready for your next show.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Retractable Roll-Up Banners , Fort Lauderdale, FL</h2>
+            <p>When people search for a "pull-up banner" or "retractable banner stand," this is what they mean: a self-contained display that lives inside an aluminum base, deploys in seconds, and packs back down for the next event. It's the single most-used display format at trade shows for a reason , no assembly, no tools, no separate stand to carry.</p>
+            <p>Nano Signs builds these on an anti-curl, block-out polyester that stays flat under lighting and won't let backlighting bleed through your artwork. Every order ships fully assembled with a padded carrying case, so it's ready to travel the same day it arrives.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where retractable banners get used:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Trade show booths and exhibitor spaces</li>
+              <li>Corporate lobbies and reception areas</li>
+              <li>Retail promotional signage</li>
+              <li>Conference presentations and speaking events</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">The questions we get asked most</h3>
+            <p><em>How do you set up a pull-up banner?</em> Fold out the base feet, extend the telescoping pole, and pull the graphic up until it locks into the top bracket. It takes under a minute with no tools.</p>
+            <p><em>What substrate is the graphic printed on?</em> An anti-curl polyester with an opaque blockout layer, which keeps the display flat and prevents light from washing out the print , even under bright booth lighting.</p>
+            <p><em>Can I reuse the stand with new graphics later?</em> Technically yes, but it requires opening the internal tension spring mechanism. Most customers find it simpler and more reliable to order a fresh complete unit.</p>
+            <p><em>Are these suitable for outdoor use?</em> No , the large graphic panel catches wind easily and can tip the stand. For outdoor events, a feather flag or A-frame sign is the better call.</p>
+            <p class="mt-4">Build your custom retractable banner and have it ready for your next show.</p>
           </div>`,
           sizes: [
             {
@@ -837,17 +843,22 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "430",
           ratingScore: "4.8",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Step and Repeat Backdrop Banners, Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              If you've ever seen a red carpet photo with a logo pattern repeating behind the subject, that's a step and repeat banner, and it's become the standard backdrop for press events, red carpet arrivals, and branded photo moments of any kind. Nano Signs prints these as large, seamless backwalls on a matte, glare-free vinyl finish specifically so flash photography doesn't wash out the image.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Pole pockets sewn into the top and bottom make mounting straightforward, and an optional adjustable backdrop stand means you don't need to source separate hardware or truss a wall yourself.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Order a custom step and repeat banner built for your next press event or photo activation.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Step and Repeat Backdrop Banners , Fort Lauderdale, FL</h2>
+            <p>If you've ever seen a red carpet photo with a logo pattern repeating behind the subject, that's a step and repeat banner , and it's become the standard backdrop for press events, red carpet arrivals, and branded photo moments of any kind. Nano Signs prints these as large, seamless backwalls on a matte, glare-free vinyl finish specifically so flash photography doesn't wash out the image.</p>
+            <p>Pole pockets sewn into the top and bottom make mounting straightforward, and an optional adjustable backdrop stand means you don't need to source separate hardware or truss a wall yourself.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where these get used:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Press conferences and media walls</li>
+              <li>Red carpet and VIP entrance events</li>
+              <li>Wedding and event photo booths</li>
+              <li>Corporate event branding</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions</h3>
+            <p><em>Why is the finish matte instead of glossy?</em> Glossy material reflects camera flash and creates hot spots in photos. A matte finish keeps the backdrop evenly lit and legible in every shot.</p>
+            <p><em>What sizes are available?</em> An 8' x 8' square works well for standard photo booths; a 10' x 10' size covers larger step-and-repeat walls for bigger events.</p>
+            <p><em>Do I need a stand, or does it mount to an existing wall?</em> Both are options , order the banner alone if you already have mounting hardware or truss, or add our adjustable backdrop stand if you need a complete standalone setup.</p>
+            <p class="mt-4">Order a custom step and repeat banner built for your next press event or photo activation.</p>
           </div>`,
           sizes: [
             {
@@ -1523,17 +1534,22 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "1530",
           ratingScore: "4.9",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Magnetic Car Signs Printed in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              A magnetic car sign turns your own vehicle into a moving advertisement without any permanent decal work, apply it before a job, peel it off after, and your personal car is personal again. It's a go-to option for contractors, delivery drivers, and real estate agents who don't want (or can't get) vinyl wraps on their vehicles.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Nano Signs prints on heavyweight 30mil magnetic sheeting, thick enough to hold securely at highway speeds without lifting at the edges. Rounded corners are available specifically to reduce wind catch and prevent peeling on the road, and every sign gets a UV-resistant ink layer with a glossy protective laminate on top.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Order custom magnetic car signs and turn your vehicle into a mobile ad in a matter of days.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Magnetic Car Signs Printed in Fort Lauderdale, FL</h2>
+            <p>A magnetic car sign turns your own vehicle into a moving advertisement without any permanent decal work , apply it before a job, peel it off after, and your personal car is personal again. It's a go-to option for contractors, delivery drivers, and real estate agents who don't want (or can't get) vinyl wraps on their vehicles.</p>
+            <p>Nano Signs prints on heavyweight 30mil magnetic sheeting, thick enough to hold securely at highway speeds without lifting at the edges. Rounded corners are available specifically to reduce wind catch and prevent peeling on the road, and every sign gets a UV-resistant ink layer with a glossy protective laminate on top.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who typically orders these:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Delivery and service vans</li>
+              <li>Real estate agents' personal vehicles</li>
+              <li>Contractors and field technicians</li>
+              <li>Anyone using a personal car for part-time business use</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Frequently asked questions</h3>
+            <p><em>Will a magnetic sign stick to any car door?</em> No , magnets only adhere to steel panels. Many modern vehicles use aluminum doors and fenders, so it's worth testing your door with a small kitchen magnet before ordering.</p>
+            <p><em>How often should I clean the magnet and the panel underneath?</em> Wipe both down weekly. Moisture and grit trapped between the magnet and the paint can cause issues over time if it's left unchecked.</p>
+            <p><em>What sizes are available?</em> From a compact 6" x 12" up to a large 18" x 24", depending on how much of the door you want to cover.</p>
+            <p class="mt-4">Order custom magnetic car signs and turn your vehicle into a mobile ad in a matter of days.</p>
           </div>`,
           sizes: [
             { label: '6" x 12"', value: "6x12", basePrice: 18.99 },
@@ -3479,17 +3495,22 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingCount: "940",
           ratingScore: "4.9",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Window Decals for Storefronts in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Your storefront window is one of the most valuable pieces of marketing real estate you own, and most businesses barely use it. A well-placed window decal, hours of operation, your logo, an "Open" sign, seasonal promotions, turns blank glass into something that actually communicates with people walking past.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Nano Signs prints window decals on weatherproof vinyl with UV-resistant inks, so the graphic holds its color whether it's applied to the inside or outside of the glass. Choose an opaque white backing for maximum color vibrancy, a clear adhesive for a "printed directly on glass" look, or a frosted etched finish for a more upscale, private feel.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Get custom window decals made for your storefront, office door, or glass partition.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Window Decals for Storefronts in Fort Lauderdale, FL</h2>
+            <p>Your storefront window is one of the most valuable pieces of marketing real estate you own, and most businesses barely use it. A well-placed window decal , hours of operation, your logo, an "Open" sign, seasonal promotions , turns blank glass into something that actually communicates with people walking past.</p>
+            <p>Nano Signs prints window decals on weatherproof vinyl with UV-resistant inks, so the graphic holds its color whether it's applied to the inside or outside of the glass. Choose an opaque white backing for maximum color vibrancy, a clear adhesive for a "printed directly on glass" look, or a frosted etched finish for a more upscale, private feel.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Popular uses for window decals:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Store hours and contact information</li>
+              <li>Storefront logos and branding</li>
+              <li>Open/Closed signage for entry doors</li>
+              <li>Frosted privacy panels for office partitions</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions customers ask most</h3>
+            <p><em>Can window decals go on the inside of the glass?</em> Yes , most storefront decals are designed to apply from the inside, which also protects the print from direct weather exposure.</p>
+            <p><em>What's the difference between opaque and clear vinyl?</em> Opaque white backing makes colors pop since there's a solid base behind the ink. Clear vinyl lets the glass show through around your design for a more seamless, "etched" appearance.</p>
+            <p><em>Will sun exposure fade the print?</em> The inks used are UV-resistant and formulated specifically to hold up in direct sunlight over time.</p>
+            <p class="mt-4">Get custom window decals made for your storefront, office door, or glass partition.</p>
           </div>`,
           sizes: [
             {
