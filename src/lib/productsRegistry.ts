@@ -627,7 +627,7 @@ export const PRODUCTS_REGISTRY = {
         name: "Retractable / Roll-Up Banners",
         description: "Lightweight and instantly deployable roll-up stands for trade shows, retail displays, and exhibitions. Get high-quality, durable printing solutions tailored to your exact specifications and delivered quickly.",
         image: "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
-        price: "Starting at CAD 124.60",
+        price: "Starting at $89.00",
         badge: "Best Seller",
         config: {
           title: "Retractable / Roll-Up Banners",
@@ -2182,7 +2182,7 @@ export const PRODUCTS_REGISTRY = {
         },
       },
       {
-        id: "retractable-banners",
+        id: "roll-up-banners",
         name: "Retractable Banner",
         description:
           "Our Retractable Banners (Roll Up Stands) are the ultimate standalone banner display for trade shows, retail checkouts, and office lobbies. The banner graphic pulls up from an anodized aluminum base stand in seconds and secures with a vertical support rod. Each kit includes a padded carrying bag, making transport and setup incredibly simple. Manufactured using high-quality curl-resistant polyester film or standard 13oz vinyl to maintain a clean, flat presentation.",

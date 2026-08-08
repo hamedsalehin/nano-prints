@@ -224,6 +224,11 @@ const nextConfig = {
         destination: "/led-display-signs/programmable-led-sign",
         permanent: true,
       },
+      {
+        source: "/trade-show/retractable-banners",
+        destination: "/custom-banners/roll-up-banners",
+        permanent: true,
+      },
     ];
   },
 };
