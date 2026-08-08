@@ -244,6 +244,11 @@ const nextConfig = {
         destination: "/marketing-materials/postcards",
         permanent: true,
       },
+      {
+        source: "/trade-show/roll-up-banners",
+        destination: "/custom-banners/roll-up-banners",
+        permanent: true,
+      },
     ];
   },
 };
