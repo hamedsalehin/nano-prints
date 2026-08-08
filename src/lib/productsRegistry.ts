@@ -272,17 +272,22 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "980",
           ratingScore: "4.9",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Fabric Banner Printing in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Vinyl banners have their place, but if you're hanging something inside a lobby, a boutique window, or behind a step-and-repeat at a press event, fabric reads as noticeably more upscale. Nano Signs prints fabric banners using dye-sublimation on a wrinkle-resistant knit polyester, giving you a soft matte finish with no glare, which also happens to photograph much better than glossy vinyl under event lighting.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              Because the ink is infused directly into the fabric rather than coated on top, the graphic won't crack, peel, or flake even after repeated folding, rolling, or machine washing. That makes it a genuinely reusable banner, not a one-event throwaway.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Order a custom fabric banner and get a free proof before it goes into production.
-            </p>
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Fabric Banner Printing in Fort Lauderdale, FL</h2>
+            <p>Vinyl banners have their place, but if you're hanging something inside a lobby, a boutique window, or behind a step-and-repeat at a press event, fabric reads as noticeably more upscale. Nano Signs prints fabric banners using dye-sublimation on a wrinkle-resistant knit polyester, giving you a soft matte finish with no glare , which also happens to photograph much better than glossy vinyl under event lighting.</p>
+            <p>Because the ink is infused directly into the fabric rather than coated on top, the graphic won't crack, peel, or flake even after repeated folding, rolling, or machine washing. That makes it a genuinely reusable banner, not a one-event throwaway.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common places you'll see fabric banners:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Office lobbies and reception areas</li>
+              <li>Trade show booth backdrops</li>
+              <li>Press conferences and media walls</li>
+              <li>Upscale retail window displays</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions worth answering upfront</h3>
+            <p><em>Is fabric banner material washable?</em> Yes , it's machine washable, which is one of the main reasons businesses choose fabric over vinyl for banners they plan to reuse.</p>
+            <p><em>What sizes are available?</em> Standard options run from a compact 2' x 6' up to a large 4' x 8', with satin and velvet fabric upgrades available for a more premium look.</p>
+            <p><em>Does fabric wrinkle after folding?</em> The polyester knit is specifically engineered to resist wrinkling, so it hangs flat again shortly after unpacking.</p>
+            <p class="mt-4">Order a custom fabric banner and get a free proof before it goes into production.</p>
           </div>`,
           sizes: [
             { label: "2' x 6' Small Banner", value: "24x72", basePrice: 65.39 },
@@ -1236,35 +1241,20 @@ export const PRODUCTS_REGISTRY = {
           ],
           ratingCount: "612",
           ratingScore: "4.8",
-          description: `<div class="space-y-4">
-            <h2 class="text-xl font-bold text-slate-800 font-poppins mb-4">Custom Standard Flags Printed in Fort Lauderdale, FL</h2>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              A grommeted flag is the classic choice when you want something that mounts to a standard flagpole or hangs flat against a wall, not the feather-shaped kind that flutters outside a car dealership, but a traditional horizontal flag with a clean, structured look. Nano Signs prints these on lightweight polyester that catches wind easily while a reinforced canvas header and rust-proof brass grommets keep it securely attached through repeated use.
-            </p>
-            <h3 class="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">Where standard flags typically show up:</h3>
-            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 leading-relaxed">
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Standard Flags Printed in Fort Lauderdale, FL</h2>
+            <p>A grommeted flag is the classic choice when you want something that mounts to a standard flagpole or hangs flat against a wall , not the feather-shaped kind that flutters outside a car dealership, but a traditional horizontal flag with a clean, structured look. Nano Signs prints these on lightweight polyester that catches wind easily while a reinforced canvas header and rust-proof brass grommets keep it securely attached through repeated use.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where standard flags typically show up:</h3>
+            <ul class="list-disc pl-5 space-y-1">
               <li>Business flags outside storefronts or offices</li>
               <li>School and club spirit flags</li>
               <li>Residential and personal flagpoles</li>
             </ul>
-            <h3 class="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">Frequently asked questions</h3>
-            <div class="space-y-3 mt-2">
-              <div>
-                <strong class="block text-slate-800 font-semibold">What sizes do standard flags come in?</strong>
-                <p class="text-sm text-gray-700">2' x 3', 3' x 5' (the most common), and 4' x 6' for larger poles or wall installations.</p>
-              </div>
-              <div>
-                <strong class="block text-slate-800 font-semibold">Do I need a pole sleeve or grommets?</strong>
-                <p class="text-sm text-gray-700">Grommets work for most standard poles; a 3-inch pole sleeve is available as an add-on if your setup calls for it instead.</p>
-              </div>
-              <div>
-                <strong class="block text-slate-800 font-semibold">How long will the print last outdoors?</strong>
-                <p class="text-sm text-gray-700">The polyester and printing method are built for regular outdoor flagpole use, though like any flag, expect eventual fraying at the fly end with heavy wind exposure over time, that's normal wear, not a defect.</p>
-              </div>
-            </div>
-            <p class="text-sm text-slate-800 font-semibold leading-relaxed mt-4">
-              Design your custom flag and get it printed and shipped fast from Fort Lauderdale.
-            </p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Frequently asked questions</h3>
+            <p><em>What sizes do standard flags come in?</em> 2' x 3', 3' x 5' (the most common), and 4' x 6' for larger poles or wall installations.</p>
+            <p><em>Do I need a pole sleeve or grommets?</em> Grommets work for most standard poles; a 3-inch pole sleeve is available as an add-on if your setup calls for it instead.</p>
+            <p><em>How long will the print last outdoors?</em> The polyester and printing method are built for regular outdoor flagpole use, though like any flag, expect eventual fraying at the fly end with heavy wind exposure over time , that's normal wear, not a defect.</p>
+            <p class="mt-4">Design your custom flag and get it printed and shipped fast from Fort Lauderdale.</p>
           </div>`,
           sizes: [
             {
