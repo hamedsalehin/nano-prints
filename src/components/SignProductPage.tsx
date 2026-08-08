@@ -365,87 +365,89 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
         />
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600 leading-relaxed font-opensans space-y-4">
-        <h2 className="text-xl font-bold text-slate-800 font-poppins mb-4">
-          Custom {productName} Printing in {location}
-        </h2>
-        <p>
-          Elevate your brand visibility with our premium <strong>{productName}</strong>. 
-          As a leading provider of custom <strong>{categoryName}</strong> in {location}, 
-          Nano Signs is dedicated to delivering high-quality, durable, and visually striking signage solutions. 
-          {cfg.subtitle && ` ${cfg.subtitle}`} Our state-of-the-art printing technology ensures that your {productName.toLowerCase()} will feature vibrant colors and crisp details that capture attention.
-        </p>
-
-        {cfg.description && (
+        {cfg.description ? (
           <div
-            className="mt-6 text-slate-600 leading-relaxed font-opensans"
+            className="space-y-4"
             dangerouslySetInnerHTML={{ __html: cfg.description }}
           />
-        )}
-
-        <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-          Why Choose Our {productName}?
-        </h3>
-        <p>
-          When it comes to selecting the perfect <strong>{categoryName}</strong>, quality and durability are paramount. 
-          Our {productName.toLowerCase()} is specifically engineered to meet the demands of both indoor and outdoor environments. 
-          {cfg.keyFeatures && cfg.keyFeatures.length > 0 && (
-            ` Featuring ${cfg.keyFeatures.slice(0, 3).join(", ").toLowerCase()}, `
-          )} 
-          this product offers unparalleled performance. Whether you are using it for a short-term promotional event or a long-term permanent installation, you can trust that your investment will withstand the elements and continue to represent your brand professionally.
-        </p>
-
-        {cfg.useCases && cfg.useCases.length > 0 && (
+        ) : (
           <>
+            <h2 className="text-xl font-bold text-slate-800 font-poppins mb-4">
+              Custom {productName} Printing in {location}
+            </h2>
+            <p>
+              Elevate your brand visibility with our premium <strong>{productName}</strong>. 
+              As a leading provider of custom <strong>{categoryName}</strong> in {location}, 
+              Nano Signs is dedicated to delivering high-quality, durable, and visually striking signage solutions. 
+              {cfg.subtitle && ` ${cfg.subtitle}`} Our state-of-the-art printing technology ensures that your {productName.toLowerCase()} will feature vibrant colors and crisp details that capture attention.
+            </p>
+
             <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-              Ideal Applications and Use Cases
+              Why Choose Our {productName}?
             </h3>
             <p>
-              The versatility of our <strong>{productName}</strong> makes it an excellent choice for a wide variety of applications. 
-              Our clients frequently utilize this product for <strong>{cfg.useCases.join(", ")}</strong>. 
-              By integrating these custom {categoryName.toLowerCase()} into your marketing strategy, you can effectively communicate your message to your target audience and drive engagement.
+              When it comes to selecting the perfect <strong>{categoryName}</strong>, quality and durability are paramount. 
+              Our {productName.toLowerCase()} is specifically engineered to meet the demands of both indoor and outdoor environments. 
+              {cfg.keyFeatures && cfg.keyFeatures.length > 0 && (
+                ` Featuring ${cfg.keyFeatures.slice(0, 3).join(", ").toLowerCase()}, `
+              )} 
+              this product offers unparalleled performance. Whether you are using it for a short-term promotional event or a long-term permanent installation, you can trust that your investment will withstand the elements and continue to represent your brand professionally.
             </p>
-          </>
-        )}
 
-        {cfg.faqs && cfg.faqs.length > 0 && (
-          <>
-            <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-              Common Questions About {productName}
-            </h3>
-            <div className="space-y-4">
-              {cfg.faqs.map((faq, idx) => (
-                <div key={idx}>
-                  <strong className="block text-slate-700">{faq.q}</strong>
-                  <p>{faq.a}</p>
+            {cfg.useCases && cfg.useCases.length > 0 && (
+              <>
+                <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
+                  Ideal Applications and Use Cases
+                </h3>
+                <p>
+                  The versatility of our <strong>{productName}</strong> makes it an excellent choice for a wide variety of applications. 
+                  Our clients frequently utilize this product for <strong>{cfg.useCases.join(", ")}</strong>. 
+                  By integrating these custom {categoryName.toLowerCase()} into your marketing strategy, you can effectively communicate your message to your target audience and drive engagement.
+                </p>
+              </>
+            )}
+
+            {cfg.faqs && cfg.faqs.length > 0 && (
+              <>
+                <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
+                  Common Questions About {productName}
+                </h3>
+                <div className="space-y-4">
+                  {cfg.faqs.map((faq, idx) => (
+                    <div key={idx}>
+                      <strong className="block text-slate-700">{faq.q}</strong>
+                      <p>{faq.a}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </>
-        )}
+              </>
+            )}
 
-        {(categoryName.toLowerCase().includes("neon") || categoryName.toLowerCase().includes("led")) && (
-          <>
+            {(categoryName.toLowerCase().includes("neon") || categoryName.toLowerCase().includes("led")) && (
+              <>
+                <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
+                  Energy-Efficient Custom LED Neon Signs
+                </h3>
+                <p>
+                  Our custom <strong>LED neon signs</strong> are the perfect alternative to traditional glass neon. 
+                  They provide the same mesmerizing, nostalgic glow but are crafted using modern, eco-friendly LED flex tubing. 
+                  This means your <strong>custom neon led signage</strong> is completely shatterproof, cool to the touch, and significantly more energy-efficient, drastically reducing your electricity costs. 
+                  Whether you are looking for a vibrant neon led logo for your office, a romantic neon backdrop for a wedding, or an eye-catching open sign for your storefront, our programmable and static led display signs deliver maximum brightness with zero maintenance. 
+                  Installation is a breeze, and every led neon sign comes equipped with a low-voltage adapter and mounting hardware, ensuring you can illuminate your space instantly and safely.
+                </p>
+              </>
+            )}
+
             <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-              Energy-Efficient Custom LED Neon Signs
+              Fast Turnaround and Expert Support
             </h3>
             <p>
-              Our custom <strong>LED neon signs</strong> are the perfect alternative to traditional glass neon. 
-              They provide the same mesmerizing, nostalgic glow but are crafted using modern, eco-friendly LED flex tubing. 
-              This means your <strong>custom neon led signage</strong> is completely shatterproof, cool to the touch, and significantly more energy-efficient, drastically reducing your electricity costs. 
-              Whether you are looking for a vibrant neon led logo for your office, a romantic neon backdrop for a wedding, or an eye-catching open sign for your storefront, our programmable and static led display signs deliver maximum brightness with zero maintenance. 
-              Installation is a breeze, and every led neon sign comes equipped with a low-voltage adapter and mounting hardware, ensuring you can illuminate your space instantly and safely.
+              At Nano Signs, we understand that time is often of the essence. That is why we offer rapid production times and expedited shipping options for our <strong>{productName}</strong>. 
+              Our dedicated team of design and print experts is always available to assist you with file preparation, ensuring that your artwork is perfectly optimized for production. 
+              Order your custom {categoryName.toLowerCase()} today and experience the difference of working with a true industry leader in custom printing.
             </p>
           </>
         )}
-
-        <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-          Fast Turnaround and Expert Support
-        </h3>
-        <p>
-          At Nano Signs, we understand that time is often of the essence. That is why we offer rapid production times and expedited shipping options for our <strong>{productName}</strong>. 
-          Our dedicated team of design and print experts is always available to assist you with file preparation, ensuring that your artwork is perfectly optimized for production. 
-          Order your custom {categoryName.toLowerCase()} today and experience the difference of working with a true industry leader in custom printing.
-        </p>
       </div>
     </section>
   );

@@ -1237,14 +1237,34 @@ export const PRODUCTS_REGISTRY = {
           ratingCount: "612",
           ratingScore: "4.8",
           description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Standard Flags Printed in Fort Lauderdale, FL</h3>
+            <h2 class="text-xl font-bold text-slate-800 font-poppins mb-4">Custom Standard Flags Printed in Fort Lauderdale, FL</h2>
             <p class="text-sm text-gray-700 leading-relaxed">
               A grommeted flag is the classic choice when you want something that mounts to a standard flagpole or hangs flat against a wall, not the feather-shaped kind that flutters outside a car dealership, but a traditional horizontal flag with a clean, structured look. Nano Signs prints these on lightweight polyester that catches wind easily while a reinforced canvas header and rust-proof brass grommets keep it securely attached through repeated use.
             </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
+            <h3 class="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">Where standard flags typically show up:</h3>
+            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 leading-relaxed">
+              <li>Business flags outside storefronts or offices</li>
+              <li>School and club spirit flags</li>
+              <li>Residential and personal flagpoles</li>
+            </ul>
+            <h3 class="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">Frequently asked questions</h3>
+            <div class="space-y-3 mt-2">
+              <div>
+                <strong class="block text-slate-800 font-semibold">What sizes do standard flags come in?</strong>
+                <p class="text-sm text-gray-700">2' x 3', 3' x 5' (the most common), and 4' x 6' for larger poles or wall installations.</p>
+              </div>
+              <div>
+                <strong class="block text-slate-800 font-semibold">Do I need a pole sleeve or grommets?</strong>
+                <p class="text-sm text-gray-700">Grommets work for most standard poles; a 3-inch pole sleeve is available as an add-on if your setup calls for it instead.</p>
+              </div>
+              <div>
+                <strong class="block text-slate-800 font-semibold">How long will the print last outdoors?</strong>
+                <p class="text-sm text-gray-700">The polyester and printing method are built for regular outdoor flagpole use, though like any flag, expect eventual fraying at the fly end with heavy wind exposure over time, that's normal wear, not a defect.</p>
+              </div>
+            </div>
+            <p class="text-sm text-slate-800 font-semibold leading-relaxed mt-4">
               Design your custom flag and get it printed and shipped fast from Fort Lauderdale.
             </p>
-            
           </div>`,
           sizes: [
             {
