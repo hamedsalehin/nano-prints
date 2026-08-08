@@ -229,6 +229,21 @@ const nextConfig = {
         destination: "/custom-banners/roll-up-banners",
         permanent: true,
       },
+      {
+        source: "/trade-show/business-cards",
+        destination: "/marketing-materials/business-cards",
+        permanent: true,
+      },
+      {
+        source: "/trade-show/custom-postcards",
+        destination: "/marketing-materials/postcards",
+        permanent: true,
+      },
+      {
+        source: "/trade-show/postcards",
+        destination: "/marketing-materials/postcards",
+        permanent: true,
+      },
     ];
   },
 };

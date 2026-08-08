@@ -3065,7 +3065,7 @@ Why Choose Our Expert-grade Rollup Banners?
         },
       },
       {
-        id: "custom-postcards",
+        id: "postcards",
         name: "Postcards",
         description:
           "Hand out rich, full-color Postcards at your event table to advertise promotions, catalog your services, or distribute coupons. Printed in high definition on heavy 14pt gloss cover paper, they feel substantial and expert-grade. Choose between matte or high-gloss front finishes and sizes to create flyers, handouts, or mailers that prompt action from potential clients.",
@@ -4217,7 +4217,7 @@ Why Choose Our Expert-grade Rollup Banners?
         name: "Postcards",
         description: "High-quality postcards for direct mail, handouts, and promotional inserts. Get high-quality, durable printing solutions tailored to your exact specifications and delivered quickly.",
         image: "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-        price: "Starting at CAD 60.00 for 100",
+        price: "Starting at $60.00 for 100",
         badge: "Event Choice",
         config: {
           title: "Postcards",
