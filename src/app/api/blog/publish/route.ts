@@ -51,6 +51,40 @@ ${content}
     const filePath = path.join(targetDir, `${newSlug}.md`);
     try {
       fs.writeFileSync(filePath, fileContent, "utf8");
+
+      // Auto-sync into src/lib/blogRegistry.ts if running in Node environment
+      const registryPath = path.join(process.cwd(), "src/lib/blogRegistry.ts");
+      if (fs.existsSync(registryPath)) {
+        let regContent = fs.readFileSync(registryPath, "utf8");
+        const entryKey = `"${newSlug}":`;
+        const newEntry = `  "${newSlug}": {
+    slug: "${newSlug}",
+    title: "${title.replace(/"/g, '\\"')}",
+    excerpt: "${(description || "").replace(/"/g, '\\"')}",
+    image: "${image || "/images/products/outdoor-fixed-led-display.jpg"}",
+    category: "${(category || "General Signage").replace(/"/g, '\\"')}",
+    date: "${todayDate}",
+    readTime: "4 min read",
+    color: "from-blue-900 to-cyan-900",
+    content: \`\n${content}\n\`
+  },`;
+
+        if (regContent.includes(entryKey)) {
+          // Replace existing entry
+          const keyIdx = regContent.indexOf(entryKey);
+          const nextKeyIdx = regContent.indexOf('\n  "', keyIdx + entryKey.length);
+          const endBraceIdx = regContent.indexOf("\n};", keyIdx);
+          const replaceEnd = (nextKeyIdx !== -1 && nextKeyIdx < endBraceIdx) ? nextKeyIdx : endBraceIdx;
+          regContent = regContent.slice(0, keyIdx - 2) + newEntry + regContent.slice(replaceEnd);
+        } else {
+          // Append before ending };
+          const lastBraceIdx = regContent.lastIndexOf("};");
+          if (lastBraceIdx !== -1) {
+            regContent = regContent.slice(0, lastBraceIdx) + newEntry + "\n};";
+          }
+        }
+        fs.writeFileSync(registryPath, regContent, "utf8");
+      }
     } catch (fsErr) {
       console.warn("Could not write to local filesystem (read-only environment):", fsErr);
     }
