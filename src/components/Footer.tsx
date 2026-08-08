@@ -161,7 +161,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <MapPin
                   className={`w-4 h-4 mt-0.5 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
-                <span>4567 Powerline Rd, Fort Lauderdale, FL 33309</span>
+                <span>4567 Powerline Rd, Oakland Park, FL 33309</span>
               </div>
             </div>
 

@@ -254,6 +254,41 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
       "priceCurrency": "USD",
       "price": cfg.sizes?.[0]?.basePrice || "49.00",
       "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0.00",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 3,
+            "unitCode": "DAY"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "US",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
       "seller": {
         "@type": "LocalBusiness",
         "name": "Nano Signs",
@@ -261,7 +296,7 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "4567 Powerline Rd",
-          "addressLocality": "Fort Lauderdale",
+          "addressLocality": "Oakland Park",
           "addressRegion": "FL",
           "postalCode": "33309",
           "addressCountry": "US"
@@ -270,8 +305,8 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": cfg.ratingScore || "4.9",
-      "reviewCount": cfg.ratingCount || "128"
+      "ratingValue": parseFloat(String(cfg.ratingScore || "4.9")),
+      "reviewCount": parseInt(String(cfg.ratingCount || 128), 10)
     }
   };
 

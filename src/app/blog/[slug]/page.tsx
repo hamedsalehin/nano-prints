@@ -29,21 +29,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = BLOG_REGISTRY[slug] ?? getMarkdownBlogPost(slug);
   if (!post) return { title: "Post Not Found" };
 
-  const description = (post.excerpt || "").slice(0, 155);
+  // Smart High-CTR title formatting (capped <= 60 characters)
+  let pageTitle = post.title;
+  if (pageTitle.length + 13 <= 60) {
+    pageTitle = `${pageTitle} | Nano Signs`;
+  } else if (pageTitle.length > 60) {
+    pageTitle = pageTitle.slice(0, 57).trim() + "...";
+  }
+
+  const rawDesc = post.excerpt || `Read ${post.title} on Nano Signs. Custom printing & sign solutions in Oakland Park & Fort Lauderdale FL.`;
+  const description = rawDesc.length > 155 ? rawDesc.slice(0, 152).trim() + "..." : rawDesc;
   const canonicalUrl = `https://nano-signs.com/blog/${slug}`;
 
+  const imageUrl = post.image.startsWith("/") ? `https://nano-signs.com${post.image}` : post.image;
+
   return {
-    title: `${post.title} | Nano Signs`,
+    title: pageTitle,
     description,
     alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${post.title} | Nano Signs`, description, url: canonicalUrl,
-      images: [{ url: post.image.startsWith("/") ? `https://nano-signs.com${post.image}` : post.image, alt: post.title }],
+      title: pageTitle,
+      description,
+      url: canonicalUrl,
+      images: [{ url: imageUrl, alt: post.title }],
       type: "article",
     },
     twitter: {
-      card: "summary_large_image", title: `${post.title} | Nano Signs`, description,
-      images: [post.image.startsWith("/") ? `https://nano-signs.com${post.image}` : post.image],
+      card: "summary_large_image",
+      title: pageTitle,
+      description,
+      images: [imageUrl],
     },
   };
 }
@@ -83,9 +98,40 @@ export default async function BlogPostPage({ params }: PageProps) {
   const date = post.date;
   const relatedProducts = getRelatedProducts(post.category ?? "General Signage");
   const firstCategoryKey = CATEGORY_TO_PRODUCTS[post.category ?? "General Signage"]?.[0]?.registryKey ?? "custom-signs";
+  const imageUrl = post.image.startsWith("/") ? `https://nano-signs.com${post.image}` : post.image;
+
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt || post.title,
+    "image": [imageUrl],
+    "datePublished": date,
+    "author": {
+      "@type": "Organization",
+      "name": "Nano Signs",
+      "url": "https://nano-signs.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nano Signs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nano-signs.com/images/nano%20logo%20complete.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://nano-signs.com/blog/${slug}`
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 font-opensans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
 
       {/* ── Article Header Section (Clean & Fancy Dark Theme) ───────────────── */}

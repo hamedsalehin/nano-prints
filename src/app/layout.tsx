@@ -34,9 +34,6 @@ export const metadata: Metadata = {
     apple: "/images/nano logo O.png",
   },
   metadataBase: new URL("https://nano-signs.com"),
-  alternates: {
-    canonical: "https://nano-signs.com/",
-  },
   openGraph: {
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
     description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
