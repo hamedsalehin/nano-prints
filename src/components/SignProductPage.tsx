@@ -376,14 +376,10 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
         </p>
 
         {cfg.description && (
-          <>
-            <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
-              Product Overview
-            </h3>
-            <p className="whitespace-pre-line">
-              {cfg.description}
-            </p>
-          </>
+          <div
+            className="mt-6 text-slate-600 leading-relaxed font-opensans"
+            dangerouslySetInnerHTML={{ __html: cfg.description }}
+          />
         )}
 
         <h3 className="text-lg font-bold text-slate-800 font-poppins mt-6 mb-2">
