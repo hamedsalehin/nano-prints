@@ -2854,6 +2854,18 @@ Why Choose Our Expert-grade Rollup Banners?
           image: "/images/products/main-page/business_cards-oakland-park-printing-fl.webp",
           ratingCount: "1120",
           ratingScore: "4.9",
+          description: `<div class="space-y-4">
+            <h3 class="text-lg font-bold text-slate-900">Custom Business Card Printing in Fort Lauderdale, FL</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A business card is still the fastest way to hand someone your contact info at a networking event, on a job site, or across a coffee shop table and a flimsy one undercuts the impression you're trying to make. Nano Signs prints standard 3.5" x 2" cards on true 14pt or 16pt cardstock, thick enough that people notice the quality before they even read the text.
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              You get to choose the finish: a glossy UV coating for punchy, saturated colors, or a smooth matte finish that's easy to write on and reads as more understated and professional. Add-ons like rounded corners, painted edges, soft-touch coating, or raised foil accents let you make cards that don't look like everyone else's.
+            </p>
+            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
+              Ready when you are, design and order custom business cards with a free artwork check included on every order.
+            </p>
+          </div>`,
           sizes: [
             {
               label: '3.5" x 2" Standard size',
