@@ -667,7 +667,7 @@ export const PRODUCTS_REGISTRY = {
             {
               label: '33" x 80" Standard Stand Size',
               value: "33x80",
-              basePrice: 109,
+              basePrice: 89.00,
             },
             {
               label: '46" x 80" Vertical Size',
