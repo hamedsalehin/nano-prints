@@ -167,7 +167,7 @@ export default function QuotePageClient() {
         <section className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 w-full space-y-8">
           {/* TOP HERO HEADER */}
           <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-xl shadow-slate-200/50 text-center md:text-left relative overflow-hidden">
-            <div className="absolute -top-12 -right-12 w-64 h-64 bg-pink-100/40 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-12 -right-12 w-64 h-64 bg-pink-50 rounded-full opacity-60 pointer-events-none" />
             <div className="relative z-10 space-y-2">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-pink-50 border border-pink-200 text-[#ff2d78] rounded-full text-xs font-black uppercase tracking-wider">
                 <Sparkles className="w-4 h-4" /> WE PRINT EVERYTHING • FAST TURNAROUND
