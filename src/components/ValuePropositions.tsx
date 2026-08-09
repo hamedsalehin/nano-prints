@@ -3,28 +3,28 @@ import Link from "next/link";
 
 const valueProps = [
   {
-    icon: "https://ext.same-assets.com/1114826555/593408931.svg",
+    icon: "/icons/same-assets/593408931.svg",
     title: "Award-Winning Support",
     description:
       "Experience top-rated customer service every step of your purchase.",
     even: true,
   },
   {
-    icon: "https://ext.same-assets.com/1114826555/3683589186.svg",
+    icon: "/icons/same-assets/3683589186.svg",
     title: "Tax Exempt Savings",
     description:
       "Qualify for tax exemption on eligible orders and stretch your budget even further.",
     even: false,
   },
   {
-    icon: "https://ext.same-assets.com/1114826555/3064715821.svg",
+    icon: "/icons/same-assets/3064715821.svg",
     title: "Expert Design Services",
     description:
       "Our professional in-house team brings your custom sign vision to life, hassle-free.",
     even: true,
   },
   {
-    icon: "https://ext.same-assets.com/1114826555/3700267247.svg",
+    icon: "/icons/same-assets/3700267247.svg",
     title: "Exclusive Corporate Pricing",
     description:
       "Secure discounted rates on bulk orders for brand consistency and cost savings.",
@@ -32,14 +32,14 @@ const valueProps = [
     even: false,
   },
   {
-    icon: "https://ext.same-assets.com/1114826555/2316830229.svg",
+    icon: "/icons/same-assets/2316830229.svg",
     title: "100% Satisfaction Guaranteed",
     description:
       "Not completely satisfied with your product? Our customer love team will make it right.",
     even: true,
   },
   {
-    icon: "https://ext.same-assets.com/1114826555/1104967888.svg",
+    icon: "/icons/same-assets/1104967888.svg",
     title: "Free Artwork Check",
     description:
       "We'll review any artwork for free so your sign design is pixel perfect.",

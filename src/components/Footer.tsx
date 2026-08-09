@@ -62,19 +62,19 @@ const footerLinks = {
 const paymentMethods = [
   {
     name: "Mastercard",
-    icon: "https://ext.same-assets.com/1114826555/2789702158.svg",
+    icon: "/icons/same-assets/2789702158.svg",
   },
   {
     name: "Visa",
-    icon: "https://ext.same-assets.com/1114826555/794747697.svg",
+    icon: "/icons/same-assets/794747697.svg",
   },
   {
     name: "Discover",
-    icon: "https://ext.same-assets.com/1114826555/3085012672.svg",
+    icon: "/icons/same-assets/3085012672.svg",
   },
   {
     name: "PayPal",
-    icon: "https://ext.same-assets.com/1114826555/4065183383.svg",
+    icon: "/icons/same-assets/4065183383.svg",
   },
 ];
 
