@@ -8,13 +8,9 @@ export async function POST(req: Request) {
     const { title, description, content, image, originalSlug, category } = body;
 
     if (!title || !content) {
-      return NextResponse.json(
-        { error: "Title and Content are required." },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Title and Content are required." }, { status: 400 });
     }
 
-    // Generate safe file slug from title
     const newSlug = title
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
@@ -30,116 +26,89 @@ export async function POST(req: Request) {
     const finalImage = normalizeImagePath(image || extractedData.image);
     const finalCategory = category || extractedData.category || "General Signage";
 
-    // Build the .md file content
-    const escapedTitle = finalTitle.replace(/"/g, '\\"');
-    const escapedDesc = finalDescription.replace(/"/g, '\\"');
-    const escapedCat = finalCategory.replace(/"/g, '\\"');
-    const fileContent = [
-      "---",
-      `title: "${escapedTitle}"`,
-      `date: "${todayDate}"`,
-      `description: "${escapedDesc}"`,
-      `image: "${finalImage}"`,
-      `category: "${escapedCat}"`,
-      'type: "post"',
-      "---",
-      "",
-      cleanedContent,
-      "",
-    ].join("\n");
+    // Save to Supabase (primary, survives all redeploys)
+    const { supabase } = await import("@/lib/supabaseClient");
 
-    // GitHub API Commit
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const GITHUB_REPO = process.env.GITHUB_REPO || "hamedsalehin/nano-prints";
-    const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
-    const ghFilePath = `src/content/blog/${newSlug}.md`;
-    const fileContentB64 = Buffer.from(fileContent, "utf8").toString("base64");
+    // If slug changed, delete old entry
+    if (originalSlug && originalSlug !== newSlug) {
+      await supabase.from("blog_posts").delete().eq("slug", originalSlug);
+    }
 
-    if (!GITHUB_TOKEN) {
+    const { error: dbError } = await supabase.from("blog_posts").upsert(
+      {
+        slug: newSlug,
+        title: finalTitle,
+        description: finalDescription,
+        content: cleanedContent,
+        image: finalImage,
+        category: finalCategory,
+        published: true,
+        date: todayDate,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "slug" }
+    );
+
+    if (dbError) {
+      console.error("Supabase upsert error:", dbError);
       return NextResponse.json(
-        {
-          error:
-            "GITHUB_TOKEN environment variable is not set. Please add it to Netlify: Site Settings > Environment Variables.",
-        },
+        { error: `Database save failed: ${dbError.message}` },
         { status: 500 }
       );
     }
 
-    const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${ghFilePath}`;
-    const headers: HeadersInit = {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      "Content-Type": "application/json",
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2022-11-28",
-    };
-
-    // Check if file already exists (get SHA for update)
-    let existingSha: string | undefined;
-    const checkRes = await fetch(`${apiBase}?ref=${GITHUB_BRANCH}`, { headers });
-    if (checkRes.ok) {
-      const checkData = await checkRes.json();
-      existingSha = checkData.sha;
-    }
-
-    // If editing and slug changed, delete old file
-    if (originalSlug && originalSlug !== newSlug) {
-      const oldPath = `src/content/blog/${originalSlug}.md`;
-      const oldCheck = await fetch(
-        `https://api.github.com/repos/${GITHUB_REPO}/contents/${oldPath}?ref=${GITHUB_BRANCH}`,
-        { headers }
-      );
-      if (oldCheck.ok) {
-        const oldData = await oldCheck.json();
-        await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${oldPath}`, {
-          method: "DELETE",
-          headers,
-          body: JSON.stringify({
-            message: `chore(blog): remove old post ${originalSlug}`,
-            sha: oldData.sha,
-            branch: GITHUB_BRANCH,
-          }),
-        });
-      }
-    }
-
-    // Commit new/updated file to GitHub
-    const commitBody: Record<string, unknown> = {
-      message: `feat(blog): publish "${finalTitle}"`,
-      content: fileContentB64,
-      branch: GITHUB_BRANCH,
-    };
-    if (existingSha) {
-      commitBody.sha = existingSha;
-    }
-
-    const commitRes = await fetch(apiBase, {
-      method: "PUT",
-      headers,
-      body: JSON.stringify(commitBody),
-    });
-
-    if (!commitRes.ok) {
-      const errBody = await commitRes.text();
-      console.error("GitHub commit failed:", commitRes.status, errBody);
-      return NextResponse.json(
-        { error: `GitHub commit failed (${commitRes.status}): ${errBody}` },
-        { status: 502 }
-      );
-    }
-
-    // Optionally trigger Netlify rebuild hook
-    const NETLIFY_HOOK = process.env.NETLIFY_BUILD_HOOK;
-    if (NETLIFY_HOOK) {
+    // Also try to commit to GitHub if token is available (optional bonus)
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+    if (GITHUB_TOKEN) {
       try {
-        await fetch(NETLIFY_HOOK, { method: "POST" });
+        const GITHUB_REPO = process.env.GITHUB_REPO || "hamedsalehin/nano-prints";
+        const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
+        const escapedTitle = finalTitle.replace(/"/g, '\\"');
+        const escapedDesc = finalDescription.replace(/"/g, '\\"');
+        const escapedCat = finalCategory.replace(/"/g, '\\"');
+        const fileContent = [
+          "---",
+          `title: "${escapedTitle}"`,
+          `date: "${todayDate}"`,
+          `description: "${escapedDesc}"`,
+          `image: "${finalImage}"`,
+          `category: "${escapedCat}"`,
+          'type: "post"',
+          "---",
+          "",
+          cleanedContent,
+          "",
+        ].join("\n");
+        const ghFilePath = `src/content/blog/${newSlug}.md`;
+        const fileContentB64 = Buffer.from(fileContent, "utf8").toString("base64");
+        const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${ghFilePath}`;
+        const headers: HeadersInit = {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          "Content-Type": "application/json",
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        };
+        let existingSha: string | undefined;
+        const checkRes = await fetch(`${apiBase}?ref=${GITHUB_BRANCH}`, { headers });
+        if (checkRes.ok) {
+          const checkData = await checkRes.json();
+          existingSha = checkData.sha;
+        }
+        const commitBody: Record<string, unknown> = {
+          message: `feat(blog): publish "${finalTitle}"`,
+          content: fileContentB64,
+          branch: GITHUB_BRANCH,
+        };
+        if (existingSha) commitBody.sha = existingSha;
+        await fetch(apiBase, { method: "PUT", headers, body: JSON.stringify(commitBody) });
       } catch {
-        // Non-fatal
+        // GitHub backup is optional — Supabase is the source of truth
       }
     }
 
     return NextResponse.json({
       success: true,
-      message: `Blog post "${finalTitle}" saved to GitHub. Site will rebuild in ~1-2 minutes.`,
+      message: `Blog post "${finalTitle}" saved successfully!`,
       slug: newSlug,
     });
   } catch (err: unknown) {

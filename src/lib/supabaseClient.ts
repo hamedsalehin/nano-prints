@@ -1,14 +1,8 @@
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+// Real Supabase project — anon key is safe to ship (intended for public frontend use)
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://wpbfwgwxxcplaclkdbzi.supabase.co";
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndwYmZ3Z3d4eGNwbGFjbGtkYnppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5Mzc2NDksImV4cCI6MjA5NjUxMzY0OX0.iuFihrtyg393FXcXBr2usKVlKqnfWto0p-HJ2xmv8mw";
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.warn("Supabase credentials missing. Using fallback dummy client to prevent crashes.");
-}
-
-// Provide a dummy URL and key so the application doesn't crash with "Cannot read properties of null"
-const safeUrl = supabaseUrl || "https://dummyproject.supabase.co";
-const safeKey = supabaseAnonKey || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSJ9.dummy";
-
-export const supabase: SupabaseClient = createClient(safeUrl, safeKey);
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
