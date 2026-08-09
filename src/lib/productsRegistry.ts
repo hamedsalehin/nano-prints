@@ -5374,6 +5374,26 @@ Why Choose Our Expert-grade Rollup Banners?
         "price": "Starting at $90/sqft",
         "badge": "New",
         "config": {
+          "description": `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Programmable LED Signs in Fort Lauderdale, FL</h2>
+            <p>A static sign says one thing, forever, until you pay to replace it. A programmable LED sign says whatever you need it to say today — today's special, this week's hours, tomorrow's sale — and you change it from your phone in under a minute. That's the entire appeal, and it's why storefronts, restaurants, and gas stations keep switching over to them instead of swapping out printed banners every season.</p>
+            <p>Nano Signs builds these with 6,500+ nit LEDs, bright enough to stay readable in direct Florida sunlight rather than washing out at noon. The housing is IP65-rated and weatherproof, built to run outdoors year-round without worrying about rain or humidity getting inside the unit. You control content over WiFi or USB, scrolling text, full-color graphics, or simple animations — no electrician or programmer needed on your end.</p>
+            <p><strong>Pixel pitch, explained simply:</strong> the closer people stand to your sign, the finer the resolution you need. P10 is the most cost-effective option and reads well from a distance — think highway frontage or a large parking lot. P5 is the middle ground, sharp enough for closer storefront viewing. P3 is the highest resolution, best when people are walking right up to the sign, like at an entrance or a counter display.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who these signs work best for:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Retail storefronts running promotions and sale announcements</li>
+              <li>Restaurants displaying daily specials and hours</li>
+              <li>Gas stations and convenience stores with rotating pricing</li>
+              <li>Medical offices and pharmacies with patient-facing announcements</li>
+              <li>Churches, schools, and community centers posting event updates</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions about programmable LED signs</h3>
+            <p><em>What's the difference between P3, P5, and P10?</em> The number refers to the distance in millimeters between LED pixels — smaller numbers mean tighter pixel spacing and sharper image quality up close. P10 is best for long-distance viewing, P5 for mid-range, and P3 for close-up clarity.</p>
+            <p><em>Can I update the sign's message myself?</em> Yes — control is handled over WiFi or USB, so you can update text, graphics, or scrolling messages directly without calling anyone to reprogram it.</p>
+            <p><em>Is it safe to install outdoors?</em> The aluminum housing is IP65-rated waterproof, which means it's built to handle rain, humidity, and general outdoor exposure without protection or a covered structure required.</p>
+            <p><em>How bright is bright enough for daylight?</em> At 6,500+ nits, these signs are designed specifically to stay legible in direct sun — most standard indoor displays fall well short of that and wash out outdoors.</p>
+            <p class="mt-4">Get a custom programmable LED sign quote and put your storefront message on a screen that updates as often as you need it to.</p>
+          </div>`,
           "id": "programmable-led-sign",
           "title": "Programmable LED Sign",
           "subtitle": "High-visibility programmable LED signs for storefronts. Available in multiple pixel pitches (P3, P5, P10) for indoor or outdoor use.",
@@ -7124,6 +7144,26 @@ Why Choose Our Expert-grade Rollup Banners?
         "price": "Starting at $90/sqft",
         "badge": "New",
         "config": {
+          "description": `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Programmable LED Signs in Fort Lauderdale, FL</h2>
+            <p>A static sign says one thing, forever, until you pay to replace it. A programmable LED sign says whatever you need it to say today — today's special, this week's hours, tomorrow's sale — and you change it from your phone in under a minute. That's the entire appeal, and it's why storefronts, restaurants, and gas stations keep switching over to them instead of swapping out printed banners every season.</p>
+            <p>Nano Signs builds these with 6,500+ nit LEDs, bright enough to stay readable in direct Florida sunlight rather than washing out at noon. The housing is IP65-rated and weatherproof, built to run outdoors year-round without worrying about rain or humidity getting inside the unit. You control content over WiFi or USB, scrolling text, full-color graphics, or simple animations — no electrician or programmer needed on your end.</p>
+            <p><strong>Pixel pitch, explained simply:</strong> the closer people stand to your sign, the finer the resolution you need. P10 is the most cost-effective option and reads well from a distance — think highway frontage or a large parking lot. P5 is the middle ground, sharp enough for closer storefront viewing. P3 is the highest resolution, best when people are walking right up to the sign, like at an entrance or a counter display.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who these signs work best for:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Retail storefronts running promotions and sale announcements</li>
+              <li>Restaurants displaying daily specials and hours</li>
+              <li>Gas stations and convenience stores with rotating pricing</li>
+              <li>Medical offices and pharmacies with patient-facing announcements</li>
+              <li>Churches, schools, and community centers posting event updates</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions about programmable LED signs</h3>
+            <p><em>What's the difference between P3, P5, and P10?</em> The number refers to the distance in millimeters between LED pixels — smaller numbers mean tighter pixel spacing and sharper image quality up close. P10 is best for long-distance viewing, P5 for mid-range, and P3 for close-up clarity.</p>
+            <p><em>Can I update the sign's message myself?</em> Yes — control is handled over WiFi or USB, so you can update text, graphics, or scrolling messages directly without calling anyone to reprogram it.</p>
+            <p><em>Is it safe to install outdoors?</em> The aluminum housing is IP65-rated waterproof, which means it's built to handle rain, humidity, and general outdoor exposure without protection or a covered structure required.</p>
+            <p><em>How bright is bright enough for daylight?</em> At 6,500+ nits, these signs are designed specifically to stay legible in direct sun — most standard indoor displays fall well short of that and wash out outdoors.</p>
+            <p class="mt-4">Get a custom programmable LED sign quote and put your storefront message on a screen that updates as often as you need it to.</p>
+          </div>`,
           "id": "programmable-led-sign",
           "title": "Programmable LED Signs",
           "subtitle": "Ultra-bright programmable & scrolling LED signs for retail facades. Offered in various pixel pitches (P3, P5, P10) for indoor or outdoor use in Fort Lauderdale FL.",
@@ -7354,6 +7394,26 @@ Why Choose Our Expert-grade Rollup Banners?
         "price": "Starting at $90/sqft",
         "badge": "Popular",
         "config": {
+          "description": `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Programmable LED Signs in Fort Lauderdale, FL</h2>
+            <p>A static sign says one thing, forever, until you pay to replace it. A programmable LED sign says whatever you need it to say today — today's special, this week's hours, tomorrow's sale — and you change it from your phone in under a minute. That's the entire appeal, and it's why storefronts, restaurants, and gas stations keep switching over to them instead of swapping out printed banners every season.</p>
+            <p>Nano Signs builds these with 6,500+ nit LEDs, bright enough to stay readable in direct Florida sunlight rather than washing out at noon. The housing is IP65-rated and weatherproof, built to run outdoors year-round without worrying about rain or humidity getting inside the unit. You control content over WiFi or USB, scrolling text, full-color graphics, or simple animations — no electrician or programmer needed on your end.</p>
+            <p><strong>Pixel pitch, explained simply:</strong> the closer people stand to your sign, the finer the resolution you need. P10 is the most cost-effective option and reads well from a distance — think highway frontage or a large parking lot. P5 is the middle ground, sharp enough for closer storefront viewing. P3 is the highest resolution, best when people are walking right up to the sign, like at an entrance or a counter display.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who these signs work best for:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Retail storefronts running promotions and sale announcements</li>
+              <li>Restaurants displaying daily specials and hours</li>
+              <li>Gas stations and convenience stores with rotating pricing</li>
+              <li>Medical offices and pharmacies with patient-facing announcements</li>
+              <li>Churches, schools, and community centers posting event updates</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions about programmable LED signs</h3>
+            <p><em>What's the difference between P3, P5, and P10?</em> The number refers to the distance in millimeters between LED pixels — smaller numbers mean tighter pixel spacing and sharper image quality up close. P10 is best for long-distance viewing, P5 for mid-range, and P3 for close-up clarity.</p>
+            <p><em>Can I update the sign's message myself?</em> Yes — control is handled over WiFi or USB, so you can update text, graphics, or scrolling messages directly without calling anyone to reprogram it.</p>
+            <p><em>Is it safe to install outdoors?</em> The aluminum housing is IP65-rated waterproof, which means it's built to handle rain, humidity, and general outdoor exposure without protection or a covered structure required.</p>
+            <p><em>How bright is bright enough for daylight?</em> At 6,500+ nits, these signs are designed specifically to stay legible in direct sun — most standard indoor displays fall well short of that and wash out outdoors.</p>
+            <p class="mt-4">Get a custom programmable LED sign quote and put your storefront message on a screen that updates as often as you need it to.</p>
+          </div>`,
           "id": "scrolling-led-sign",
           "title": "Scrolling LED Signs",
           "subtitle": "High-visibility scrolling LED text signs & message displays. Control moving announcements via mobile WiFi or USB in Fort Lauderdale FL.",
