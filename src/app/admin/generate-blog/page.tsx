@@ -350,12 +350,38 @@ export default function AdminBlogStudio() {
                       <input type="file" accept="image/*" className="hidden" onChange={async (e) => {
                         const file = e.target.files?.[0];
                         if (!file) return;
-                        const formData = new FormData();
-                        formData.append("file", file);
                         try {
-                          const res = await fetch("/api/blog/upload", { method: "POST", body: formData });
-                          const data = await res.json();
-                          if (data.url) { setCustomImage(data.url); alert("Cover image uploaded successfully!"); }
+                          // Process image directly into optimized Base64 Data URL so it works 100% on Netlify & production
+                          const reader = new FileReader();
+                          reader.onload = (event) => {
+                            const img = new Image();
+                            img.onload = () => {
+                              const canvas = document.createElement("canvas");
+                              const MAX_WIDTH = 1200;
+                              let width = img.width;
+                              let height = img.height;
+                              if (width > MAX_WIDTH) {
+                                height = Math.round((height * MAX_WIDTH) / width);
+                                width = MAX_WIDTH;
+                              }
+                              canvas.width = width;
+                              canvas.height = height;
+                              const ctx = canvas.getContext("2d");
+                              if (ctx) {
+                                ctx.drawImage(img, 0, 0, width, height);
+                                setCustomImage(canvas.toDataURL("image/jpeg", 0.85));
+                              } else {
+                                setCustomImage(event.target?.result as string);
+                              }
+                              alert("Cover image uploaded and attached successfully!");
+                            };
+                            img.onerror = () => {
+                              setCustomImage(event.target?.result as string);
+                              alert("Cover image uploaded!");
+                            };
+                            img.src = event.target?.result as string;
+                          };
+                          reader.readAsDataURL(file);
                         } catch (err: unknown) { alert("Upload failed: " + (err instanceof Error ? err.message : String(err))); }
                       }} />
                     </label>
@@ -372,15 +398,34 @@ export default function AdminBlogStudio() {
                         <input type="file" accept="image/*" className="hidden" onChange={async (e) => {
                           const file = e.target.files?.[0];
                           if (!file) return;
-                          const formData = new FormData();
-                          formData.append("file", file);
                           try {
-                            const res = await fetch("/api/blog/upload", { method: "POST", body: formData });
-                            const data = await res.json();
-                            if (data.url) {
-                              setCustomContent((prev) => prev + `\n<img src="${data.url}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`);
-                              alert("Picture added into article!");
-                            }
+                            const reader = new FileReader();
+                            reader.onload = (event) => {
+                              const img = new Image();
+                              img.onload = () => {
+                                const canvas = document.createElement("canvas");
+                                const MAX_WIDTH = 1000;
+                                let width = img.width;
+                                let height = img.height;
+                                if (width > MAX_WIDTH) {
+                                  height = Math.round((height * MAX_WIDTH) / width);
+                                  width = MAX_WIDTH;
+                                }
+                                canvas.width = width;
+                                canvas.height = height;
+                                const ctx = canvas.getContext("2d");
+                                const dataUrl = ctx ? canvas.toDataURL("image/jpeg", 0.85) : (event.target?.result as string);
+                                setCustomContent((prev) => prev + `\n<img src="${dataUrl}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`);
+                                alert("Picture inserted into article!");
+                              };
+                              img.onerror = () => {
+                                const dataUrl = event.target?.result as string;
+                                setCustomContent((prev) => prev + `\n<img src="${dataUrl}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`);
+                                alert("Picture inserted into article!");
+                              };
+                              img.src = event.target?.result as string;
+                            };
+                            reader.readAsDataURL(file);
                           } catch (err: unknown) { alert("Upload failed: " + (err instanceof Error ? err.message : String(err))); }
                         }} />
                       </label>

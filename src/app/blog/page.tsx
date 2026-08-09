@@ -100,6 +100,7 @@ export default function BlogPage() {
                   src={post.image}
                   alt={post.title}
                   fill
+                  unoptimized={post.image.startsWith("data:") || post.image.startsWith("/api/") || post.image.startsWith("http")}
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />

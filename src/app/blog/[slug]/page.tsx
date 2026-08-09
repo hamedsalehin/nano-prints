@@ -165,6 +165,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             fill
             className="object-cover object-center"
             priority
+            unoptimized={post.image.startsWith("data:") || post.image.startsWith("/api/") || post.image.startsWith("http")}
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </div>
