@@ -249,6 +249,11 @@ const nextConfig = {
         destination: "/custom-banners/roll-up-banners",
         permanent: true,
       },
+      {
+        source: "/:category/:product/:product",
+        destination: "/:category/:product",
+        permanent: true,
+      },
     ];
   },
 };

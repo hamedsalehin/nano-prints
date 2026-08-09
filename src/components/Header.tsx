@@ -501,16 +501,24 @@ export function Header() {
                         {hasProducts && (
                           <div className="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out transform origin-top-left -translate-y-2 group-hover:translate-y-0 shadow-xl rounded-lg border border-gray-100 bg-white w-64 text-left overflow-hidden z-50">
                             <ul className="py-2 max-h-[70vh] overflow-y-auto">
-                              {categoryData.products.map((product) => (
-                                <li key={product.id}>
-                                  <Link
-                                    href={product.config?.breadcrumbHref ? `${product.config.breadcrumbHref}/${product.id}` : `${item.href}/${product.id}`}
-                                    className="block px-4 py-2.5 text-sm font-semibold text-gray-700 hover:text-[#ff2d78] hover:bg-slate-50 transition-colors duration-150"
-                                  >
-                                    {product.name}
-                                  </Link>
-                                </li>
-                              ))}
+                              {categoryData.products.map((product) => {
+                                const bHref = product.config?.breadcrumbHref;
+                                const href = !bHref
+                                  ? `${item.href}/${product.id}`
+                                  : bHref.endsWith(`/${product.id}`)
+                                  ? bHref
+                                  : `${bHref}/${product.id}`;
+                                return (
+                                  <li key={product.id}>
+                                    <Link
+                                      href={href}
+                                      className="block px-4 py-2.5 text-sm font-semibold text-gray-700 hover:text-[#ff2d78] hover:bg-slate-50 transition-colors duration-150"
+                                    >
+                                      {product.name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
                             </ul>
                           </div>
                         )}
@@ -569,17 +577,25 @@ export function Header() {
                         </div>
                         {hasProducts && isExpanded && (
                           <ul className="bg-black/20 py-1">
-                            {categoryData.products.map((product) => (
-                              <li key={product.id}>
-                                <Link
-                                  href={product.config?.breadcrumbHref ? `${product.config.breadcrumbHref}/${product.id}` : `${item.href}/${product.id}`}
-                                  onClick={() => setMobileMenuOpen(false)}
-                                  className="block px-8 py-2.5 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 transition-colors"
-                                >
-                                  {product.name}
-                                </Link>
-                              </li>
-                            ))}
+                            {categoryData.products.map((product) => {
+                              const bHref = product.config?.breadcrumbHref;
+                              const href = !bHref
+                                ? `${item.href}/${product.id}`
+                                : bHref.endsWith(`/${product.id}`)
+                                ? bHref
+                                : `${bHref}/${product.id}`;
+                              return (
+                                <li key={product.id}>
+                                  <Link
+                                    href={href}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="block px-8 py-2.5 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 transition-colors"
+                                  >
+                                    {product.name}
+                                  </Link>
+                                </li>
+                              );
+                            })}
                           </ul>
                         )}
                       </div>
