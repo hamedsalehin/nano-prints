@@ -12,6 +12,14 @@
     "lint": "bunx tsc --noEmit && next lint",
     "format": "bunx biome format --write"
   },
+  "browserslist": [
+    "chrome >= 100",
+    "safari >= 15",
+    "ios_saf >= 15",
+    "firefox >= 100",
+    "edge >= 100",
+    "not dead"
+  ],
   "dependencies": {
     "@stripe/react-stripe-js": "^6.6.0",
     "@stripe/stripe-js": "^9.8.0",

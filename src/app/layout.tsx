@@ -8,16 +8,18 @@ import { CanonicalTag } from "@/components/CanonicalTag";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-open-sans",
   display: "swap",
+  preload: true,
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["600", "700", "800"],
   variable: "--font-poppins",
   display: "swap",
+  preload: true,
 });
 
 export const viewport: Viewport = {
