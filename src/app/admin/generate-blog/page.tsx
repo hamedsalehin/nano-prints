@@ -180,7 +180,7 @@ export default function AdminBlogStudio() {
         image: target.image,
       });
       setDrafts((prev) => prev.map((d) => (d.id === draftId ? { ...d, published: true } : d)));
-      alert(`Article published! It is live at /blog/${data.slug}`);
+      alert(`Article committed to GitHub! The site will rebuild in ~1-2 minutes, then it will be live at /blog/${data.slug}`);
     } catch (e: unknown) {
       alert(`Error publishing post: ${e instanceof Error ? e.message : String(e)}`);
     }
@@ -234,7 +234,7 @@ export default function AdminBlogStudio() {
               : d
           )
         );
-        alert(`Article updated successfully at /blog/${data.slug}`);
+        alert(`Article updated and committed to GitHub! Site will rebuild in ~1-2 minutes. URL: /blog/${data.slug}`);
       } else {
         const newArticle: DraftArticle = {
           id: `article-${Date.now()}`,
@@ -246,7 +246,7 @@ export default function AdminBlogStudio() {
           published: true,
         };
         setDrafts((prev) => [newArticle, ...prev]);
-        alert(`Published successfully! Article is live at /blog/${data.slug}`);
+        alert(`Published to GitHub! The site will rebuild in ~1-2 minutes. Blog URL: /blog/${data.slug}`);
       }
       setShowForm(false);
       setEditingId(null);

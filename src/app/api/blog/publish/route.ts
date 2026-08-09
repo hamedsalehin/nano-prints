@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+﻿import { NextResponse } from "next/server";
+
+export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   try {
@@ -21,21 +21,8 @@ export async function POST(req: Request) {
       .replace(/(^-|-$)+/g, "");
 
     const todayDate = new Date().toISOString().split("T")[0];
-    const targetDir = path.join(process.cwd(), "src/content/blog");
 
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    // If editing an existing article and the title/slug changed, remove the old file
-    if (originalSlug && originalSlug !== newSlug) {
-      const oldFilePath = path.join(targetDir, `${originalSlug}.md`);
-      if (fs.existsSync(oldFilePath)) {
-        fs.unlinkSync(oldFilePath);
-      }
-    }
-
-    const { cleanRawContent, normalizeImagePath, formatTitle } = await import("@/lib/blogUtils");
+    const { cleanRawContent, normalizeImagePath } = await import("@/lib/blogUtils");
     const { content: cleanedContent, extractedData } = cleanRawContent(content);
 
     const finalTitle = title || extractedData.title || newSlug.replace(/-/g, " ");
@@ -43,89 +30,121 @@ export async function POST(req: Request) {
     const finalImage = normalizeImagePath(image || extractedData.image);
     const finalCategory = category || extractedData.category || "General Signage";
 
-    // Markdown file template
-    const fileContent = `---
-title: "${finalTitle.replace(/"/g, '\\"')}"
-date: "${todayDate}"
-description: "${finalDescription.replace(/"/g, '\\"')}"
-image: "${finalImage}"
-category: "${finalCategory.replace(/"/g, '\\"')}"
-type: "post"
----
+    // Build the .md file content
+    const escapedTitle = finalTitle.replace(/"/g, '\\"');
+    const escapedDesc = finalDescription.replace(/"/g, '\\"');
+    const escapedCat = finalCategory.replace(/"/g, '\\"');
+    const fileContent = [
+      "---",
+      `title: "${escapedTitle}"`,
+      `date: "${todayDate}"`,
+      `description: "${escapedDesc}"`,
+      `image: "${finalImage}"`,
+      `category: "${escapedCat}"`,
+      'type: "post"',
+      "---",
+      "",
+      cleanedContent,
+      "",
+    ].join("\n");
 
-${cleanedContent}
-`;
+    // GitHub API Commit
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+    const GITHUB_REPO = process.env.GITHUB_REPO || "hamedsalehin/nano-prints";
+    const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
+    const ghFilePath = `src/content/blog/${newSlug}.md`;
+    const fileContentB64 = Buffer.from(fileContent, "utf8").toString("base64");
 
-    const filePath = path.join(targetDir, `${newSlug}.md`);
-    try {
-      fs.writeFileSync(filePath, fileContent, "utf8");
-
-      // Auto-sync into src/lib/blogRegistry.ts if running in Node environment
-      const registryPath = path.join(process.cwd(), "src/lib/blogRegistry.ts");
-      if (fs.existsSync(registryPath)) {
-        let regContent = fs.readFileSync(registryPath, "utf8");
-        const entryKey = `"${newSlug}":`;
-        const newEntry = `  "${newSlug}": {
-    slug: "${newSlug}",
-    title: "${finalTitle.replace(/"/g, '\\"')}",
-    excerpt: "${finalDescription.replace(/"/g, '\\"')}",
-    image: "${finalImage}",
-    category: "${finalCategory.replace(/"/g, '\\"')}",
-    date: "${todayDate}",
-    readTime: "4 min read",
-    color: "from-blue-900 to-cyan-900",
-    content: \`\n${cleanedContent}\n\`
-  },`;
-
-        if (regContent.includes(entryKey)) {
-          // Replace existing entry
-          const keyIdx = regContent.indexOf(entryKey);
-          const nextKeyIdx = regContent.indexOf('\n  "', keyIdx + entryKey.length);
-          const endBraceIdx = regContent.indexOf("\n};", keyIdx);
-          const replaceEnd = (nextKeyIdx !== -1 && nextKeyIdx < endBraceIdx) ? nextKeyIdx : endBraceIdx;
-          regContent = regContent.slice(0, keyIdx - 2) + newEntry + regContent.slice(replaceEnd);
-        } else {
-          // Append before ending };
-          const lastBraceIdx = regContent.lastIndexOf("};");
-          if (lastBraceIdx !== -1) {
-            regContent = regContent.slice(0, lastBraceIdx) + newEntry + "\n};";
-          }
-        }
-        fs.writeFileSync(registryPath, regContent, "utf8");
-      }
-    } catch (fsErr) {
-      console.warn("Could not write to local filesystem (read-only environment):", fsErr);
+    if (!GITHUB_TOKEN) {
+      return NextResponse.json(
+        {
+          error:
+            "GITHUB_TOKEN environment variable is not set. Please add it to Netlify: Site Settings > Environment Variables.",
+        },
+        { status: 500 }
+      );
     }
 
-    // Persist to Supabase Database for cloud survival across Netlify builds
-    try {
-      const { supabase } = await import("@/lib/supabaseClient");
-      await supabase.from("blog_posts").upsert(
-        {
-          slug: newSlug,
-          title,
-          description: description || "",
-          content,
-          image: image || "/images/products/outdoor-fixed-led-display.jpg",
-          category: category || "General Signage",
-          published: true,
-          date: todayDate,
-          updated_at: new Date().toISOString(),
-        },
-        { onConflict: "slug" }
+    const apiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/${ghFilePath}`;
+    const headers: HeadersInit = {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      "Content-Type": "application/json",
+      Accept: "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    };
+
+    // Check if file already exists (get SHA for update)
+    let existingSha: string | undefined;
+    const checkRes = await fetch(`${apiBase}?ref=${GITHUB_BRANCH}`, { headers });
+    if (checkRes.ok) {
+      const checkData = await checkRes.json();
+      existingSha = checkData.sha;
+    }
+
+    // If editing and slug changed, delete old file
+    if (originalSlug && originalSlug !== newSlug) {
+      const oldPath = `src/content/blog/${originalSlug}.md`;
+      const oldCheck = await fetch(
+        `https://api.github.com/repos/${GITHUB_REPO}/contents/${oldPath}?ref=${GITHUB_BRANCH}`,
+        { headers }
       );
-    } catch (dbErr) {
-      console.warn("Supabase blog post sync warning:", dbErr);
+      if (oldCheck.ok) {
+        const oldData = await oldCheck.json();
+        await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${oldPath}`, {
+          method: "DELETE",
+          headers,
+          body: JSON.stringify({
+            message: `chore(blog): remove old post ${originalSlug}`,
+            sha: oldData.sha,
+            branch: GITHUB_BRANCH,
+          }),
+        });
+      }
+    }
+
+    // Commit new/updated file to GitHub
+    const commitBody: Record<string, unknown> = {
+      message: `feat(blog): publish "${finalTitle}"`,
+      content: fileContentB64,
+      branch: GITHUB_BRANCH,
+    };
+    if (existingSha) {
+      commitBody.sha = existingSha;
+    }
+
+    const commitRes = await fetch(apiBase, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify(commitBody),
+    });
+
+    if (!commitRes.ok) {
+      const errBody = await commitRes.text();
+      console.error("GitHub commit failed:", commitRes.status, errBody);
+      return NextResponse.json(
+        { error: `GitHub commit failed (${commitRes.status}): ${errBody}` },
+        { status: 502 }
+      );
+    }
+
+    // Optionally trigger Netlify rebuild hook
+    const NETLIFY_HOOK = process.env.NETLIFY_BUILD_HOOK;
+    if (NETLIFY_HOOK) {
+      try {
+        await fetch(NETLIFY_HOOK, { method: "POST" });
+      } catch {
+        // Non-fatal
+      }
     }
 
     return NextResponse.json({
       success: true,
-      message: `Blog post saved successfully as ${newSlug}.md`,
+      message: `Blog post "${finalTitle}" saved to GitHub. Site will rebuild in ~1-2 minutes.`,
       slug: newSlug,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : "Failed to save post.";
-    console.error("Failed to publish/edit blog post:", err);
+    console.error("Failed to publish blog post:", err);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
