@@ -79,6 +79,25 @@ export default function RootLayout({
     <html lang="en" className={openSans.variable + " " + poppins.variable}>
       <head>
         <CanonicalTag />
+        {/* Preload Homepage LCP Hero Image for ultra-fast LCP (<1.5s) */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-image-mobile.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+          // @ts-expect-error fetchpriority attribute
+          fetchpriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-image.webp"
+          type="image/webp"
+          media="(min-width: 769px)"
+          // @ts-expect-error fetchpriority attribute
+          fetchpriority="high"
+        />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE"
