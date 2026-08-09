@@ -24,8 +24,7 @@ import {
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
 import { useRouter } from "next/navigation";
-// productsRegistry is lazy-loaded on first search to avoid bundling 469KB into the critical path
-import type { ProductsRegistryType } from "@/lib/productsRegistry";
+import { HEADER_NAV_PRODUCTS } from "@/lib/headerNavData";
 
 const navItems = [
   { name: "Signs", href: "/custom-signs" },
@@ -50,48 +49,49 @@ export function Header() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRefDesktop = useRef<HTMLFormElement>(null);
   const searchRefMobile = useRef<HTMLFormElement>(null);
-  const [registry, setRegistry] = useState<ProductsRegistryType | null>(null);
+  const registryRef = useRef<any | null>(null);
   const { user, signOut, setShowAuthModal } = useAuth();
   const { items, setCartOpen } = useCart();
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [expandedMobileCategories, setExpandedMobileCategories] = useState<Record<string, boolean>>({});
   const router = useRouter();
 
-  // Eagerly (but non-blocking) load productsRegistry after first paint
   useEffect(() => {
-    import("@/lib/productsRegistry").then((mod) => {
-      setRegistry(mod.PRODUCTS_REGISTRY);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (searchQuery.trim().length > 0 && registry) {
-      const query = searchQuery.toLowerCase();
-      const matched: any[] = [];
-      for (const [categoryKey, categoryData] of Object.entries(registry)) {
-        if (categoryData.products) {
-          for (const product of categoryData.products) {
-            const searchString = `${product.name} ${product.description} ${categoryKey} ${categoryData.title || ""} ${categoryData.categoryDescriptionText || ""} ${product.config?.keyFeatures?.join(" ") || ""}`.toLowerCase();
-            const tokens = query.split(/\s+/).filter(Boolean);
-            const isMatch = tokens.every(token => searchString.includes(token));
-            
-            if (isMatch) {
-              matched.push({
-                ...product,
-                categoryHref: `/${categoryKey}`,
-                href: `/${categoryKey}/${product.id}`
-              });
+    if (searchQuery.trim().length > 0) {
+      const doSearch = async () => {
+        if (!registryRef.current) {
+          const mod = await import("@/lib/productsRegistry");
+          registryRef.current = mod.PRODUCTS_REGISTRY;
+        }
+        const registry = registryRef.current;
+        const query = searchQuery.toLowerCase();
+        const matched: any[] = [];
+        for (const [categoryKey, categoryData] of Object.entries(registry as Record<string, any>)) {
+          if (categoryData.products) {
+            for (const product of categoryData.products) {
+              const searchString = `${product.name} ${product.description} ${categoryKey} ${categoryData.title || ""} ${categoryData.categoryDescriptionText || ""} ${product.config?.keyFeatures?.join(" ") || ""}`.toLowerCase();
+              const tokens = query.split(/\s+/).filter(Boolean);
+              const isMatch = tokens.every((token: string) => searchString.includes(token));
+              
+              if (isMatch) {
+                matched.push({
+                  ...product,
+                  categoryHref: `/${categoryKey}`,
+                  href: `/${categoryKey}/${product.id}`
+                });
+              }
             }
           }
         }
-      }
-      setSuggestions(matched.slice(0, 5));
-      setShowSuggestions(true);
+        setSuggestions(matched.slice(0, 5));
+        setShowSuggestions(true);
+      };
+      doSearch();
     } else {
       setSuggestions([]);
       setShowSuggestions(false);
     }
-  }, [searchQuery, registry]);
+  }, [searchQuery]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -478,10 +478,9 @@ export function Header() {
           <div className="max-w-7xl mx-auto px-4">
             <ul className="flex justify-center items-center">
               {navItems.map((item) => {
-                // Determine if this item has products in the registry
                 const categoryKey = item.href.replace("/", "");
-                const categoryData = registry?.[categoryKey];
-                const hasProducts = categoryData && categoryData.products && categoryData.products.length > 0;
+                const products = HEADER_NAV_PRODUCTS[categoryKey] || [];
+                const hasProducts = products.length > 0;
 
                 return (
                   <li
@@ -510,8 +509,8 @@ export function Header() {
                         {hasProducts && (
                           <div className="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out transform origin-top-left -translate-y-2 group-hover:translate-y-0 shadow-xl rounded-lg border border-gray-100 bg-white w-64 text-left overflow-hidden z-50">
                             <ul className="py-2 max-h-[70vh] overflow-y-auto">
-                              {categoryData.products.map((product) => {
-                                const bHref = product.config?.breadcrumbHref;
+                              {products.map((product) => {
+                                const bHref = product.breadcrumbHref;
                                 const href = !bHref
                                   ? `${item.href}/${product.id}`
                                   : bHref.endsWith(`/${product.id}`)
@@ -546,8 +545,8 @@ export function Header() {
             <ul className="py-2">
               {navItems.map((item) => {
                 const categoryKey = item.href.replace("/", "");
-                const categoryData = registry?.[categoryKey];
-                const hasProducts = categoryData && categoryData.products && categoryData.products.length > 0;
+                const products = HEADER_NAV_PRODUCTS[categoryKey] || [];
+                const hasProducts = products.length > 0;
                 const isExpanded = expandedMobileCategories[item.name];
 
                 return (
@@ -586,8 +585,8 @@ export function Header() {
                         </div>
                         {hasProducts && isExpanded && (
                           <ul className="bg-black/20 py-1">
-                            {categoryData.products.map((product) => {
-                              const bHref = product.config?.breadcrumbHref;
+                            {products.map((product) => {
+                              const bHref = product.breadcrumbHref;
                               const href = !bHref
                                 ? `${item.href}/${product.id}`
                                 : bHref.endsWith(`/${product.id}`)
