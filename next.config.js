@@ -250,8 +250,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/:category/:product/:product",
-        destination: "/:category/:product",
+        source: "/led-display-signs/:product/:product",
+        destination: "/led-display-signs/:product",
         permanent: true,
       },
     ];

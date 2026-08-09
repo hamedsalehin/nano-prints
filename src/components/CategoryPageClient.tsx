@@ -335,8 +335,7 @@ export function CategoryPageClient({
                       src={p.image}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                      quality={85}
-                      unoptimized={p.image.startsWith("/api/")}
+                      unoptimized
                       className="object-contain transition-all duration-500 ease-in-out group-hover:scale-105"
                     />
                   </div>
@@ -374,8 +373,7 @@ export function CategoryPageClient({
                     alt={`${title} Visual Layout`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
-                    quality={85}
-                    unoptimized={categorySecondaryImage.startsWith("/api/")}
+                    unoptimized
                     className="w-full h-full object-cover"
                   />
                 </div>
