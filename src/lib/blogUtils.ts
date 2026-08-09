@@ -1,4 +1,4 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
@@ -12,6 +12,58 @@ export interface MarkdownBlogPost {
   date: string;
   readTime: string;
   color: string;
+}
+
+export function slugToTitle(slug: string): string {
+  return slug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase());
+}
+
+export function formatTitle(title?: string, slug?: string): string {
+  if (!title && slug) return slugToTitle(slug);
+  if (!title) return "Blog Article";
+  // If title is equal to slug format (e.g. all lowercase/dashes)
+  if (/^[a-z0-9-]+$/.test(title) && title.includes("-")) {
+    return slugToTitle(title);
+  }
+  return title;
+}
+
+export function normalizeImagePath(imageStr?: string): string {
+  if (!imageStr || imageStr.trim() === "") {
+    return "/images/products/neon/nano-signs-cocktails-neon-usa.webp";
+  }
+  let clean = imageStr.replace(/\\/g, "/").trim();
+  if (clean.startsWith("data:") || clean.startsWith("http")) return clean;
+  if (!clean.startsWith("/")) clean = "/" + clean;
+
+  const hasExt = /\.(jpg|jpeg|png|webp|svg|gif|avif)$/i.test(clean);
+  if (!hasExt) {
+    clean += ".webp";
+  }
+  return clean;
+}
+
+export function cleanRawContent(rawContent: string): { content: string; extractedData: Record<string, string> } {
+  let text = (rawContent || "").trim();
+  const extractedData: Record<string, string> = {};
+
+  if (text.startsWith("---")) {
+    try {
+      const parsed = matter(text);
+      text = parsed.content;
+      if (parsed.data.title) extractedData.title = parsed.data.title;
+      if (parsed.data.description) extractedData.description = parsed.data.description;
+      if (parsed.data.image) extractedData.image = parsed.data.image;
+      if (parsed.data.category) extractedData.category = parsed.data.category;
+      if (parsed.data.date) extractedData.date = parsed.data.date;
+    } catch {
+      text = text.replace(/^---[\s\S]*?---\s*/, "");
+    }
+  }
+
+  return { content: text.trim(), extractedData };
 }
 
 function estimateReadTime(content: string): string {
@@ -39,12 +91,14 @@ export function getMarkdownBlogPosts(): MarkdownBlogPost[] {
       const slug = fileName.replace(/\.md$/, "");
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data, content } = matter(fileContents);
+      const { data, content: rawBody } = matter(fileContents);
+      const { content, extractedData } = cleanRawContent(rawBody);
 
-      const category = data.category || "General Signage";
-      const rawDate = data.date || new Date().toISOString().split("T")[0];
+      const title = formatTitle(data.title || extractedData.title, slug);
+      const category = data.category || extractedData.category || "General Signage";
+      const rawDate = data.date || extractedData.date || new Date().toISOString().split("T")[0];
+      const image = normalizeImagePath(data.image || extractedData.image);
 
-      // Format date nicely if it's in YYYY-MM-DD format
       let formattedDate = rawDate;
       try {
         const d = new Date(rawDate);
@@ -59,10 +113,10 @@ export function getMarkdownBlogPosts(): MarkdownBlogPost[] {
 
       return {
         slug,
-        title: data.title || slug,
-        excerpt: data.description || content.replace(/<[^>]+>/g, "").slice(0, 160),
+        title,
+        excerpt: data.description || extractedData.description || content.replace(/<[^>]+>/g, "").slice(0, 160),
         content,
-        image: data.image || "/images/products/outdoor-fixed-led-display.jpg",
+        image,
         category,
         date: formattedDate,
         rawDate,
@@ -80,10 +134,13 @@ export function getMarkdownBlogPost(slug: string): MarkdownBlogPost | null {
   if (!fs.existsSync(filePath)) return null;
 
   const fileContents = fs.readFileSync(filePath, "utf8");
-  const { data, content } = matter(fileContents);
+  const { data, content: rawBody } = matter(fileContents);
+  const { content, extractedData } = cleanRawContent(rawBody);
 
-  const category = data.category || "General Signage";
-  const rawDate = data.date || new Date().toISOString().split("T")[0];
+  const title = formatTitle(data.title || extractedData.title, slug);
+  const category = data.category || extractedData.category || "General Signage";
+  const rawDate = data.date || extractedData.date || new Date().toISOString().split("T")[0];
+  const image = normalizeImagePath(data.image || extractedData.image);
 
   let formattedDate = rawDate;
   try {
@@ -99,10 +156,10 @@ export function getMarkdownBlogPost(slug: string): MarkdownBlogPost | null {
 
   return {
     slug,
-    title: data.title || slug,
-    excerpt: data.description || content.replace(/<[^>]+>/g, "").slice(0, 160),
+    title,
+    excerpt: data.description || extractedData.description || content.replace(/<[^>]+>/g, "").slice(0, 160),
     content,
-    image: data.image || "/images/products/outdoor-fixed-led-display.jpg",
+    image,
     category,
     date: formattedDate,
     readTime: estimateReadTime(content),

@@ -91,8 +91,20 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const registryPost = BLOG_REGISTRY[slug];
   const mdPost = !registryPost ? getMarkdownBlogPost(slug) : null;
-  const post = registryPost ?? mdPost;
-  if (!post) notFound();
+  const rawPost = registryPost ?? mdPost;
+  if (!rawPost) notFound();
+
+  const { cleanRawContent, formatTitle, normalizeImagePath } = await import("@/lib/blogUtils");
+  const { content: cleanBody, extractedData } = cleanRawContent(rawPost.content);
+
+  const post = {
+    ...rawPost,
+    title: extractedData.title || formatTitle(rawPost.title, slug),
+    image: normalizeImagePath(extractedData.image || rawPost.image),
+    category: extractedData.category || rawPost.category || "General Signage",
+    excerpt: extractedData.description || rawPost.excerpt || "",
+    content: cleanBody,
+  };
 
   const readTime = "readTime" in post ? post.readTime : "3 min read";
   const date = post.date;

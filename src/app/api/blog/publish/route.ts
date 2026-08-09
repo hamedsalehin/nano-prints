@@ -35,17 +35,25 @@ export async function POST(req: Request) {
       }
     }
 
+    const { cleanRawContent, normalizeImagePath, formatTitle } = await import("@/lib/blogUtils");
+    const { content: cleanedContent, extractedData } = cleanRawContent(content);
+
+    const finalTitle = title || extractedData.title || newSlug.replace(/-/g, " ");
+    const finalDescription = description || extractedData.description || "";
+    const finalImage = normalizeImagePath(image || extractedData.image);
+    const finalCategory = category || extractedData.category || "General Signage";
+
     // Markdown file template
     const fileContent = `---
-title: "${title.replace(/"/g, '\\"')}"
+title: "${finalTitle.replace(/"/g, '\\"')}"
 date: "${todayDate}"
-description: "${(description || "").replace(/"/g, '\\"')}"
-image: "${image || "/images/products/outdoor-fixed-led-display.jpg"}"
-category: "${(category || "General Signage").replace(/"/g, '\\"')}"
+description: "${finalDescription.replace(/"/g, '\\"')}"
+image: "${finalImage}"
+category: "${finalCategory.replace(/"/g, '\\"')}"
 type: "post"
 ---
 
-${content}
+${cleanedContent}
 `;
 
     const filePath = path.join(targetDir, `${newSlug}.md`);
@@ -59,14 +67,14 @@ ${content}
         const entryKey = `"${newSlug}":`;
         const newEntry = `  "${newSlug}": {
     slug: "${newSlug}",
-    title: "${title.replace(/"/g, '\\"')}",
-    excerpt: "${(description || "").replace(/"/g, '\\"')}",
-    image: "${image || "/images/products/outdoor-fixed-led-display.jpg"}",
-    category: "${(category || "General Signage").replace(/"/g, '\\"')}",
+    title: "${finalTitle.replace(/"/g, '\\"')}",
+    excerpt: "${finalDescription.replace(/"/g, '\\"')}",
+    image: "${finalImage}",
+    category: "${finalCategory.replace(/"/g, '\\"')}",
     date: "${todayDate}",
     readTime: "4 min read",
     color: "from-blue-900 to-cyan-900",
-    content: \`\n${content}\n\`
+    content: \`\n${cleanedContent}\n\`
   },`;
 
         if (regContent.includes(entryKey)) {
