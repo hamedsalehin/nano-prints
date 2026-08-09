@@ -214,8 +214,7 @@ function RelatedProducts({ breadcrumbHref, currentTitle }: { breadcrumbHref: str
                     alt={p.name}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    quality={85}
-                    unoptimized={p.image.startsWith("/api/")}
+                    unoptimized
                     className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -892,8 +891,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                 alt={`${cfg.title} preview`}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                quality={90}
-                unoptimized={currentImage.startsWith("/api/")}
+                unoptimized
                 className="object-cover"
                 priority
               />
@@ -921,7 +919,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                         alt={`Product thumbnail ${idx + 1}`}
                         fill
                         sizes="64px"
-                        unoptimized={img.startsWith("/api/")}
+                        unoptimized
                         className="object-contain"
                       />
                     </div>
