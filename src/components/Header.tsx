@@ -24,7 +24,8 @@ import {
 import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
 import { useRouter } from "next/navigation";
-import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
+// productsRegistry is lazy-loaded on first search to avoid bundling 469KB into the critical path
+import type { ProductsRegistryType } from "@/lib/productsRegistry";
 
 const navItems = [
   { name: "Signs", href: "/custom-signs" },
@@ -49,17 +50,25 @@ export function Header() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRefDesktop = useRef<HTMLFormElement>(null);
   const searchRefMobile = useRef<HTMLFormElement>(null);
+  const [registry, setRegistry] = useState<ProductsRegistryType | null>(null);
   const { user, signOut, setShowAuthModal } = useAuth();
   const { items, setCartOpen } = useCart();
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [expandedMobileCategories, setExpandedMobileCategories] = useState<Record<string, boolean>>({});
   const router = useRouter();
 
+  // Eagerly (but non-blocking) load productsRegistry after first paint
   useEffect(() => {
-    if (searchQuery.trim().length > 0) {
+    import("@/lib/productsRegistry").then((mod) => {
+      setRegistry(mod.PRODUCTS_REGISTRY);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery.trim().length > 0 && registry) {
       const query = searchQuery.toLowerCase();
       const matched: any[] = [];
-      for (const [categoryKey, categoryData] of Object.entries(PRODUCTS_REGISTRY)) {
+      for (const [categoryKey, categoryData] of Object.entries(registry)) {
         if (categoryData.products) {
           for (const product of categoryData.products) {
             const searchString = `${product.name} ${product.description} ${categoryKey} ${categoryData.title || ""} ${categoryData.categoryDescriptionText || ""} ${product.config?.keyFeatures?.join(" ") || ""}`.toLowerCase();
@@ -76,13 +85,13 @@ export function Header() {
           }
         }
       }
-      setSuggestions(matched.slice(0, 5)); // Show up to 5 suggestions
+      setSuggestions(matched.slice(0, 5));
       setShowSuggestions(true);
     } else {
       setSuggestions([]);
       setShowSuggestions(false);
     }
-  }, [searchQuery]);
+  }, [searchQuery, registry]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -195,7 +204,7 @@ export function Header() {
             <div className="flex items-center gap-3">
               <Link href="/" className="flex-shrink-0">
                 <Image
-                  src="/images/nano logo complete.png"
+                  src="/images/nano logo complete.webp"
                   alt="Nano Signs Logo"
                   width={180}
                   height={70}
@@ -471,7 +480,7 @@ export function Header() {
               {navItems.map((item) => {
                 // Determine if this item has products in the registry
                 const categoryKey = item.href.replace("/", "");
-                const categoryData = PRODUCTS_REGISTRY[categoryKey];
+                const categoryData = registry?.[categoryKey];
                 const hasProducts = categoryData && categoryData.products && categoryData.products.length > 0;
 
                 return (
@@ -537,7 +546,7 @@ export function Header() {
             <ul className="py-2">
               {navItems.map((item) => {
                 const categoryKey = item.href.replace("/", "");
-                const categoryData = PRODUCTS_REGISTRY[categoryKey];
+                const categoryData = registry?.[categoryKey];
                 const hasProducts = categoryData && categoryData.products && categoryData.products.length > 0;
                 const isExpanded = expandedMobileCategories[item.name];
 

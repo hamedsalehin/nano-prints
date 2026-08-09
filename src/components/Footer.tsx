@@ -117,7 +117,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <Image
-                src="/images/nano logo complete.png"
+                src="/images/nano logo complete.webp"
                 alt="Nano Signs"
                 width={160}
                 height={60}

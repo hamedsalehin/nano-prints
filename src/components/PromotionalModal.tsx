@@ -176,7 +176,7 @@ export function PromotionalModal() {
                 {/* Brand Logo */}
                 <div className="w-24 md:w-36 h-auto">
                   <img
-                    src="/images/nano_logo_modal.png"
+                    src="/images/nano_logo_modal.webp"
                     alt="Nano Signs Logo"
                     className="w-full h-auto object-contain brightness-110 drop-shadow-[0_0_8px_rgba(255,45,120,0.3)]"
                   />

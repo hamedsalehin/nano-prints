@@ -29,7 +29,9 @@ export interface RegistryCategory {
   reviewQuote?: string;
 }
 
-export const PRODUCTS_REGISTRY = {
+export type ProductsRegistryType = Record<string, RegistryCategory>;
+
+export const PRODUCTS_REGISTRY: ProductsRegistryType = {
   "neon-signs": {
     title: "Neon Signs",
     breadcrumbLabel: "Neon Signs",
