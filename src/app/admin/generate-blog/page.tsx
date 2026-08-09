@@ -351,11 +351,11 @@ export default function AdminBlogStudio() {
                         const file = e.target.files?.[0];
                         if (!file) return;
                         try {
-                          // Process image directly into optimized Base64 Data URL so it works 100% on Netlify & production
+                          // Convert to base64 with canvas resize
                           const reader = new FileReader();
-                          reader.onload = (event) => {
+                          reader.onload = async (event) => {
                             const img = new Image();
-                            img.onload = () => {
+                            img.onload = async () => {
                               const canvas = document.createElement("canvas");
                               const MAX_WIDTH = 1200;
                               let width = img.width;
@@ -367,18 +367,30 @@ export default function AdminBlogStudio() {
                               canvas.width = width;
                               canvas.height = height;
                               const ctx = canvas.getContext("2d");
-                              if (ctx) {
-                                ctx.drawImage(img, 0, 0, width, height);
-                                setCustomImage(canvas.toDataURL("image/jpeg", 0.85));
+                              if (ctx) ctx.drawImage(img, 0, 0, width, height);
+                              const dataUrl = ctx ? canvas.toDataURL("image/jpeg", 0.85) : (event.target?.result as string);
+                              // Strip the data URL prefix to get raw base64
+                              const base64 = dataUrl.split(",")[1];
+                              const ext = file.name.split(".").pop() || "jpg";
+                              const safeName = `${Date.now()}-${file.name.replace(/[^a-z0-9._-]/gi, "-").toLowerCase()}`;
+                              const filename = safeName.endsWith(`.${ext}`) ? safeName : `${safeName}.jpg`;
+                              // Upload to GitHub
+                              const res = await fetch("/api/blog/upload-image", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({ filename, base64 }),
+                              });
+                              const result = await res.json();
+                              if (res.ok && result.url) {
+                                setCustomImage(result.url);
+                                alert(`Cover image uploaded! Will be live after site rebuilds (~1-2 min).`);
                               } else {
-                                setCustomImage(event.target?.result as string);
+                                // Fallback: use data URL locally if GitHub upload fails
+                                setCustomImage(dataUrl);
+                                alert(`Note: GitHub upload failed (${result.error || "unknown"}). Using local preview — image will not persist after deploy. Please set GITHUB_TOKEN in Netlify env vars.`);
                               }
-                              alert("Cover image uploaded and attached successfully!");
                             };
-                            img.onerror = () => {
-                              setCustomImage(event.target?.result as string);
-                              alert("Cover image uploaded!");
-                            };
+                            img.onerror = () => { setCustomImage(event.target?.result as string); alert("Image loaded locally (could not process)."); };
                             img.src = event.target?.result as string;
                           };
                           reader.readAsDataURL(file);
@@ -386,6 +398,11 @@ export default function AdminBlogStudio() {
                       }} />
                     </label>
                   </div>
+                  {customImage && customImage.startsWith("/images/blog/") && (
+                    <p className="text-[11px] text-emerald-400 mb-1 flex items-center gap-1">
+                      <CheckCircle className="w-3 h-3" /> Image saved to GitHub permanently
+                    </p>
+                  )}
                   <input type="text" value={customImage} onChange={(e) => setCustomImage(e.target.value)} placeholder="/images/products/outdoor-fixed-led-display.jpg" className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-[#ff2d78]" />
                 </div>
                 <div>
@@ -400,9 +417,9 @@ export default function AdminBlogStudio() {
                           if (!file) return;
                           try {
                             const reader = new FileReader();
-                            reader.onload = (event) => {
+                            reader.onload = async (event) => {
                               const img = new Image();
-                              img.onload = () => {
+                              img.onload = async () => {
                                 const canvas = document.createElement("canvas");
                                 const MAX_WIDTH = 1000;
                                 let width = img.width;
@@ -414,9 +431,21 @@ export default function AdminBlogStudio() {
                                 canvas.width = width;
                                 canvas.height = height;
                                 const ctx = canvas.getContext("2d");
+                                if (ctx) ctx.drawImage(img, 0, 0, width, height);
                                 const dataUrl = ctx ? canvas.toDataURL("image/jpeg", 0.85) : (event.target?.result as string);
-                                setCustomContent((prev) => prev + `\n<img src="${dataUrl}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`);
-                                alert("Picture inserted into article!");
+                                const base64 = dataUrl.split(",")[1];
+                                const safeName = `${Date.now()}-${file.name.replace(/[^a-z0-9._-]/gi, "-").toLowerCase()}`;
+                                const filename = safeName.endsWith(".jpg") || safeName.match(/\.(png|webp|jpeg)$/) ? safeName : `${safeName}.jpg`;
+                                // Try uploading to GitHub for permanent storage
+                                const res = await fetch("/api/blog/upload-image", {
+                                  method: "POST",
+                                  headers: { "Content-Type": "application/json" },
+                                  body: JSON.stringify({ filename, base64 }),
+                                });
+                                const result = await res.json();
+                                const srcUrl = (res.ok && result.url) ? result.url : dataUrl;
+                                setCustomContent((prev) => prev + `\n<img src="${srcUrl}" alt="${file.name}" class="rounded-xl my-4 w-full object-cover max-h-96" />\n`);
+                                alert(res.ok && result.url ? "Picture uploaded to GitHub and inserted!" : "Picture inserted (using local preview — set GITHUB_TOKEN for permanent storage).");
                               };
                               img.onerror = () => {
                                 const dataUrl = event.target?.result as string;
