@@ -778,6 +778,23 @@ export const PRODUCTS_REGISTRY = {
           image: "/images/products/main-page/x_banner_stand-oakland-park-printing-fl.webp",
           ratingCount: "385",
           ratingScore: "4.7",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom X-Banner Stands in Fort Lauderdale, FL</h2>
+            <p>If you need a freestanding graphic display without spending on a full retractable banner setup, an X-banner stand is the budget-friendly middle ground. The name comes from the frame shape: two crossing fiberglass rods that tension the fabric or vinyl graphic into place, holding it upright without a heavy base.</p>
+            <p>Nano Signs builds these with lightweight fiberglass legs that fold flat for transport, and every graphic attaches with grommeted corners that hook onto the frame in under a minute. Because the graphic is a separate printed piece from the frame, swapping in new artwork for a different event or promotion doesn't mean buying a whole new stand.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where X-banner stands come in handy:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Retail product launches and in-store promotions</li>
+              <li>Trade show and expo booths</li>
+              <li>Church and community event signage</li>
+              <li>Pop-up shop displays</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions people ask before buying</h3>
+            <p><em>How is an X-banner different from a retractable roll-up banner?</em> A retractable banner has the graphic built into a base that rolls up for storage. An X-banner uses a separate lightweight frame with a grommeted graphic that attaches and detaches, generally a lighter, more affordable option, though the graphic isn't as protected in transport.</p>
+            <p><em>Can I reuse the frame with new graphics later?</em> Yes, since the frame and the printed graphic are separate pieces, ordering a new graphic to hook onto your existing stand is straightforward.</p>
+            <p><em>What sizes are available?</em> A compact 24" x 63" stand works for tighter spaces, while a larger 31" x 70" stand gives you more visual real estate for bigger booths or storefronts.</p>
+            <p class="mt-4">Order a custom X-banner stand for an affordable, portable display that's ready in minutes.</p>
+          </div>`,
           sizes: [
             {
               label: '24" x 63" Small X-Stand',
@@ -4247,6 +4264,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingCount: "580",
           ratingScore: "4.8",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Postcard Printing in Fort Lauderdale, FL</h2>
+            <p>A postcard doesn't need to be opened. The message is right there the second it lands in someone's hand or mailbox. That's what makes it one of the most reliable formats for direct mail: no envelope to get tossed unopened, no click required.</p>
+            <p>Nano Signs prints postcards on thick, archival-grade cardstock with square corners that meet standard USPS mailing specs, so if you're running a direct mail campaign, sizing and cutting won't cause issues at the post office. Pick a glossy finish for punchy, photo-forward designs, or matte if you want something with a more restrained, writeable surface. Four sizes are available, from a standard 4" x 6" up to a 6" x 11" jumbo card for when you need more room to work with.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">What postcards work well for:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Direct mail marketing campaigns</li>
+              <li>Coupons and promotional handouts</li>
+              <li>Event invitations</li>
+              <li>Package inserts</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions worth answering upfront</h3>
+            <p><em>Do these postcards meet USPS mailing requirements?</em> Yes, they're cut with square corners to standard postal specifications, which matters if you're mailing in bulk rather than hand-distributing.</p>
+            <p><em>What size postcard should I use for a mailer?</em> 4" x 6" is the standard choice for most direct mail campaigns and keeps postage costs predictable; larger sizes like 5" x 7" or 6" x 9" stand out more in a mailbox but may affect postage rates depending on your mail class.</p>
+            <p><em>Can I print different content on each side?</em> Yes, double-sided printing is available, so you can keep the front focused on visuals and the back on address space, offer details, or contact info.</p>
+            <p class="mt-4">Order custom postcards and get them printed and ready to mail or hand out.</p>
+          </div>`,
           sizes: [
             {
               label: '4" x 6" Standard Postcard',
@@ -4359,16 +4393,6 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Material", value: "14pt Premium Cardstock" },
             { key: "Finish Options", value: "Glossy (front only) or Smooth Matte" },
           ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Printed Postcards in Fort Lauderdale & Mississauga</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Take your local direct mail marketing or client handouts to the next level with high-quality postcards from Nano Signs. Serving the Greater Fort Lauderdale Area, Fort Lauderdale, and Mississauga, ON, we offer crisp, full-color postcard printing that is ideal for neighbourhood outreach, retail promotions, coupons, and corporate invitations. Our postcards are cut with square corners to comply with standard USA Post specifications, guaranteeing a clean and simple product-focused aesthetic.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Choose between high-shine glossy finish that accentuates photographic imagery and makes colors pop, or smooth matte cardstock for a non-glare, writeable finish. With single-sided or double-sided printing options, you can design your postcard layout to showcase striking graphics on the front while keeping the back clear for address, postage, and local corporate details.
-              </p>
-            </div>`,
           faqs: [
             {
               q: "What paper stock options do you offer for postcards?",
@@ -4428,6 +4452,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingCount: "430",
           ratingScore: "4.7",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Flyer Printing in Fort Lauderdale, FL</h2>
+            <p>A flyer is still one of the cheapest ways to get a message in front of a lot of people fast: pinned to a community board, handed out at an event, dropped at a front desk. Nano Signs prints them on your choice of 100lb glossy stock, which makes photos and color pop, or matte stock, which reads cleaner under fluorescent lighting and doesn't glare back at whoever's holding it.</p>
+            <p>You can go single-sided if the message is short, or double-sided to fit a second offer, map, or set of details on the back. Three sizes cover most use cases: a compact 5.5" x 8.5" for handouts, an 8.5" x 14" for more detailed content, and an 11" x 17" when you need something closer to a mini-poster.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common uses for flyers:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Local event promotion</li>
+              <li>Restaurant menus and specials</li>
+              <li>Real estate open house listing sheets</li>
+              <li>Corporate handouts and info sheets</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">What people usually ask</h3>
+            <p><em>Should I go single or double-sided?</em> If your message fits in a headline, a few bullet points, and a call to action, single-sided keeps it simple and cheap. Double-sided is worth it when you've got a second offer, event details, or a map to include.</p>
+            <p><em>What paper size works best for handing out at events?</em> The 5.5" x 8.5" size is the most common for direct handouts, small enough to pocket, big enough to read at a glance.</p>
+            <p><em>Glossy or matte, which one holds up better outdoors?</em> Neither finish is weatherproof on its own; if the flyer's going to be posted outside for more than a day or two, ask about laminate coating options instead.</p>
+            <p class="mt-4">Order custom flyers online with fast turnaround and a free proof before printing.</p>
+          </div>`,
           sizes: [
             {
               label: '5.5" x 8.5" Small Flyer',
@@ -4529,16 +4570,6 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Material", value: "Premium Glossy or Matte paper stock" },
             { key: "Printing", value: "High definition offset printing" },
           ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Flyer Printing in Fort Lauderdale</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Promote your next corporate event, local restaurant menu, or real estate open house with flyers from Nano Signs. Serving Mississauga, Fort Lauderdale, and all of the Greater Fort Lauderdale Area, we specialize in high-definition offset flyer printing with fast turnarounds. Manufactured using high-quality 100lb glossy text paper (which makes colors pop with photographic vibrance) or smooth matte text paper (ideal for a sophisticated, glare-free readable finish), our flyers offer a thick, substantial feel.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Choose single or double-sided layouts and orientation options (horizontal or vertical) to match your campaign goals. Hand them out at local Fort Lauderdale events, display them at front desks, or mail them directly to neighbourhood prospects.
-              </p>
-            </div>`,
           faqs: [
             {
               q: "What sizes are available for flyers?",
@@ -4595,6 +4626,23 @@ Why Choose Our Expert-grade Rollup Banners?
           image: "/images/products/main-page/custom_brochures-oakland-park-printing-fl.webp",
           ratingCount: "320",
           ratingScore: "4.8",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Tri-Fold Brochure Printing in Fort Lauderdale, FL</h2>
+            <p>Some information just doesn't fit on a single page: a service menu, a multi-step process, a full property portfolio. That's the job a folded brochure does better than a flyer or postcard: it gives you multiple panels to work with, so people move through your content in order instead of scanning one crowded page and moving on.</p>
+            <p>Nano Signs prints standard 8.5" x 11" brochures with machine scoring, so every fold lands exactly where it should and panels line up cleanly when the piece is closed. You've got three paper options depending on what you're going for: 100lb glossy for bold, saturated photography; 100lb matte if you want a more restrained, professional look that doesn't smudge under fingerprints; or 80lb recycled stock for businesses leaning into sustainability messaging.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">What folded brochures get used for most:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Restaurant and cafe menus</li>
+              <li>Corporate service overviews and company portfolios</li>
+              <li>Real estate property packets</li>
+              <li>Nonprofit or event program guides</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions people search before ordering</h3>
+            <p><em>Tri-fold or half-fold, what's the actual difference?</em> A tri-fold splits the page into three panels and works well for step-by-step content or a menu with several sections. A half-fold gives you two larger panels, better suited to fewer, bigger visuals: think a single hero photo or a simple two-part layout.</p>
+            <p><em>Does matte or glossy paper photograph better?</em> Glossy paper makes colors and photos look richer and more saturated. Matte holds up better under indoor lighting since it doesn't throw glare, and it's easier to write on if you need to.</p>
+            <p><em>What's the minimum order?</em> Runs start at 100 units, with per-unit pricing dropping as quantity goes up, useful if you're restocking a rack regularly.</p>
+            <p class="mt-4">Order custom folded brochures and get a proof to review before anything prints.</p>
+          </div>`,
           sizes: [
             {
               label: '8.5" x 11" Standard Brochure',
@@ -4653,16 +4701,6 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Material", value: "100lb Text Paper" },
             { key: "Printing", value: "Offset lithography" },
           ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Folded Brochures in Florida</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Present your products, services, or menu items in an elegant, structured format with folded brochures from Nano Signs. Serving businesses in Fort Lauderdale, Mississauga, and neighbouring Florida cities, we provide high-definition brochure printing with clean scoring and machine-folding. Our standard 8.5" x 11" brochures are available in standard Tri-Fold or Half-Fold configurations, ensuring your layouts line up perfectly.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Customize your print run with high-quality 100lb glossy text paper (vivid and striking), 100lb matte text paper (sophisticated, smudge-resistant), or 80lb recycled text paper for green-focused branding. Organize complex corporate information, portfolios, or restaurant menu items into readable panels that encourage prospective customers to learn more.
-              </p>
-            </div>`,
           faqs: [
             {
               q: "What fold styles do you offer for brochures?",
@@ -4717,6 +4755,23 @@ Why Choose Our Expert-grade Rollup Banners?
           image: "/images/products/main-page/door_hangers-oakland-park-printing-fl.webp",
           ratingCount: "310",
           ratingScore: "4.8",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Door Hanger Printing in Fort Lauderdale, FL</h2>
+            <p>Door-to-door marketing skips the inbox entirely. No spam filter, no scrolling past it. A door hanger gets physically placed on a homeowner's front door handle, which is exactly why landscaping companies, pressure washers, pest control services, and roofers keep coming back to this format for local campaigns.</p>
+            <p>Nano Signs prints on 14pt cardstock, heavy enough to resist curling in Florida humidity, and pre-cuts every hanger with a circular hole and slit that slides onto virtually any door handle. Go double-sided and you get a front panel for a bold headline and phone number, plus a back panel for pricing, a list of services, or a couple of client reviews.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Businesses that rely on door hangers:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Lawn care, pressure washing, and pest control</li>
+              <li>Roofing and home improvement contractors</li>
+              <li>Local restaurant delivery promotions</li>
+              <li>Political and community campaigning</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Frequently asked questions</h3>
+            <p><em>Will the hanger fit any door handle?</em> The standard cutout is a 1.25" circle with a slit, which fits the vast majority of residential handles. A curved arch hook cut is also available for handles that need a different shape.</p>
+            <p><em>What makes door hangers more effective than flyers for local campaigns?</em> A flyer can get lost in a stack of mail; a door hanger sits directly on the handle, so the homeowner has to physically remove it to get inside, meaning it doesn't get missed.</p>
+            <p><em>Is the cardstock durable enough for outdoor weather?</em> The 14pt stock is built to resist curling and hold up through humidity and light rain, though it's still paper, so for hangers left out multiple days, a shorter distribution window is safer than expecting fully weatherproof performance.</p>
+            <p class="mt-4">Order custom door hangers for your next neighborhood marketing push.</p>
+          </div>`,
           sizes: [
             {
               label: '3.5" x 8.5" Compact Hanger',
@@ -4788,16 +4843,6 @@ Why Choose Our Expert-grade Rollup Banners?
             { key: "Material", value: "14pt cardstock" },
             { key: "Hole Diameter", value: "1.25 inches standard" },
           ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Door Hanger Printing in Fort Lauderdale & Mississauga</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Connect directly with local neighbourhoods using door hangers from Nano Signs. Highly popular for landscaping, pressure washing, pest control, roofing, plumbing, and local restaurant delivery campaigns, door hangers provide a guaranteed physical touchpoint on the front doors of Fort Lauderdale, Mississauga, and GTA homes. Manufactured using heavy 14pt cardstock, these hangers hold up against Florida's exterior weather without curling.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Our door hangers are pre-cut with a circular hole and a slit (or curved arch hook) at the top, sliding effortlessly onto any standard handle. Design your door hangers with double-sided printing: use the front for bold, high-gloss promos and contact details, and the back for detailed service pricing or client reviews.
-              </p>
-            </div>`,
           faqs: [
             {
               q: "What sizes do you offer for door hangers?",
@@ -5584,6 +5629,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingScore: "4.9",
           ratingCount: "1,240",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Bulk Plastic Yard Sign Printing in Fort Lauderdale, FL</h2>
+            <p>Some jobs call for one or two signs. A political campaign blanketing a district, an HOA posting notices across a neighborhood, or a real estate team stocking signs for an entire quarter needs a very different order: dozens or hundreds of identical panels at once, priced to make sense at volume. That's what this listing is built for: bulk-quantity coroplast yard signs, sold in batches starting at 100 units.</p>
+            <p>Nano Signs prints these on heavy-duty 4mm corrugated plastic with UV-cured inks that hold color outdoors through direct sun and Florida rain. Every batch is manufactured to the same spec, so sign 1 and sign 100 look identical, important when you're placing them across a wide area and need consistent branding.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who typically needs bulk yard sign printing:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Political and election campaigns</li>
+              <li>Real estate teams and brokerages restocking inventory</li>
+              <li>HOAs and property managers posting community-wide notices</li>
+              <li>Event organizers marking multiple directional points</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Questions people ask about bulk orders</h3>
+            <p><em>What's the minimum order quantity?</em> Runs start at 100 signs, with bulk pricing tiers up to 1,000 units, and the per-sign cost drops noticeably as the order size increases.</p>
+            <p><em>Single-sided or double-sided, does it matter for large runs?</em> Double-sided is worth the small added cost for anything placed where traffic passes from both directions, like street-facing yard signs or intersection placements; single-sided can save on cost for signs mounted flat against a wall or fence.</p>
+            <p><em>How is this different from your standard Yard Signs product?</em> This listing is built specifically around large-quantity, single-size runs at bulk pricing, ideal for campaigns needing many identical signs at once. For a one-off listing sign or a small order with size and stand options to choose from, the standard yard signs page is the better fit.</p>
+            <p class="mt-4">Get a bulk quote on plastic yard signs and outfit your whole campaign or listing season in one order.</p>
+          </div>`,
           quantityOptions: [100, 200, 500, 1000],
           quantityPrices: {
             100: 330.00,
@@ -5645,6 +5707,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingScore: "4.9",
           ratingCount: "8,420",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Yard Signs in Fort Lauderdale, FL</h2>
+            <p>When people search "yard sign printing," this is usually what they picture: a corrugated plastic panel hung from a wire H-stake or an L-shaped stand, planted in the grass at a listing, a campaign stop, or a front lawn. Nano Signs prints these on weather-resistant coroplast, full color and double-sided by default, so the sign reads just as clearly from either direction of the street.</p>
+            <p>Sizes run from a standard 24" x 32" up to a large 36" x 48" for signs that need to be seen from further away, and every order ships with grommets already in place so mounting hardware attaches without extra drilling or punching. Choose plain coroplast for a standard listing window, heavy-duty 10mm board for a sign that'll be up longer, or aluminum composite (ACM) if you want something closer to permanent.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">What yard signs get used for:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Real estate listings and open houses</li>
+              <li>Political and election campaigns</li>
+              <li>Yard sales and neighborhood events</li>
+              <li>Small business storefront advertising</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions</h3>
+            <p><em>Do yard signs come with a stand?</em> The sign panel itself doesn't include a stand by default, but a black L-shaped post stand can be added, worth it if you don't already have wire H-stakes on hand.</p>
+            <p><em>Is coroplast waterproof?</em> Yes, coroplast is a corrugated plastic material designed to resist water, humidity, and general outdoor wear, which is why it's the standard choice for lawn and campaign signage.</p>
+            <p><em>How long will a yard sign last outdoors?</em> A standard 4mm coroplast sign typically holds up well through a normal listing or campaign season; for anything left outdoors for many months, the heavy-duty 10mm or aluminum options resist warping and fading considerably longer.</p>
+            <p class="mt-4">Order custom yard signs for your next listing, campaign, or event.</p>
+          </div>`,
           sizes: [
             { label: '24" x 32"', value: "24x32", basePrice: 45 },
             { label: '24" x 36"', value: "24x36", basePrice: 65 },
@@ -5780,6 +5859,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingScore: "4.9",
           ratingCount: "3,150",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Real Estate Sign Panels in Fort Lauderdale, FL</h2>
+            <p>A "For Sale" sign only does its job if it's still legible six months later. Sun-faded, curled panels don't inspire confidence in a listing. Real estate panels from Nano Signs are built specifically to survive months outdoors in Florida heat and rain without the print fading or the panel warping.</p>
+            <p>You've got a choice of materials depending on how long the panel needs to last: standard 4mm coroplast for a typical listing window, 6mm heavy-duty coroplast if the property's likely to sit longer, or a rigid .040 aluminum panel for agents who want something more permanent and professional-looking on a repeat basis. Every panel is compatible with standard real estate sign frames and rider slots, so it drops right into the hardware agents already use.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where real estate panels get used:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>For Sale and For Rent listings</li>
+              <li>Open house directional signage</li>
+              <li>Sold and Under Contract riders</li>
+              <li>Broker and agent branding at a property</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions from agents</h3>
+            <p><em>Coroplast or aluminum, which should I choose?</em> Coroplast is lightweight and budget-friendly, a good fit for a listing that'll be sold within a normal timeframe. Aluminum costs more but resists denting, warping, and fading far longer, which pays off if you're reusing panels across multiple listings.</p>
+            <p><em>Will the print fade in direct sun?</em> The panels use UV-resistant, fade-proof inks specifically because real estate signage sits outside for extended periods, often through full Florida summers.</p>
+            <p><em>Do these fit my existing sign frame?</em> Standard 20" x 24" panels are sized to work with the sign frames and rider slots most agents already have installed.</p>
+            <p class="mt-4">Order custom real estate panels and keep your listings looking sharp from the first showing to closing day.</p>
+          </div>`,
           sizes: [
             { label: '20" x 24"', value: "20x24", basePrice: 110 }
           ],
@@ -6013,6 +6109,23 @@ Why Choose Our Expert-grade Rollup Banners?
           ],
           ratingScore: "4.8",
           ratingCount: "1,640",
+          description: `<div class="space-y-4 text-slate-700 leading-relaxed">
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom A-Frame Sidewalk Signs in Fort Lauderdale, FL</h2>
+            <p>Foot traffic doesn't read a menu posted inside your window. It needs something on the sidewalk to actually stop and look at. An A-frame sign, sometimes called a sandwich board, does exactly that: it stands upright on its own, folds flat for storage, and gets set up or packed away in seconds each day.</p>
+            <p>Nano Signs builds these with a metal or plastic frame holding two printed insert panels, visible from both directions so someone walking by from either side sees your message. Inserts come in coroplast for everyday use or aluminum composite for something sturdier, and because the panels slide in and out of the frame, updating your daily special or weekly promotion doesn't mean replacing the whole sign.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Where A-frame signs get used most:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Restaurant and cafe daily specials</li>
+              <li>Retail store sidewalk promotions</li>
+              <li>Salons, hotels, and pop-up shops</li>
+              <li>Farmers markets and outdoor vendor stalls</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions</h3>
+            <p><em>Can I change the message without buying a new sign?</em> Yes, the printed inserts slide in and out of the frame independently, so swapping in a new panel for a different promotion is quick and doesn't require a new frame.</p>
+            <p><em>What's the difference between the metal and plastic frame options?</em> The metal frame is the standard, more affordable choice. A plastic frame costs a bit more but resists rust, which matters if the sign is going to sit outdoors near sprinklers or coastal humidity for extended stretches.</p>
+            <p><em>Are A-frame signs printed on both sides?</em> Yes, these ship double-sided by default, since the whole point is being readable to foot traffic approaching from either direction on the sidewalk.</p>
+            <p class="mt-4">Order a custom A-frame sign and start pulling in foot traffic tomorrow.</p>
+          </div>`,
           sizes: [
             { label: '18" x 24"', value: "18x24", basePrice: 105 },
             { label: '36" x 24"', value: "36x24", basePrice: 130 },
