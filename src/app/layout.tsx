@@ -127,12 +127,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "additionalType": "https://schema.org/PrintShop",
-              "category": "Sign Shop & Print Shop",
-              "keywords": "Sign Shop, Custom Business Signs, Print Shop, Commercial Printing, LED Signs, Banners, Neon Signs, Vehicle Wraps",
+              "category": "Sign Shop",
+              "keywords": "Sign Shop, Custom Business Signs, LED Signs, Banners, Neon Signs, Channel Letters, Vehicle Wraps",
               "name": "Nano Signs",
-              "alternateName": "Nano Signs & Printing",
-              "description": "Fort Lauderdale's premier custom sign shop and commercial print shop. We specialize in custom business signs, banners, LED displays, neon signs, vehicle wraps, channel letters, and marketing materials in Fort Lauderdale FL.",
+              "alternateName": "Nano Signs",
+              "description": "Fort Lauderdale's premier custom sign shop. We specialize in custom business signs, banners, LED displays, neon signs, vehicle wraps, channel letters, and commercial signage in Fort Lauderdale FL.",
+
 
 
               "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
