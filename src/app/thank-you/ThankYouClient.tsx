@@ -15,7 +15,7 @@ function ThankYouContent() {
   useEffect(() => {
     // Trigger Google Ads & Analytics Conversion event when Thank You page loads
     if (typeof window !== "undefined") {
-      const win = window as unknown as { gtag?: (...args: unknown[]) => void };
+      const win = window as unknown as { gtag?: (...args: unknown[]) => void; fbq?: (...args: unknown[]) => void };
       if (win.gtag) {
         // Generic pageview conversion
         win.gtag("event", "conversion", {
@@ -25,6 +25,9 @@ function ThankYouContent() {
           value: 1,
           currency: "USD",
         });
+      }
+      if (win.fbq) {
+        win.fbq("track", "Lead");
       }
     }
   }, []);
