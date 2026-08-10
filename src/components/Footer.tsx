@@ -257,6 +257,8 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                     alt={method.name}
                     width={38}
                     height={24}
+                    loading="lazy"
+                    decoding="async"
                     className="h-6 bg-white rounded px-1 border border-gray-200"
                   />
                 ))}

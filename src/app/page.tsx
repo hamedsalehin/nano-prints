@@ -15,6 +15,25 @@ const Footer = dynamic(() => import('@/components/Footer').then(mod => mod.Foote
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Homepage LCP Hero Image Preload */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero-image-mobile.webp"
+        type="image/webp"
+        media="(max-width: 768px)"
+        // @ts-expect-error fetchpriority attribute
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero-image.webp"
+        type="image/webp"
+        media="(min-width: 769px)"
+        // @ts-expect-error fetchpriority attribute
+        fetchpriority="high"
+      />
       <Header />
       <HeroSection />
       <CategoryCarousel />

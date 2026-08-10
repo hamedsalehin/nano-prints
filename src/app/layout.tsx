@@ -19,7 +19,7 @@ const poppins = Poppins({
   weight: ["600", "700"],
   variable: "--font-poppins",
   display: "swap",
-  preload: false,
+  preload: true,
 });
 
 export const viewport: Viewport = {
