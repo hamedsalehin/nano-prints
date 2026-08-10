@@ -1,9 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+
+const Footer = dynamic(() => import("@/components/Footer").then((mod) => mod.Footer), {
+  ssr: true,
+});
 import {
   UploadCloud,
   Loader2,
