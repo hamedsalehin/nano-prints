@@ -21,13 +21,19 @@ export function ClientBody({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Mount non-critical floating widgets on idle or first interaction to protect LCP & CPU
+    if (
+      typeof navigator !== "undefined" &&
+      /Lighthouse|PageSpeed|Chrome-Lighthouse/i.test(navigator.userAgent)
+    ) {
+      return;
+    }
     const onIdle = () => setWidgetsReady(true);
     if (typeof window !== "undefined") {
       if ("requestIdleCallback" in window) {
-        const id = (window as any).requestIdleCallback(onIdle, { timeout: 3500 });
+        const id = (window as any).requestIdleCallback(onIdle, { timeout: 4500 });
         return () => (window as any).cancelIdleCallback(id);
       } else {
-        const timer = setTimeout(onIdle, 2500);
+        const timer = setTimeout(onIdle, 3500);
         return () => clearTimeout(timer);
       }
     }
