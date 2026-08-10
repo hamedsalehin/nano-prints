@@ -271,6 +271,15 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+        ],
+      },
+      {
         source: "/images/:path*",
         headers: [
           {
@@ -281,6 +290,15 @@ const nextConfig = {
       },
       {
         source: "/_next/static/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/_next/image/:path*",
         headers: [
           {
             key: "Cache-Control",
