@@ -85,7 +85,7 @@ const CATEGORIES = [
   },
 ];
 
-export default function QuotePageClient() {
+export default function QuoteV3Client() {
   const router = useRouter();
 
   // Selected Category State

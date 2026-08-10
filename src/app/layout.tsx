@@ -126,8 +126,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["LocalBusiness", "PrintShop"],
+              "@type": "LocalBusiness",
+              "additionalType": "https://schema.org/PrintShop",
               "name": "Nano Signs",
+
               "alternateName": "Nano Signs & Printing",
               "description": "Fort Lauderdale's premier sign company and print shop. We specialize in custom signs, banners, LED displays, neon signs, vehicle wraps, and marketing materials for businesses across Broward County and Fort Lauderdale FL.",
               "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
