@@ -63,6 +63,14 @@ export function cleanRawContent(rawContent: string): { content: string; extracte
     }
   }
 
+  
+  // Strip document level HTML tags, head, title, body wrappers to prevent duplicate title tags
+  text = text.replace(/<!DOCTYPE[^>]*>/gi, "");
+  text = text.replace(/<html[^>]*>/gi, "").replace(/<\/html>/gi, "");
+  text = text.replace(/<head[^>]*>[\s\S]*?<\/head>/gi, "");
+  text = text.replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "");
+  text = text.replace(/<body[^>]*>/gi, "").replace(/<\/body>/gi, "");
+
   return { content: text.trim(), extractedData };
 }
 

@@ -176,6 +176,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF ALL VINYL BANNERS - FAST SHIPPING",
           image: "/images/products/main-page/vinyl_banner-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/vinyl_banner-oakland-park-printing-fl.webp","/images/products/main-page/banners_desc-oakland-park-printing-fl.webp","/images/products/main-page/mesh_banner-oakland-park-printing-fl.webp"],
           ratingCount: "1,530",
           ratingScore: "4.8",
           sizes: [
@@ -266,12 +267,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF LUXURY FABRIC BANNERS",
           image: "/images/products/main-page/fabric_banner-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/fabric_banner-oakland-park-printing-fl.webp",
-            "/images/products/gallery/fabric_banner_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/fabric_banner_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/fabric_banner_use_1-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/fabric_banner-oakland-park-printing-fl.webp","/images/products/gallery/fabric_banner_use_1.webp","/images/products/gallery/step_repeat_use_1.webp"],
           ratingCount: "980",
           ratingScore: "4.9",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -385,6 +381,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF ALL MESH FENCE BANNERS",
           image: "/images/products/main-page/mesh_banner-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/mesh_banner-oakland-park-printing-fl.webp","/images/products/main-page/vinyl_banner-oakland-park-printing-fl.webp","/images/products/main-page/vertical_banner-oakland-park-printing-fl.webp"],
           ratingCount: "680",
           ratingScore: "4.8",
           sizes: [
@@ -449,6 +446,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF STREET & BOULEVARD POLE BANNERS",
           image: "/images/products/main-page/pole_banner-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/pole_banner-oakland-park-printing-fl.webp","/images/products/main-page/vertical_banner-oakland-park-printing-fl.webp","/images/products/main-page/banners_desc-oakland-park-printing-fl.webp"],
           ratingCount: "210",
           ratingScore: "4.7",
           sizes: [
@@ -639,12 +637,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF RETRACTABLE ROLL-UP BANNERS",
           image: "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
-            "/images/products/gallery/retractable_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/retractable_use_2-oakland-park-printing-fl.webp",
-            "/images/products/gallery/retractable_use_3-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp","/images/products/gallery/retractable_use_1.webp","/images/products/gallery/retractable_use_2.webp","/images/products/gallery/retractable_use_3.webp"],
           ratingCount: "1240",
           ratingScore: "4.9",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -854,12 +847,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF STEP AND REPEAT PRESS WALLS",
           image: "/images/products/main-page/backdrop_banners-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/backdrop_banners-oakland-park-printing-fl.webp",
-            "/images/products/gallery/step_repeat_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/step_repeat_use_2-oakland-park-printing-fl.webp",
-            "/images/products/gallery/step_repeat_use_3-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/backdrop_banners-oakland-park-printing-fl.webp","/images/products/gallery/step_repeat_use_1.webp","/images/products/gallery/step_repeat_use_2.webp","/images/products/gallery/step_repeat_use_3.webp"],
           ratingCount: "430",
           ratingScore: "4.8",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -952,6 +940,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-banners",
           promoText: "20% OFF TABLETOP RETRACTABLE DISPLAYS",
           image: "/images/products/main-page/tabletop_retractable-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/tabletop_retractable-oakland-park-printing-fl.webp","/images/products/gallery/retractable_use_1.webp","/images/products/gallery/retractable_use_2.webp"],
           ratingCount: "420",
           ratingScore: "4.8",
           sizes: [
@@ -1057,6 +1046,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF ALL ADVERTISING FLAGS - SHIPS NEXT DAY",
           image: "/images/products/main-page/feather_flag-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/feather_flag-oakland-park-printing-fl.webp","/images/products/gallery/flag_use_1.webp","/images/products/main-page/teardrop_flag-oakland-park-printing-fl.webp"],
           ratingCount: "820",
           ratingScore: "4.8",
           sizes: [
@@ -1156,6 +1146,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF ALL TEARDROP FLAGS",
           image: "/images/products/main-page/teardrop_flag-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/teardrop_flag-oakland-park-printing-fl.webp","/images/products/gallery/flag_use_1.webp","/images/products/main-page/feather_flag-oakland-park-printing-fl.webp"],
           ratingCount: "432",
           ratingScore: "4.7",
           sizes: [
@@ -1219,6 +1210,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/custom-flags",
           promoText: "20% OFF STRAIGHT ADVERTISING FLAGS",
           image: "/images/products/main-page/straight_flag-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/straight_flag-oakland-park-printing-fl.webp","/images/products/gallery/flag_use_1.webp","/images/products/main-page/flags_desc-oakland-park-printing-fl.webp"],
           ratingCount: "295",
           ratingScore: "4.7",
           sizes: [
@@ -1436,6 +1428,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF BUMPER STICKERS",
           image: "/images/products/main-page/bumper_sticker-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/bumper_sticker-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp","/images/products/main-page/vinyl_sticker-oakland-park-printing-fl.webp"],
           ratingCount: "850",
           ratingScore: "4.8",
           sizes: [
@@ -1653,6 +1646,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF SEMI-PERMANENT DOOR DECALS",
           image: "/images/products/main-page/car_door_decal-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/car_door_decal-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/gallery/magnet_use_1.webp"],
           ratingCount: "320",
           ratingScore: "4.7",
           sizes: [
@@ -1711,6 +1705,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
           breadcrumbHref: "/vehicle-signs",
           promoText: "25% OFF WINDOW ADHESIVE DECALS",
           image: "/images/products/main-page/car_window_decal-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/car_window_decal-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/main-page/car_door_decal_product-oakland-park-printing-fl.webp"],
           ratingCount: "285",
           ratingScore: "4.8",
           sizes: [
@@ -2875,403 +2870,8 @@ Why Choose Our Expert-grade Rollup Banners?
           reviews: [],
           ctaHeading: "Ready to design your banner?",
         },
-      },
-      {
-        id: "business-cards",
-        name: "Business Cards",
-        description:
-          'Leave a lasting impression with high-quality Business Cards. Manufactured using ultra-thick 14pt or 16pt cardstock with offset high-resolution printing, these standard 3.5" x 2" cards represent your business with absolute quality. Customize your finish with expert-grade non-glare matte or high-gloss UV sheen, and choose single or double-sided layouts to distribute to tradeshow attendees, recruits, and new leads.',
-        image: "/images/products/main-page/business_cards-oakland-park-printing-fl.webp",
-        price: "Starting at $55.00",
-        config: {
-          title: "Business Cards",
-          quantityOptions: [100, 250, 500, 1000, 1500, 2000, 2500, 5000, 10000],
-          quantityPrices: {
-            100: 29.98,
-            250: 39.98,
-            500: 49.98,
-            1000: 79.98,
-            1500: 117.98,
-            2000: 145.98,
-            2500: 179.98,
-            5000: 319.98,
-            10000: 559.98,
-          },
-          subtitle:
-            'Standard 3.5" x 2" cards manufactured using ultra-thick cardstock with multiple finishes.',
-          breadcrumb: "Tradeshow",
-          breadcrumbHref: "/trade-show",
-          promoText: "25% OFF ALL EVENT STATIONERY",
-          image: "/images/products/main-page/business_cards-oakland-park-printing-fl.webp",
-          ratingCount: "1120",
-          ratingScore: "4.9",
-          description: `<div class="space-y-4">
-            <h3 class="text-lg font-bold text-slate-900">Custom Business Card Printing in Fort Lauderdale, FL</h3>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              A business card is still the fastest way to hand someone your contact info at a networking event, on a job site, or across a coffee shop table and a flimsy one undercuts the impression you're trying to make. Nano Signs prints standard 3.5" x 2" cards on true 14pt or 16pt cardstock, thick enough that people notice the quality before they even read the text.
-            </p>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              You get to choose the finish: a glossy UV coating for punchy, saturated colors, or a smooth matte finish that's easy to write on and reads as more understated and professional. Add-ons like rounded corners, painted edges, soft-touch coating, or raised foil accents let you make cards that don't look like everyone else's.
-            </p>
-            <p class="text-sm text-gray-700 font-semibold leading-relaxed">
-              Ready when you are, design and order custom business cards with a free artwork check included on every order.
-            </p>
-          </div>`,
-          sizes: [
-            {
-              label: '3.5" x 2" Standard size',
-              value: "3.5x2",
-              basePrice: 29.98,
-            },
-          ],
-          selects: [
-            {
-              label: "Paper Stock & Finish",
-              options: [
-                {
-                  label: "14pt semi gloss (profit maximizer)",
-                  value: "semi_gloss",
-                  priceAdder: 0,
-                  description: "Clean, expert-grade look with a smooth semi-gloss finish. Simple to write on.",
-                  image: "/images/products/main-page/business_cards_semigloss-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Glossy",
-                  value: "glossy",
-                  priceAdder: 0,
-                  description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main-page/business_cards_glossy-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Embossed Gloss",
-                  value: "embossed_gloss",
-                  priceAdder: 0.15,
-                  description: "Raised clear gloss accents for a textured, high-end feel.",
-                  image: "/images/products/main-page/business_cards_foil-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Soft Touch",
-                  value: "soft_touch",
-                  priceAdder: 0.12,
-                  description: "Velvety coating that feels soft and high-quality in the hand.",
-                  image: "/images/products/main-page/business_cards-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Painted Edge",
-                  value: "painted_edge",
-                  priceAdder: 0.25,
-                  description: "Thick cards with colored edges for a bold, modern look.",
-                  image: "/images/products/main-page/business_cards_painted_edge-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Ultra Thick",
-                  value: "ultra_thick",
-                  priceAdder: 0.23,
-                  description: "Double-thick cardstock for a substantial, sturdy feel.",
-                  image: "/images/products/main-page/business_cards_ultra_thick-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Clear Plastic",
-                  value: "clear_plastic",
-                  priceAdder: 0.35,
-                  description: "See-through modern plastic cards that make a unique statement.",
-                  image: "/images/products/main-page/business_cards_clear_plastic-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Pearl",
-                  value: "pearl",
-                  priceAdder: 0.12,
-                  description: "Glimmering, light-catching surface with a pearlescent shine.",
-                  image: "/images/products/main-page/business_cards_pearl-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Gold Raised Foil",
-                  value: "gold_raised_foil",
-                  priceAdder: 0.20,
-                  description: "Elevated, 3D raised gold foil accents for a luxury feel.",
-                  image: "/images/products/main-page/business_cards_gold_raised_foil-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Silver Raised Foil",
-                  value: "silver_raised_foil",
-                  priceAdder: 0.20,
-                  description: "Elevated, 3D raised silver foil accents for a luxury feel.",
-                  image: "/images/products/main-page/business_cards_silver_raised_foil-oakland-park-printing-fl.webp",
-                },
-              ],
-            },
-            {
-              label: "Sides",
-              options: [
-                {
-                  label: "Single-Sided",
-                  value: "single",
-                  priceAdder: 0,
-                  priceMultiplier: 1.0,
-                  description: "Manufactured using front side only.",
-                },
-                {
-                  label: "Double-Sided",
-                  value: "double",
-                  priceAdder: 0,
-                  priceMultiplier: 1.25,
-                  description: "Manufactured using both front and back sides.",
-                },
-              ],
-            },
-            {
-              label: "Corners",
-              options: [
-                {
-                  label: "Standard Square Corners",
-                  value: "square",
-                  priceAdder: 0,
-                },
-                {
-                  label: "Rounded Corners",
-                  value: "rounded",
-                  priceAdder: 0.05,
-                },
-              ],
-            },
-          ],
-          qtyDiscount: "Predefined package quantities selected below",
-          keyFeatures: [
-            "Vivid color offset printing",
-            "Ultra-thick cardstock options",
-            "Easy design templates",
-          ],
-          useCases: ["Networking events", "Customer takeaways"],
-          specs: [
-            { key: "Dimensions", value: '3.5" x 2" (Standard size)' },
-            { key: "Standard Stock", value: "14pt semi gloss (profit maximizer)" },
-            { key: "Premium Finishes", value: "Glossy, Soft Touch, Pearl" },
-            { key: "Luxury Finishes", value: "Embossed Gloss, Gold Raised Foil, Silver Raised Foil" },
-            { key: "Specialty Stocks", value: "Painted Edge, Ultra Thick, Clear Plastic" },
-            { key: "Standard Turnaround", value: "Next Business Day" },
-          ],
-          faqs: [
-            {
-              q: "What is the standard size of a business card?",
-              a: 'The standard size for standard business cards is 3.5 inches by 2 inches. This fits perfectly into standard wallets, cardholders, and organizer slots.',
-            },
-            {
-              q: "What is the difference between 14 pt and 16 pt cardstock?",
-              a: 'The point (pt) unit measures paper thickness. 14 pt cardstock is the industry standard for high-quality business cards. 16 pt cardstock is thicker and sturdier, providing a heavier, more high-quality feel.',
-            },
-            {
-              q: "Can I write on both matte and glossy business cards?",
-              a: 'You can write on matte and uncoated cards using standard ballpoint pens or pencils. Glossy cards have a slick UV coating that resists ink, making them harder to write on.',
-            },
-            {
-              q: "What is the difference between Pearl and Soft Touch finishes?",
-              a: 'Pearl cardstock uses a specialized paper embedded with natural shimmering fibers that give the entire card a pearlescent sheen. Soft Touch is a velvet-matte protective coating applied after printing that gives the cards a soft, suede-like texture.',
-            },
-          ],
-          reviews: [
-            {
-              author: "Marcus K., Event Director",
-              rating: 5,
-              text: "The metallic foil cards look amazing! They really capture attention when handed out. Exact color registration and excellent high-quality paper stock.",
-            },
-            {
-              author: "Sarah J., Retail Manager",
-              rating: 5,
-              text: "I ordered the Pearl business cards and have received so many compliments on the shimmer. The offset print quality is pristine.",
-            },
-            {
-              author: "David T., Startup Founder",
-              rating: 5,
-              text: "Sturdy 16 pt high-quality cards. Excellent price point and extremely fast turnaround. Will definitely reorder standard cards here.",
-            },
-          ],
-          ctaHeading: "Design business cards now",
-        },
-      },
-      {
-        id: "postcards",
-        name: "Postcards",
-        description:
-          "Hand out rich, full-color Postcards at your event table to advertise promotions, catalog your services, or distribute coupons. Printed in high definition on heavy 14pt gloss cover paper, they feel substantial and expert-grade. Choose between matte or high-gloss front finishes and sizes to create flyers, handouts, or mailers that prompt action from potential clients.",
-        image: "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-        price: "Starting at $65.00",
-        config: {
-          title: "Postcards",
-          quantityOptions: [100, 250, 500, 750, 1000, 1500, 2000],
-          subtitle:
-            "Standard promotional postcards printed in high definition gloss or matte cardstock.",
-          breadcrumb: "Tradeshow",
-          breadcrumbHref: "/trade-show",
-          promoText: "25% OFF ALL POSTCARDS AND HANDOUTS",
-          image: "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_matte-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_1-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_2-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_3-oakland-park-printing-fl.webp",
-          ],
-          ratingCount: "280",
-          ratingScore: "4.8",
-          sizes: [
-            {
-              label: '4" x 6" Postcard',
-              value: "4x6",
-              basePrice: 0.60,
-              quantityPrices: {
-                100: 65.00,
-                250: 75.00,
-                500: 140.00,
-                750: 165.00,
-                1000: 170.00,
-                2500: 220.00,
-                2000: 250.00,
-              },
-            },
-            {
-              label: '5" x 7" Postcard',
-              value: "5x7",
-              basePrice: 0.80,
-              quantityPrices: {
-                100: 80.00,
-                250: 95,
-                500: 155.00,
-                750: 180.00,
-                1000: 190.00,
-                1500: 210.00,
-                2000: 320.00,
-              },
-            },
-            {
-              label: '6" x 9" Postcard',
-              value: "6x9",
-              basePrice: 1.10,
-              quantityPrices: {
-                100: 85.00,
-                250: 110.00,
-                500: 165.00,
-                750: 195.00,
-                1000: 220.00,
-                1500: 260.00,
-                2000: 450.00,
-              },
-            },
-            {
-              label: '6" x 11" Postcard',
-              value: "6x11",
-              basePrice: 1.20,
-              quantityPrices: {
-                100: 95.00,
-                250: 120.00,
-                500: 185.00,
-                750: 210.00,
-                1000: 250.00,
-                1500: 350.00,
-                2000: 550.00,
-              },
-            },
-          ],
-          selects: [
-            {
-              label: "Paper Stock",
-              options: [
-                {
-                  label: "Glossy",
-                  value: "glossy",
-                  priceAdder: 0,
-                  description: "High-shine glossy finish that makes colors pop.",
-                  image: "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-                },
-                {
-                  label: "Matte",
-                  value: "matte",
-                  priceAdder: 0,
-                  description: "Clean, expert-grade look with a smooth non-glare matte finish.",
-                  image: "/images/products/main-page/postcard_matte-oakland-park-printing-fl.webp",
-                },
-              ],
-            },
-            {
-              label: "Orientation",
-              options: [
-                {
-                  label: "Horizontal",
-                  value: "horizontal",
-                  priceAdder: 0,
-                  description: "Landscape orientation layout.",
-                },
-                {
-                  label: "Vertical",
-                  value: "vertical",
-                  priceAdder: 0,
-                  description: "Portrait orientation layout.",
-                },
-              ],
-            },
-          ],
-          qtyDiscount: "Save more when printing in bulk",
-          keyFeatures: [
-            "High-quality heavyweight 14pt cardstock",
-            "Vivid double-sided printing available",
-            "High-quality glossy or matte textures",
-          ],
-          useCases: [
-            "Product coupon codes",
-            "Information spec sheets",
-            "Direct mail advertisements",
-          ],
-          specs: [
-            { key: "Material", value: "14pt Premium Cardstock" },
-            { key: "Finish Options", value: "Glossy (front only) or Smooth Matte" },
-          ],
-          description:
-            `<div class="space-y-4">
-              <h3 class="text-lg font-bold text-slate-900">Event Postcards & Table Handouts</h3>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Nano Signs provides high-quality postcard printing tailored for trade shows, networking events, and corporate displays nationwide. Manufactured using rigid 14pt cardstock, these postcards make outstanding spec sheets, coupon hand-outs, and direct mail ads. The clean, square-cornered trim ensures a simple, modern look that matches corporate guidelines.
-              </p>
-              <p class="text-sm text-gray-700 leading-relaxed">
-                Choose between high-gloss coating for ultimate vibrance or matte finish for a elegant, non-glare appearance that is simple to write on. Personalize with your logo and messaging in our Design Studio or upload layouts to print single-sided or double-sided.
-              </p>
-            </div>`,
-          faqs: [
-            {
-              q: "What paper stock options do you offer for postcards?",
-              a: "We print our postcards on high-quality heavy 14pt glossy cover or matte cardstock, giving them a stiff and substantial feel. Our glossy finish offers a high-shine coating that enhances photographic prints, while our smooth matte finish offers an elegant, writeable surface that resists smudging.",
-            },
-            {
-              q: "Can I print on both the front and back of the postcards?",
-              a: "Yes, absolutely! We offer both single-sided and double-sided full-color printing. Double-sided printing is highly recommended for direct mailers so you can place address and postage details on one side and a beautiful visual promotion on the other.",
-            },
-            {
-              q: "Are your postcards compatible with direct mail services like EDDM?",
-              a: "Yes! Our postcards are cut with square corners (no round cornering) to comply with USA Post and USPS direct mail standards. Popular EDDM sizes like 6\" x 9\" and 6\" x 11\" are fully supported.",
-            },
-            {
-              q: "What is the difference between glossy and matte postcard finishes?",
-              a: "Glossy paper has a reflective coating that makes images pop with intense color and deep contrasts, ideal for real estate flyers. Matte finish is non-reflective, soft to the touch, and makes text highly legible, ideal for info-dense postcards.",
-            },
-            {
-              q: "Do you offer layout templates for designing postcards?",
-              a: "Yes, our online Design Studio provides easy-to-use layouts, shapes, cliparts, and text boxes. You can design your postcard from scratch or upload a print-ready PDF/AI file directly to place your order.",
-            },
-          ],
-          reviews: [
-            {
-              author: "Tina M., Sales Rep",
-              rating: 5,
-              text: "Used these as handout spec sheets for our trade show in Fort Lauderdale. Colors are bright, and the 14pt stock feels very thick and expensive. Highly recommended local print shop!",
-            },
-            {
-              author: "Robert G., General Contractor",
-              rating: 5,
-              text: "Resilient, thick cards. Square corners look very modern. Handed out to clients and got a great response.",
-            },
-          ],
-          ctaHeading: "Build flyers & postcards",
-        },
-      },
-    ],
+      }
+      ],
   },
   "custom-decals": {
     title: "Decals",
@@ -3333,6 +2933,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF BUMPER STICKERS - SHIPS NEXT DAY",
           image: "/images/products/main-page/bumper_sticker_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/bumper_sticker_product-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp","/images/products/main-page/vinyl_sticker-oakland-park-printing-fl.webp"],
           ratingCount: "850",
           ratingScore: "4.8",
           sizes: [
@@ -3388,6 +2989,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF SEMI-PERMANENT DOOR DECALS",
           image: "/images/products/main-page/car_door_decal_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/car_door_decal_product-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/gallery/magnet_use_1.webp"],
           ratingCount: "320",
           ratingScore: "4.7",
           sizes: [
@@ -3446,6 +3048,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF WINDOW ADHESIVE DECALS",
           image: "/images/products/main-page/car_window_decal_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/car_window_decal_product-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/main-page/car_door_decal_product-oakland-park-printing-fl.webp"],
           ratingCount: "285",
           ratingScore: "4.8",
           sizes: [
@@ -3511,12 +3114,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF STOREFRONT WINDOW DECALS",
           image: "/images/products/main-page/vinyl_sticker-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/vinyl_sticker-oakland-park-printing-fl.webp",
-            "/images/products/gallery/vinyl_decal_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/vinyl_decal_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/vinyl_decal_use_1-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/vinyl_sticker-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp","/images/products/gallery/vinyl_decal_use_1.webp"],
           ratingCount: "940",
           ratingScore: "4.9",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -3620,6 +3218,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF ALL BULK ROLL LABELS",
           image: "/images/products/main-page/roll_labels_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/roll_labels_product-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp","/images/products/main-page/sticker_and_labels-oakland-park-printing-fl.webp"],
           ratingCount: "410",
           ratingScore: "4.8",
           sizes: [
@@ -3679,6 +3278,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText: "20% OFF REPOSITIONABLE WINDOW CLINGS",
           image:
             "/images/products/main-page/window_clings_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/window_clings_product-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/main-page/window_sign-oakland-park-printing-fl.webp"],
           ratingCount: "220",
           ratingScore: "4.7",
           sizes: [
@@ -3749,12 +3349,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-decals",
           promoText: "20% OFF PRINTED STICKER SHEETS",
           image: "/images/products/main-page/sticker_and_labels-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/sticker_and_labels-oakland-park-printing-fl.webp",
-            "/images/products/gallery/sticker_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/sticker_use_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/sticker_use_1-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/sticker_and_labels-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp","/images/products/main-page/roll_labels_product-oakland-park-printing-fl.webp"],
           ratingCount: "340",
           ratingScore: "4.8",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -3847,6 +3442,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText: "20% OFF RETURN ADDRESS LABELS",
           image:
             "/images/products/main-page/return_address_labels_product-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/return_address_labels_product-oakland-park-printing-fl.webp","/images/products/main-page/roll_labels_product-oakland-park-printing-fl.webp","/images/products/gallery/sticker_use_1.webp"],
           ratingCount: "480",
           ratingScore: "4.9",
           sizes: [
@@ -4257,13 +3853,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF ALL EVENT MARKETING PRINTS",
           image: "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_matte-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_1-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_2-oakland-park-printing-fl.webp",
-            "/images/products/main-page/postcard_action_3-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/postcard_glossy-oakland-park-printing-fl.webp","/images/products/main-page/postcard_action_1-oakland-park-printing-fl.webp","/images/products/main-page/postcard_action_2-oakland-park-printing-fl.webp","/images/products/main-page/postcard_action_3-oakland-park-printing-fl.webp"],
           ratingCount: "580",
           ratingScore: "4.8",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -4448,10 +4038,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF BULK EVENT FLYERS",
           image: "/images/products/main-page/flyer_glossy-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/flyer_glossy-oakland-park-printing-fl.webp",
-            "/images/products/main-page/flyer_matte-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/flyer_glossy-oakland-park-printing-fl.webp","/images/products/main-page/flyer_matte-oakland-park-printing-fl.webp","/images/products/main-page/marketing_materials_desc-oakland-park-printing-fl.webp"],
           ratingCount: "430",
           ratingScore: "4.7",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -4626,6 +4213,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF FOLDED CORPORATE BROCHURES",
           image: "/images/products/main-page/custom_brochures-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/custom_brochures-oakland-park-printing-fl.webp","/images/products/main-page/flyer_glossy-oakland-park-printing-fl.webp","/images/products/main-page/postcard_action_1-oakland-park-printing-fl.webp"],
           ratingCount: "320",
           ratingScore: "4.8",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -4755,6 +4343,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/marketing-materials",
           promoText: "25% OFF CORPORATE DOOR HANGERS",
           image: "/images/products/main-page/door_hangers-oakland-park-printing-fl.webp",
+          images: ["/images/products/main-page/door_hangers-oakland-park-printing-fl.webp","/images/products/main-page/postcard_action_1-oakland-park-printing-fl.webp","/images/products/main-page/marketing_materials_desc-oakland-park-printing-fl.webp"],
           ratingCount: "310",
           ratingScore: "4.8",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -5614,7 +5203,7 @@ Why Choose Our Expert-grade Rollup Banners?
         id: "plastic-yard-sign",
         name: "Plastic yard sign",
         description: "Durable corrugated plastic yard signs perfect for bulk campaigns. Get high-quality, durable printing solutions tailored to your exact specifications and delivered quickly.",
-        image: "/plastic yard signs.webp",
+        image: "/images/products/plastic-yard-signs.webp",
         price: "100 pcs for $330",
         badge: "Bulk Deal",
         config: {
@@ -5623,12 +5212,8 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumb: "Signs",
           breadcrumbHref: "/custom-signs",
           promoText: "Bulk Deal - 100 pcs for $330",
-          image: "/plastic yard signs.webp",
-          images: [
-            "/bag yard signs.webp",
-            "/plastic yard signs.webp",
-            "/Bag signs.webp"
-          ],
+          image: "/images/products/plastic-yard-signs.webp",
+          images: ["/images/products/plastic-yard-signs.webp","/images/products/gallery/lawn_bag_signs_in_action_1.webp","/images/products/gallery/lawn_bag_signs_in_action_2.webp"],
           ratingScore: "4.9",
           ratingCount: "1,240",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -5702,11 +5287,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "🏡 25% OFF Yard Signs — Most Popular Sign in America!",
           image: "/images/products/main-page/yard_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/yard_sign-oakland-park-printing-fl.webp",
-            "/images/products/gallery/yard_sign_in_action_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/yard_sign_in_action_2-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/yard_sign-oakland-park-printing-fl.webp","/images/products/gallery/yard_sign_in_action_1.webp","/images/products/gallery/yard_sign_in_action_2.webp"],
           ratingScore: "4.9",
           ratingCount: "8,420",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -5854,11 +5435,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "🏠 Real Estate Panels — Next Day Delivery Available!",
           image: "/images/products/main-page/Real_estate_panels-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/Real_estate_panels-oakland-park-printing-fl.webp",
-            "/images/products/gallery/real_estate_panels_in_action_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/real_estate_panels_in_action_2-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/Real_estate_panels-oakland-park-printing-fl.webp","/images/products/gallery/real_estate_panels_in_action_1.webp","/images/products/gallery/real_estate_panels_in_action_2.webp"],
           ratingScore: "4.9",
           ratingCount: "3,150",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -5995,10 +5572,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "⚙️ Aluminum Signs — Rust-Proof, Fade-Proof, Weatherproof. Ships Next Day!",
           image: "/images/products/main-page/aluminum_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/aluminum_sign-oakland-park-printing-fl.webp",
-            "/images/products/alum_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/aluminum_sign-oakland-park-printing-fl.webp","/images/products/alum_sign_hover.webp","/images/products/main-page/Parking_sign-oakland-park-printing-fl.webp"],
           ratingScore: "4.9",
           ratingCount: "2,840",
           sizes: [
@@ -6105,10 +5679,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "🪧 A-Frame Signs — Double-Sided, Portable, Ships Tomorrow!",
           image: "/images/products/main-page/A-frame_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/A-frame_sign-oakland-park-printing-fl.webp",
-            "/images/products/aframe_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/A-frame_sign-oakland-park-printing-fl.webp","/images/products/aframe_sign_hover.webp","/images/products/wind_sign_hover.webp"],
           ratingScore: "4.8",
           ratingCount: "1,640",
           description: `<div class="space-y-4 text-slate-700 leading-relaxed">
@@ -6241,10 +5812,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText:
             "✨ High Quality Foam Signs — Ultra-Light, Ultra-Crisp. Ideal for Presentations & Trade Shows!",
           image: "/images/products/main-page/foam_board-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/foam_board-oakland-park-printing-fl.webp",
-            "/images/products/foam_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/foam_board-oakland-park-printing-fl.webp","/images/products/foam_sign_hover.webp","/images/products/main-page/custom_signs_desc-oakland-park-printing-fl.webp"],
           ratingScore: "4.8",
           ratingCount: "1,280",
           sizes: [
@@ -6375,10 +5943,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText:
             "💎 High-quality Acrylic Signs — Crystal-Clear Quality, Ships Next Day!",
           image: "/images/products/main-page/acrylic_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/acrylic_sign-oakland-park-printing-fl.webp",
-            "/images/products/acryl_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/acrylic_sign-oakland-park-printing-fl.webp","/images/products/acryl_sign_hover.webp","/images/products/main-page/custom_signs_desc-oakland-park-printing-fl.webp"],
           ratingScore: "4.9",
           ratingCount: "980",
           sizes: [
@@ -6568,11 +6133,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "💧 Weather-resistant Coroplast Signs — Weatherproof & Budget-Friendly. Ships Tomorrow!",
           image: "/images/products/main-page/coroplast_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/coroplast_sign-oakland-park-printing-fl.webp",
-            "/images/products/coro_sign_hover-oakland-park-printing-fl.webp",
-            "/images/products/yard_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/coroplast_sign-oakland-park-printing-fl.webp","/images/products/coro_sign_hover.webp","/images/products/gallery/lawn_bag_signs_in_action_1.webp"],
           ratingScore: "4.8",
           ratingCount: "5,620",
           sizes: [
@@ -6766,10 +6327,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText:
             "🪟 Window Signs That Turn Passersby Into Customers — Ships Next Day!",
           image: "/images/products/main-page/window_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/window_sign-oakland-park-printing-fl.webp",
-            "/images/products/wind_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/window_sign-oakland-park-printing-fl.webp","/images/products/gallery/vinyl_decal_use_1.webp","/images/products/main-page/window_clings_product-oakland-park-printing-fl.webp"],
           ratingScore: "4.8",
           ratingCount: "1,940",
           sizes: [
@@ -6997,10 +6555,7 @@ Why Choose Our Expert-grade Rollup Banners?
           promoText:
             "🅿️ Parking Signs — MUTCD-Compliant Reflective Available. Ships Tomorrow!",
           image: "/images/products/main-page/Parking_sign-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/Parking_sign-oakland-park-printing-fl.webp",
-            "/images/products/park_sign_hover-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/Parking_sign-oakland-park-printing-fl.webp","/images/products/alum_sign_hover.webp","/images/products/main-page/aluminum_sign-oakland-park-printing-fl.webp"],
           ratingScore: "4.9",
           ratingCount: "2,310",
           sizes: [
@@ -7104,11 +6659,7 @@ Why Choose Our Expert-grade Rollup Banners?
           breadcrumbHref: "/custom-signs",
           promoText: "✨ Modern LED Channel Letters — Expert-grade Storefront Impact. Shipped Fast!",
           image: "/images/products/main-page/channel_letter_signs-oakland-park-printing-fl.webp",
-          images: [
-            "/images/products/main-page/channel_letter_signs-oakland-park-printing-fl.webp",
-            "/images/products/gallery/channel_letter_storefront_1-oakland-park-printing-fl.webp",
-            "/images/products/gallery/channel_letter_storefront_2-oakland-park-printing-fl.webp",
-          ],
+          images: ["/images/products/main-page/channel_letter_signs-oakland-park-printing-fl.webp","/images/products/gallery/channel_letter_storefront_1.webp","/images/products/gallery/channel_letter_storefront_2.webp"],
           ratingScore: "4.9",
           ratingCount: "820",
           sizes: [
@@ -7505,29 +7056,34 @@ Why Choose Our Expert-grade Rollup Banners?
         "id": "scrolling-led-sign",
         "name": "Scrolling LED Signs",
         "description": "Custom scrolling LED signs & moving message displays in Fort Lauderdale FL. Ultra-bright LED scrolling text displays & digital tickers for store windows, commercial facades, and retail advertising.",
-        "image": "/images/products/led_sign_welcome.webp",
+        "image": "/images/products/scrolling_led_sign_welcome.webp",
         "price": "Starting at $90/sqft",
         "badge": "Popular",
         "config": {
           "description": `<div class="space-y-4 text-slate-700 leading-relaxed">
-            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Programmable LED Signs in Fort Lauderdale, FL</h2>
-            <p>A static sign says one thing, forever, until you pay to replace it. A programmable LED sign says whatever you need it to say today — today's special, this week's hours, tomorrow's sale — and you change it from your phone in under a minute. That's the entire appeal, and it's why storefronts, restaurants, and gas stations keep switching over to them instead of swapping out printed banners every season.</p>
-            <p>Nano Signs builds these with 6,500+ nit LEDs, bright enough to stay readable in direct Florida sunlight rather than washing out at noon. The housing is IP65-rated and weatherproof, built to run outdoors year-round without worrying about rain or humidity getting inside the unit. You control content over WiFi or USB, scrolling text, full-color graphics, or simple animations — no electrician or programmer needed on your end.</p>
-            <p><strong>Pixel pitch, explained simply:</strong> the closer people stand to your sign, the finer the resolution you need. P10 is the most cost-effective option and reads well from a distance — think highway frontage or a large parking lot. P5 is the middle ground, sharp enough for closer storefront viewing. P3 is the highest resolution, best when people are walking right up to the sign, like at an entrance or a counter display.</p>
-            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Who these signs work best for:</h3>
+            <h2 class="text-xl font-bold text-slate-900 font-poppins mb-4">Custom Scrolling LED Signs & Moving Message Displays in Fort Lauderdale, FL</h2>
+            <p>Static signs share a single fixed message, but business conditions change constantly. A custom scrolling LED sign gives your storefront the power to broadcast rotating announcements, daily promotions, business hours, and special offers in vivid full-color motion. Passersby naturally look toward movement, making a dynamic LED message ticker one of the highest-converting store window investments for retail stores, restaurants, salons, and offices throughout Fort Lauderdale and Oakland Park, FL.</p>
+            <p>At Nano Signs, our scrolling LED text displays feature ultra-bright 6,500+ nit RGB LEDs engineered to cut through intense South Florida sunlight without fading or washing out. Controlled effortlessly via a free smartphone app over Wi-Fi, PC software, or USB drive, you can change your scrolling text, adjust animation speeds, add multi-color borders, and program scheduled announcements in seconds without any technical expertise.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Key Features of Our Scrolling LED Ticker Signs:</h3>
             <ul class="list-disc pl-5 space-y-1">
-              <li>Retail storefronts running promotions and sale announcements</li>
-              <li>Restaurants displaying daily specials and hours</li>
-              <li>Gas stations and convenience stores with rotating pricing</li>
-              <li>Medical offices and pharmacies with patient-facing announcements</li>
-              <li>Churches, schools, and community centers posting event updates</li>
+              <li><strong>Multi-Option Connectivity:</strong> Instant wireless updates over mobile Wi-Fi (iOS & Android app), PC software, or plug-and-play USB disk.</li>
+              <li><strong>Sunlight-Readable Brightness:</strong> High-density 6,500+ nit SMD LEDs stay crisp, clear, and visible from across the street.</li>
+              <li><strong>Custom Text Effects & Animations:</strong> Choose from scrolling left/right/up/down, flashing borders, rain effects, laser reveals, and multi-line text layouts.</li>
+              <li><strong>Weatherproof Commercial Cabinet:</strong> Heavy-duty aluminum IP65 housing designed to withstand Florida humidity, heat, and coastal weather.</li>
+              <li><strong>Variable Pixel Pitches (P3, P5, P10):</strong> Tailored pixel density options for close-up window displays (P3) or long-distance roadside viewing (P10).</li>
             </ul>
-            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Common questions about programmable LED signs</h3>
-            <p><em>What's the difference between P3, P5, and P10?</em> The number refers to the distance in millimeters between LED pixels — smaller numbers mean tighter pixel spacing and sharper image quality up close. P10 is best for long-distance viewing, P5 for mid-range, and P3 for close-up clarity.</p>
-            <p><em>Can I update the sign's message myself?</em> Yes — control is handled over WiFi or USB, so you can update text, graphics, or scrolling messages directly without calling anyone to reprogram it.</p>
-            <p><em>Is it safe to install outdoors?</em> The aluminum housing is IP65-rated waterproof, which means it's built to handle rain, humidity, and general outdoor exposure without protection or a covered structure required.</p>
-            <p><em>How bright is bright enough for daylight?</em> At 6,500+ nits, these signs are designed specifically to stay legible in direct sun — most standard indoor displays fall well short of that and wash out outdoors.</p>
-            <p class="mt-4">Get a custom programmable LED sign quote and put your storefront message on a screen that updates as often as you need it to.</p>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Popular Applications in South Florida:</h3>
+            <ul class="list-disc pl-5 space-y-1">
+              <li><strong>Retail Stores & Boutiques:</strong> Announce flash sales, new inventory arrivals, and seasonal discounts directly to foot traffic.</li>
+              <li><strong>Restaurants & Nightlife:</strong> Display happy hour specials, live entertainment schedules, and featured menu items.</li>
+              <li><strong>Service & Professional Offices:</strong> Highlight walk-in availability, appointment reminders, and featured services.</li>
+              <li><strong>Auto Shops & Convenience Stores:</strong> Show current fuel prices, tire specials, and operating hours 24/7.</li>
+            </ul>
+            <h3 class="text-base font-bold text-slate-900 font-poppins mt-6 mb-2">Frequently Asked Questions</h3>
+            <p><em>How do I program messages on the scrolling LED sign?</em> You can connect directly to the sign's Wi-Fi network using our free mobile app on your iPhone or Android phone, type your custom text, choose your favorite colors and movement speed, and send it immediately. You can also program messages on a computer and transfer them via USB disk.</p>
+            <p><em>Can I display multiple messages in sequence?</em> Yes! You can save dozens of different text messages, create rotating program loops, and schedule specific announcements to appear at certain times of the day.</p>
+            <p><em>Are these signs suitable for outdoor storefront mounting?</em> Absolutely. Every scrolling LED display built by Nano Signs features a commercial IP65 weatherproof casing designed to handle outdoor rain, wind, and humidity.</p>
+            <p class="mt-4">Order your custom scrolling LED sign from Nano Signs in Fort Lauderdale, FL today or call <strong>(305) 967-1005</strong> for expert sizing, resolution guidance, and local pick-up options.</p>
           </div>`,
           "id": "scrolling-led-sign",
           "title": "Scrolling LED Signs",
@@ -7535,7 +7091,8 @@ Why Choose Our Expert-grade Rollup Banners?
           "breadcrumb": "Scrolling LED Signs",
           "breadcrumbHref": "/led-display-signs",
           "promoText": "NANO SIGNS EXCLUSIVE: SCROLLING LED MESSAGE SIGNS",
-          "image": "/images/products/led_sign_welcome.webp",
+          "image": "/images/products/scrolling_led_sign_welcome.webp",
+          "images": [ "/images/products/scrolling_led_sign_welcome.webp", "/images/products/led_sign_welcome.webp", "/images/products/shop-window-led-display.webp", "/images/products/outdoor-fixed-led-display.webp" ],
           "ratingCount": "58",
           "ratingScore": "4.9",
           "sizes": [
@@ -9290,7 +8847,7 @@ Why Choose Our Expert-grade Rollup Banners?
         "id": "led-pillar-display",
         "name": "LED Pillar Display",
         "description": "Slim, freestanding multi-sided LED display column — 16kg ultra-light, plug-and-play, single to 4-sided configurations for trade shows, retail stores, and hotel lobbies.",
-        "image": "/images/products/led-pillar-display.png",
+        "image": "/images/products/led-pillar-display.webp",
         "price": "Custom Pricing",
         "badge": "Creative",
         "config": {
@@ -9300,7 +8857,7 @@ Why Choose Our Expert-grade Rollup Banners?
           "breadcrumb": "LED Pillar Display",
           "breadcrumbHref": "/led-display-signs",
           "promoText": "NANO SIGNS EXCLUSIVE: LP SERIES - PREMIUM LED",
-          "image": "/images/products/led-pillar-display.png",
+          "image": "/images/products/led-pillar-display.webp",
           "ratingCount": "64",
           "ratingScore": "5.0",
           "sizes": [
