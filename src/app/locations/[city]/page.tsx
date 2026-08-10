@@ -54,8 +54,10 @@ export default async function LocationPage({ params }: PageProps) {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": locationData.schemaType === "Service" ? "Service" : ["LocalBusiness", "PrintShop"],
+    "@type": locationData.schemaType === "Service" ? "Service" : "LocalBusiness",
+    "category": "Sign Shop",
     "name": "Nano Signs",
+
     "description": locationData.description,
     "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
     "@id": `https://nano-signs.com/locations/${decodedCity}`,
