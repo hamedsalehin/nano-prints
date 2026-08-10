@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
+  output: "standalone",
+  poweredByHeader: false,
   compiler: {
+
+
     removeConsole: process.env.NODE_ENV === "production" ? { exclude: ["error", "warn"] } : false,
   },
   allowedDevOrigins: ["*.preview.same-app.com"],

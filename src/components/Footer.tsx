@@ -134,39 +134,43 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               signs, banners, and more.
             </p>
 
-            <div className="space-y-3 mb-6">
+            <div itemScope itemType="https://schema.org/LocalBusiness" className="space-y-2 text-sm">
+              <meta itemProp="name" content="Nano Signs" />
+              <meta itemProp="url" content="https://nano-signs.com" />
+              <meta itemProp="image" content="https://nano-signs.com/images/nano%20logo%20complete.png" />
+
               <a
                 href="tel:305-967-1005"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#ff2d78]"}`}
+                itemProp="telephone"
+                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#00e5ff]"}`}
               >
                 <Phone
-                  className="w-4 h-4 flex-shrink-0 text-[#ff2d78]"
+                  className={`w-4 h-4 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
                 <span>305-967-1005</span>
               </a>
               <a
-                href="tel:305-967-9654"
-                className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#ff2d78]"}`}
-              >
-                <Phone
-                  className="w-4 h-4 flex-shrink-0 text-[#ff2d78]"
-                />
-                <span>305-967-9654</span>
-              </a>
-              <a
                 href="mailto:info@nano-signs.com"
+                itemProp="email"
                 className={`flex items-center gap-2 transition-colors ${light ? "text-slate-600 hover:text-[#ff2d78]" : "text-gray-300 hover:text-[#00e5ff]"}`}
               >
                 <Mail
                   className={`w-4 h-4 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
-                <span>Email Support</span>
+                <span>info@nano-signs.com</span>
               </a>
-              <div className={`flex items-start gap-2 ${light ? "text-slate-600" : "text-gray-300"}`}>
+              <div
+                itemProp="address"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+                className={`flex items-start gap-2 ${light ? "text-slate-600" : "text-gray-300"}`}
+              >
                 <MapPin
                   className={`w-4 h-4 mt-0.5 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
-                <span>4567 Powerline Rd, Oakland Park, FL 33309</span>
+                <span>
+                  <span itemProp="streetAddress">4567 Powerline Rd</span>, <span itemProp="addressLocality">Oakland Park</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">33309</span>
+                </span>
               </div>
             </div>
 
