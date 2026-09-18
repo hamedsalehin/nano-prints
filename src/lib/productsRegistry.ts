@@ -4793,7 +4793,7 @@ Why Choose Our Expert-grade Rollup Banners?
         name: "Journals & Notebooks",
         description: "Pre-ruled journals and notebooks, ideal for client meetings and logs. Get high-quality, durable printing solutions tailored to your exact specifications and delivered quickly.",
         image: "/images/products/main-page/custom_notebooks-oakland-park-printing-fl.webp",
-        price: "Starting at CAD 3.99 each",
+        price: "Starting at CAD 399 for 50 pcs",
         config: {
           title: "Notebooks & Journals",
           minQuantity: 50,
@@ -4809,7 +4809,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '5.5" x 8.5" Classic Journal',
               value: "5.5x8.5",
-              basePrice: 3.99,
+              basePrice: 7.98,
             },
           ],
           selects: [
