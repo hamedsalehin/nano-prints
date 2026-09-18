@@ -4,8 +4,6 @@ import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
 
-import { CanonicalTag } from "@/components/CanonicalTag";
-
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
@@ -78,7 +76,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={openSans.variable + " " + poppins.variable}>
       <head>
-        <CanonicalTag />
         {/* Global Analytics Stub Queues (Instant, 0KB network, non-blocking) */}
         <script
           dangerouslySetInnerHTML={{

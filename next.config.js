@@ -266,6 +266,11 @@ const nextConfig = {
         destination: "/led-display-signs/:product",
         permanent: true,
       },
+      {
+        source: "/blog/the-death-of-gas-neon-why-led-2nd-gen-neon-is-taking-over",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
   async headers() {
