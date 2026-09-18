@@ -4796,7 +4796,7 @@ Why Choose Our Expert-grade Rollup Banners?
         price: "Starting at CAD 3.99 each",
         config: {
           title: "Notebooks & Journals",
-          minQuantity: 10,
+          minQuantity: 50,
           subtitle:
             "Lined paper journals with high-quality covers to organize meetings and ideas.",
           breadcrumb: "Promotional",
@@ -4822,6 +4822,12 @@ Why Choose Our Expert-grade Rollup Banners?
                   value: "hard",
                   priceAdder: 3.0,
                 },
+              ],
+            },
+            {
+              label: "Turnaround",
+              options: [
+                { label: "7-10 business days", value: "7-10 days", priceAdder: 0 },
               ],
             },
           ],
