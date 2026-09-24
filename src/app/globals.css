@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    /* Primary = hot pink */
+    --primary: 330 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 190 100% 50%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    /* Accent = cyan */
+    --accent: 190 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 330 100% 60%;
+    --radius: 0.5rem;
+
+    /* Brand palette */
+    --pink: #ff2d78;
+    --cyan: #00e5ff;
+    --pink-dark: #d4005a;
+    --cyan-dark: #00b8d4;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: var(--font-open-sans), sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins), sans-serif;
+  }
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-opensans {
+  font-family: var(--font-open-sans), sans-serif;
+}
+
+/* ─── Brand gradient helpers ─────────────────────────────── */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--pink) 0%, #b020ff 50%, var(--cyan) 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, var(--pink) 0%, #b020ff 50%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-gradient-animated {
+  background: linear-gradient(270deg, var(--pink), #b020ff, var(--cyan), #b020ff, var(--pink));
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease infinite;
+}
+
+.brand-gradient-static {
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--pink) 100%);
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ─── Glow effects ───────────────────────────────────────── */
+.glow-pink {
+  box-shadow: 0 0 20px rgba(255, 45, 120, 0.4), 0 0 40px rgba(255, 45, 120, 0.15);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4), 0 0 40px rgba(0, 229, 255, 0.15);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 24px rgba(255, 45, 120, 0.5), 0 0 48px rgba(0, 229, 255, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+/* ─── Custom scrollbar for carousels ─────────────────────── */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Star ratings ───────────────────────────────────────── */
+.star-rating {
+  color: #ff2d78;
+}
+
+/* ─── Product/Category card hover (pure CSS, works in server components) ── */
+.card-pink-hover {
+  border: 2px solid transparent;
+  background: #ffffff;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+}
+.card-pink-hover:hover {
+  background: linear-gradient(145deg, #f9f0ff, #ffe0f0, #e0faff);
+  border-color: #ff2d78;
+  box-shadow: 0 0 20px rgba(255, 45, 120, 0.3), 0 0 40px rgba(0, 229, 255, 0.15);
+}
+
+/* Value prop card hover */
+.value-card-hover {
+  border: 1.5px solid transparent;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.value-card-hover:hover {
+  border-color: #ff2d78;
+  box-shadow: 0 0 20px rgba(255, 45, 120, 0.2), 0 0 40px rgba(0, 229, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Product grid card hover */
+.product-card-hover {
+  border: 2px solid transparent;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+.product-card-hover:hover {
+  border-color: #ff2d78;
+  box-shadow: 0 0 16px rgba(255, 45, 120, 0.3), 0 0 32px rgba(0, 229, 255, 0.15);
+}
+
+/* Customer favorite card hover */
+.favorite-card-hover {
+  border: 2px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.favorite-card-hover:hover {
+  border-color: #ff2d78;
+  box-shadow: 0 0 24px rgba(255, 45, 120, 0.4), 0 0 48px rgba(0, 229, 255, 0.2);
+}
+
+/* Social icon hover */
+.social-icon-hover {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 45, 120, 0.3);
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+.social-icon-hover:hover {
+  background: linear-gradient(135deg, #ff2d78, #00e5ff);
+  border-color: transparent;
+  transform: scale(1.1);
+}
+
+/* Gradient text utility */
+.pink-cyan-text {
+  background: linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Category browse item hover bg */
+.browse-item-hover {
+  transition: background 0.25s, border-color 0.25s;
+  background: #F6F6F6;
+  border: 1px solid #e5e7eb;
+}
+.browse-item-hover:hover {
+  background: linear-gradient(135deg, rgba(255,45,120,0.12), rgba(0,229,255,0.12));
+  border-color: #ff2d78;
+}
+
+html { zoom: 0.8; }
+

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Filter to remove white background from the embedded PNG -->
+    <filter id="remove-white">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        -1 -1 -1 3.2 -0.2
+      "/>
+    </filter>
+
+    <!-- High-quality drop shadow for the 3D frame -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-opacity="0.22"/>
+    </filter>
+    <!-- Inner shadow for the recessed insert area -->
+    <filter id="inner-shadow">
+      <feOffset dx="0" dy="3"/>
+      <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+      <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+      <feFlood flood-color="black" flood-opacity="0.25" result="color"/>
+      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+
+    <!-- White plastic gradient -->
+    <linearGradient id="plasticFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="85%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Reflection overlay gradient -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="35.1%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Complete A-Frame Structure with Drop Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Base Rubber Feet -->
+    <rect x="94" y="360" width="32" height="12" rx="3" fill="#1e293b"/>
+    <rect x="274" y="360" width="32" height="12" rx="3" fill="#1e293b"/>
+
+    <!-- Outer Plastic Frame Body -->
+    <path d="M 120,30 
+             L 280,30 
+             A 30,30 0 0 1 310,60 
+             L 310,360 
+             L 270,360 
+             L 270,345 
+             A 5,5 0 0 0 265,340 
+             L 135,340 
+             A 5,5 0 0 0 130,345 
+             L 130,360 
+             L 90,360 
+             L 90,60 
+             A 30,30 0 0 1 120,30 Z" 
+          fill="url(#plasticFront)" 
+          stroke="#cbd5e1" 
+          stroke-width="1"/>
+
+    <!-- Top Handle Hole Cutout -->
+    <rect x="175" y="45" width="50" height="16" rx="8" fill="#1e293b" opacity="0.15"/>
+    <rect x="176" y="46" width="48" height="14" rx="7" fill="#f1f5f9"/>
+
+    <!-- Hinge Detail Indentations -->
+    <line x1="90" y1="75" x2="94" y2="75" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="306" y1="75" x2="310" y2="75" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Recessed Sign Insert Area with Inner Shadow -->
+    <rect x="106" y="80" width="188" height="248" rx="4" fill="#cbd5e1" filter="url(#inner-shadow)"/>
+    <rect x="108" y="82" width="184" height="244" rx="2" fill="#ffffff"/>
+
+    <!-- Embedded Custom Sign Graphic Panel -->
+    <image href="/images/products/aframe_sign_std.png" x="110" y="84" width="180" height="240" filter="url(#remove-white)"/>
+
+    <!-- Glossy reflection overlay -->
+    <path d="M108,82 L210,82 L108,184 Z" fill="url(#glossGrad)" pointer-events="none"/>
+  </g>
+</svg>

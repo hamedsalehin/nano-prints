@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Filter to remove white background from the embedded PNG -->
+    <filter id="remove-white">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        -1 -1 -1 3.2 -0.2
+      "/>
+    </filter>
+
+    <!-- Strong drop shadow to represent the sign floating 1-inch off the wall -->
+    <filter id="wall-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="8" dy="12" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glass-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Metallic steel standoff gradient -->
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#e2e8f0"/>
+      <stop offset="60%" stop-color="#94a3b8"/>
+      <stop offset="85%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Polished glass/acrylic edge gradient (light teal/green tint) -->
+    <linearGradient id="glassEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ccfbf1" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#99f6e4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Glass face glossy reflection -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="35.1%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Wall Drop Shadow of the Floating Sign (Floating glass shadow) -->
+  <rect x="90" y="80" width="220" height="240" rx="8" fill="#1e293b" filter="url(#wall-shadow)" opacity="0.4"/>
+
+  <!-- 2. Standoff Wall Barrels (Sitting behind the acrylic, supporting the float) -->
+  <g fill="url(#boltGrad)" stroke="#475569" stroke-width="0.5" filter="url(#glass-shadow)">
+    <!-- Top Left Wall Barrel -->
+    <circle cx="106" cy="96" r="10"/>
+    <!-- Top Right Wall Barrel -->
+    <circle cx="294" cy="96" r="10"/>
+    <!-- Bottom Left Wall Barrel -->
+    <circle cx="106" cy="304" r="10"/>
+    <!-- Bottom Right Wall Barrel -->
+    <circle cx="294" cy="304" r="10"/>
+  </g>
+
+  <!-- 3. The Acrylic Panel Plate -->
+  <g filter="url(#glass-shadow)">
+    <!-- Polished Green/Teal Glass/Acrylic Outer Edge border (3D sheet) -->
+    <rect x="90" y="80" width="220" height="240" rx="6" fill="url(#glassEdge)" stroke="#0d9488" stroke-width="0.5"/>
+    
+    <!-- Clear Frosted/Glossy Inner Face Panel -->
+    <rect x="92" y="82" width="216" height="236" rx="4" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Diagonal reflection lines inside the glass -->
+    <path d="M92,82 L220,82 L92,210 Z" fill="url(#glossGrad)" pointer-events="none"/>
+  </g>
+
+  <!-- 4. Custom Sign Image Panel (Printed on/in the acrylic, showing through) -->
+  <g filter="url(#glass-shadow)">
+    <image href="/images/products/acryl_sign_std.png" x="100" y="90" width="200" height="220" filter="url(#remove-white)"/>
+  </g>
+
+  <!-- 5. Front Standoff Caps & Silicon Washers (Sitting in front of the acrylic) -->
+  <g filter="url(#glass-shadow)">
+    <!-- Top Left Cap -->
+    <!-- Silicon Washer -->
+    <circle cx="106" cy="96" r="9.5" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Metal Cap -->
+    <circle cx="106" cy="96" r="8" fill="url(#boltGrad)" stroke="#475569" stroke-width="0.5"/>
+    <!-- Cap Center Detailing -->
+    <circle cx="106" cy="96" r="2" fill="#334155"/>
+    <circle cx="104.5" cy="94.5" r="1" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Top Right Cap -->
+    <!-- Silicon Washer -->
+    <circle cx="294" cy="96" r="9.5" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Metal Cap -->
+    <circle cx="294" cy="96" r="8" fill="url(#boltGrad)" stroke="#475569" stroke-width="0.5"/>
+    <circle cx="294" cy="96" r="2" fill="#334155"/>
+    <circle cx="292.5" cy="94.5" r="1" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Bottom Left Cap -->
+    <!-- Silicon Washer -->
+    <circle cx="106" cy="304" r="9.5" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Metal Cap -->
+    <circle cx="106" cy="304" r="8" fill="url(#boltGrad)" stroke="#475569" stroke-width="0.5"/>
+    <circle cx="106" cy="304" r="2" fill="#334155"/>
+    <circle cx="104.5" cy="302.5" r="1" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Bottom Right Cap -->
+    <!-- Silicon Washer -->
+    <circle cx="294" cy="304" r="9.5" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Metal Cap -->
+    <circle cx="294" cy="304" r="8" fill="url(#boltGrad)" stroke="#475569" stroke-width="0.5"/>
+    <circle cx="294" cy="304" r="2" fill="#334155"/>
+    <circle cx="292.5" cy="302.5" r="1" fill="#ffffff" opacity="0.4"/>
+  </g>
+</svg>
