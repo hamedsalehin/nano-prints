@@ -3635,7 +3635,7 @@ Why Choose Our Expert-grade Rollup Banners?
           title: "Business Cards",
           quantityOptions: [100, 500, 1000, 2500, 5000],
           quantityPrices: {
-            100: 55.98,
+            100: 1.98,
             500: 65.98,
             1000: 85.98,
             2500: 179.98,
