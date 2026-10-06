@@ -39,6 +39,7 @@ export default function CheckoutPage() {
 
   const [shippingAddress, setShippingAddress] = useState({
     name: "",
+    email: "",
     address: "",
     city: "",
     state: "FL",
@@ -96,11 +97,9 @@ export default function CheckoutPage() {
     return hasFreight || totalWeight > 150 || maxDim > 96;
   }, [items]);
 
-  // Redirect/prompt login if not authenticated
+  // Removed forced auth redirect to allow guest checkout
   useEffect(() => {
-    if (!user) {
-      setShowAuthModal(true);
-    }
+    // Authentication is optional now
   }, [user, setShowAuthModal]);
 
   // Fetch shipping rates when address or ZIP changes
@@ -147,8 +146,9 @@ export default function CheckoutPage() {
 
   // Create payment intent from backend
   const handleInitiatePayment = async () => {
-    if (!user) {
-      setShowAuthModal(true);
+    const checkoutEmail = user?.email || shippingAddress.email;
+    if (!checkoutEmail) {
+      setPaymentError("Please provide an email address in the shipping form.");
       return;
     }
 
@@ -170,8 +170,8 @@ export default function CheckoutPage() {
           shippingAddress,
           discountApplied,
           freightOptions,
-          userId: user.id,
-          userEmail: user.email,
+          userId: user?.id || null,
+          userEmail: checkoutEmail,
         }),
       });
 
@@ -188,7 +188,11 @@ export default function CheckoutPage() {
 
   // Handle local mockup submission if Stripe publishable key is missing
   const handleSimulatePayment = async () => {
-    if (!user) return;
+    const checkoutEmail = user?.email || shippingAddress.email;
+    if (!checkoutEmail) {
+      setPaymentError("Please provide an email address.");
+      return;
+    }
     setIntentLoading(true);
     setPaymentError(null);
 
@@ -202,7 +206,7 @@ export default function CheckoutPage() {
         const { data, error } = await supabase
           .from("orders")
           .insert({
-            user_id: user.id,
+            user_id: user?.id || null,
             product_title: item.productTitle,
             product_size: item.size,
             quantity: item.quantity,
@@ -233,12 +237,12 @@ export default function CheckoutPage() {
       }
 
       // Mark discount as used if applicable
-      if (discountApplied) {
+      if (discountApplied && checkoutEmail) {
         try {
           await supabase
             .from("discount_claims")
             .update({ used_at: new Date().toISOString() })
-            .eq("email", user.email!.trim().toLowerCase())
+            .eq("email", checkoutEmail.trim().toLowerCase())
             .is("used_at", null);
         } catch (dbErr) {
           console.warn("Failed to update discount claim status:", dbErr);
@@ -246,11 +250,11 @@ export default function CheckoutPage() {
       }
 
       // Send confirmation emails
-      if (orderIds.length > 0) {
+      if (orderIds.length > 0 && checkoutEmail) {
         fetch("/api/send-order-emails", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ orderIds, userEmail: user.email }),
+          body: JSON.stringify({ orderIds, userEmail: checkoutEmail }),
         }).catch(err => console.error("Simulated send email failed:", err));
       }
 
@@ -276,7 +280,7 @@ export default function CheckoutPage() {
             <div>
               <h2 className="text-2xl font-bold font-poppins text-slate-900">Payment Completed!</h2>
               <p className="text-sm text-gray-500 mt-2">
-                Thank you for your order. A confirmation email with details has been sent to <span className="font-semibold text-slate-800">{user?.email}</span>.
+                Thank you for your order. A confirmation email with details has been sent to <span className="font-semibold text-slate-800">{user?.email || shippingAddress.email}</span>.
               </p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 w-full text-left space-y-2 text-sm font-semibold">
@@ -355,6 +359,22 @@ export default function CheckoutPage() {
                       className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
                     />
                   </div>
+
+                  {!user && (
+                    <div className="sm:col-span-2">
+                      <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        value={shippingAddress.email}
+                        onChange={(e) => setShippingAddress({ ...shippingAddress, email: e.target.value })}
+                        placeholder="jane@example.com"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                      />
+                    </div>
+                  )}
 
                   <div className="sm:col-span-2">
                     <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
@@ -589,7 +609,7 @@ export default function CheckoutPage() {
                         </div>
                         <button
                           onClick={handleSimulatePayment}
-                          disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId}
+                          disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || (!user && !shippingAddress.email)}
                           className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50"
                         >
                           {intentLoading ? (
@@ -605,7 +625,7 @@ export default function CheckoutPage() {
                     ) : (
                       <button
                         onClick={handleInitiatePayment}
-                        disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId}
+                        disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || (!user && !shippingAddress.email)}
                         className="w-full py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 font-poppins uppercase tracking-wide"
                       >
                         {intentLoading ? (
@@ -744,7 +764,7 @@ function StripeElementsForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!stripe || !elements || !user) return;
+    if (!stripe || !elements) return;
 
     setLoading(true);
     setPaymentError(null);
@@ -760,7 +780,7 @@ function StripeElementsForm({
         const { data, error } = await supabase
           .from("orders")
           .insert({
-            user_id: user.id,
+            user_id: user?.id || null,
             product_title: item.productTitle,
             product_size: item.size,
             quantity: item.quantity,
