@@ -839,42 +839,27 @@ function StripeElementsForm({
 
     try {
       // 1. Insert order rows into Supabase first (status: awaiting_payment)
-      const orderIds: string[] = [];
+      let orderIds: string[] = [];
+      const res = await fetch("/api/create-checkout-orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items,
+          shippingAddress,
+          shippingCost,
+          taxAmount,
+          discount,
+          selectedRateId,
+          discountApplied,
+          userId: user?.id || null,
+        }),
+      });
 
-      for (const item of items) {
-        const finalUnitPrice = discountApplied ? item.unitPrice * 0.9 : item.unitPrice;
-        const finalTotalPrice = discountApplied ? item.totalPrice * 0.9 : item.totalPrice;
-
-        const { data, error } = await supabase
-          .from("orders")
-          .insert({
-            user_id: user?.id || null,
-            product_title: item.productTitle,
-            product_size: item.size,
-            quantity: item.quantity,
-            unit_price: finalUnitPrice,
-            total_price: finalTotalPrice,
-            design_url: item.designUrl || null,
-            design_filename: item.designFilename || null,
-            custom_options: {
-              ...item.customOptions,
-              "Shipping Cost": `$${shippingCost.toFixed(2)}`,
-              "Tax Paid": `$${taxAmount.toFixed(2)}`,
-              "Discount Applied": `$${discount.toFixed(2)}`,
-              "Shipping Method": selectedRateId,
-            },
-            shipping_name: shippingAddress.name,
-            shipping_address: shippingAddress.address,
-            shipping_city: `${shippingAddress.city}, ${shippingAddress.state}`,
-            shipping_postal: shippingAddress.postal,
-            status: "pending", // awaiting payment confirmation
-          })
-          .select("id")
-          .single();
-
-        if (error) throw error;
-        if (data) orderIds.push(data.id);
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(data.error || "Failed to create order records.");
       }
+      orderIds = data.orderIds || [];
 
       // 2. Associate the order ids to the payment intent metadata via backend updates
       // This ensures when webhook fires it has the exact order ids to fulfill.
