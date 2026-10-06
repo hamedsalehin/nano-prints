@@ -890,20 +890,19 @@ function StripeElementsForm({
       }
 
       if (result.paymentIntent?.status === "succeeded") {
-        // Stripe webhook will process payment_intent.succeeded and update order status in Supabase.
-        // We will also update locally immediately for better UI experience.
-        for (const orderId of orderIds) {
-          await supabase
-            .from("orders")
-            .update({ status: "paid" })
-            .eq("id", orderId);
-        }
+        // Update order status to paid via backend (bypasses RLS for guests)
+        await fetch("/api/create-checkout-orders", {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ orderIds }),
+        }).catch(err => console.error("Order status update failed:", err));
 
-        // Send emails immediately
+        // Send emails - use shippingAddress.email so guests also receive confirmation
+        const emailAddress = shippingAddress.email || user?.email || "";
         fetch("/api/send-order-emails", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ orderIds, userEmail: user?.email ?? "" }),
+          body: JSON.stringify({ orderIds, userEmail: emailAddress }),
         }).catch(err => console.error("Email API failed:", err));
 
         setSuccessOrderIds(orderIds);

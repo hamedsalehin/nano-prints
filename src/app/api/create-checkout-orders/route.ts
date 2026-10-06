@@ -76,3 +76,36 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+
+// PATCH: Mark orders as paid after Stripe payment succeeds
+export async function PATCH(req: NextRequest) {
+  try {
+    if (!supabaseAdmin) {
+      return NextResponse.json(
+        { error: "Database configuration error." },
+        { status: 500 }
+      );
+    }
+
+    const { orderIds } = await req.json();
+
+    if (!orderIds || !Array.isArray(orderIds) || orderIds.length === 0) {
+      return NextResponse.json({ error: "orderIds are required." }, { status: 400 });
+    }
+
+    const { error } = await supabaseAdmin
+      .from("orders")
+      .update({ status: "paid" })
+      .in("id", orderIds);
+
+    if (error) throw error;
+
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    console.error("create-checkout-orders PATCH error:", err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Internal server error" },
+      { status: 500 }
+    );
+  }
+}
