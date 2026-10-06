@@ -4934,7 +4934,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '2.95" L x 1.13" W Stainless Steel',
               value: "stainless_steel",
-              basePrice: 1.29,
+              basePrice: 11.29,
             },
           ],
           selects: [
@@ -4990,11 +4990,11 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingCount: "710",
           ratingScore: "4.9",
           sizes: [
-            { label: '2" x 2" Square Magnet', value: "2x2", basePrice: 0.49 },
+            { label: '2" x 2" Square Magnet', value: "2x2", basePrice: 0.89 },
             {
               label: '3.5" x 2" Business Card Magnet',
               value: "3.5x2",
-              basePrice: 0.79,
+              basePrice: 1.4,
             },
           ],
           selects: [
