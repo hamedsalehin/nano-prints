@@ -1390,6 +1390,62 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                     <p className="text-center text-xs text-gray-400 font-semibold pt-1">
                       Free artwork check included with every order
                     </p>
+
+                    {/* ── Trust & Contact Bar ── */}
+                    <div className="mt-4 rounded-2xl border border-gray-100 bg-gradient-to-br from-slate-50 to-white overflow-hidden shadow-sm">
+                      <div className="px-4 pt-3 pb-1 text-center">
+                        <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">Need Help? Talk to a Real Person</p>
+                      </div>
+                      <div className="grid grid-cols-3 divide-x divide-gray-100">
+                        {/* Get a Quote */}
+                        <a
+                          href="/get-a-quote"
+                          className="flex flex-col items-center gap-1 py-3 px-2 hover:bg-pink-50 transition-colors group"
+                        >
+                          <span className="w-8 h-8 rounded-full bg-[#ff2d78]/10 flex items-center justify-center group-hover:bg-[#ff2d78]/20 transition-colors">
+                            <svg className="w-4 h-4 text-[#ff2d78]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-3-3v6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                          </span>
+                          <span className="text-[10px] font-extrabold text-gray-700 uppercase tracking-wide leading-tight text-center">Get a<br/>Quote</span>
+                        </a>
+                        {/* Call Us */}
+                        <a
+                          href="tel:305-967-1005"
+                          className="flex flex-col items-center gap-1 py-3 px-2 hover:bg-blue-50 transition-colors group"
+                        >
+                          <span className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+                            <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                          </span>
+                          <span className="text-[10px] font-extrabold text-gray-700 uppercase tracking-wide leading-tight text-center">Call Us<br/><span className="text-blue-500 normal-case font-bold">305-967-1005</span></span>
+                        </a>
+                        {/* Email Us */}
+                        <a
+                          href="mailto:info@nano-signs.com"
+                          className="flex flex-col items-center gap-1 py-3 px-2 hover:bg-purple-50 transition-colors group"
+                        >
+                          <span className="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                            <svg className="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                          </span>
+                          <span className="text-[10px] font-extrabold text-gray-700 uppercase tracking-wide leading-tight text-center">Email<br/><span className="text-purple-500 normal-case font-bold">Us</span></span>
+                        </a>
+                      </div>
+                      {/* Trust badges */}
+                      <div className="flex items-center justify-center gap-3 px-4 py-2.5 bg-gray-50/80 border-t border-gray-100 flex-wrap">
+                        <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500">
+                          <svg className="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd"/></svg>
+                          Secure Payment
+                        </span>
+                        <span className="text-gray-200">|</span>
+                        <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500">
+                          <svg className="w-3 h-3 text-[#ff2d78]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+                          Free Artwork Check
+                        </span>
+                        <span className="text-gray-200">|</span>
+                        <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500">
+                          <svg className="w-3 h-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
+                          Florida Local Shop
+                        </span>
+                      </div>
+                    </div>
                   </>
                 ) : (
                   <>
