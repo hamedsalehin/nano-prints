@@ -496,7 +496,6 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
     const file = e.target.files?.[0];
     if (!file) return;
 
-
     const allowedTypes = [
       "application/pdf",
       "image/png",
@@ -512,24 +511,23 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
     setPdfUploading(true);
 
     try {
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Date.now()}_${Math.random().toString(36).substring(2, 9)}.${fileExt}`;
-      const filePath = `designs/${fileName}`;
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("bucket", "designs");
 
-      const { error: uploadError } = await supabase.storage
-        .from("designs")
-        .upload(filePath, file);
+      const res = await fetch("/api/upload-artwork", {
+        method: "POST",
+        body: formData,
+      });
 
-      if (uploadError) {
-        throw uploadError;
+      const data = await res.json();
+
+      if (!res.ok || data.error) {
+        throw new Error(data.error || "Upload failed. Please try again.");
       }
 
-      const {
-        data: { publicUrl },
-      } = supabase.storage.from("designs").getPublicUrl(filePath);
-
-      setPdfUrl(publicUrl);
-      setPdfName(file.name);
+      setPdfUrl(data.publicUrl);
+      setPdfName(data.fileName);
     } catch (err) {
       console.error("PDF upload failed:", err);
       setPdfError(
