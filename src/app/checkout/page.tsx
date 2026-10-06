@@ -653,8 +653,9 @@ export default function CheckoutPage() {
             </div>
 
             {/* Right Column: Order Summary (Lg: 5 cols) */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-6">
-              <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
+            <div className="lg:col-span-5 flex flex-col gap-4">
+              <div className="bg-white rounded-3xl p-6 md:p-8 shadow-md border border-gray-150 space-y-6">
+                <h2 className="text-lg font-bold font-poppins text-slate-800 flex items-center gap-2 border-b pb-3">
                 <ShoppingBag className="w-5 h-5 text-[#ff2d78]" />
                 Order Summary
               </h2>
@@ -782,6 +783,7 @@ export default function CheckoutPage() {
                   <svg className="w-3.5 h-3.5 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
                   Florida Local Shop
                 </span>
+              </div>
               </div>
             </div>
 
