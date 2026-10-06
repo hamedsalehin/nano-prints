@@ -360,21 +360,19 @@ export default function CheckoutPage() {
                     />
                   </div>
 
-                  {!user && (
-                    <div className="sm:col-span-2">
-                      <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
-                        Email Address
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        value={shippingAddress.email}
-                        onChange={(e) => setShippingAddress({ ...shippingAddress, email: e.target.value })}
-                        placeholder="jane@example.com"
-                        className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
-                      />
-                    </div>
-                  )}
+                  <div className="sm:col-span-2">
+                    <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      value={shippingAddress.email}
+                      onChange={(e) => setShippingAddress({ ...shippingAddress, email: e.target.value })}
+                      placeholder="jane@example.com"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#ff2d78] transition-colors"
+                    />
+                  </div>
 
                   <div className="sm:col-span-2">
                     <label className="block text-xs font-bold text-slate-600 mb-1.5 uppercase tracking-wide">
@@ -609,7 +607,7 @@ export default function CheckoutPage() {
                         </div>
                         <button
                           onClick={handleSimulatePayment}
-                          disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || (!user && !shippingAddress.email)}
+                          disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || !shippingAddress.email}
                           className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50"
                         >
                           {intentLoading ? (
@@ -623,20 +621,29 @@ export default function CheckoutPage() {
                         </button>
                       </div>
                     ) : (
-                      <button
-                        onClick={handleInitiatePayment}
-                        disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || (!user && !shippingAddress.email)}
-                        className="w-full py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 font-poppins uppercase tracking-wide"
-                      >
-                        {intentLoading ? (
-                          <>
-                            <Loader2 className="w-4 h-4 animate-spin" />
-                            Loading payment form...
-                          </>
-                        ) : (
-                          <>Proceed to Card Payment</>
-                        )}
-                      </button>
+                      <div className="space-y-3">
+                        <button
+                          onClick={handleInitiatePayment}
+                          disabled={intentLoading || !shippingAddress.name || !shippingAddress.address || !selectedRateId || !shippingAddress.email}
+                          className="w-full py-3.5 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 font-poppins uppercase tracking-wide"
+                        >
+                          {intentLoading ? (
+                            <>
+                              <Loader2 className="w-4 h-4 animate-spin" />
+                              Loading payment form...
+                            </>
+                          ) : (
+                            <>Proceed to Card Payment</>
+                          )}
+                        </button>
+                        
+                        <Link
+                          href="/get-a-quote"
+                          className="w-full py-3.5 bg-white border-2 border-[#ff2d78] text-[#ff2d78] hover:bg-pink-50 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm font-poppins uppercase tracking-wide text-center block"
+                        >
+                          Need a Custom Design? Get a Quote
+                        </Link>
+                      </div>
                     )}
                   </div>
                 )}
@@ -894,20 +901,29 @@ function StripeElementsForm({
         </div>
       </div>
 
-      <button
-        type="submit"
-        disabled={loading || !stripe}
-        className="w-full py-4 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 uppercase tracking-wide"
-      >
-        {loading ? (
-          <>
-            <Loader2 className="w-4 h-4 animate-spin" />
-            Processing secure payment...
-          </>
-        ) : (
-          <>Pay Order Securely</>
-        )}
-      </button>
+      <div className="space-y-3">
+        <button
+          type="submit"
+          disabled={loading || !stripe}
+          className="w-full py-4 bg-gradient-to-r from-[#ff2d78] to-[#b020ff] hover:opacity-95 text-white rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 shadow disabled:opacity-50 uppercase tracking-wide"
+        >
+          {loading ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              Processing secure payment...
+            </>
+          ) : (
+            <>Pay Order Securely</>
+          )}
+        </button>
+
+        <Link
+          href="/get-a-quote"
+          className="w-full py-4 bg-white border-2 border-slate-200 hover:border-[#ff2d78] hover:text-[#ff2d78] text-slate-600 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 uppercase tracking-wide text-center block"
+        >
+          Need a Custom Design? Get a Quote
+        </Link>
+      </div>
     </form>
   );
 }
