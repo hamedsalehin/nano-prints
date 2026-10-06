@@ -50,6 +50,8 @@ export async function POST(req: NextRequest) {
             "Tax Paid": `$${taxAmount.toFixed(2)}`,
             "Discount Applied": `$${discount.toFixed(2)}`,
             "Shipping Method": selectedRateId,
+            "Customer Email": shippingAddress.email || "",
+            "Customer Phone": shippingAddress.phone || "",
           },
           shipping_name: shippingAddress.name,
           shipping_address: shippingAddress.address,

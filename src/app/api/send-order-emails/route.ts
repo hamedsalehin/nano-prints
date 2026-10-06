@@ -70,6 +70,10 @@ export async function POST(req: NextRequest) {
       const shippingCity = order.shipping_city;
       const shippingPostal = order.shipping_postal;
 
+      // Fallback: get customer email/phone from custom_options if not in request body
+      const customerEmail = userEmail || customOptions["Customer Email"] || "N/A";
+      const customerPhone = customOptions["Customer Phone"] || "N/A";
+
       // Build attachments using remote path for Resend API
       const emailAttachments = [];
       if (designUrl) {
@@ -146,8 +150,9 @@ export async function POST(req: NextRequest) {
         }
 
           <div style="text-align: center; padding-top: 20px; border-top: 1px solid #1e293b;">
-            <p style="font-size: 12px; color: #475569; margin: 0;">Customer: ${userEmail || "N/A"}</p>
-            <p style="font-size: 12px; color: #475569; margin: 4px 0 0;">Order ID: ${order.id}</p>
+            <p style="font-size: 12px; color: #475569; margin: 0;">📧 Customer Email: <strong style="color:#e2e8f0;">${customerEmail}</strong></p>
+            <p style="font-size: 12px; color: #475569; margin: 4px 0 0;">📞 Customer Phone: <strong style="color:#e2e8f0;">${customerPhone}</strong></p>
+            <p style="font-size: 11px; color: #334155; margin: 6px 0 0;">Order ID: ${order.id}</p>
           </div>
         </div>
       `;
@@ -225,11 +230,9 @@ export async function POST(req: NextRequest) {
             : ""
             }
 
-            <div style="text-align: center;">
-              <p style="font-size: 13px; color: #64748b; margin: 0 0 16px;">Expected delivery: <strong style="color: #0f172a;">Next Business Day</strong></p>
-              <a href="${process.env.NEXT_PUBLIC_SUPABASE_URL?.replace("supabase.co", "") || ""}account/orders" style="display: inline-block; background: linear-gradient(135deg, #ff2d78, #b020ff); color: white; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-size: 13px; font-weight: bold;">
-                View My Orders
-              </a>
+            <div style="text-align: center; margin-top: 8px;">
+              <p style="font-size: 13px; color: #64748b; margin: 0 0 4px;">Estimated turnaround: <strong style="color: #0f172a;">${customOptions["Turnaround"] || "3–5 Business Days"}</strong></p>
+              <p style="font-size: 12px; color: #94a3b8;">We will contact you if we need anything before printing.</p>
             </div>
           </div>
 
