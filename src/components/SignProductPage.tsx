@@ -496,12 +496,6 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    if (!user) {
-      setPdfError("Please sign in or create an account to upload your design.");
-      setShowAuthModal(true);
-      e.target.value = "";
-      return;
-    }
 
     const allowedTypes = [
       "application/pdf",
@@ -1327,13 +1321,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                         type="file"
                         accept=".pdf,.png,.jpg,.jpeg"
                         onChange={handlePdfUpload}
-                        onClick={(e) => {
-                          if (!user) {
-                            e.preventDefault();
-                            setPdfError("Please sign in or create an account to upload your design.");
-                            setShowAuthModal(true);
-                          }
-                        }}
+                
                         id="pdf-upload-input"
                         className="hidden"
                         disabled={pdfUploading}
