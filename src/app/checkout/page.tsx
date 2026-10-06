@@ -850,7 +850,7 @@ function StripeElementsForm({
         fetch("/api/send-order-emails", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ orderIds, userEmail: user.email }),
+          body: JSON.stringify({ orderIds, userEmail: user?.email ?? "" }),
         }).catch(err => console.error("Email API failed:", err));
 
         setSuccessOrderIds(orderIds);
