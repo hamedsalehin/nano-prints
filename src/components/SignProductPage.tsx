@@ -1398,7 +1398,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                       </div>
                       <div className="grid grid-cols-3 divide-x divide-gray-100">
                         {/* Get a Quote */}
-                        <a
+                        <Link
                           href="/get-a-quote"
                           className="flex flex-col items-center gap-1 py-3 px-2 hover:bg-pink-50 transition-colors group"
                         >
@@ -1406,7 +1406,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                             <svg className="w-4 h-4 text-[#ff2d78]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-3-3v6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                           </span>
                           <span className="text-[10px] font-extrabold text-gray-700 uppercase tracking-wide leading-tight text-center">Get a<br/>Quote</span>
-                        </a>
+                        </Link>
                         {/* Call Us */}
                         <a
                           href="tel:305-967-1005"
