@@ -1986,7 +1986,7 @@ export const PRODUCTS_REGISTRY: ProductsRegistryType = {
             {
               label: '30" Round Table Throw',
               value: "30_round",
-              basePrice: 129.99,
+              basePrice: 229.99,
             },
             {
               label: '60" Circular Banquet Cover',
@@ -2433,7 +2433,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: '24" x 63" Small X-Stand',
               value: "63x24",
-              basePrice: 49.99,
+              basePrice: 89.99,
             },
             {
               label: '31" x 70" Large X-Stand',
@@ -4524,13 +4524,13 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Medium Unisex Tee",
               value: "medium_tee",
-              basePrice: 14.99,
+              basePrice: 20.00,
             },
-            { label: "Large Unisex Tee", value: "large_tee", basePrice: 14.99 },
+            { label: "Large Unisex Tee", value: "large_tee", basePrice: 20.00 },
             {
               label: "Extra Large Unisex Tee",
               value: "xl_tee",
-              basePrice: 16.99,
+              basePrice: 22.00,
             },
           ],
           selects: [
@@ -4712,7 +4712,7 @@ Why Choose Our Expert-grade Rollup Banners?
         price: "Starting at CAD 2.4 each",
         badge: "Trade Show Choice",
         config: {
-          title: "Logo Pens",
+          title: "Logo Pens(metal styl)",
           quantityOptions: [100, 250, 500, 1000, 2500, 5000, 10000],
           subtitle:
             "Sleek retractable clicker pens printed with your business website or phone number.",
@@ -4726,7 +4726,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "Standard Fine Point Pen",
               value: "fine_pen",
-              basePrice: 2.49,
+              basePrice: 3.50,
             },
           ],
           selects: [
@@ -4802,21 +4802,18 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.8",
           sizes: [
             {
-              label: '5.5" x 8.5" Classic Journal',
-              value: "5.5x8.5",
+              label: '8.5" x 11"',
+              value: '8.5x11',
               basePrice: 7.98,
             },
           ],
           selects: [
             {
-              label: "Cover Style",
+              label: "Quantity 25 pages",
               options: [
-                { label: "Flexible Softcover", value: "soft", priceAdder: 0 },
-                {
-                  label: "Rigid Leatherette Hardcover",
-                  value: "hard",
-                  priceAdder: 3.0,
-                },
+                { label: "50 pcs", value: "50pcs", priceAdder: 0 },
+                { label: "100 pcs", value: "100pcs", priceAdder: 3.0 },
+                { label: "500 pcs", value: "500pcs", priceAdder: 10.0 },
               ],
             },
             {
@@ -4848,6 +4845,75 @@ Why Choose Our Expert-grade Rollup Banners?
         },
       },
       {
+        id: "notepads",
+        name: "Notepads",
+        description: "Custom-printed notepads with your logo or artwork, perfect for offices, events, and promotional giveaways. 25 pages per pad, available in 4×6 and 8.5×11 sizes.",
+        image: "/images/products/main-page/custom_notebooks-oakland-park-printing-fl.webp",
+        price: "Starting at $270 for 50 pcs",
+        config: {
+          title: "Custom Notepads – 25 Pages",
+          minQuantity: 50,
+          subtitle:
+            "Full-color custom notepads with 25 sheets each. Perfect for branding, client gifts, and office use.",
+          breadcrumb: "Promotional",
+          breadcrumbHref: "/promotional-products",
+          promoText: "FREE SETUP ON ALL CUSTOM NOTEPAD ORDERS",
+          image: "/images/products/main-page/custom_notebooks-oakland-park-printing-fl.webp",
+          ratingCount: "210",
+          ratingScore: "4.8",
+          sizes: [
+            {
+              label: '4" x 6"',
+              value: "4x6",
+              basePrice: 5.40,
+            },
+            {
+              label: '8.5" x 11"',
+              value: "8.5x11",
+              basePrice: 5.40,
+            },
+          ],
+          selects: [
+            {
+              label: "Quantity – 25 pages per pad",
+              options: [
+                { label: "50 pcs – $270", value: "50pcs", priceAdder: 0 },
+                { label: "100 pcs – $380", value: "100pcs", priceAdder: 1.10 },
+                { label: "500 pcs – $760", value: "500pcs", priceAdder: -3.88 },
+              ],
+            },
+            {
+              label: "Turnaround",
+              options: [
+                { label: "7-10 business days", value: "7-10 days", priceAdder: 0 },
+              ],
+            },
+          ],
+          qtyDiscount: "Save more on larger orders – up to 500 pcs",
+          keyFeatures: [
+            "25 sheets per notepad",
+            "Full-color custom printing on cover",
+            "Available in 4×6 and 8.5×11 sizes",
+            "Sturdy chipboard backing",
+          ],
+          useCases: [
+            "Corporate branded stationery",
+            "Trade show & event giveaways",
+            "Real estate & mortgage offices",
+            "School and educational programs",
+          ],
+          specs: [
+            { key: "Page Count", value: "25 sheets per pad" },
+            { key: "Sizes", value: '4" × 6" or 8.5" × 11"' },
+            { key: "Backing", value: "Chipboard backing included" },
+            { key: "Printing", value: "Full-color, one side" },
+          ],
+          faqs: [],
+          reviews: [],
+          ctaHeading: "Order custom notepads",
+        },
+      },
+      {
         id: "keychains",
         name: "Logo Keychains",
         description: "Acrylic and metallic keyring tags customized with your company logo. Get high-quality, durable printing solutions tailored to your exact specifications and delivered quickly.",
@@ -4866,8 +4932,8 @@ Why Choose Our Expert-grade Rollup Banners?
           ratingScore: "4.7",
           sizes: [
             {
-              label: '2" x 2" Acrylic Keychain',
-              value: "2x2_acrylic",
+              label: '2.95" L x 1.13" W Stainless Steel',
+              value: "stainless_steel",
               basePrice: 1.29,
             },
           ],
