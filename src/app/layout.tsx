@@ -63,6 +63,11 @@ export const metadata: Metadata = {
       "https://nano-signs.com/images/nano%20logo%20complete.png",
     ],
   },
+  verification: {
+    other: {
+      "msvalidate.01": "c4922da6ab454f97bab83b29ef869898",
+    },
+  },
 };
 
 
