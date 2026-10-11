@@ -19,7 +19,7 @@ const categoryMeta: Record<string, { title: string; description: string }> = {
     description: "Heavy-duty vinyl banner printing in Fort Lauderdale FL. Weatherproof outdoor banners, mesh & retractable roll-up banner stands. Call 305-967-1005 for fast print.",
   },
   "custom-flags": {
-    title: "Custom Feather Flags & Business Advertising Flags | Nano Signs",
+    title: "Custom Feather Flags & Advertising Flags | Nano Signs",
     description: "Custom feather flags, teardrop flags & event banners printed in Fort Lauderdale FL. Wind-resistant, double-sided printing. Call 305-967-1005 for fast turnaround.",
   },
   "custom-signs": {

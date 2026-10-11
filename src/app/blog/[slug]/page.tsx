@@ -195,7 +195,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             prose-a:text-[#ff2d78] hover:prose-a:text-pink-700 prose-a:font-semibold
             prose-ul:my-5 prose-li:text-slate-700 prose-li:my-1.5
             prose-img:rounded-2xl prose-img:shadow-xl prose-img:border prose-img:border-slate-200 prose-img:w-full prose-img:my-8"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{
+            __html: (post.content || "").replace(/<h1(\b[^>]*)>/gi, "<h2$1>").replace(/<\/h1>/gi, "</h2>"),
+          }}
         />
       </main>
 

@@ -4,14 +4,14 @@ import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign & Print FAQs | Turnaround, Pricing & Design | Nano Signs",
+  title: "Sign & Print FAQs | Pricing, Turnaround | Nano Signs",
   description:
     "Get quick answers to FAQ regarding custom sign pricing, turnaround times, banner printing & neon sign installation in Fort Lauderdale FL. Call 305-967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/faq",
   },
   openGraph: {
-    title: "Sign & Print FAQs | Turnaround, Pricing & Design | Nano Signs",
+    title: "Sign & Print FAQs | Pricing, Turnaround | Nano Signs",
     description:
       "Get quick answers to FAQ regarding custom sign pricing, turnaround times, banner printing & neon sign installation in Fort Lauderdale FL. Call 305-967-1005.",
     url: "https://nano-signs.com/faq",

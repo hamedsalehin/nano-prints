@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nano Signs | Return & Refund Policy – Custom Signs & Printing",
+  title: "Return & Refund Policy | Nano Signs",
   description: "Read the Nano Signs Return and Refund Policy. Learn about our terms, restocking fees for hardware, and instructions for reporting printed product issues.",
   alternates: {
     canonical: "https://nano-signs.com/return-policy",
   },
   openGraph: {
-    title: "Nano Signs | Return & Refund Policy – Custom Signs & Printing",
+    title: "Return & Refund Policy | Nano Signs",
     description: "Read the Nano Signs Return and Refund Policy. Learn about our terms, restocking fees for hardware, and instructions for reporting printed product issues.",
     url: "https://nano-signs.com/return-policy",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nano Signs | Return & Refund Policy – Custom Signs & Printing",
+    title: "Return & Refund Policy | Nano Signs",
     description: "Read the Nano Signs Return and Refund Policy. Learn about our terms, restocking fees for hardware, and instructions for reporting printed product issues.",
     images: ["https://nano-signs.com/images/nano%20logo%20complete.png"],
   },

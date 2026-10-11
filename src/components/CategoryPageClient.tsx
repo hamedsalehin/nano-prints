@@ -280,9 +280,9 @@ export function CategoryPageClient({
             </div>
 
             <div className="lg:hidden w-full bg-white p-5 text-center border-b">
-              <h1 className="text-2xl font-bold font-poppins text-gray-900 mb-1">
+              <h2 className="text-2xl font-bold font-poppins text-gray-900 mb-1">
                 {title}
-              </h1>
+              </h2>
               <p className="text-base text-gray-600 font-semibold font-poppins mb-4">
                 {heroSubtitle}
               </p>

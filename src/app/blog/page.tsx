@@ -8,12 +8,12 @@ import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 import { getMarkdownBlogPosts } from "@/lib/blogUtils";
 
 export const metadata: Metadata = {
-  title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
+  title: "Sign & Print Tips Blog | LED, Neon & Banners | Nano Signs",
   description:
     "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
   alternates: { canonical: "https://nano-signs.com/blog" },
   openGraph: {
-    title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
+    title: "Sign & Print Tips Blog | LED, Neon & Banners | Nano Signs",
     description:
       "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop in Broward County.",
     url: "https://nano-signs.com/blog",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nano Signs | Sign & Print Tips Blog – LED Signs, Neon & Banners",
+    title: "Sign & Print Tips Blog | LED, Neon & Banners | Nano Signs",
     description:
       "Expert tips on custom signs, LED displays, neon signs, banner printing & vehicle wraps from Nano Signs — Fort Lauderdale's local sign shop.",
   },
