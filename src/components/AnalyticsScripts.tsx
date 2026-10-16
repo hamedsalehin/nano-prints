@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 
+const META_PIXEL_ID = "2153049288980687";
+
 export function AnalyticsScripts() {
   useEffect(() => {
     // Avoid loading heavy analytics during synthetic Lighthouse/PageSpeed tests
@@ -30,16 +32,48 @@ export function AnalyticsScripts() {
       clarityScript.src = "https://www.clarity.ms/tag/xn5oqaysht";
       document.head.appendChild(clarityScript);
 
-      // 3. Meta Pixel (Facebook)
-      const fbScript = document.createElement("script");
-      fbScript.async = true;
-      fbScript.src = "https://connect.facebook.net/en_US/fbevents.js";
-      document.head.appendChild(fbScript);
+      // 3. Meta Pixel (Facebook) — full official snippet
+      !(function (
+        f: Window & { fbq?: Function; _fbq?: Function },
+        b: Document,
+        e: string,
+        v: string,
+        n?: { callMethod?: Function; queue: unknown[]; push?: Function; loaded?: boolean; version?: string },
+        t?: HTMLScriptElement,
+        s?: HTMLScriptElement | null
+      ) {
+        if (f.fbq) return;
+        n = f.fbq = function (...args: unknown[]) {
+          n!.callMethod ? n!.callMethod!(...args) : n!.queue.push(args);
+        } as unknown as typeof n;
+        if (!f._fbq) f._fbq = n;
+        n!.push = n;
+        n!.loaded = true;
+        n!.version = "2.0";
+        n!.queue = [];
+        t = b.createElement(e) as HTMLScriptElement;
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0] as HTMLScriptElement | null;
+        s?.parentNode?.insertBefore(t, s);
+      })(
+        window as Window & { fbq?: Function; _fbq?: Function },
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
 
-      const win = window as unknown as { fbq?: (...args: unknown[]) => void };
-      if (typeof win.fbq === "function") {
-        win.fbq("track", "PageView");
-      }
+      const win = window as unknown as { fbq: Function };
+      win.fbq("init", META_PIXEL_ID);
+      win.fbq("track", "PageView");
+
+      // noscript fallback pixel
+      const noscriptImg = document.createElement("img");
+      noscriptImg.height = 1;
+      noscriptImg.width = 1;
+      noscriptImg.style.display = "none";
+      noscriptImg.src = `https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`;
+      document.body.appendChild(noscriptImg);
     };
 
     // Trigger immediately on real user engagement
