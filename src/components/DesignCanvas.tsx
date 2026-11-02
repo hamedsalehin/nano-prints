@@ -909,7 +909,6 @@ export function DesignCanvas({
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative p-0">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={el.imageUrl}
                       alt="Uploaded element"

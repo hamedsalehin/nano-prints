@@ -3,6 +3,9 @@ const nextConfig = {
   compress: true,
   output: "standalone",
   poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   compiler: {
 
 

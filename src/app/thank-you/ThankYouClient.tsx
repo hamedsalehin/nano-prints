@@ -13,14 +13,17 @@ function ThankYouContent() {
   const email = searchParams.get("email") || "your email";
 
   useEffect(() => {
-    // Trigger Google Ads & Analytics Conversion event when Thank You page loads
+    // Trigger Google Ads & Analytics Conversion event only once per submission session
     if (typeof window !== "undefined") {
+      const trackingKey = `quote_submitted_${email || name || "lead"}`;
+      if (sessionStorage.getItem(trackingKey)) {
+        // Prevent duplicate trigger on page refresh
+        return;
+      }
+      sessionStorage.setItem(trackingKey, "1");
+
       const win = window as unknown as { gtag?: (...args: unknown[]) => void; fbq?: (...args: unknown[]) => void };
       if (win.gtag) {
-        // Generic pageview conversion
-        win.gtag("event", "conversion", {
-          send_to: "AW-CONVERSION_ID/CONVERSION_LABEL", // Ready for user's Google Ads tag
-        });
         win.gtag("event", "generate_lead", {
           value: 1,
           currency: "USD",
@@ -30,7 +33,7 @@ function ThankYouContent() {
         win.fbq("track", "Lead");
       }
     }
-  }, []);
+  }, [email, name]);
 
   return (
     <main className="flex-grow py-12 bg-white">

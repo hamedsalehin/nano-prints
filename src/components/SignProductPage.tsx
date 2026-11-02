@@ -643,14 +643,14 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
     let multiplier = 1;
 
     Object.values(selectValues).forEach((v) => {
-      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? 0;
+      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? (v as any).price ?? 0;
       price += adder;
       if (v.priceMultiplier !== undefined) {
         multiplier *= v.priceMultiplier;
       }
     });
     Object.values(toggleValues).forEach((v) => {
-      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? 0;
+      const adder = (v as any).sizePriceAdders?.[selectedSize.value] ?? v.priceAdder ?? (v as any).price ?? 0;
       price += adder;
       if (v.priceMultiplier !== undefined) {
         multiplier *= v.priceMultiplier;
@@ -1165,14 +1165,20 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
                         }}
                         className="w-full appearance-none bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff2d78] cursor-pointer font-semibold"
                       >
-                        {sel.options.map((o) => (
-                          <option key={o.value} value={o.value}>
-                            {o.label}
-                            {o.priceAdder > 0 && selectedSize.basePrice > 0
-                              ? ` (+$${o.priceAdder.toFixed(2)})`
-                              : ""}
-                          </option>
-                        ))}
+                        {sel.options.map((o) => {
+                          const adder = (o as any).sizePriceAdders?.[selectedSize.value] ?? o.priceAdder ?? (o as any).price ?? 0;
+                          let priceLabel = "";
+                          if (adder > 0 && selectedSize.basePrice > 0) {
+                            priceLabel = ` (+$${adder.toFixed(2)})`;
+                          } else if (o.priceMultiplier && o.priceMultiplier > 1 && selectedSize.basePrice > 0) {
+                            priceLabel = ` (+${Math.round((o.priceMultiplier - 1) * 100)}%)`;
+                          }
+                          return (
+                            <option key={o.value} value={o.value}>
+                              {o.label}{priceLabel}
+                            </option>
+                          );
+                        })}
                       </select>
                       <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
                     </div>

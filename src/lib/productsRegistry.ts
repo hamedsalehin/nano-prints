@@ -2583,6 +2583,23 @@ Why Choose Our Expert-grade Rollup Banners?
                 },
               ],
             },
+            {
+              label: "Turnaround",
+              options: [
+                {
+                  label: "Standard 7-10 business days",
+                  value: "standard",
+                  priceAdder: 0,
+                  priceMultiplier: 1.0,
+                },
+                {
+                  label: "Rush services 2-3 days",
+                  value: "rush",
+                  priceAdder: 0,
+                  priceMultiplier: 1.5,
+                },
+              ],
+            },
           ],
           qtyDiscount: "Volume canopy packaging available",
           keyFeatures: [

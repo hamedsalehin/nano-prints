@@ -2995,8 +2995,9 @@ function DesignPageContent() {
 
       Object.entries(selectValues).forEach(([k, v]: [string, any]) => {
         if (v) {
-          if (v.priceAdder !== undefined) {
-            price += v.priceAdder;
+          const adder = (v as any).sizePriceAdders?.[matchedSize?.value || ""] ?? v.priceAdder ?? v.price;
+          if (adder !== undefined) {
+            price += adder;
           }
           if (v.priceMultiplier !== undefined) {
             multiplier *= v.priceMultiplier;
@@ -4945,7 +4946,6 @@ function DesignPageContent() {
 
                 {el.type === "image" && el.imageUrl && (
                   <div className="w-full h-full relative flex items-center justify-center p-0.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={el.imageUrl}
                       alt="Uploaded element"
