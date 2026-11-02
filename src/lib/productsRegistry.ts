@@ -2543,7 +2543,7 @@ Why Choose Our Expert-grade Rollup Banners?
         description:
           "Command attention at exterior events, farmers markets, sporting events, and street fairs with our 10' x 10' Canopy Tents. The canopy top is made from industrial-strength, weather-resistant, and UV-resistant fabric printed in rich full-color dye-sublimation. The popup frame features a commercial-grade steel or aluminum truss system with adjustable height settings, popping up in minutes for instant shade and high-visibility branding.",
         image: "/images/products/main-page/event_tents-oakland-park-printing-fl.webp",
-        price: "Starting at CAD 349.99",
+        price: "Starting at CAD 749.99",
         config: {
           title: "Canopy Tents",
           subtitle:
@@ -2564,7 +2564,7 @@ Why Choose Our Expert-grade Rollup Banners?
             {
               label: "10ft x 10ft Canopy Tent",
               value: "10x10",
-              basePrice: 349.99,
+              basePrice: 749.99,
             },
           ],
           selects: [
