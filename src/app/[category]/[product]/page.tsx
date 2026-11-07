@@ -42,10 +42,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;
 
   let primaryCategory = decodedCategory;
-  for (const [catSlug, catData] of Object.entries(PRODUCTS_REGISTRY)) {
-    if (catData.products.some(p => p.id === decodedProduct)) {
-      primaryCategory = catSlug;
-      break;
+  if (decodedProduct === "programmable-led-sign") {
+    primaryCategory = "led-display-signs";
+  } else if (decodedProduct === "roll-up-banners") {
+    primaryCategory = "custom-banners";
+  } else {
+    for (const [catSlug, catData] of Object.entries(PRODUCTS_REGISTRY)) {
+      if (catData.products.some(p => p.id === decodedProduct)) {
+        primaryCategory = catSlug;
+        break;
+      }
     }
   }
 
