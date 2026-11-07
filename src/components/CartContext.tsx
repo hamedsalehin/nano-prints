@@ -65,13 +65,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         console.warn("Failed to check discount status in Supabase:", err);
         if (active) {
           // Fallback to local storage tracking
-          const claimed = localStorage.getItem("nano_promo_claimed") === "true";
-          const claimedEmail = localStorage.getItem("nano_promo_claimed_email");
-          const usedLocally = localStorage.getItem("nano_promo_used") === "true";
+          try {
+            const claimed = localStorage.getItem("nano_promo_claimed") === "true";
+            const claimedEmail = localStorage.getItem("nano_promo_claimed_email");
+            const usedLocally = localStorage.getItem("nano_promo_used") === "true";
 
-          if (claimed && claimedEmail === user.email.trim().toLowerCase() && !usedLocally) {
-            setDiscountApplied(true);
-          } else {
+            if (claimed && claimedEmail === user.email.trim().toLowerCase() && !usedLocally) {
+              setDiscountApplied(true);
+            } else {
+              setDiscountApplied(false);
+            }
+          } catch {
             setDiscountApplied(false);
           }
         }
@@ -94,13 +98,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   // Load cart on mount
   useEffect(() => {
-    const savedCart = localStorage.getItem("nano_cart");
-    if (savedCart) {
-      try {
+    try {
+      const savedCart = localStorage.getItem("nano_cart");
+      if (savedCart) {
         setItems(JSON.parse(savedCart));
-      } catch (e) {
-        console.error("Failed to parse cart items:", e);
       }
+    } catch (e) {
+      console.error("Failed to parse cart items:", e);
     }
     setIsMounted(true);
   }, []);
@@ -108,12 +112,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   // Save cart when items change
   useEffect(() => {
     if (isMounted) {
-      localStorage.setItem("nano_cart", JSON.stringify(items));
+      try {
+        localStorage.setItem("nano_cart", JSON.stringify(items));
+      } catch (e) {}
     }
   }, [items, isMounted]);
 
   const addItem = (item: Omit<CartItem, "id">) => {
-    const id = crypto.randomUUID();
+    const id =
+      typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+        ? crypto.randomUUID()
+        : `${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
     setItems((prev) => [...prev, { ...item, id }]);
     setCartOpen(true); // Auto-open cart sidebar when adding item
   };
@@ -179,7 +188,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         } catch (dbErr) {
           console.warn("Failed to mark discount as used in Supabase:", dbErr);
         }
-        localStorage.setItem("nano_promo_used", "true");
+        try {
+          localStorage.setItem("nano_promo_used", "true");
+        } catch {}
         setDiscountApplied(false);
       }
 

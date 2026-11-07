@@ -15,41 +15,45 @@ export function PromotionalModal() {
   const [showBusinessTooltip, setShowBusinessTooltip] = useState(false);
 
   useEffect(() => {
-    // 1. Check if discount has already been claimed or if modal was previously dismissed
-    const claimed = localStorage.getItem("nano_promo_claimed") === "true";
-    const dismissed = localStorage.getItem("nano_promo_dismissed") === "true";
+    try {
+      // 1. Check if discount has already been claimed or if modal was previously dismissed
+      const claimed = localStorage.getItem("nano_promo_claimed") === "true";
+      const dismissed = localStorage.getItem("nano_promo_dismissed") === "true";
 
-    // If already claimed, we set state but keep it minimized so the blob is available
-    if (claimed) {
-      setSuccess(true);
-      setIsMinimized(true);
-      return;
-    }
+      // If already claimed, we set state but keep it minimized so the blob is available
+      if (claimed) {
+        setSuccess(true);
+        setIsMinimized(true);
+        return;
+      }
 
-    // If dismissed, we keep it minimized so they can open it later
-    if (dismissed) {
-      setIsMinimized(true);
-      return;
-    }
+      // If dismissed, we keep it minimized so they can open it later
+      if (dismissed) {
+        setIsMinimized(true);
+        return;
+      }
 
-    // 2. Track first visit time in sessionStorage to persist across page navigations
-    let firstVisit = sessionStorage.getItem("nano_promo_first_visit");
-    if (!firstVisit) {
-      firstVisit = Date.now().toString();
-      sessionStorage.setItem("nano_promo_first_visit", firstVisit);
-    }
+      // 2. Track first visit time in sessionStorage to persist across page navigations
+      let firstVisit = sessionStorage.getItem("nano_promo_first_visit");
+      if (!firstVisit) {
+        firstVisit = Date.now().toString();
+        sessionStorage.setItem("nano_promo_first_visit", firstVisit);
+      }
 
-    const elapsed = Date.now() - parseInt(firstVisit);
-    const targetDelay = 40000; // 40 seconds
+      const elapsed = Date.now() - parseInt(firstVisit);
+      const targetDelay = 40000; // 40 seconds
 
-    if (elapsed >= targetDelay) {
-      setIsOpen(true);
-    } else {
-      const remaining = targetDelay - elapsed;
-      const timer = setTimeout(() => {
+      if (elapsed >= targetDelay) {
         setIsOpen(true);
-      }, remaining);
-      return () => clearTimeout(timer);
+      } else {
+        const remaining = targetDelay - elapsed;
+        const timer = setTimeout(() => {
+          setIsOpen(true);
+        }, remaining);
+        return () => clearTimeout(timer);
+      }
+    } catch {
+      // Storage access blocked in private browsing mode
     }
   }, []);
 
@@ -80,19 +84,27 @@ export function PromotionalModal() {
       }
 
       // 2. Successfully registered in database
-      localStorage.setItem("nano_promo_claimed", "true");
-      localStorage.setItem("nano_promo_claimed_email", email.trim().toLowerCase());
+      try {
+        localStorage.setItem("nano_promo_claimed", "true");
+        localStorage.setItem("nano_promo_claimed_email", email.trim().toLowerCase());
+      } catch {}
       setSuccess(true);
       
       // Dispatch custom event to let CartContext know about the discount
-      window.dispatchEvent(new Event("nano_discount_claimed"));
+      try {
+        window.dispatchEvent(new Event("nano_discount_claimed"));
+      } catch {}
     } catch (err) {
       console.warn("Supabase discount_claims insert failed, falling back to local storage:", err);
       // Fallback: Proceed even if table doesn't exist yet, so user experience isn't broken
-      localStorage.setItem("nano_promo_claimed", "true");
-      localStorage.setItem("nano_promo_claimed_email", email.trim().toLowerCase());
+      try {
+        localStorage.setItem("nano_promo_claimed", "true");
+        localStorage.setItem("nano_promo_claimed_email", email.trim().toLowerCase());
+      } catch {}
       setSuccess(true);
-      window.dispatchEvent(new Event("nano_discount_claimed"));
+      try {
+        window.dispatchEvent(new Event("nano_discount_claimed"));
+      } catch {}
     } finally {
       setLoading(false);
     }
@@ -101,7 +113,9 @@ export function PromotionalModal() {
   const handleClose = () => {
     setIsOpen(false);
     setIsMinimized(true);
-    localStorage.setItem("nano_promo_dismissed", "true");
+    try {
+      localStorage.setItem("nano_promo_dismissed", "true");
+    } catch {}
   };
 
   const handleOpen = () => {

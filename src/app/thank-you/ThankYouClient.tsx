@@ -15,22 +15,30 @@ function ThankYouContent() {
   useEffect(() => {
     // Trigger Google Ads & Analytics Conversion event only once per submission session
     if (typeof window !== "undefined") {
-      const trackingKey = `quote_submitted_${email || name || "lead"}`;
-      if (sessionStorage.getItem(trackingKey)) {
-        // Prevent duplicate trigger on page refresh
-        return;
+      try {
+        const trackingKey = `quote_submitted_${email || name || "lead"}`;
+        if (sessionStorage.getItem(trackingKey)) {
+          // Prevent duplicate trigger on page refresh
+          return;
+        }
+        sessionStorage.setItem(trackingKey, "1");
+      } catch {
+        // Ignore storage restrictions
       }
-      sessionStorage.setItem(trackingKey, "1");
 
-      const win = window as unknown as { gtag?: (...args: unknown[]) => void; fbq?: (...args: unknown[]) => void };
-      if (win.gtag) {
-        win.gtag("event", "generate_lead", {
-          value: 1,
-          currency: "USD",
-        });
-      }
-      if (win.fbq) {
-        win.fbq("track", "Lead");
+      try {
+        const win = window as unknown as { gtag?: (...args: unknown[]) => void; fbq?: (...args: unknown[]) => void };
+        if (win.gtag) {
+          win.gtag("event", "generate_lead", {
+            value: 1,
+            currency: "USD",
+          });
+        }
+        if (win.fbq) {
+          win.fbq("track", "Lead");
+        }
+      } catch {
+        // Safe fail
       }
     }
   }, [email, name]);
