@@ -51,13 +51,6 @@ export default function ContactUsPage() {
       }
 
       setSubmitSuccess(true);
-      if (typeof window !== "undefined" && (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag) {
-        (window as unknown as { gtag: (...args: unknown[]) => void }).gtag(
-          "event",
-          "conversion_event_request_quote",
-          {}
-        );
-      }
       const submittedName = formData.name;
       const submittedEmail = formData.email;
       setFormData({ name: "", email: "", subject: "", message: "" });

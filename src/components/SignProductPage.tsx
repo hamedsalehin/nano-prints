@@ -454,7 +454,9 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
 
 export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
   const cfg = useMemo(() => {
-    const updatedSelects = [...(rawCfg.selects || [])];
+    // Deep clone to ensure all nested objects and arrays are 100% mutable in strict mode (iOS Safari)
+    const cloned: ProductPageConfig = JSON.parse(JSON.stringify(rawCfg));
+    const updatedSelects = cloned.selects || [];
     const hasTurnaround = updatedSelects.some(
       (s) => s.label.toLowerCase().includes("turnaround")
     );
@@ -477,7 +479,8 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
         ],
       });
     }
-    return { ...rawCfg, selects: updatedSelects };
+    cloned.selects = updatedSelects;
+    return cloned;
   }, [rawCfg]);
 
   const [selectedSize, setSelectedSize] = useState(() => cfg.sizes[0]);
