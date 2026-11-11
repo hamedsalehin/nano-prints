@@ -81,6 +81,28 @@ export default function RootLayout({
   return (
     <html lang="en" className={openSans.variable + " " + poppins.variable}>
       <head>
+        {/* Guard against third-party ad-blocker / Safari ITP readonly property errors before analytics execute */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (typeof window !== "undefined") {
+                  window.addEventListener("error", function(e) {
+                    if (e && e.message && (
+                      e.message.indexOf("readonly property") !== -1 ||
+                      e.message.indexOf("read only property") !== -1 ||
+                      (e.filename && (e.filename.indexOf("fbevents") !== -1 || e.filename.indexOf("clarity") !== -1))
+                    )) {
+                      e.preventDefault && e.preventDefault();
+                      e.stopPropagation && e.stopPropagation();
+                      return true;
+                    }
+                  }, true);
+                }
+              } catch(err) {}
+            `,
+          }}
+        />
         {/* Global Analytics Stub Queues (Instant, 0KB network, non-blocking) */}
         <script
           dangerouslySetInnerHTML={{
