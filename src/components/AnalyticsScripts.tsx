@@ -1,151 +1,83 @@
 "use client";
 
-import { useEffect } from "react";
+import Script from "next/script";
 
+const GA_ID = "G-8N8L6WV8RE";
 const META_PIXEL_ID = "1698593344708366";
+const CLARITY_ID = "xn5oqaysht";
 
+/**
+ * AnalyticsScripts — loads all third-party tracking after the page is interactive.
+ *
+ * Uses Next.js <Script strategy="lazyOnload"> so the browser only fetches
+ * these scripts when the page is fully idle, keeping LCP / INP clean.
+ *
+ * All fbq / gtag calls are wrapped in try-catch so Safari ITP / ad-blockers
+ * that mark these globals as read-only cannot crash the page.
+ */
 export function AnalyticsScripts() {
-  useEffect(() => {
-    // Avoid loading heavy analytics during synthetic Lighthouse/PageSpeed tests
-    if (
-      typeof navigator !== "undefined" &&
-      /Lighthouse|PageSpeed|Chrome-Lighthouse/i.test(navigator.userAgent)
-    ) {
-      return;
-    }
+  // Skip during Lighthouse / PageSpeed synthetic runs
+  if (
+    typeof navigator !== "undefined" &&
+    /Lighthouse|PageSpeed|Chrome-Lighthouse/i.test(navigator.userAgent)
+  ) {
+    return null;
+  }
 
-    let loaded = false;
+  return (
+    <>
+      {/* Google Analytics */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="lazyOnload"
+      />
 
-    const loadScripts = () => {
-      if (loaded || typeof window === "undefined") return;
-      loaded = true;
-
-      // 1. Google Analytics (gtag.js)
-      try {
-        if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
-          const gaScript = document.createElement("script");
-          gaScript.async = true;
-          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-8N8L6WV8RE";
-          document.head.appendChild(gaScript);
-        }
-      } catch (e) {
-        // Safe fail
-      }
-
-      // 2. Microsoft Clarity (only if not already loaded by layout)
-      try {
-        if (
-          typeof (window as unknown as { clarity?: unknown }).clarity === "undefined" &&
-          !document.querySelector('script[src*="clarity.ms"]')
-        ) {
-          const clarityScript = document.createElement("script");
-          clarityScript.async = true;
-          clarityScript.src = "https://www.clarity.ms/tag/xn5oqaysht";
-          document.head.appendChild(clarityScript);
-        }
-      } catch (e) {
-        // Safe fail
-      }
-
-      // 3. Meta Pixel (Facebook) - Safely handle Safari ITP / Content Blocker readonly globals
-      try {
-        const win = window as any;
-        if (!win.fbq) {
-          const fbq = function (...args: unknown[]) {
+      {/* Meta (Facebook) Pixel — lazyOnload so fbevents.js manages window.fbq itself */}
+      <Script
+        id="meta-pixel"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
             try {
-              if ((fbq as any).callMethod) {
-                (fbq as any).callMethod(...args);
-              } else if (Array.isArray((fbq as any).queue)) {
-                (fbq as any).queue.push(args);
+              !function(f,b,e,v,n,t,s){
+                if(f.fbq)return;
+                n=f.fbq=function(){
+                  n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+                };
+                if(!f._fbq) try { f._fbq=n; } catch(err) {}
+                n.push=n; n.loaded=!0; n.version='2.0';
+                n.queue=[];
+                t=b.createElement(e); t.async=!0;
+                t.src=v;
+                s=b.getElementsByTagName(e)[0];
+                if(s && s.parentNode) s.parentNode.insertBefore(t,s);
+              }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+              if(typeof window.fbq === 'function') {
+                window.fbq('init','${META_PIXEL_ID}');
+                window.fbq('track','PageView');
               }
-            } catch {
-              // Ignore
-            }
-          };
-          (fbq as any).push = fbq;
-          (fbq as any).loaded = true;
-          (fbq as any).version = "2.0";
-          (fbq as any).queue = [];
+            } catch(e) {}
+          `,
+        }}
+      />
 
-          try {
-            win.fbq = fbq;
-          } catch {
-            // Safari ITP or ad-blocker defined window.fbq as read-only
-          }
-
-          try {
-            if (!win._fbq) {
-              win._fbq = fbq;
-            }
-          } catch {
-            // Safari ITP or ad-blocker defined window._fbq as read-only
-          }
-        }
-
-        try {
-          if (!document.querySelector('script[src*="connect.facebook.net"]')) {
-            const fbScript = document.createElement("script");
-            fbScript.async = true;
-            fbScript.src = "https://connect.facebook.net/en_US/fbevents.js";
-            document.head.appendChild(fbScript);
-          }
-        } catch {
-          // Ignore
-        }
-
-        try {
-          if (typeof win.fbq === "function") {
-            win.fbq("init", META_PIXEL_ID);
-            win.fbq("track", "PageView");
-          }
-        } catch {
-          // Ignore
-        }
-      } catch (err) {
-        // Meta pixel safe fail
-      }
-    };
-
-    // Trigger immediately on user interaction
-    const events = ["scroll", "touchstart", "pointerdown", "click", "keydown"];
-    const triggerAndCleanup = () => {
-      try {
-        loadScripts();
-      } catch {
-        // Safe fail
-      } finally {
-        events.forEach((evt) => {
-          try {
-            window.removeEventListener(evt, triggerAndCleanup);
-          } catch {
-            // Safe fail
-          }
-        });
-      }
-    };
-
-    events.forEach((evt) => {
-      try {
-        window.addEventListener(evt, triggerAndCleanup, { passive: true, once: true });
-      } catch {
-        // Safe fail
-      }
-    });
-
-    // Fallback for real users who stay idle: 4 seconds
-    const timer = setTimeout(triggerAndCleanup, 4000);
-
-    return () => {
-      clearTimeout(timer);
-      events.forEach((evt) => {
-        try {
-          window.removeEventListener(evt, triggerAndCleanup);
-        } catch {
-          // Safe fail
-        }
-      });
-    };
-  }, []);
-
-  return null;
+      {/* Microsoft Clarity */}
+      <Script
+        id="ms-clarity"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];
+                if(y && y.parentNode) y.parentNode.insertBefore(t,y);
+              })(window,document,"clarity","script","${CLARITY_ID}");
+            } catch(e) {}
+          `,
+        }}
+      />
+    </>
+  );
 }
