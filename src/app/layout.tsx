@@ -116,31 +116,29 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Local Business Schema Markup */}
+        {/* Local Business Schema Markup — validated against schema.org/LocalBusiness */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "category": "Sign Shop & Printing Services",
-              "keywords": "Sign Shop, Custom Business Signs, Print Shop, Commercial Printing, LED Signs, Banners, Neon Signs, Channel Letters, Vehicle Wraps",
+              "@id": "https://nano-signs.com/#localbusiness",
               "name": "Nano Signs",
               "alternateName": "Nano Signs & Custom Print Shop",
               "description": "Fort Lauderdale's premier custom sign shop and commercial print shop. We specialize in custom business signs, banners, LED displays, neon signs, vehicle wraps, channel letters, and marketing materials in Fort Lauderdale FL.",
-
-
-
-
-              "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
-              "logo": "https://nano-signs.com/images/nano%20logo%20complete.png",
-              "@id": "https://nano-signs.com/#localbusiness",
               "url": "https://nano-signs.com",
               "telephone": "305-967-1005",
               "email": "info@nano-signs.com",
+              "image": "https://nano-signs.com/images/nano%20logo%20complete.png",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://nano-signs.com/images/nano%20logo%20complete.png"
+              },
               "priceRange": "$$",
               "currenciesAccepted": "USD",
               "paymentAccepted": "Cash, Credit Card, Check",
+              "naics": "541890",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4567 Powerline Rd",
@@ -156,8 +154,8 @@ export default function RootLayout({
               },
               "hasMap": "https://maps.google.com/?q=Nano+Signs+4567+Powerline+Rd+Fort+Lauderdale+FL+33309",
               "areaServed": [
-                {"@type": "City", "name": "Fort Lauderdale & Oakland Park", "addressRegion": "FL"},
-                {"@type": "City", "name": "Fort Lauderdale & Oakland Park", "addressRegion": "FL"},
+                {"@type": "City", "name": "Fort Lauderdale", "addressRegion": "FL"},
+                {"@type": "City", "name": "Oakland Park", "addressRegion": "FL"},
                 {"@type": "City", "name": "Pompano Beach", "addressRegion": "FL"},
                 {"@type": "City", "name": "Deerfield Beach", "addressRegion": "FL"},
                 {"@type": "City", "name": "Hollywood", "addressRegion": "FL"},
@@ -174,24 +172,6 @@ export default function RootLayout({
               "sameAs": [
                 "https://facebook.com/signsnano",
                 "https://nano-signs.com"
-              ],
-              "hasCredential": [
-                {
-                  "@type": "EducationalOccupationalCredential",
-                  "credentialCategory": "license",
-                  "name": "Oakland Park City Business License & Commercial Sign Contractor License"
-                }
-              ],
-              "naics": "541890",
-              "knowsAbout": [
-                "Custom Signs",
-                "Banners",
-                "LED Signs",
-                "Neon Signs",
-                "Vehicle Wraps",
-                "Banner Printing Fort Lauderdale",
-                "Sign Company Fort Lauderdale",
-                "Print Shop Fort Lauderdale FL"
               ]
             })
           }}
