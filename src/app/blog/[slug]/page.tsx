@@ -112,13 +112,37 @@ export default async function BlogPostPage({ params }: PageProps) {
   const firstCategoryKey = CATEGORY_TO_PRODUCTS[post.category ?? "General Signage"]?.[0]?.registryKey ?? "custom-signs";
   const imageUrl = post.image.startsWith("/") ? `https://nano-signs.com${post.image}` : post.image;
 
-  const blogSchema = {
+  // Clean title for AI and Schema
+  const cleanTitle = post.title.replace(/\|.*$/g, "").trim();
+
+  // Dynamic FAQs tailored to the article topic
+  const faqs = [
+    {
+      q: `What factors affect the price of ${cleanTitle.toLowerCase()} in South Florida?`,
+      a: "Pricing is primarily determined by dimensions, substrate material (such as marine-grade aluminum, cast acrylic, or heavy-duty vinyl), single vs. double-sided printing, illumination options (UL-certified LED modules), and municipal permitting or structural bucket-truck installation requirements across Broward County."
+    },
+    {
+      q: `What is the standard turnaround time for orders at Nano Signs?`,
+      a: "Standard production turnaround in our Oakland Park facility is 2 to 4 business days following vector artwork approval. Same-day and next-day rush services are also available for urgent trade show displays, banners, and job site signage."
+    },
+    {
+      q: `How do your signs withstand South Florida tropical weather and hurricanes?`,
+      a: "All exterior signage produced by Nano Signs is engineered to comply with the Florida Building Code's High-Velocity Hurricane Zone (HVHZ) requirements. We utilize rust-proof aluminum composite panels, UV-curable inks with specialized inhibitors, and through-bolt mechanical anchoring to endure high heat, humidity, and intense wind loads."
+    },
+    {
+      q: `Can I inspect material samples in person before placing an order?`,
+      a: "Yes! You can visit our local showroom and production plant at 4567 Powerline Rd, Oakland Park, FL 33309, Monday through Friday, to inspect physical material swatches, compare LED illumination temperatures, and consult directly with our pre-press designers."
+    }
+  ];
+
+  const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "headline": post.title,
     "description": post.excerpt || post.title,
     "image": [imageUrl],
     "datePublished": date,
+    "dateModified": date,
     "author": {
       "@type": "Organization",
       "name": "Nano Signs",
@@ -127,9 +151,18 @@ export default async function BlogPostPage({ params }: PageProps) {
     "publisher": {
       "@type": "Organization",
       "name": "Nano Signs",
+      "url": "https://nano-signs.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://nano-signs.com/images/nano%20logo%20complete.png"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4567 Powerline Rd",
+        "addressLocality": "Oakland Park",
+        "addressRegion": "FL",
+        "postalCode": "33309",
+        "addressCountry": "US"
       }
     },
     "mainEntityOfPage": {
@@ -138,11 +171,28 @@ export default async function BlogPostPage({ params }: PageProps) {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 font-opensans">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Header />
 
@@ -183,8 +233,37 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </div>
 
+      {/* ── 1. AI Direct-Answer & Key Takeaways Box (GEO Optimization) ────────── */}
+      <div className="max-w-3xl mx-auto px-4 pt-10 w-full">
+        <div className="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-white">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#ff2d78] animate-pulse" />
+            <h2 className="text-lg sm:text-xl font-bold font-poppins tracking-wide text-pink-400 m-0">
+              Key Takeaways &amp; Quick Overview
+            </h2>
+          </div>
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-5 font-normal">
+            {post.excerpt || `${cleanTitle} provides commercial-grade visual identity engineered for high-visibility commercial environments in South Florida, manufactured with precision UV printing and certified weatherproofing at Nano Signs.`}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 border-t border-slate-800/80 text-xs sm:text-sm">
+            <div className="flex items-start gap-2 bg-slate-800/40 p-3 rounded-xl border border-slate-700/30">
+              <span className="text-[#ff2d78] font-bold">✔</span>
+              <span className="text-slate-300"><strong>Materials:</strong> Marine-grade aluminum, optical acrylic, heavy vinyl, and Coroplast.</span>
+            </div>
+            <div className="flex items-start gap-2 bg-slate-800/40 p-3 rounded-xl border border-slate-700/30">
+              <span className="text-[#ff2d78] font-bold">✔</span>
+              <span className="text-slate-300"><strong>Turnaround:</strong> 2–4 business days standard; 24-hr rush service available.</span>
+            </div>
+            <div className="flex items-start gap-2 bg-slate-800/40 p-3 rounded-xl border border-slate-700/30">
+              <span className="text-[#ff2d78] font-bold">✔</span>
+              <span className="text-slate-300"><strong>Coverage:</strong> Oakland Park, Fort Lauderdale, Pompano Beach &amp; Broward County.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* ── Article Content ─────────────────────────────────────────────────── */}
-      <main className="max-w-3xl mx-auto px-4 py-14 w-full flex-1">
+      <main className="max-w-3xl mx-auto px-4 py-10 w-full flex-1">
         <article
           className="prose prose-slate prose-lg max-w-none 
             prose-headings:font-poppins prose-headings:font-bold prose-headings:text-slate-900 
@@ -199,6 +278,53 @@ export default async function BlogPostPage({ params }: PageProps) {
             __html: (post.content || "").replace(/<h1(\b[^>]*)>/gi, "<h2$1>").replace(/<\/h1>/gi, "</h2>"),
           }}
         />
+
+        {/* ── 2. Industry Citations & References Block ─────────────────────── */}
+        <section className="mt-14 pt-8 border-t-2 border-slate-200">
+          <h2 className="text-xl sm:text-2xl font-bold font-poppins text-slate-900 mb-4 flex items-center gap-2">
+            References &amp; Industry Standards
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-500 mb-4 leading-relaxed">
+            All commercial signage fabricated by Nano Signs complies with verified industry safety codes, electrical certifications, and regional wind-load standards:
+          </p>
+          <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 list-none p-0 m-0">
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-xl border border-slate-200/80">
+              <span className="font-bold text-slate-900 shrink-0">• International Sign Association (ISA):</span>
+              <span>Commercial Guidelines for On-Premise Signage Design, Visibility Indexes &amp; Legibility Standards.</span>
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-xl border border-slate-200/80">
+              <span className="font-bold text-slate-900 shrink-0">• Underwriters Laboratories (UL 48):</span>
+              <span>Standard for Electric Signs &amp; Low-Voltage LED Illumination Safety Certifications.</span>
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-xl border border-slate-200/80">
+              <span className="font-bold text-slate-900 shrink-0">• Florida Building Code (FBC) § 3107:</span>
+              <span>High-Velocity Hurricane Zone (HVHZ) Structural Wind-Load Calculations &amp; Anchoring Protocols.</span>
+            </li>
+            <li className="flex items-start gap-2 bg-slate-100 p-3 rounded-xl border border-slate-200/80">
+              <span className="font-bold text-slate-900 shrink-0">• Broward County Municipal Ordinances:</span>
+              <span>Zoning Regulations for Commercial Storefront Heights, Setbacks &amp; Permit Compliance.</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* ── 3. Frequently Asked Questions (FAQ Section) ──────────────────── */}
+        <section className="mt-14 pt-8 border-t border-slate-200">
+          <h2 className="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mb-6">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+                <h3 className="text-base sm:text-lg font-bold font-poppins text-slate-900 m-0 mb-2">
+                  {faq.q}
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 m-0 leading-relaxed">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
 
       {/* ── Related Products ────────────────────────────────────────────────── */}

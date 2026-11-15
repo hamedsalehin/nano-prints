@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 import { BLOG_REGISTRY } from "@/lib/blogRegistry";
+import { getMarkdownBlogPosts } from "@/lib/blogUtils";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nano-signs.com";
@@ -136,13 +137,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   const blogPages: MetadataRoute.Sitemap = [];
+  const addedBlogSlugs = new Set<string>();
+
+  // 1. Include Markdown blog posts (all 60+ new & existing articles)
+  try {
+    const mdPosts = getMarkdownBlogPosts();
+    for (const post of mdPosts) {
+      if (post.slug && !addedBlogSlugs.has(post.slug)) {
+        addedBlogSlugs.add(post.slug);
+        blogPages.push({
+          url: `${baseUrl}/blog/${post.slug}`,
+          lastModified: currentDate,
+          changeFrequency: "weekly" as const,
+          priority: 0.7,
+        });
+      }
+    }
+  } catch (e) {
+    // Graceful fallback
+  }
+
+  // 2. Include any code registry posts
   for (const slug of Object.keys(BLOG_REGISTRY)) {
-    blogPages.push({
-      url: `${baseUrl}/blog/${slug}`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    });
+    if (!addedBlogSlugs.has(slug)) {
+      addedBlogSlugs.add(slug);
+      blogPages.push({
+        url: `${baseUrl}/blog/${slug}`,
+        lastModified: currentDate,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      });
+    }
   }
 
   return [...corePages, ...categoryPages, ...productPages, ...locationPages, ...blogPages];
