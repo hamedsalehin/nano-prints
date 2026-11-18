@@ -3,6 +3,8 @@ import type { NextRequest } from "next/server";
 
 // Permanent (301) redirects for legacy or restructured URLs identified in Google Search Console
 const LEGACY_REDIRECTS: Record<string, string> = {
+  "/about-nano-signs-neon-led-custom-signs-roll-up-signs": "/about-us",
+  "/about-nano-signs-neon-led-custom-signs-roll-up-signs/": "/about-us",
   "/led-signs-for-sale": "/led-display-signs",
   "/programmable-led-signs": "/led-display-signs/programmable-led-sign",
   "/custom-signs/programmable-led-sign": "/led-display-signs/programmable-led-sign",

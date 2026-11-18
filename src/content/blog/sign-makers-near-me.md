@@ -2,7 +2,7 @@
 title: "Sign Makers Near Me in Fort Lauderdale & Broward County"
 date: "2026-11-15"
 description: "Looking for sign makers near me? Nano Signs is a local full-service sign maker in Oakland Park serving Fort Lauderdale and all of Broward County FL."
-image: "/images/blog/sign-makers-near-me.jpg"
+image: "/images/blog/sign-makers-near-me.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

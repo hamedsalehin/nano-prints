@@ -2,7 +2,7 @@
 title: "Local Signs Shop in Fort Lauderdale & Oakland Park | Nano Signs"
 date: "2026-11-15"
 description: "Find a trusted local signs shop in Fort Lauderdale or Oakland Park. Nano Signs offers custom banner printing, vinyl signs, and commercial sign fabrication in Broward County."
-image: "/images/blog/signs-shop.jpg"
+image: "/images/blog/signs-shop.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

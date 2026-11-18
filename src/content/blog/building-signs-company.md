@@ -2,7 +2,7 @@
 title: "Building Signs Company in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Find a trusted building signs company in South Florida. Nano Signs installs channel letters, cabinet signs, and dimensional building signs in Fort Lauderdale and Broward County."
-image: "/images/blog/building-signs-company.jpg"
+image: "/images/blog/building-signs-company.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

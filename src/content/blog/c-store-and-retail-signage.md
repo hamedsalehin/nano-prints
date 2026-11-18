@@ -2,7 +2,7 @@
 title: "C-Store & Retail Signage Printing: Complete Storefront, Pump Top & Merchandising Graphics"
 date: "2026-11-15"
 description: "Complete commercial guide to convenience store and retail signage printing in South Florida. Explore pump toppers, window perf, channel letters, and point-of-sale graphics."
-image: "/images/blog/c-store-and-retail-signage.jpg"
+image: "/images/blog/c-store-and-retail-signage.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

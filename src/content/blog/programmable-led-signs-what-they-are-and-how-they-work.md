@@ -2,7 +2,7 @@
 title: "Programmable LED Signs: What They Are and How They Work"
 date: "2026-08-10"
 description: "Programmable LED signs let you run live sports, countdowns, and custom content from your phone or HDMI. See how they work and what to look for."
-image: "/images/blog/programmable-led-signs-what-they-are-and-how-they-work.jpg"
+image: "/images/blog/programmable-led-signs-what-they-are-and-how-they-work.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

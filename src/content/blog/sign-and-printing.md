@@ -2,7 +2,7 @@
 title: "Sign and Printing Services in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Full-service sign and printing company in Fort Lauderdale. Custom banners, rigid signs, vehicle wraps, and large-format graphics by Nano Signs in Oakland Park FL."
-image: "/images/blog/sign-and-printing.jpg"
+image: "/images/blog/sign-and-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

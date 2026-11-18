@@ -2,7 +2,7 @@
 title: "Custom Construction Signs in Florida | Broward County Job Sites"
 date: "2026-11-15"
 description: "Custom construction signs Florida: OSHA-compliant job site signs, contractor panels, and project identification banners. Fast turnaround by Nano Signs in Oakland Park."
-image: "/images/blog/custom-construction-signs-florida.jpg"
+image: "/images/blog/custom-construction-signs-florida.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

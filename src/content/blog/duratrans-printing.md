@@ -2,7 +2,7 @@
 title: "Duratrans Printing in Fort Lauderdale | Backlit Film by Nano Signs"
 date: "2026-11-15"
 description: "Expert duratrans printing and backlit film in Fort Lauderdale. High-luminance lightbox graphics for retail, C-stores, and trade shows. Nano Signs, Oakland Park FL."
-image: "/images/blog/duratrans-printing.jpg"
+image: "/images/blog/duratrans-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

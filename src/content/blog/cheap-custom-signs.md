@@ -2,7 +2,7 @@
 title: "Affordable & Cheap Custom Signs in Fort Lauderdale FL | Nano Signs"
 date: "2026-11-15"
 description: "Looking for cheap custom signs in Fort Lauderdale that deliver professional quality? Nano Signs offers affordable yard signs, vinyl banners, and aluminum boards in Broward County."
-image: "/images/blog/cheap-custom-signs.jpg"
+image: "/images/blog/cheap-custom-signs.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Signage Business Near Me in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Find a trusted signage business near me in Broward County FL. Nano Signs provides custom commercial signage, banners, and LED signs in Oakland Park, Fort Lauderdale."
-image: "/images/blog/signage-business-near-me.jpg"
+image: "/images/blog/signage-business-near-me.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

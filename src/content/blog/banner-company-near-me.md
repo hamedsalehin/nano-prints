@@ -2,7 +2,7 @@
 title: "Banner Company Near Me in Fort Lauderdale | Nano Signs"
 date: "2026-11-15"
 description: "Find a banner company near me in Broward County. Nano Signs provides custom vinyl banners, retractable displays, and fabric banners in Oakland Park, Fort Lauderdale FL."
-image: "/images/blog/banner-company-near-me.jpg"
+image: "/images/blog/banner-company-near-me.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

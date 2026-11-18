@@ -22,7 +22,7 @@ export const LOCATIONS_REGISTRY: Record<string, LocationPageConfig> = {
     title: "Oakland Park Sign Shop & Print Company",
     description: "Oakland Park's local sign shop — Nano Signs at 4567 Powerline Rd. Custom signs, banner printing, business signs, LED displays & neon signs. Next-day turnaround. Call 305-967-1005 for a free quote.",
     heroSubtitle: "Your Local Sign Shop on Powerline Rd, Oakland Park FL",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs is Oakland Park's local sign company and print shop, located at 4567 Powerline Rd, Fort Lauderdale FL 33309 — right on the Oakland Park border. We serve businesses across Oakland Park and all of Broward County with same-week turnaround on all orders.
 
@@ -76,7 +76,7 @@ We are a full-service sign shop serving Oakland Park, Fort Lauderdale, Pompano B
     title: "Fort Lauderdale Sign Company",
     description: "Fort Lauderdale's trusted sign company — Nano Signs. Custom signs, LED signs, banner printing, neon signs & vehicle wraps. Serving all of Fort Lauderdale, Oakland Park & Broward County. Call 305-967-1005.",
     heroSubtitle: "Fort Lauderdale's Premier Sign Company & Print Shop",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs is the go-to sign company for Fort Lauderdale businesses. Located just minutes away in Fort Lauderdale on Powerline Road, we serve the entire Fort Lauderdale area with custom signage, banner printing, LED signs, and commercial printing.
 
@@ -130,7 +130,7 @@ Our Fort Lauderdale sign services include full design support, professional inst
     title: "Florida LED Sign Company & Programmable Displays",
     description: "Top-rated LED sign company serving Florida. Programmable LED displays, neon signs & digital signage for businesses statewide. Based in Fort Lauderdale, Broward County. Call 305-967-1005.",
     heroSubtitle: "High-Quality LED Signs & Programmable Displays Across Florida",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "Service",
     bodyContent: `Nano Signs is Florida's trusted source for programmable LED signs, LED display signs, and neon signs. Based in Fort Lauderdale (Broward County), we ship and install LED signage throughout Florida.
 
@@ -171,7 +171,7 @@ We serve businesses in Miami-Dade, Broward, Palm Beach, and throughout Florida w
     title: "Sign Shop in Fort Lauderdale & Fort Lauderdale FL",
     description: "Looking for a sign shop near you in Fort Lauderdale or Fort Lauderdale FL? Nano Signs is your local full-service sign shop — custom signs, banners, LED signs & printing. Call 305-967-1005.",
     heroSubtitle: "Your Local Full-Service Sign Shop in Broward County",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs is the premier sign shop serving Fort Lauderdale, Fort Lauderdale, and all of Broward County. Located at 4567 Powerline Rd in Fort Lauderdale FL, our sign shop produces custom signage for businesses of every size — from single-location retail stores to large commercial contractors.
 
@@ -226,7 +226,7 @@ Whether you're a real estate agent needing yard signs, a restaurant looking for 
     title: "Custom Neon & LED Signs in Fort Lauderdale FL",
     description: "Custom neon LED signs for businesses & décor in Fort Lauderdale, Fort Lauderdale, Oakland Park & Broward County FL. Flex neon signs, LED neon, classic neon looks. Fast turnaround. Call 305-967-1005.",
     heroSubtitle: "Stunning Custom Neon & LED Signs for South Florida Businesses",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs creates custom neon LED signs and traditional-style neon signs for businesses, restaurants, bars, retail stores, and home décor throughout Fort Lauderdale, Fort Lauderdale, and South Florida.
 
@@ -279,7 +279,7 @@ From restaurant neon signs and bar neon signs to wedding neon signs and retail d
     title: "Programmable LED Signs & Digital Displays — Fort Lauderdale FL",
     description: "Custom programmable LED signs & digital display signs for businesses in Fort Lauderdale, Fort Lauderdale, Oakland Park & Broward County FL. Update your message anytime. Free quote: 305-967-1005.",
     heroSubtitle: "Programmable LED Signs & Digital Signage for South Florida Businesses",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs supplies and installs programmable LED signs and digital display signs for businesses throughout Fort Lauderdale, Fort Lauderdale, and Broward County, Florida.
 
@@ -334,7 +334,7 @@ Our team handles site surveys, permitting assistance, installation, and training
     title: "Roll-Up Banners & Retractable Banners — Fort Lauderdale & Fort Lauderdale FL",
     description: "Custom roll-up banners & retractable banner stands in Fort Lauderdale & Fort Lauderdale FL. Trade show banners, step-and-repeat, pop-up displays. Fast print & delivery. Call 305-967-1005.",
     heroSubtitle: "Professional Roll-Up & Retractable Banner Printing in South Florida",
-    heroImage: "/images/hero_image_main.jpg",
+    heroImage: "/images/hero-signs.jpg",
     schemaType: "LocalBusiness",
     bodyContent: `Nano Signs prints and assembles premium roll-up banners and retractable banner stands for businesses, trade shows, events, and promotions throughout Fort Lauderdale, Fort Lauderdale, and Broward County, Florida.
 

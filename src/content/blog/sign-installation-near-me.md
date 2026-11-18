@@ -2,7 +2,7 @@
 title: "Sign Installation Near Me in Fort Lauderdale & Broward County"
 date: "2026-11-15"
 description: "Professional sign installation near me in Broward County. Licensed sign installers for channel letters, monument signs, pylon signs, and vehicle wraps at Nano Signs."
-image: "/images/blog/sign-installation-near-me.jpg"
+image: "/images/blog/sign-installation-near-me.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Sidewalk Ads & Yard Signs: Portable Commercial Signage, A-Frames & Coroplast Manufacturing"
 date: "2026-11-15"
 description: "Ultimate guide to sidewalk A-frame signs, fluted Coroplast yard signs, H-stakes, and portable commercial advertising displays manufactured in Oakland Park, FL."
-image: "/images/blog/sidewalk-ads-and-yard-signs.jpg"
+image: "/images/blog/sidewalk-ads-and-yard-signs.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

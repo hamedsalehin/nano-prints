@@ -2,7 +2,7 @@
 title: "Sign Printing in Fort Lauderdale & Oakland Park FL"
 date: "2026-11-15"
 description: "Professional commercial sign printing in Fort Lauderdale and Oakland Park. High-resolution vinyl, acrylic, aluminum, and wide-format signs at Nano Signs."
-image: "/images/blog/sign-printing.jpg"
+image: "/images/blog/sign-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

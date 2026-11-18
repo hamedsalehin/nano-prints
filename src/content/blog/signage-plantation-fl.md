@@ -2,7 +2,7 @@
 title: "Custom Signage in Plantation FL | Nano Signs Fort Lauderdale"
 date: "2026-11-15"
 description: "Professional custom signage in Plantation FL. Nano Signs provides channel letters, banners, interior signs, and vehicle wraps for Plantation businesses in Broward County."
-image: "/images/blog/signage-plantation-fl.jpg"
+image: "/images/blog/signage-plantation-fl.jpg?v=1794986380876"
 category: "Local Guides"
 type: "post"
 ---

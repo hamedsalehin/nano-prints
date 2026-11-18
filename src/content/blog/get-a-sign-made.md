@@ -2,7 +2,7 @@
 title: "Get a Sign Made in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Need to get a sign made in South Florida? Nano Signs handles everything from concept to installation. Custom signs, banners, and LED displays made in Oakland Park FL."
-image: "/images/blog/get-a-sign-made.jpg"
+image: "/images/blog/get-a-sign-made.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Indoor Signs Near Me in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Looking for indoor signs near me in Broward County? Nano Signs creates custom lobby signs, wayfinding, ADA plaques, and office interior signs in Oakland Park FL."
-image: "/images/blog/indoor-signs-near-me.jpg"
+image: "/images/blog/indoor-signs-near-me.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

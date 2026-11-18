@@ -2,7 +2,7 @@
 title: "Florida Sign Company | Nano Signs Fort Lauderdale & Broward"
 date: "2026-11-15"
 description: "Nano Signs is a trusted Florida sign company providing custom commercial signs, LED displays, vinyl banners, and monument signs across Fort Lauderdale and South Florida."
-image: "/images/blog/florida-sign-company.jpg"
+image: "/images/blog/florida-sign-company.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

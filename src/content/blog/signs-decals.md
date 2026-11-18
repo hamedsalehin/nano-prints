@@ -2,7 +2,7 @@
 title: "Custom Commercial Signs & Vinyl Decals: Industrial Materials, Die-Cutting & Fleet Applications"
 date: "2026-11-14"
 description: "The ultimate guide to commercial signs and custom vinyl decals in South Florida. Discover cast vs. calendered vinyl, UV laminates, fleet graphics, and storefront branding."
-image: "/images/blog/signs-decals.jpg"
+image: "/images/blog/signs-decals.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

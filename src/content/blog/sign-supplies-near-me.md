@@ -2,7 +2,7 @@
 title: "Sign Supplies Near Me in Fort Lauderdale & Oakland Park | Nano Signs"
 date: "2026-11-15"
 description: "Find sign supplies near me in Broward County. Nano Signs provides commercial sign materials, vinyl, substrates, and hardware. Signage supplier serving Fort Lauderdale FL."
-image: "/images/blog/sign-supplies-near-me.jpg"
+image: "/images/blog/sign-supplies-near-me.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

@@ -229,7 +229,7 @@ export const BLOG_REGISTRY: Record<string, BlogPost> = {
     slug: "the-death-of-gas-neon-why-led-neon-is-taking-over",
     title: "The Death of Gas Neon: Why LED Neon Is Taking Over",
     excerpt: "Traditional neon signs are fragile, toxic, and power-hungry. See why LED neon is replacing gas neon for storefronts, logos, and custom signage.",
-    image: "/images/blog/transparent-led-screens-buying-guide.webp",
+    image: "/images/blog/the-death-of-gas-neon-why-led-neon-is-taking-over.jpg",
     category: "General Signage",
     date: "2026-08-09",
     readTime: "4 min read",

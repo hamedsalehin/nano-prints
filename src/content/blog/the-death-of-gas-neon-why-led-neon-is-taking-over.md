@@ -2,7 +2,7 @@
 title: "The Death of Gas Neon: Why LED Neon Is Taking Over"
 date: "2026-08-09"
 description: "Traditional neon signs are fragile, toxic, and power-hungry. See why LED neon is replacing gas neon for storefronts, logos, and custom signage."
-image: "/images/blog/the-death-of-gas-neon-why-led-neon-is-taking-over.jpg"
+image: "/images/blog/the-death-of-gas-neon-why-led-neon-is-taking-over.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

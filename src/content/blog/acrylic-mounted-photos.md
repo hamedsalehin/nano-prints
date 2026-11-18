@@ -2,7 +2,7 @@
 title: "Acrylic Mounted Photos & Prints in Fort Lauderdale | Nano Signs"
 date: "2026-11-15"
 description: "Premium acrylic mounted photos and prints in Fort Lauderdale. Face-mount acrylic prints for offices, hotels, and galleries. Custom sizes by Nano Signs in Oakland Park FL."
-image: "/images/blog/acrylic-mounted-photos.jpg"
+image: "/images/blog/acrylic-mounted-photos.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

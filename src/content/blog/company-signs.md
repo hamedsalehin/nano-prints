@@ -2,7 +2,7 @@
 title: "Custom Company Signs in Fort Lauderdale & Oakland Park FL"
 date: "2026-11-15"
 description: "Professional custom company signs for Broward County businesses. Channel letters, monument signs, lobby logos, and exterior building signs at Nano Signs."
-image: "/images/blog/company-signs.jpg"
+image: "/images/blog/company-signs.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Event Signage Near Me in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Custom event signage near me in Broward County. Nano Signs provides trade show displays, event banners, retractable stands, and step-and-repeat backdrops in Oakland Park FL."
-image: "/images/blog/event-signage-near-me.jpg"
+image: "/images/blog/event-signage-near-me.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

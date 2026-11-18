@@ -2,7 +2,7 @@
 title: "Where to Get Signs Made in Fort Lauderdale & Broward County"
 date: "2026-11-15"
 description: "Wondering where to get signs made in Fort Lauderdale? Nano Signs is a full-service custom sign shop handling design, manufacturing, and installation locally in Oakland Park FL."
-image: "/images/blog/where-to-get-signs-made.jpg"
+image: "/images/blog/where-to-get-signs-made.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

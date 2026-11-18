@@ -2,7 +2,7 @@
 title: "What Is a Vinyl Poster? Heavy-Duty Commercial Banners, Materials & Display Guide"
 date: "2026-11-14"
 description: "Discover what a vinyl poster is, how commercial vinyl banners are printed, substrate weights (13oz to 18oz), scrim reinforcement, and South Florida applications."
-image: "/images/blog/what-is-a-vinyl-poster.jpg"
+image: "/images/blog/what-is-a-vinyl-poster.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

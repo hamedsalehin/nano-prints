@@ -2,7 +2,7 @@
 title: "Window Film & Adhesive Vinyl Printing: Storefront Privacy, One-Way Vision & Solar Protection"
 date: "2026-11-15"
 description: "Comprehensive commercial guide to architectural window films, custom adhesive vinyl printing, perforated graphics, and etched privacy glass in South Florida."
-image: "/images/blog/window-film-and-adhesive-vinyl.jpg"
+image: "/images/blog/window-film-and-adhesive-vinyl.jpg?v=1794986380876"
 category: "Print & Signs"
 type: "post"
 ---

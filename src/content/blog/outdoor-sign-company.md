@@ -2,7 +2,7 @@
 title: "Outdoor Sign Company in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Find a trusted outdoor sign company in Fort Lauderdale. Nano Signs designs, fabricates, and installs outdoor signs, monument signs, and channel letters in Broward County."
-image: "/images/blog/outdoor-sign-company.jpg"
+image: "/images/blog/outdoor-sign-company.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

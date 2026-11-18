@@ -2,7 +2,7 @@
 title: "Custom Sign Makers & Sign Company in Davie & Hollywood FL: Storefronts, Banners & LED Signs"
 date: "2026-11-15"
 description: "Top-rated custom sign makers serving Davie and Hollywood FL. Explore commercial storefront signs, illuminated channel letters, vehicle wraps, and local permit services."
-image: "/images/blog/sign-makers-davie-hollywood-fl.jpg"
+image: "/images/blog/sign-makers-davie-hollywood-fl.jpg?v=1795023354058"
 category: "Local Guides"
 type: "post"
 ---

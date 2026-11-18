@@ -2,7 +2,7 @@
 title: "Local Sign Makers in Fort Lauderdale & Broward County | Nano Signs"
 date: "2026-11-15"
 description: "Find local sign makers near you in Broward County. Nano Signs provides custom commercial sign fabrication and installation in Oakland Park, Fort Lauderdale, and South Florida."
-image: "/images/blog/local-sign-makers.jpg"
+image: "/images/blog/local-sign-makers.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

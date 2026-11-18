@@ -2,7 +2,7 @@
 title: "Roll-Up Banners for Events: Portable Advertising Guide"
 date: "2026-08-09"
 description: "Roll-up banners set up in seconds, cost less per use, and stand out at trade shows. See why retractable banner stands are a top pick for event marketing."
-image: "/images/blog/roll-up-banners-for-events-portable-advertising-guide.jpg"
+image: "/images/blog/roll-up-banners-for-events-portable-advertising-guide.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

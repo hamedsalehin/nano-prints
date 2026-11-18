@@ -2,7 +2,7 @@
 title: "Sign Manufacturer Near Me in Fort Lauderdale & Broward County"
 date: "2026-11-15"
 description: "Find a local sign manufacturer near me in Broward County. Nano Signs manufactures LED, acrylic, aluminum, and illuminated commercial signs in Oakland Park FL."
-image: "/images/blog/sign-manufacturer-near-me.jpg"
+image: "/images/blog/sign-manufacturer-near-me.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

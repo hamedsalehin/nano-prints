@@ -2,7 +2,7 @@
 title: "Storefront Signs Near Me in Fort Lauderdale & Broward FL"
 date: "2026-11-15"
 description: "Custom storefront signs near me in South Florida. Channel letters, window graphics, awning signs, and LED illuminated displays by Nano Signs in Oakland Park."
-image: "/images/blog/storefront-signs-near-me.jpg"
+image: "/images/blog/storefront-signs-near-me.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

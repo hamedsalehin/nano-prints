@@ -2,7 +2,7 @@
 title: "Custom Signs in Deerfield Beach FL | Nano Signs Fort Lauderdale"
 date: "2026-11-15"
 description: "Professional custom signs in Deerfield Beach FL. Nano Signs provides storefront signs, banners, channel letters, and commercial signage for Broward County businesses."
-image: "/images/blog/signs-deerfield-beach.jpg"
+image: "/images/blog/signs-deerfield-beach.jpg?v=1794986380876"
 category: "Local Guides"
 type: "post"
 ---

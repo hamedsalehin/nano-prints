@@ -2,7 +2,7 @@
 title: "Custom Printed Signs: Commercial Substrates, UV Flatbed Printing & South Florida Durability Guide"
 date: "2026-11-14"
 description: "Comprehensive guide to commercial printed signs in South Florida. Explore rigid PVC, aluminum composite, acrylic UV printing, weatherproofing, and installation."
-image: "/images/blog/printed-sign.jpg"
+image: "/images/blog/printed-sign.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

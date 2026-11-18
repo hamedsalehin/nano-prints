@@ -2,7 +2,7 @@
 title: "Custom Signs in Boca Raton FL: Luxury Architectural Signage, Dimensional Letters & Storefronts"
 date: "2026-11-15"
 description: "Premier custom sign company serving Boca Raton FL. Luxury architectural signs, reverse halo-lit channel letters, corporate lobby signage, and permitting expertise."
-image: "/images/blog/custom-signs-boca-raton-fl.jpg"
+image: "/images/blog/custom-signs-boca-raton-fl.jpg?v=1795023354058"
 category: "Local Guides"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Business Sign Company in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Find a trusted business sign company in Broward County. Nano Signs provides custom business signs, illuminated channel letters, and commercial displays in Fort Lauderdale FL."
-image: "/images/blog/business-sign-company.jpg"
+image: "/images/blog/business-sign-company.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

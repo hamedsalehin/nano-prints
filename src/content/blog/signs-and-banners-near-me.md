@@ -2,7 +2,7 @@
 title: "Signs and Banners Near Me in Fort Lauderdale FL | Nano Signs"
 date: "2026-11-15"
 description: "Find custom signs and banners near me in Broward County. Nano Signs provides vinyl banners, foam boards, aluminum signs, and full-color printing in Oakland Park FL."
-image: "/images/blog/signs-and-banners-near-me.jpg"
+image: "/images/blog/signs-and-banners-near-me.jpg?v=1794986380876"
 category: "Print & Signs"
 type: "post"
 ---

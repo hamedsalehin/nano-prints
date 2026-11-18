@@ -2,7 +2,7 @@
 title: "Duratrans Backlit Printing: High-Definition Lightbox Graphics & Commercial Display Guide"
 date: "2026-11-15"
 description: "The definitive guide to Duratrans backlit film printing in South Florida. Explore light transmission diffusion, optical density, LED lightbox profiles, and local production."
-image: "/images/blog/duratrans-backlit-printing.jpg"
+image: "/images/blog/duratrans-backlit-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Sign Printing Company in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Nano Signs is a leading sign printing company in Fort Lauderdale. Full-service commercial sign design, wide-format printing, and installation in Broward County FL."
-image: "/images/blog/sign-printing-company.jpg"
+image: "/images/blog/sign-printing-company.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

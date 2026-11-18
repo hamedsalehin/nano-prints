@@ -2,7 +2,7 @@
 title: "South Florida Sign Company | Nano Signs Fort Lauderdale"
 date: "2026-11-15"
 description: "Nano Signs is a leading South Florida sign company providing custom commercial signs, LED displays, banners, and vehicle wraps across Broward County and all of South FL."
-image: "/images/blog/south-florida-sign-company.jpg"
+image: "/images/blog/south-florida-sign-company.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Large Sign Printing in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Expert large sign printing in Fort Lauderdale. Building wraps, large banners, wide-format panels, and oversized prints by Nano Signs in Oakland Park, Broward County FL."
-image: "/images/blog/large-sign-printing.jpg"
+image: "/images/blog/large-sign-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

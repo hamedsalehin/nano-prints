@@ -2,7 +2,7 @@
 title: "What Is Wood Print? Direct-to-Wood UV Printing, Grain Textures & Architectural Signage"
 date: "2026-11-14"
 description: "Explore direct-to-wood printing techniques, natural grain integration, UV curing on birch and reclaimed lumber, and custom wooden signs in South Florida."
-image: "/images/blog/what-is-wood-print.jpg"
+image: "/images/blog/what-is-wood-print.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

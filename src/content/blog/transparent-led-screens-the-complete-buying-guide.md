@@ -2,7 +2,7 @@
 title: "Transparent LED Screens: The Complete Buying Guide"
 date: "2026-08-09"
 description: "What are transparent LED screens, how do they work, and what do they cost? A complete guide to see-through LED screens for luxury retail and events."
-image: "/images/blog/transparent-led-screens-the-complete-buying-guide.jpg"
+image: "/images/blog/transparent-led-screens-the-complete-buying-guide.jpg?v=1795023354058"
 category: "General Signage"
 type: "post"
 ---

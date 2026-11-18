@@ -2,7 +2,7 @@
 title: "Commercial Sign Vendors in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Looking for trusted commercial sign vendors in South Florida? Nano Signs provides custom LED, acrylic, and fabricated business signs for Broward County businesses."
-image: "/images/blog/sign-vendors.jpg"
+image: "/images/blog/sign-vendors.jpg?v=1794986380876"
 category: "General Signage"
 type: "post"
 ---

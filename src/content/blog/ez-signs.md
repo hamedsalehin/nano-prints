@@ -2,7 +2,7 @@
 title: "EZ Signs & Fast Custom Signs in Fort Lauderdale | Nano Signs"
 date: "2026-11-15"
 description: "Need ez signs or fast custom signs in South Florida? Nano Signs provides quick-turnaround banners, yard signs, and printed panels in Oakland Park, Fort Lauderdale."
-image: "/images/blog/ez-signs.jpg"
+image: "/images/blog/ez-signs.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

@@ -2,7 +2,7 @@
 title: "Custom Sign Printing in Fort Lauderdale & Oakland Park FL"
 date: "2026-11-15"
 description: "Expert custom sign printing in Fort Lauderdale. Full-service custom sign design, fabrication, and installation by Nano Signs. Serving all of Broward County FL."
-image: "/images/blog/custom-sign-printing.jpg"
+image: "/images/blog/custom-sign-printing.jpg?v=1795023354058"
 category: "Print & Signs"
 type: "post"
 ---

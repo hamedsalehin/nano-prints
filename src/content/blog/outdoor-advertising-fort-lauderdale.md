@@ -2,7 +2,7 @@
 title: "Outdoor Advertising in Fort Lauderdale & Broward | Nano Signs"
 date: "2026-11-15"
 description: "Expert outdoor advertising in Fort Lauderdale. Custom billboards, building wraps, monument signs, and large-format outdoor displays by Nano Signs in Oakland Park FL."
-image: "/images/blog/outdoor-advertising-fort-lauderdale.jpg"
+image: "/images/blog/outdoor-advertising-fort-lauderdale.jpg?v=1795023354058"
 category: "Local Guides"
 type: "post"
 ---
