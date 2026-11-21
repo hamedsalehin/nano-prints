@@ -37,8 +37,9 @@ const navItems = [
   { name: "Promotional Products", href: "/promotional-products" },
   { name: "Neon Signs", href: "https://neonFL.com", isExternal: true },
   {
-    name: "Programmable LED Signs",
-    href: "/led-display-signs",
+    name: "LED Displays & Signs",
+    href: "https://led-signs.us",
+    isExternal: true,
   },
 ];
 

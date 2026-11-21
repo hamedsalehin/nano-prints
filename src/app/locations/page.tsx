@@ -7,14 +7,14 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 
 export const metadata: Metadata = {
-  title: "Nano Signs | Sign Shop Service Areas in Broward County FL",
+  title: "Service Areas in Fort Lauderdale & Broward County FL | Nano Signs",
   description:
-    "Serving Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom signs, banner printing & LED neon signs. Call 305-967-1005 for quotes.",
+    "Nano Signs serves Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom storefront signs, banner printing & LED neon signs. Call (305) 967-1005.",
   alternates: { canonical: "https://nano-signs.com/locations" },
   openGraph: {
-    title: "Nano Signs | Sign Shop Service Areas in Broward County FL",
+    title: "Service Areas in Fort Lauderdale & Broward County FL | Nano Signs",
     description:
-      "Serving Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom signs, banner printing & LED neon signs. Call 305-967-1005 for quotes.",
+      "Nano Signs serves Fort Lauderdale, Oakland Park, Pompano Beach & Broward County FL with custom storefront signs, banner printing & LED neon signs. Call (305) 967-1005.",
     url: "https://nano-signs.com/locations",
     type: "website",
   },
@@ -42,7 +42,7 @@ export default function LocationsPage() {
             Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d78] to-[#ff9a00]">Areas</span>
           </h1>
           <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Nano Signs provides high-quality custom signs, banners, and LED displays to businesses across Florida. Find a location near you.
+            Headquartered in Broward County, Nano Signs provides premium commercial signs, vinyl banners, and LED displays across Fort Lauderdale, Oakland Park, and throughout Florida.
           </p>
         </div>
       </section>

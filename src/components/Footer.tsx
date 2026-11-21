@@ -54,7 +54,8 @@ const footerLinks = {
     title: "Products",
     links: [
       { name: "Custom Signs", href: "/custom-signs" },
-      { name: "Programmable LED Signs", href: "/led-display-signs/programmable-led-sign" },
+      { name: "Programmable LED Signs", href: "https://led-signs.us", target: "_blank", rel: "noopener noreferrer" },
+      { name: "LED Video Walls & Displays", href: "https://led-signs.us/#products", target: "_blank", rel: "noopener noreferrer" },
       { name: "Neon Signs", href: "/neon-signs" },
       { name: "Roll Up Banners", href: "/custom-banners/roll-up-banners" },
       { name: "Vehicle Signs", href: "/vehicle-signs" },
@@ -148,7 +149,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                 <Phone
                   className={`w-4 h-4 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
-                <span>305-967-1005</span>
+                <span>(305) 967-1005</span>
               </a>
               <a
                 href="mailto:info@nano-signs.com"
@@ -170,7 +171,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                   className={`w-4 h-4 mt-0.5 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
                 <span>
-                  <span itemProp="streetAddress">4567 Powerline Rd</span>, <span itemProp="addressLocality">Oakland Park</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">33309</span>
+                  <span itemProp="streetAddress">4567 Powerline Rd (4567 NW 9th Ave)</span>, <span itemProp="addressLocality">Oakland Park</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">33309</span>
                 </span>
               </div>
             </div>
@@ -236,10 +237,12 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
               {footerLinks.products.title}
             </h3>
             <ul className="space-y-2">
-              {footerLinks.products.links.map((link) => (
+              {footerLinks.products.links.map((link: any) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
+                    target={link.target}
+                    rel={link.rel}
                     className={`transition-colors text-sm ${light ? "text-slate-500 hover:text-[#ff2d78]" : "text-gray-400 hover:text-[#00e5ff]"}`}
                   >
                     {link.name}

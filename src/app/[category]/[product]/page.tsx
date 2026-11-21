@@ -22,14 +22,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   // Category-specific keyword suffixes for accurate product titles
   const categorySuffixes: Record<string, string> = {
-    "neon-signs": "Custom LED Neon Signs Fort Lauderdale FL",
+    "neon-signs": "Custom LED Neon Signs | Nationwide Shipping & Fort Lauderdale FL",
     "custom-banners": "Vinyl Banner Printing Fort Lauderdale FL",
     "custom-flags": "Custom Flag Printing Fort Lauderdale FL",
     "custom-signs": "Custom Business Signs Fort Lauderdale FL",
-    "led-display-signs": "Digital Signage Fort Lauderdale FL",
+    "led-display-signs": "Digital Signage & Programmable LED Displays FL",
     "custom-decals": "Vehicle Wraps & Decals Fort Lauderdale FL",
     "trade-show": "Trade Show Displays Fort Lauderdale FL",
     "marketing-materials": "Commercial Printing Fort Lauderdale FL",
+    "signs-supply": "Wholesale Signmaking Hardware & Supplies",
   };
 
   const suffix = categorySuffixes[decodedCategory] || `Custom ${categoryData.title} Fort Lauderdale FL`;
@@ -41,6 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     "custom-banners": "Custom Banners",
     "custom-signs": "Custom Signs",
     "marketing-materials": "Marketing",
+    "signs-supply": "Signs Supply",
   };
   const PRODUCTS_WITH_DUPLICATE_NAMES = new Set([
     "step-and-repeat-banner",   // trade-show version → add category hint
@@ -52,10 +54,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const categoryHint = needsCategoryHint && categoryLabel[decodedCategory]
     ? ` for ${categoryLabel[decodedCategory]}`
     : "";
-  const title = `${rawTitle}${categoryHint} Fort Lauderdale FL | Nano Signs`;
+  
+  // Neon signs ship nationwide; local products focus on Fort Lauderdale FL
+  const locationTag = decodedCategory === "neon-signs"
+    ? "Nationwide & Fort Lauderdale FL"
+    : "Fort Lauderdale FL";
+
+  const title = `${rawTitle}${categoryHint} ${locationTag} | Nano Signs`;
   const description = productData.description
-    ? `Custom ${productData.name} in Fort Lauderdale FL. ${productData.description} Call 305-967-1005 for a free quote.`
-    : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call 305-967-1005!`;
+    ? `Custom ${productData.name} in Fort Lauderdale & South Florida. ${productData.description} Call (305) 967-1005 for a free quote.`
+    : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call (305) 967-1005!`;
 
   let primaryCategory = decodedCategory;
   if (decodedProduct === "programmable-led-sign") {

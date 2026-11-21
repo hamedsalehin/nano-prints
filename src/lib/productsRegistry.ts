@@ -9547,14 +9547,14 @@ Why Choose Our Expert-grade Rollup Banners?
     products: [
       {
         id: "a-frame-sign",
-        name: "A Frame Sign 24x36In Double-Sided Black Metal Slide-in Folding",
-        description: "Heavy-Duty Coated Steel Frame Sidewalk Curb Sign (Frame only)",
+        name: "A-Frame Sidewalk Sign Stand (Frame Only)",
+        description: "Heavy-duty black powder-coated metal slide-in curb sign stand (24\"x36\" insert capacity, hardware only, no prints included).",
         image: "/images/products/signs-supply/a-frame-sign.jpeg",
         price: "$45.00",
         badge: "Essential",
         config: {
-          title: "A Frame Sign 24x36In Double-Sided Black Metal Slide-in Folding",
-          subtitle: "Heavy-Duty Coated Steel Frame Sidewalk Curb Sign (Frame only)",
+          title: "A-Frame Sign Stand 24\"x36\" (Frame Only — No Prints)",
+          subtitle: "Commercial-grade folding steel sidewalk frame with slide-in channels for signmakers & businesses.",
           breadcrumb: "Signs Supply",
           breadcrumbHref: "/signs-supply",
           promoText: "WHOLESALE PRICING FOR SIGNMAKERS",
@@ -9600,14 +9600,14 @@ Why Choose Our Expert-grade Rollup Banners?
       },
       {
         id: "roll-up-banner",
-        name: "Retractable (Roll Up ) Banner Stand Base, Metal Stand Replacement + Black Bag",
-        description: "Roll Up Stand Aluminum Trade Show/Event/Photo Booth (Base Only No Print)",
+        name: "Retractable Banner Stand (Frame Only)",
+        description: "Heavy-duty aluminum retractable roll-up banner stand base with telescopic pole and padded carrying case (hardware only, no print).",
         image: "/images/products/signs-supply/roll-up-banner.png",
         price: "$39.00",
         badge: "Popular",
         config: {
-          title: "Retractable Banner Stand 33\"x79\" Base, Metal Stand Replacement + Black Bag",
-          subtitle: "Roll Up Stand Aluminum Trade Show/Event/Photo Booth (Base Only No Print)",
+          title: "Retractable Banner Stand Base 33\"x79\" (Frame Only — No Print)",
+          subtitle: "Commercial aluminum spring-loaded banner cassette with telescopic support pole and travel bag.",
           breadcrumb: "Signs Supply",
           breadcrumbHref: "/signs-supply",
           promoText: "WHOLESALE PRICING FOR SIGNMAKERS",

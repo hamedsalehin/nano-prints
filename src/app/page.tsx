@@ -8,6 +8,7 @@ const ExpertsSection = dynamic(() => import('@/components/ExpertsSection').then(
 const ProductsGrid = dynamic(() => import('@/components/ProductsGrid').then(mod => mod.ProductsGrid));
 const ValuePropositions = dynamic(() => import('@/components/ValuePropositions').then(mod => mod.ValuePropositions));
 const CustomerHighlights = dynamic(() => import('@/components/CustomerHighlights').then(mod => mod.CustomerHighlights));
+const TrustReviewSection = dynamic(() => import('@/components/TrustReviewSection').then(mod => mod.TrustReviewSection));
 const HomepageFaq = dynamic(() => import('@/components/HomepageFaq').then(mod => mod.HomepageFaq));
 const SeoContentBlock = dynamic(() => import('@/components/SeoContentBlock').then(mod => mod.SeoContentBlock));
 const Footer = dynamic(() => import('@/components/Footer').then(mod => mod.Footer));
@@ -42,6 +43,7 @@ export default function Home() {
       <ProductsGrid />
       <ValuePropositions />
       <CustomerHighlights />
+      <TrustReviewSection />
       <HomepageFaq />
       <SeoContentBlock />
       <Footer />

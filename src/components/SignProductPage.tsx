@@ -237,10 +237,13 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
   const productName = cfg.title || "Custom Sign";
   const location = "Fort Lauderdale & Oakland Park FL | Broward County";
 
+  const isNationwideProduct = categoryName.toLowerCase().includes("neon");
+  const displayLocation = isNationwideProduct ? "South Florida & Nationwide" : "Fort Lauderdale & Broward County FL";
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": `${productName} — Fort Lauderdale FL`,
+    "name": `${productName} — ${displayLocation}`,
     "description": cfg.description || cfg.subtitle || `Custom ${productName} in Fort Lauderdale FL`,
     "image": cfg.image?.startsWith("/") ? `https://nano-signs.com${cfg.image}` : cfg.image,
     "brand": {
@@ -291,10 +294,10 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
       "seller": {
         "@type": "LocalBusiness",
         "name": "Nano Signs",
-        "telephone": "305-967-1005",
+        "telephone": "(305) 967-1005",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "4567 Powerline Rd",
+          "streetAddress": "4567 Powerline Rd (4567 NW 9th Ave)",
           "addressLocality": "Oakland Park",
           "addressRegion": "FL",
           "postalCode": "33309",

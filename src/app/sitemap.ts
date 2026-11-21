@@ -3,110 +3,103 @@ import { PRODUCTS_REGISTRY } from "@/lib/productsRegistry";
 import { LOCATIONS_REGISTRY } from "@/lib/locationsRegistry";
 import { BLOG_REGISTRY } from "@/lib/blogRegistry";
 import { getMarkdownBlogPosts } from "@/lib/blogUtils";
+import fs from "fs";
+import path from "path";
+
+// Helper to extract file mtime or fallback to safe static date
+function getFileMtime(relativeFilePath: string): Date {
+  try {
+    const fullPath = path.join(process.cwd(), relativeFilePath);
+    if (fs.existsSync(fullPath)) {
+      const stat = fs.statSync(fullPath);
+      return stat.mtime;
+    }
+  } catch (e) {
+    // fallback
+  }
+  return new Date("2026-11-20T12:00:00.000Z");
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nano-signs.com";
-  const currentDate = new Date();
 
-  // Core pages
-  const corePages = [
+  // Core public indexable pages with individual modification timestamps
+  const corePages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: "daily" as const,
+      lastModified: getFileMtime("src/app/page.tsx"),
+      changeFrequency: "daily",
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/get-a-quote`,
+      lastModified: getFileMtime("src/app/get-a-quote/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/about-us`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
+      lastModified: getFileMtime("src/app/about-us/page.tsx"),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: `${baseUrl}/contact-us`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
+      lastModified: getFileMtime("src/app/contact-us/page.tsx"),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: `${baseUrl}/return-policy`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/get-a-quote`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
+      lastModified: getFileMtime("src/app/return-policy/page.tsx"),
+      changeFrequency: "monthly",
+      priority: 0.4,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
+      lastModified: getFileMtime("src/app/blog/page.tsx"),
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/projects`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
+      lastModified: getFileMtime("src/app/projects/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/locations`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
+      lastModified: getFileMtime("src/app/locations/page.tsx"),
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/faq`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
+      lastModified: getFileMtime("src/app/faq/page.tsx"),
+      changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/corporate-pricing`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
+      lastModified: getFileMtime("src/app/corporate-pricing/page.tsx"),
+      changeFrequency: "monthly",
       priority: 0.7,
-    },
-    // Service landing pages — target high-value local keywords
-    {
-      url: `${baseUrl}/locations/sign-shop`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/locations/neon-led-signs`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/locations/programmable-led-signs`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/locations/roll-up-banners`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
     },
   ];
 
+  // Category & Product pages
   const categoryPages: MetadataRoute.Sitemap = [];
   const productPages: MetadataRoute.Sitemap = [];
   const addedProducts = new Set<string>();
 
+  const productsRegistryMtime = getFileMtime("src/lib/productsRegistry.ts");
+
   for (const categorySlug of Object.keys(PRODUCTS_REGISTRY)) {
     categoryPages.push({
       url: `${baseUrl}/${categorySlug}`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
+      lastModified: productsRegistryMtime,
+      changeFrequency: "weekly",
+      priority: 0.8,
     });
 
     const category = PRODUCTS_REGISTRY[categorySlug];
@@ -114,41 +107,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if (!addedProducts.has(product.id)) {
         addedProducts.add(product.id);
         const productUrl = `${baseUrl}/${categorySlug}/${product.id}`;
-        // Exclude legacy redirected product URLs
-        if (productUrl.includes("/custom-signs/programmable-led-sign")) continue;
+
+        // Exclude legacy redirected product URLs so sitemap stays 100% clean
+        if (
+          productUrl.includes("/custom-signs/programmable-led-sign") ||
+          productUrl.includes("/trade-show/roll-up-banners") ||
+          productUrl.includes("/trade-show/retractable-banner") ||
+          productUrl.includes("/trade-show/business-cards")
+        ) {
+          continue;
+        }
+
         productPages.push({
           url: productUrl,
-          lastModified: currentDate,
-          changeFrequency: "weekly" as const,
-          priority: 0.6,
+          lastModified: productsRegistryMtime,
+          changeFrequency: "weekly",
+          priority: 0.7,
         });
       }
     }
   }
 
+  // Active City Locations
   const locationPages: MetadataRoute.Sitemap = [];
+  const locationsRegistryMtime = getFileMtime("src/lib/locationsRegistry.ts");
+
   for (const locationId of Object.keys(LOCATIONS_REGISTRY)) {
+    // Only include real active city/state location pages
     locationPages.push({
       url: `${baseUrl}/locations/${locationId}`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
+      lastModified: locationsRegistryMtime,
+      changeFrequency: "weekly",
+      priority: 0.85,
     });
   }
 
+  // Blog pages with real individual markdown post modification dates
   const blogPages: MetadataRoute.Sitemap = [];
   const addedBlogSlugs = new Set<string>();
 
-  // 1. Include Markdown blog posts (all 60+ new & existing articles)
   try {
     const mdPosts = getMarkdownBlogPosts();
     for (const post of mdPosts) {
       if (post.slug && !addedBlogSlugs.has(post.slug)) {
         addedBlogSlugs.add(post.slug);
+        const mdFileMtime = getFileMtime(`src/content/blog/${post.slug}.md`);
         blogPages.push({
           url: `${baseUrl}/blog/${post.slug}`,
-          lastModified: currentDate,
-          changeFrequency: "weekly" as const,
+          lastModified: mdFileMtime,
+          changeFrequency: "monthly",
           priority: 0.7,
         });
       }
@@ -157,14 +164,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Graceful fallback
   }
 
-  // 2. Include any code registry posts
+  // Registry-defined blog posts
+  const blogRegistryMtime = getFileMtime("src/lib/blogRegistry.ts");
   for (const slug of Object.keys(BLOG_REGISTRY)) {
     if (!addedBlogSlugs.has(slug)) {
       addedBlogSlugs.add(slug);
       blogPages.push({
         url: `${baseUrl}/blog/${slug}`,
-        lastModified: currentDate,
-        changeFrequency: "weekly" as const,
+        lastModified: blogRegistryMtime,
+        changeFrequency: "monthly",
         priority: 0.7,
       });
     }

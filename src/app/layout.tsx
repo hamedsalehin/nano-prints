@@ -30,7 +30,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
   description:
-    "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
+    "Fort Lauderdale & Oakland Park's premier print and sign company: custom business storefront signs, vinyl banner printing, LED displays & neon signs. Call (305) 967-1005.",
   icons: {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
@@ -41,24 +41,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
-    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop: custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs 3059671005",
+    description:
+      "Fort Lauderdale & Oakland Park's premier print and sign company: custom business storefront signs, vinyl banner printing, LED displays & neon signs. Call (305) 967-1005.",
     url: "https://nano-signs.com/",
+    type: "website",
     siteName: "Nano Signs",
     images: [
       {
         url: "https://nano-signs.com/images/nano%20logo%20complete.png",
         width: 1200,
         height: 630,
-        alt: "Nano Signs - Custom Printing & Signage",
+        alt: "Nano Signs — Custom Business Signs & Printing in Fort Lauderdale FL",
       },
     ],
     locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
-    description: "Oakland Park & Fort Lauderdale's premier Print & Sign shop. Custom business signs, vinyl banner printing, Storefront Signs, LED displays & neon signs. 3059671005",
+    description: "Fort Lauderdale & Oakland Park's premier print & sign company. Custom business storefront signs, banner printing, LED displays & neon signs. Call (305) 967-1005.",
     images: [
       "https://nano-signs.com/images/nano%20logo%20complete.png",
     ],

@@ -105,47 +105,72 @@ export default async function CategoryPage({ params }: PageProps) {
 
   const firstTwoProducts = categoryData.products.slice(0, 2);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nano-signs.com",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": categoryData.title,
+        "item": `https://nano-signs.com/${decodedCategory}`,
+      },
+    ],
+  };
+
   return (
-    <CategoryPageClient
-      categorySlug={decodedCategory}
-      title={categoryData.title}
-      breadcrumbLabel={categoryData.breadcrumbLabel || categoryData.title}
-      heroSubtitle={
-        categoryData.heroSubtitle ||
-        "All-Weather. Quick Production. Affordable."
-      }
-      heroImage={categoryData.heroImage}
-      tabletHeroImage={categoryData.tabletHeroImage}
-      mobileHeroImage={categoryData.mobileHeroImage}
-      heroVariant={(categoryData as { heroVariant?: "neon" | "default" }).heroVariant}
-      products={categoryData.products.map((p) => ({
-        id: p.id,
-        name: p.name,
-        image: p.image,
-        hoverImage: p.hoverImage,
-      }))}
-      categoryDescriptionText={categoryData.categoryDescriptionText}
-      categorySecondaryImage={categoryData.categorySecondaryImage}
-      faqs={categoryData.faqs || []}
-      reviewRating={categoryData.reviewRating}
-      reviewCount={categoryData.reviewCount}
-      reviewQuote={categoryData.reviewQuote}
-      ctaProduct1={
-        firstTwoProducts[0]
-          ? {
-              name: firstTwoProducts[0].name,
-              href: `/${decodedCategory}/${firstTwoProducts[0].id}`,
-            }
-          : undefined
-      }
-      ctaProduct2={
-        firstTwoProducts[1]
-          ? {
-              name: firstTwoProducts[1].name,
-              href: `/${decodedCategory}/${firstTwoProducts[1].id}`,
-            }
-          : undefined
-      }
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <CategoryPageClient
+        categorySlug={decodedCategory}
+        title={categoryData.title}
+        breadcrumbLabel={categoryData.breadcrumbLabel || categoryData.title}
+        heroSubtitle={
+          categoryData.heroSubtitle ||
+          "All-Weather. Quick Production. Affordable."
+        }
+        heroImage={categoryData.heroImage}
+        tabletHeroImage={categoryData.tabletHeroImage}
+        mobileHeroImage={categoryData.mobileHeroImage}
+        heroVariant={(categoryData as { heroVariant?: "neon" | "default" }).heroVariant}
+        products={categoryData.products.map((p) => ({
+          id: p.id,
+          name: p.name,
+          image: p.image,
+          hoverImage: p.hoverImage,
+        }))}
+        categoryDescriptionText={categoryData.categoryDescriptionText}
+        categorySecondaryImage={categoryData.categorySecondaryImage}
+        faqs={categoryData.faqs || []}
+        reviewRating={categoryData.reviewRating}
+        reviewCount={categoryData.reviewCount}
+        reviewQuote={categoryData.reviewQuote}
+        ctaProduct1={
+          firstTwoProducts[0]
+            ? {
+                name: firstTwoProducts[0].name,
+                href: `/${decodedCategory}/${firstTwoProducts[0].id}`,
+              }
+            : undefined
+        }
+        ctaProduct2={
+          firstTwoProducts[1]
+            ? {
+                name: firstTwoProducts[1].name,
+                href: `/${decodedCategory}/${firstTwoProducts[1].id}`,
+              }
+            : undefined
+        }
+      />
+    </>
   );
 }
