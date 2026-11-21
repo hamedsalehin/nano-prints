@@ -46,9 +46,19 @@ const LEGACY_REDIRECTS: Record<string, string> = {
 export function middleware(request: NextRequest) {
   const { pathname, search, host } = request.nextUrl;
 
-  // 1. Enforce canonical domain (WWW to non-WWW 308 Permanent Redirect)
-  if (host.startsWith("www.")) {
-    const targetUrl = `https://nano-signs.com${pathname}${search}`;
+  // 1. Enforce canonical protocol and domain (HTTP to HTTPS and WWW to non-WWW)
+  // Check protocol via x-forwarded-proto or request.nextUrl.protocol
+  const forwardedProto = request.headers.get("x-forwarded-proto");
+  const isHttp = forwardedProto === "http" || (!forwardedProto && request.nextUrl.protocol === "http:");
+  const isWww = host.startsWith("www.");
+
+  // If already HTTPS and non-www (or localhost/dev), pass through without redirecting
+  if (!isHttp && !isWww) {
+    // Zero chance of redirect loop on Hostinger hPanel reverse proxy
+  } else if (isHttp || isWww) {
+    const cleanHost = host.replace(/^www\./, "");
+    const targetHost = cleanHost.includes("nano-signs.com") ? "nano-signs.com" : cleanHost;
+    const targetUrl = `https://${targetHost}${pathname}${search}`;
     return NextResponse.redirect(targetUrl, 308);
   }
 
