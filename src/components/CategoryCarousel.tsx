@@ -9,42 +9,42 @@ const categories = [
   {
     name: "Signs",
     href: "/custom-signs",
-    image: "/images/products/main%20page/all_signs_product.png",
+    image: "/images/products/main-page/all_signs_product.png",
   },
   {
     name: "Business Cards",
     href: "/marketing-materials/business-cards",
-    image: "/images/products/main%20page/business_cards.png",
+    image: "/images/products/main-page/business_cards.png",
   },
   {
     name: "Banners",
     href: "/custom-banners",
-    image: "/images/products/main%20page/fabric_banner.png",
+    image: "/images/products/main-page/fabric_banner.png",
   },
   {
     name: "Retractable Banners",
     href: "/custom-banners/roll-up-banners",
-    image: "/images/products/main%20page/retractable_roll_up_banner.png",
+    image: "/images/products/main-page/retractable_roll_up_banner.png",
   },
   {
     name: "Flags",
     href: "/custom-flags",
-    image: "/images/products/main%20page/flags.png",
+    image: "/images/products/main-page/flags.png",
   },
   {
     name: "Car Magnets",
     href: "/vehicle-signs",
-    image: "/images/products/main%20page/vehicle_magnets.png",
+    image: "/images/products/main-page/vehicle_magnets.png",
   },
   {
     name: "Tradeshow",
     href: "/trade-show",
-    image: "/images/products/main%20page/event_tents.png",
+    image: "/images/products/main-page/event_tents.png",
   },
   {
     name: "Custom Decals",
     href: "/custom-decals",
-    image: "/images/products/main%20page/sticker_and_labels.png",
+    image: "/images/products/main-page/sticker_and_labels.png",
   },
 ];
 
