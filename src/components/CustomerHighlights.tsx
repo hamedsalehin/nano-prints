@@ -186,20 +186,20 @@ export function CustomerHighlights() {
           Customer Highlights
         </h2>
 
-        <div className="grid grid-cols-3 gap-4 md:gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2.5 sm:gap-3 md:gap-3.5">
           {customerPhotos.map((photo, index) => (
             <div
               key={index}
-              className="relative aspect-square overflow-hidden group cursor-pointer rounded-2xl shadow-md"
+              className="relative aspect-square overflow-hidden group cursor-pointer rounded-xl shadow-sm border border-pink-100 hover:shadow-md transition-shadow"
               onClick={() => setActivePhotoIndex(index)}
             >
               <Image
                 src={photo.image}
                 alt={`Customer highlight ${index + 1}`}
                 fill
-                sizes="(max-width: 640px) 30vw, (max-width: 1024px) 25vw, 200px"
-                quality={95}
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                unoptimized
+                sizes="(max-width: 640px) 25vw, (max-width: 1024px) 15vw, 120px"
+                className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
               {/* Pink/cyan gradient overlay on hover */}
               <div
@@ -209,12 +209,12 @@ export function CustomerHighlights() {
                     "linear-gradient(to top, rgba(255,45,120,0.85) 0%, rgba(176,32,255,0.45) 100%)",
                 }}
               >
-                <div className="p-3 text-white flex flex-col items-center gap-1.5">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
-                    <ZoomIn className="w-5 h-5 text-white" />
+                <div className="p-2 text-white flex flex-col items-center gap-1">
+                  <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
+                    <ZoomIn className="w-3.5 h-3.5 text-white" />
                   </div>
-                  <p className="text-xs font-bold tracking-wide font-poppins uppercase">
-                    Click to Zoom
+                  <p className="text-[9px] font-bold tracking-wider font-poppins uppercase">
+                    Zoom
                   </p>
                 </div>
               </div>

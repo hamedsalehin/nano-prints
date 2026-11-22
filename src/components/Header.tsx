@@ -501,7 +501,7 @@ export function Header() {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full h-full relative px-2 md:px-3 lg:px-4 xl:px-5 py-3 font-bold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-xs md:text-sm lg:text-[15px] xl:text-[16px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                        className="block w-full h-full relative px-2.5 md:px-3.5 lg:px-4.5 xl:px-5.5 py-3.5 font-extrabold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-sm md:text-[15px] lg:text-[16px] xl:text-[17.5px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                       >
                         {item.name}
                       </a>
@@ -509,10 +509,10 @@ export function Header() {
                       <>
                         <Link
                           href={item.href}
-                          className="flex items-center gap-1 w-full h-full relative px-2 md:px-3 lg:px-4 xl:px-5 py-3 font-bold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-xs md:text-sm lg:text-[15px] xl:text-[16px] whitespace-nowrap after:content-[''] after:absolute after:h-[3px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                          className="flex items-center gap-1.5 w-full h-full relative px-2.5 md:px-3.5 lg:px-4.5 xl:px-5.5 py-3.5 font-extrabold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-sm md:text-[15px] lg:text-[16px] xl:text-[17.5px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                         >
                           {item.name}
-                          {hasProducts && <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform duration-200" />}
+                          {hasProducts && <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />}
                         </Link>
                         {/* Dropdown Menu */}
                         {hasProducts && (
