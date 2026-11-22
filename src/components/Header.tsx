@@ -388,6 +388,16 @@ export function Header() {
                 </span>
               </button>
 
+              {/* Call button for Mobile & Quick Contact */}
+              <a
+                href="tel:305-967-1005"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white font-bold text-xs sm:text-sm shadow-sm transition-all hover:scale-105 active:scale-95 bg-gradient-to-r from-[#ff2d78] to-[#00e5ff]"
+                aria-label="Call Nano Signs at (305) 967-1005"
+              >
+                <Phone className="w-3.5 h-3.5 fill-current animate-pulse" />
+                <span>Call (305) 967-1005</span>
+              </a>
+
               {/* Mobile menu button */}
               <button
                 type="button"
@@ -501,7 +511,7 @@ export function Header() {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full h-full relative px-2.5 md:px-3.5 lg:px-4.5 xl:px-5.5 py-3.5 font-extrabold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-sm md:text-[15px] lg:text-[16px] xl:text-[17.5px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                        className="block w-full h-full relative px-3 md:px-4 lg:px-5 xl:px-6 py-3.5 font-black text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-[15px] md:text-[16px] lg:text-[17.5px] xl:text-[19px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                       >
                         {item.name}
                       </a>
@@ -509,7 +519,7 @@ export function Header() {
                       <>
                         <Link
                           href={item.href}
-                          className="flex items-center gap-1.5 w-full h-full relative px-2.5 md:px-3.5 lg:px-4.5 xl:px-5.5 py-3.5 font-extrabold text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-sm md:text-[15px] lg:text-[16px] xl:text-[17.5px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
+                          className="flex items-center gap-1.5 w-full h-full relative px-3 md:px-4 lg:px-5 xl:px-6 py-3.5 font-black text-white hover:text-[#00e5ff] transition-colors duration-200 font-poppins text-[15px] md:text-[16px] lg:text-[17.5px] xl:text-[19px] tracking-wide whitespace-nowrap after:content-[''] after:absolute after:h-[3.5px] after:bg-[#00e5ff] after:bottom-0 after:left-0 after:w-full after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200"
                         >
                           {item.name}
                           {hasProducts && <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />}
