@@ -109,8 +109,8 @@ export function CategoryCarousel() {
                       src={category.image}
                       alt={category.name}
                       fill
+                      unoptimized
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 20vw, 180px"
-                      quality={85}
                       className="object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                     />
                   </div>
