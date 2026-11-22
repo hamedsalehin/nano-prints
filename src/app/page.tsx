@@ -42,7 +42,6 @@ export default function Home() {
       <ExpertsSection />
       <ProductsGrid />
       <ValuePropositions />
-      <CustomerHighlights />
       <TrustReviewSection />
       <HomepageFaq />
       <SeoContentBlock />
