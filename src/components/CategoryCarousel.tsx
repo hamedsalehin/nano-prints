@@ -9,42 +9,42 @@ const categories = [
   {
     name: "Signs",
     href: "/custom-signs",
-    image: "/images/products/main-page/all_signs_product.png",
+    image: "/images/products/main-page/all_signs_product-oakland-park-printing-fl.webp",
   },
   {
     name: "Business Cards",
     href: "/marketing-materials/business-cards",
-    image: "/images/products/main-page/business_cards.png",
+    image: "/images/products/main-page/business_cards-oakland-park-printing-fl.webp",
   },
   {
     name: "Banners",
     href: "/custom-banners",
-    image: "/images/products/main-page/fabric_banner.png",
+    image: "/images/products/main-page/fabric_banner-oakland-park-printing-fl.webp",
   },
   {
     name: "Retractable Banners",
     href: "/custom-banners/roll-up-banners",
-    image: "/images/products/main-page/retractable_roll_up_banner.png",
+    image: "/images/products/main-page/retractable_roll_up_banner-oakland-park-printing-fl.webp",
   },
   {
     name: "Flags",
     href: "/custom-flags",
-    image: "/images/products/main-page/flags.png",
+    image: "/images/products/main-page/flags-oakland-park-printing-fl.webp",
   },
   {
     name: "Car Magnets",
     href: "/vehicle-signs",
-    image: "/images/products/main-page/vehicle_magnets.png",
+    image: "/images/products/main-page/vehicle_magnets-oakland-park-printing-fl.webp",
   },
   {
     name: "Tradeshow",
     href: "/trade-show",
-    image: "/images/products/main-page/event_tents.png",
+    image: "/images/products/main-page/event_tents-oakland-park-printing-fl.webp",
   },
   {
     name: "Custom Decals",
     href: "/custom-decals",
-    image: "/images/products/main-page/sticker_and_labels.png",
+    image: "/images/products/main-page/sticker_and_labels-oakland-park-printing-fl.webp",
   },
 ];
 
