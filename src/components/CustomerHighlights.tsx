@@ -14,15 +14,15 @@ import {
 } from "lucide-react";
 
 const customerPhotos = [
-  { image: "/images/customer-highlights/highlight_1.jpeg" },
-  { image: "/images/customer-highlights/highlight_2.jpeg" },
-  { image: "/images/customer-highlights/highlight_3.jpeg" },
-  { image: "/images/customer-highlights/highlight_4.jpeg" },
-  { image: "/images/customer-highlights/highlight_5.jpeg" },
-  { image: "/images/customer-highlights/highlight_6.jpeg" },
-  { image: "/images/customer-highlights/highlight_7.jpeg" },
-  { image: "/images/customer-highlights/highlight_8.jpeg" },
-  { image: "/images/customer-highlights/highlight_9.jpeg" },
+  { image: "/images/customer-highlights/highlight_1.webp" },
+  { image: "/images/customer-highlights/highlight_2.webp" },
+  { image: "/images/customer-highlights/highlight_3.webp" },
+  { image: "/images/customer-highlights/highlight_4.webp" },
+  { image: "/images/customer-highlights/highlight_5.webp" },
+  { image: "/images/customer-highlights/highlight_6.webp" },
+  { image: "/images/customer-highlights/highlight_7.webp" },
+  { image: "/images/customer-highlights/highlight_8.webp" },
+  { image: "/images/customer-highlights/highlight_9.webp" },
 ];
 
 export function CustomerHighlights() {
