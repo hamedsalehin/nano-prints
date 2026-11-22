@@ -100,22 +100,22 @@ export function CategoryCarousel() {
               <Link
                 key={category.name}
                 href={category.href}
-                className="flex-shrink-0 w-48 md:w-64 group"
+                className="flex-shrink-0 w-52 sm:w-60 md:w-64 lg:w-72 group"
               >
                 {/* Pure CSS hover via card-pink-hover class */}
-                <div className="card-pink-hover rounded-2xl p-6 mb-4 aspect-square flex items-center justify-center overflow-hidden">
+                <div className="card-pink-hover rounded-2xl p-3 sm:p-4 mb-3 aspect-square flex items-center justify-center overflow-hidden bg-white shadow-sm border border-pink-50">
                   <div className="relative w-full h-full">
                     <Image
                       src={category.image}
                       alt={category.name}
                       fill
                       unoptimized
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 20vw, 180px"
-                      className="object-contain transition-transform duration-500 ease-out group-hover:scale-110"
+                      sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 280px"
+                      className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                   </div>
                 </div>
-                <p className="text-center font-bold font-poppins text-xs sm:text-sm md:text-base leading-tight text-gray-800 group-hover:pink-cyan-text transition-all duration-200">
+                <p className="text-center font-bold font-poppins text-sm sm:text-base md:text-lg leading-tight text-gray-800 group-hover:pink-cyan-text transition-all duration-200">
                   {category.name}
                 </p>
               </Link>
