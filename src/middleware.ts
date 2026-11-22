@@ -44,20 +44,20 @@ const LEGACY_REDIRECTS: Record<string, string> = {
  * Middleware — runs on the Edge before any page renders.
  */
 export function middleware(request: NextRequest) {
-  const { pathname, search, host } = request.nextUrl;
+  const { pathname, search } = request.nextUrl;
 
-  // 1. Enforce canonical protocol and domain (HTTP to HTTPS and WWW to non-WWW)
-  // Check protocol via x-forwarded-proto or request.nextUrl.protocol
+  // 1. Resolve host and protocol robustly across Hostinger / reverse-proxy environments
+  const hostHeader = request.headers.get("x-forwarded-host") || request.headers.get("host") || request.nextUrl.host || "";
+  const host = hostHeader.split(":")[0].toLowerCase();
+
   const forwardedProto = request.headers.get("x-forwarded-proto");
   const isHttp = forwardedProto === "http" || (!forwardedProto && request.nextUrl.protocol === "http:");
   const isWww = host.startsWith("www.");
 
-  // If already HTTPS and non-www (or localhost/dev), pass through without redirecting
-  if (!isHttp && !isWww) {
-    // Zero chance of redirect loop on Hostinger hPanel reverse proxy
-  } else if (isHttp || isWww) {
+  // If incoming request arrives over HTTP or on a www subdomain, enforce canonical HTTPS non-www
+  if (isHttp || isWww) {
     const cleanHost = host.replace(/^www\./, "");
-    const targetHost = cleanHost.includes("nano-signs.com") ? "nano-signs.com" : cleanHost;
+    const targetHost = cleanHost.includes("nano-signs.com") ? "nano-signs.com" : (cleanHost || "nano-signs.com");
     const targetUrl = `https://${targetHost}${pathname}${search}`;
     return NextResponse.redirect(targetUrl, 308);
   }

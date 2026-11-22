@@ -277,6 +277,17 @@ const nextConfig = {
         destination: "/blog",
         permanent: true,
       },
+      // Fix 400-499 error: /custom-signs/channel-letters → canonical /custom-signs/channel-letter-signs
+      {
+        source: "/custom-signs/channel-letters",
+        destination: "/custom-signs/channel-letter-signs",
+        permanent: true,
+      },
+      {
+        source: "/custom-signs/channel-letters/",
+        destination: "/custom-signs/channel-letter-signs",
+        permanent: true,
+      },
     ];
   },
   async headers() {

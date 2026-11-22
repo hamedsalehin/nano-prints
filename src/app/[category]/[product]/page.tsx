@@ -55,12 +55,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? ` for ${categoryLabel[decodedCategory]}`
     : "";
   
-  // Neon signs ship nationwide; local products focus on Fort Lauderdale FL
-  const locationTag = decodedCategory === "neon-signs"
-    ? "Nationwide & Fort Lauderdale FL"
-    : "Fort Lauderdale FL";
+  // Build a compact title that stays under 70 characters
+  // Format: "[Product Name] | [Short Local Tag] | Nano Signs"
+  const locationTag = decodedCategory === "neon-signs" ? "Nationwide + FL" : "Fort Lauderdale FL";
+  const rawTitleWithHint = `${rawTitle}${categoryHint}`;
 
-  const title = `${rawTitle}${categoryHint} ${locationTag} | Nano Signs`;
+  // Attempt compact title; if still long, drop "Custom " prefix and shorten location tag
+  let title = `${rawTitleWithHint} | ${locationTag} | Nano Signs`;
+  if (title.length > 70) {
+    // Try without "Custom " prefix
+    const shortName = productData.name;
+    title = `${shortName} | ${locationTag} | Nano Signs`;
+  }
+  if (title.length > 70) {
+    // Last resort: product name + brand only
+    title = `${productData.name} | Nano Signs FL`;
+  }
   const description = productData.description
     ? `Custom ${productData.name} in Fort Lauderdale & South Florida. ${productData.description} Call (305) 967-1005 for a free quote.`
     : `High-quality ${productData.name} printing in Fort Lauderdale & Oakland Park FL. Fast turnaround & durable materials. Call (305) 967-1005!`;
