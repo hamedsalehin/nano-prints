@@ -12,7 +12,7 @@ export function SpanishHeader() {
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span className="font-semibold text-pink-300">¡Hablamos Español!</span>
-            <span className="hidden sm:inline text-slate-300">Taller directo en Fort Lauderdale / Oakland Park, FL</span>
+            <span className="hidden sm:inline text-slate-300">Taller directo en Fort Lauderdale, FL (área de Oakland Park)</span>
           </div>
           <div className="flex items-center gap-4 text-slate-200">
             <Link href="/es/ubicaciones/fort-lauderdale" className="hover:text-pink-300 transition-colors flex items-center gap-1">
@@ -151,7 +151,7 @@ export function SpanishFooter() {
           <div className="space-y-3 text-sm">
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 text-pink-400 flex-shrink-0 mt-0.5" />
-              <span>4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309</span>
+              <span>4567 Powerline Rd, Fort Lauderdale, FL 33309</span>
             </p>
             <p className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />

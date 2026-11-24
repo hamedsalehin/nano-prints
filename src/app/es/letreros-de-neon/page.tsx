@@ -43,8 +43,8 @@ export default function LetrerosDeNeonPage() {
           telephone: "(305) 967-1005",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "4567 Powerline Rd (4567 NW 9th Ave)",
-            addressLocality: "Fort Lauderdale / Oakland Park",
+            streetAddress: "4567 Powerline Rd",
+            addressLocality: "Fort Lauderdale",
             addressRegion: "FL",
             postalCode: "33309",
             addressCountry: "US",

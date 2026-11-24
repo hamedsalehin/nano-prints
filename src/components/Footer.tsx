@@ -171,7 +171,7 @@ export function Footer({ light = false }: { light?: boolean } = {}) {
                   className={`w-4 h-4 mt-0.5 flex-shrink-0 ${light ? "text-[#ff2d78]" : "text-[#00e5ff]"}`}
                 />
                 <span>
-                  <span itemProp="streetAddress">4567 Powerline Rd (4567 NW 9th Ave)</span>, <span itemProp="addressLocality">Fort Lauderdale / Oakland Park</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">33309</span>
+                  <span itemProp="streetAddress">4567 Powerline Rd</span>, <span itemProp="addressLocality">Fort Lauderdale</span>, <span itemProp="addressRegion">FL</span> <span itemProp="postalCode">33309</span>
                 </span>
               </div>
             </div>

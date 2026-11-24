@@ -133,7 +133,7 @@ export function SpanishQuoteForm() {
           ¡Cotización Recibida con Éxito!
         </h3>
         <p className="text-slate-600 text-base max-w-lg mx-auto mb-6">
-          Gracias, <strong className="text-slate-900">{fullName}</strong>. Nuestro equipo de producción en Fort Lauderdale / Oakland Park revisará sus dimensiones y le responderá en menos de 4 horas hábiles.
+          Gracias, <strong className="text-slate-900">{fullName}</strong>. Nuestro equipo de producción en Fort Lauderdale revisará sus dimensiones y le responderá en menos de 4 horas hábiles.
         </p>
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 max-w-md mx-auto mb-8 text-sm text-slate-700">
           <p className="font-semibold text-slate-900 mb-1">¿Necesita atención inmediata o un pedido para mañana?</p>
@@ -370,7 +370,7 @@ export function SpanishQuoteForm() {
         </span>
         <span className="flex items-center gap-1">
           <MapPin className="w-3.5 h-3.5 text-blue-600" />
-          Retiro en Fort Lauderdale / Oakland Park
+          Retiro en taller (Fort Lauderdale, FL)
         </span>
       </div>
     </form>

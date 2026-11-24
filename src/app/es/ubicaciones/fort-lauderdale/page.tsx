@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Taller de Letreros e Imprenta en Fort Lauderdale y Oakland Park | Nano Signs",
   description:
-    "Su taller local de letreros comerciales, banners, letreros LED y rotulación en 4567 Powerline Rd, Fort Lauderdale / Oakland Park, FL 33309. Presupuesto sin compromiso.",
+    "Su taller local de letreros comerciales, banners, letreros LED y rotulación en 4567 Powerline Rd, Fort Lauderdale, FL 33309 (sirviendo también Oakland Park). Presupuesto sin compromiso.",
   alternates: {
     canonical: "https://nano-signs.com/es/ubicaciones/fort-lauderdale",
     languages: {
@@ -46,8 +46,8 @@ export default function FortLauderdaleSpanishLocationPage() {
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "4567 Powerline Rd (4567 NW 9th Ave)",
-      addressLocality: "Fort Lauderdale / Oakland Park",
+      streetAddress: "4567 Powerline Rd",
+      addressLocality: "Fort Lauderdale",
       addressRegion: "FL",
       postalCode: "33309",
       addressCountry: "US",
@@ -115,7 +115,7 @@ export default function FortLauderdaleSpanishLocationPage() {
   const spanishFaqs = [
     {
       q: "¿Dónde está ubicado exactamente su taller de letreros?",
-      a: "Estamos convenientemente ubicados en 4567 Powerline Rd (también conocida en el mapa como 4567 NW 9th Ave), en el límite entre Fort Lauderdale y Oakland Park, FL 33309. Puede visitarnos de lunes a viernes de 9:00 AM a 6:00 PM.",
+      a: "Estamos convenientemente ubicados en 4567 Powerline Rd, Fort Lauderdale, FL 33309 (en mapas municipales también aparece como 4567 NW 9th Ave, cerca de la frontera con Oakland Park). Puede visitarnos de lunes a viernes de 9:00 AM a 6:00 PM.",
     },
     {
       q: "¿Qué ciudades y áreas de South Florida atienden?",
@@ -220,8 +220,9 @@ export default function FortLauderdaleSpanishLocationPage() {
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
                 <strong>Nano Signs</strong><br />
-                4567 Powerline Rd (4567 NW 9th Ave)<br />
-                Fort Lauderdale / Oakland Park, FL 33309<br /><br />
+                4567 Powerline Rd<br />
+                Fort Lauderdale, FL 33309<br />
+                <span className="text-xs text-slate-400 font-normal">(Mapa municipal: 4567 NW 9th Ave)</span><br /><br />
                 <strong>Horario de Atención:</strong> Lunes a Viernes: 9:00 AM – 6:00 PM<br />
                 <strong>Teléfono Directo:</strong>{" "}
                 <a href="tel:3059671005" className="text-[#ff2d78] font-bold hover:underline">

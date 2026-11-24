@@ -74,7 +74,7 @@ const spanishHomepageFaqs: FAQItem[] = [
   {
     question: "¿Dónde está ubicado Nano Signs y puedo recoger mi pedido en persona?",
     answer:
-      "Nuestro taller se encuentra en 4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309. Puede recoger su pedido directamente en tienda o solicitar envío local e instalación profesional.",
+      "Nuestro taller se encuentra en 4567 Powerline Rd, Fort Lauderdale, FL 33309 (atendiendo Fort Lauderdale, Oakland Park y todo Broward). Puede recoger su pedido directamente en tienda o solicitar envío local e instalación profesional.",
   },
 ];
 
