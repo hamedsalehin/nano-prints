@@ -9,7 +9,7 @@ const openSans = Open_Sans({
   weight: ["400", "600", "700"],
   variable: "--font-open-sans",
   display: "swap",
-  preload: true,
+  adjustFontFallback: false,
 });
 
 const poppins = Poppins({
@@ -17,7 +17,7 @@ const poppins = Poppins({
   weight: ["600", "700"],
   variable: "--font-poppins",
   display: "swap",
-  preload: true,
+  adjustFontFallback: false,
 });
 
 export const viewport: Viewport = {
