@@ -58,12 +58,31 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? `https://nano-signs.com${categoryData.heroImage}`
     : categoryData.heroImage;
 
+  const SPANISH_CATEGORY_MAPPING: Record<string, string> = {
+    "custom-signs": "https://nano-signs.com/es/letreros-comerciales",
+    "custom-banners": "https://nano-signs.com/es/banners-y-pancartas",
+    "neon-signs": "https://nano-signs.com/es/letreros-de-neon",
+    "led-display-signs": "https://nano-signs.com/es/letreros-led-y-neon",
+  };
+
+  const spanishUrl = SPANISH_CATEGORY_MAPPING[decodedCategory];
+  const alternates: Metadata["alternates"] = {
+    canonical: `https://nano-signs.com/${decodedCategory}`,
+    ...(spanishUrl
+      ? {
+          languages: {
+            en: `https://nano-signs.com/${decodedCategory}`,
+            es: spanishUrl,
+            "x-default": `https://nano-signs.com/${decodedCategory}`,
+          },
+        }
+      : {}),
+  };
+
   return {
     title,
     description: description.slice(0, 155),
-    alternates: {
-      canonical: `https://nano-signs.com/${decodedCategory}`,
-    },
+    alternates,
     openGraph: {
       title,
       description: description.slice(0, 155),

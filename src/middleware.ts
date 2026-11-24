@@ -83,7 +83,16 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  return NextResponse.next();
+  // 5. Pass locale header so root layout can render correct <html lang="...">
+  const requestHeaders = new Headers(request.headers);
+  const isSpanish = pathname === "/es" || pathname.startsWith("/es/");
+  requestHeaders.set("x-locale", isSpanish ? "es" : "en");
+
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
 }
 
 export const config = {

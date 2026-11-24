@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Letreros Comerciales de Fachada en Fort Lauderdale | Nano Signs",
   description:
-    "Fabricación e instalación de letreros comerciales, channel letters 3D iluminadas y cajas de luz para negocios en Fort Lauderdale y Oakland Park, FL. Cotización gratis.",
+    "Fabricación de letreros comerciales, channel letters 3D y cajas de luz para negocios en Fort Lauderdale y Oakland Park, FL. Cotización gratis y rápida.",
   alternates: {
     canonical: "https://nano-signs.com/es/letreros-comerciales",
     languages: {

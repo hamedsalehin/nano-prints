@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "Cotización Gratis de Letreros e Impresión Comercial | Nano Signs",
   description:
-    "Solicite su presupuesto rápido para letreros comerciales de fachada, banners de vinil, roll-up stands, letreros LED y neón en Fort Lauderdale. Respuesta en 4 horas.",
+    "Presupuesto rápido para letreros comerciales de fachada, banners de vinil, roll-up stands, letreros LED y neón en Fort Lauderdale. Respuesta en 4 horas.",
   alternates: {
     canonical: "https://nano-signs.com/es/cotizacion",
     languages: {

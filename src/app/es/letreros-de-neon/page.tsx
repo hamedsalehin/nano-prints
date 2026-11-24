@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Letreros de Neón Personalizados en Fort Lauderdale | Nano Signs",
   description:
-    "Fabricación de letreros de neón LED personalizados para negocios, restaurantes, oficinas y eventos en Fort Lauderdale, Oakland Park y el condado de Broward, FL.",
+    "Letreros de neón LED personalizados para negocios, restaurantes y eventos en Fort Lauderdale, Oakland Park y todo Broward, FL. Cotización gratis.",
   alternates: {
     canonical: "https://nano-signs.com/es/letreros-de-neon",
     languages: {

@@ -15,7 +15,7 @@ const SpanishQuoteForm = dynamic(() => import('@/components/SpanishQuoteForm').t
 export const metadata: Metadata = {
   title: "Letreros e Imprenta en Fort Lauderdale y Oakland Park FL | Nano Signs",
   description:
-    "Fabricación de letreros comerciales, banners vinílicos, pantallas LED y neón en Fort Lauderdale y Oakland Park, FL. Atención 100% en español. Llame al (305) 967-1005.",
+    "Fabricación de letreros comerciales, banners, pantallas LED y neón en Fort Lauderdale y Oakland Park, FL. Atención en español. Llame al (305) 967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/es",
     languages: {

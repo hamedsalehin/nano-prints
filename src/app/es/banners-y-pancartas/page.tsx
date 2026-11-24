@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Banners Vinílicos y Roll-Up Banners en Fort Lauderdale | Nano Signs",
   description:
-    "Impresión de banners de vinil para exteriores, exhibidores retráctiles roll-up para ferias y banderas publicitarias en Fort Lauderdale y Broward. Entrega rápida en 24-48h.",
+    "Impresión de banners de vinil para exteriores, exhibidores roll-up para ferias y banderas publicitarias en Fort Lauderdale y Broward. Entrega en 24-48h.",
   alternates: {
     canonical: "https://nano-signs.com/es/banners-y-pancartas",
     languages: {

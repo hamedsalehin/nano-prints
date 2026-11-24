@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 import { ClientBody } from "./ClientBody";
 import Script from "next/script";
@@ -30,7 +31,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
   description:
-    "Fort Lauderdale & Oakland Park's premier print and sign company: custom business storefront signs, vinyl banner printing, LED displays & neon signs. Call (305) 967-1005.",
+    "Fort Lauderdale & Oakland Park's premier print and sign company: custom business signs, vinyl banner printing, LED displays & neon signs. Call (305) 967-1005.",
   icons: {
     icon: "/images/nano logo O.png",
     apple: "/images/nano logo O.png",
@@ -38,6 +39,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nano-signs.com"),
   alternates: {
     canonical: "https://nano-signs.com/",
+    languages: {
+      en: "https://nano-signs.com/",
+      es: "https://nano-signs.com/es",
+      "x-default": "https://nano-signs.com/",
+    },
   },
   openGraph: {
     title: "Nano Signs | Custom Business Signs, Banners & Neon Signs FL",
@@ -76,11 +82,14 @@ type RootLayoutProps = Readonly<{
   children: React.ReactNode;
 }>;
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: RootLayoutProps) {
+  const headerList = await headers();
+  const locale = headerList.get("x-locale") || "en";
+
   return (
-    <html lang="en" className={openSans.variable + " " + poppins.variable}>
+    <html lang={locale} className={openSans.variable + " " + poppins.variable}>
       <head>
         {/* Guard against third-party ad-blocker / Safari ITP readonly property errors before analytics execute */}
         <script

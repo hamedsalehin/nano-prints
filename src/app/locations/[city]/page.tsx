@@ -24,12 +24,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ? rawTitle
     : `${locationData.cityName} Signs & Printing | Nano Signs`;
 
+  const alternates: Metadata["alternates"] = {
+    canonical: `https://nano-signs.com/locations/${decodedCity}`,
+    ...(decodedCity === "fort-lauderdale"
+      ? {
+          languages: {
+            en: "https://nano-signs.com/locations/fort-lauderdale",
+            es: "https://nano-signs.com/es/ubicaciones/fort-lauderdale",
+            "x-default": "https://nano-signs.com/locations/fort-lauderdale",
+          },
+        }
+      : {}),
+  };
+
   return {
     title,
     description: locationData.description,
-    alternates: {
-      canonical: `https://nano-signs.com/locations/${decodedCity}`,
-    },
+    alternates,
     openGraph: {
       title,
       description: locationData.description,

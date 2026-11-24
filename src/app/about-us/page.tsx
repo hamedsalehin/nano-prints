@@ -4,7 +4,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About Nano Signs | Local Sign Shop Fort Lauderdale FL",
   description:
-    "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banner printing, LED displays & neon signs in Fort Lauderdale FL.",
+    "Fort Lauderdale's premier sign shop and print company at 4567 Powerline Rd. Custom business signs, banners, LED displays & neon signs. Call (305) 967-1005.",
   alternates: {
     canonical: "https://nano-signs.com/about-us",
   },

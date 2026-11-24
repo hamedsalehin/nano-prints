@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Taller de Letreros e Imprenta en Fort Lauderdale y Oakland Park | Nano Signs",
   description:
-    "Su taller local de letreros comerciales, banners, letreros LED y rotulación en 4567 Powerline Rd, Fort Lauderdale, FL 33309 (sirviendo también Oakland Park). Presupuesto sin compromiso.",
+    "Taller de letreros comerciales, banners, pantallas LED y rotulación en Fort Lauderdale, FL 33309 (servimos Oakland Park). Presupuesto sin compromiso.",
   alternates: {
     canonical: "https://nano-signs.com/es/ubicaciones/fort-lauderdale",
     languages: {

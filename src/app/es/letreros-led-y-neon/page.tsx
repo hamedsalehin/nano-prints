@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Letreros LED Programables y Pantallas Electrónicas en Fort Lauderdale | Nano Signs",
   description:
-    "Pantallas LED de alto brillo y letreros programables por WiFi para negocios en South Florida. Mensajes dinámicos, control móvil o PC y máxima visibilidad.",
+    "Pantallas LED de alto brillo y letreros programables por WiFi para negocios en South Florida. Mensajes dinámicos y control móvil con máxima visibilidad.",
   alternates: {
     canonical: "https://nano-signs.com/es/letreros-led-y-neon",
     languages: {
