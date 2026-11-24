@@ -340,10 +340,13 @@ export default function ContactUsPage() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wide">
-                      Headquarters
+                      Headquarters &amp; Production Facility
                     </h4>
                     <p className="text-sm font-bold text-slate-700">
-                      4567 Powerline Rd, Fort Lauderdale, FL 33309
+                      4567 Powerline Rd, Fort Lauderdale / Oakland Park, FL 33309
+                    </p>
+                    <p className="text-xs text-slate-500 font-medium mt-0.5">
+                      (Also designated as 4567 NW 9th Ave — same location)
                     </p>
                   </div>
                 </div>

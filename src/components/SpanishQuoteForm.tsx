@@ -370,7 +370,7 @@ export function SpanishQuoteForm() {
         </span>
         <span className="flex items-center gap-1">
           <MapPin className="w-3.5 h-3.5 text-blue-600" />
-          Retiro en Oakland Park / Fort Lauderdale
+          Retiro en Fort Lauderdale / Oakland Park
         </span>
       </div>
     </form>

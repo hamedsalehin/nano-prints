@@ -142,8 +142,8 @@ export default function RootLayout({
               "naics": "541890",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "4567 Powerline Rd",
-                "addressLocality": "Fort Lauderdale",
+                "streetAddress": "4567 Powerline Rd (4567 NW 9th Ave)",
+                "addressLocality": "Fort Lauderdale / Oakland Park",
                 "addressRegion": "FL",
                 "postalCode": "33309",
                 "addressCountry": "US"

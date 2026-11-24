@@ -147,7 +147,7 @@ export default function CotizacionSpanishPage() {
                   <MapPin className="w-5 h-5 text-[#00e5ff] shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs font-bold text-slate-900">Retiro Local en Powerline Rd</p>
-                    <p className="text-[11px] text-slate-500">4567 Powerline Rd (4567 NW 9th Ave), Oakland Park FL.</p>
+                    <p className="text-[11px] text-slate-500">4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309.</p>
                   </div>
                 </div>
               </div>

@@ -151,7 +151,7 @@ export function SpanishFooter() {
           <div className="space-y-3 text-sm">
             <p className="flex items-start gap-2">
               <MapPin className="w-4 h-4 text-pink-400 flex-shrink-0 mt-0.5" />
-              <span>4567 Powerline Rd (4567 NW 9th Ave), Oakland Park / Fort Lauderdale, FL 33309</span>
+              <span>4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309</span>
             </p>
             <p className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />

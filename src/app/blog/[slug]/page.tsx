@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     },
     {
       q: `Can I inspect material samples in person before placing an order?`,
-      a: "Yes! You can visit our local showroom and production plant at 4567 Powerline Rd, Oakland Park, FL 33309, Monday through Friday, to inspect physical material swatches, compare LED illumination temperatures, and consult directly with our pre-press designers."
+      a: "Yes! You can visit our local showroom and production plant at 4567 Powerline Rd, Fort Lauderdale / Oakland Park, FL 33309 (also designated as 4567 NW 9th Ave), Monday through Friday, to inspect physical material swatches, compare LED illumination temperatures, and consult directly with our pre-press designers."
     }
   ];
 
@@ -158,8 +158,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "4567 Powerline Rd",
-        "addressLocality": "Oakland Park",
+        "streetAddress": "4567 Powerline Rd (4567 NW 9th Ave)",
+        "addressLocality": "Fort Lauderdale / Oakland Park",
         "addressRegion": "FL",
         "postalCode": "33309",
         "addressCountry": "US"

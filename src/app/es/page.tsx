@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Letreros e Impresión Comercial en Fort Lauderdale FL | Nano Signs Español",
     description:
-      "Taller físico de letreros, banners y rotulación en Oakland Park / Fort Lauderdale. Diseños de alto impacto, permisos locales y atención personalizada en español.",
+      "Taller físico de letreros, banners y rotulación en Fort Lauderdale / Oakland Park. Diseños de alto impacto, permisos locales y atención personalizada en español.",
     url: "https://nano-signs.com/es",
     siteName: "Nano Signs",
     locale: "es_US",
@@ -52,7 +52,7 @@ export default function SpanishHomePage() {
     address: {
       "@type": "PostalAddress",
       streetAddress: "4567 Powerline Rd (4567 NW 9th Ave)",
-      addressLocality: "Oakland Park",
+      addressLocality: "Fort Lauderdale / Oakland Park",
       addressRegion: "FL",
       postalCode: "33309",
       addressCountry: "US",
@@ -163,7 +163,7 @@ export default function SpanishHomePage() {
             En <strong>Nano Signs</strong> diseñamos, producimos e instalamos todo tipo de señalización exterior e interior para negocios en el condado de Broward. Desde <strong>channel letters tridimensionales iluminadas con LED</strong> hasta banners vinílicos para eventos, lonas para cercas de construcción, pantallas LED electrónicas programables y letreros decorativos de neón.
           </p>
           <p>
-            Visite nuestra sala de muestras y taller en <strong>4567 Powerline Rd (4567 NW 9th Ave), Oakland Park / Fort Lauderdale, FL 33309</strong>. Brindamos asesoría en español sobre normativas de ciudad, planos técnicos para permisos y muestras reales de materiales resistentes al clima tropical de Florida.
+            Visite nuestra sala de muestras y taller en <strong>4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309</strong>. Brindamos asesoría en español sobre normativas de ciudad, planos técnicos para permisos y muestras reales de materiales resistentes al clima tropical de Florida.
           </p>
         </div>
       </section>

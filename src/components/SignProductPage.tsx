@@ -298,7 +298,7 @@ function DynamicProductSeo({ cfg }: { cfg: ProductPageConfig }) {
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "4567 Powerline Rd (4567 NW 9th Ave)",
-          "addressLocality": "Oakland Park",
+          "addressLocality": "Fort Lauderdale / Oakland Park",
           "addressRegion": "FL",
           "postalCode": "33309",
           "addressCountry": "US"

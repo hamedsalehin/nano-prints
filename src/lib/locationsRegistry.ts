@@ -44,7 +44,7 @@ Our Fort Lauderdale sign shop handles projects of any scale — from individual 
     faqs: [
       {
         q: "Where is Nano Signs located in relation to Fort Lauderdale?",
-        a: "Nano Signs is located at 4567 Powerline Rd (also designated as 4567 NW 9th Ave), Oakland Park / Fort Lauderdale, FL 33309. We are conveniently situated right on the main commercial corridor minutes from downtown Fort Lauderdale, I-95, and Commercial Blvd."
+        a: "Nano Signs is located at 4567 Powerline Rd (also designated as 4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309. We are conveniently situated right on the main commercial corridor minutes from downtown Fort Lauderdale, I-95, and Commercial Blvd."
       },
       {
         q: "What types of custom signs do you manufacture for Fort Lauderdale businesses?",
@@ -90,7 +90,7 @@ Visit our local showroom Monday through Friday to examine physical material samp
     faqs: [
       {
         q: "Where is your Oakland Park sign shop located?",
-        a: "Our shop and production facility is located at 4567 Powerline Rd (4567 NW 9th Ave), Oakland Park, FL 33309. We are open Monday through Friday, 9:00 AM to 6:00 PM for client consultations and order pickups."
+        a: "Our shop and production facility is located at 4567 Powerline Rd (4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309. We are open Monday through Friday, 9:00 AM to 6:00 PM for client consultations and order pickups."
       },
       {
         q: "Can I inspect sign and banner material samples in person?",

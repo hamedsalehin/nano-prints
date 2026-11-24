@@ -57,7 +57,7 @@ export default async function LocationPage({ params }: PageProps) {
     notFound();
   }
 
-  // Dual address accounting: 4567 Powerline Rd (also known as 4567 NW 9th Ave), Oakland Park / Fort Lauderdale FL 33309
+  // Dual address accounting: 4567 Powerline Rd (also known as 4567 NW 9th Ave), Fort Lauderdale / Oakland Park, FL 33309
   const singleLocalBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -73,7 +73,7 @@ export default async function LocationPage({ params }: PageProps) {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4567 Powerline Rd (4567 NW 9th Ave)",
-      "addressLocality": "Oakland Park",
+      "addressLocality": "Fort Lauderdale / Oakland Park",
       "addressRegion": "FL",
       "postalCode": "33309",
       "addressCountry": "US"
@@ -249,7 +249,7 @@ export default async function LocationPage({ params }: PageProps) {
               <p className="text-gray-700 text-sm leading-relaxed">
                 <strong>Nano Signs</strong><br />
                 4567 Powerline Rd (4567 NW 9th Ave)<br />
-                Oakland Park / Fort Lauderdale, FL 33309<br /><br />
+                Fort Lauderdale / Oakland Park, FL 33309<br /><br />
                 <strong>Hours:</strong> Monday – Friday: 9:00 AM – 6:00 PM<br />
                 <strong>Direct Phone:</strong>{" "}
                 <a href="tel:3059671005" className="text-[#ff2d78] font-bold hover:underline">
