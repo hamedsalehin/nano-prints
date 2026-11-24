@@ -262,6 +262,7 @@ export function ProductConfigurator({
         <div className="space-y-3 pt-4">
           <Link
             href={customizeUrl}
+            rel="nofollow"
             className="w-full block text-center text-white font-bold py-4 rounded-xl transition-all shadow-lg active:scale-[0.98] hover:opacity-90"
             style={{
               background: "linear-gradient(135deg, #ff2d78, #b020ff, #00e5ff)",

@@ -141,6 +141,7 @@ export function Header() {
           </Link>
           <Link
             href="/PrintDesignExperience/Load"
+            rel="nofollow"
             className="flex items-center gap-1.5 hover:text-[#ff2d78] transition-colors duration-200"
             aria-label="Design Online"
           >

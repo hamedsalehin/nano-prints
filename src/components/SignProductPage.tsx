@@ -1382,6 +1382,7 @@ export function SignProductPage({ cfg: rawCfg }: { cfg: ProductPageConfig }) {
 
                     <Link
                       href={customizeUrl}
+                      rel="nofollow"
                       className="w-full block text-center active:scale-[0.98] text-white font-extrabold py-4 rounded-xl transition-all text-sm uppercase tracking-wider shadow-md font-poppins hover:opacity-90"
                       style={{
                         background:
