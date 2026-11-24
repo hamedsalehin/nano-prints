@@ -85,6 +85,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    // Spanish Section (/es)
+    {
+      url: `${baseUrl}/es`,
+      lastModified: getFileMtime("src/app/es/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/es/cotizacion`,
+      lastModified: getFileMtime("src/app/es/cotizacion/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/es/letreros-comerciales`,
+      lastModified: getFileMtime("src/app/es/letreros-comerciales/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/es/banners-y-pancartas`,
+      lastModified: getFileMtime("src/app/es/banners-y-pancartas/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/es/letreros-led-y-neon`,
+      lastModified: getFileMtime("src/app/es/letreros-led-y-neon/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/es/letreros-de-neon`,
+      lastModified: getFileMtime("src/app/es/letreros-de-neon/page.tsx"),
+      changeFrequency: "weekly",
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/es/ubicaciones/fort-lauderdale`,
+      lastModified: getFileMtime("src/app/es/ubicaciones/fort-lauderdale/page.tsx"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   // Category & Product pages

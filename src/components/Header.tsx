@@ -25,6 +25,7 @@ import { useAuth } from "./AuthContext";
 import { useCart } from "./CartContext";
 import { useRouter } from "next/navigation";
 import { HEADER_NAV_PRODUCTS } from "@/lib/headerNavData";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const navItems = [
   { name: "Signs", href: "/custom-signs" },
@@ -391,12 +392,15 @@ export function Header() {
               {/* Call button for Mobile & Quick Contact */}
               <a
                 href="tel:305-967-1005"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white font-bold text-xs sm:text-sm shadow-sm transition-all hover:scale-105 active:scale-95 bg-gradient-to-r from-[#ff2d78] to-[#00e5ff]"
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-white font-bold text-xs sm:text-sm shadow-sm transition-all hover:scale-105 active:scale-95 bg-gradient-to-r from-[#ff2d78] to-[#00e5ff]"
                 aria-label="Call Nano Signs at (305) 967-1005"
               >
                 <Phone className="w-3.5 h-3.5 fill-current animate-pulse" />
                 <span>Call (305) 967-1005</span>
               </a>
+
+              {/* Language Switcher */}
+              <LanguageSwitcher />
 
               {/* Mobile menu button */}
               <button

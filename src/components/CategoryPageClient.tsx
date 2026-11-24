@@ -7,6 +7,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SeoContentBlock } from "@/components/SeoContentBlock";
+import { getSpanishProductName } from "@/lib/spanishTranslations";
 
 interface ProductItem {
   id: string;
@@ -38,6 +39,9 @@ interface CategoryPageClientProps {
   reviewQuote?: string;
   ctaProduct1?: { name: string; href: string };
   ctaProduct2?: { name: string; href: string };
+  customHeader?: React.ReactNode;
+  customFooter?: React.ReactNode;
+  isSpanish?: boolean;
 }
 
 function DynamicCategorySeo({ title, subtitle, products }: { title: string; subtitle: string; products: ProductItem[] }) {
@@ -109,6 +113,9 @@ export function CategoryPageClient({
   reviewQuote,
   ctaProduct1,
   ctaProduct2,
+  customHeader,
+  customFooter,
+  isSpanish = false,
 }: CategoryPageClientProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
@@ -129,19 +136,30 @@ export function CategoryPageClient({
         {/* Left — Text */}
         <div className="flex-1 z-10 flex flex-col justify-center py-10 lg:py-16">
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#ff2d78] mb-4 font-poppins">
-            ✦ Handcrafted &amp; Premium
+            {isSpanish ? "✦ Calidad Premium y Garantía Local" : "✦ Handcrafted & Premium"}
           </span>
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight font-poppins mb-4">
-            Custom LED Neon Signs<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d78] via-[#ff9900] to-[#00e5ff]">
-              &amp; Logo Lights
-            </span>
+            {isSpanish ? (
+              <>
+                Letreros de Neón<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d78] via-[#ff9900] to-[#00e5ff]">
+                  Personalizados y Modernos
+                </span>
+              </>
+            ) : (
+              <>
+                Custom LED Neon Signs<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2d78] via-[#ff9900] to-[#00e5ff]">
+                  & Logo Lights
+                </span>
+              </>
+            )}
           </h1>
           <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-md mb-2 font-opensans">
-            {heroSubtitle} Create a vibrant, customized atmosphere for your business storefront, wedding backdrop, home décor, or events.
+            {heroSubtitle}
           </p>
           <p className="text-sm text-gray-400 mb-8 font-opensans">
-            Built by hand using energy-efficient, safe-to-touch LED neon flex technology.
+            {isSpanish ? "Fabricación a la medida con neón LED flexible de 12V, bajo consumo eléctrico y base de acrílico cristalino." : "Built by hand using energy-efficient, safe-to-touch LED neon flex technology."}
           </p>
           <div className="flex flex-wrap gap-3">
             {ctaProduct1 && (
@@ -154,13 +172,15 @@ export function CategoryPageClient({
               </Link>
             )}
             <Link
-              href="/get-a-quote"
+              href={isSpanish ? "/es/cotizacion" : "/get-a-quote"}
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-bold text-sm font-poppins border-2 border-[#00e5ff] text-[#00e5ff] hover:bg-[#00e5ff]/10 transition-colors"
             >
-              Upload Design &amp; Get Quote ↑
+              {isSpanish ? "Pedir Cotización Gratis ↑" : "Upload Design & Get Quote ↑"}
             </Link>
           </div>
-          <p className="text-xs text-gray-500 mt-3 font-opensans">⏱ Get your quote under 12 hours</p>
+          <p className="text-xs text-gray-500 mt-3 font-opensans">
+            {isSpanish ? "⏱ Respuesta técnica en menos de 4 horas" : "⏱ Get your quote under 12 hours"}
+          </p>
         </div>
 
         {/* Right — Hero Image */}
@@ -185,12 +205,17 @@ export function CategoryPageClient({
       {/* Trust badges bar */}
       <div className="border-t border-white/10 bg-black/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
+          {(isSpanish ? [
+            { icon: "🎨", title: "Prueba Digital Rápida", desc: "Muestra de diseño y medidas para aprobación" },
+            { icon: "🚚", title: "Retiro o Entrega", desc: "Recojo local en Powerline Rd o envío en Broward" },
+            { icon: "💬", title: "Atención en Español", desc: "Asesoría técnica directa de lunes a viernes" },
+            { icon: "🏆", title: "Fábrica Directa", desc: "Sin intermediarios • Precios claros de taller" },
+          ] : [
             { icon: "🎨", title: "12H Free Proof", desc: "Digital design proof within 12 hours" },
             { icon: "🚚", title: "Fast Delivery", desc: "Express shipping to your doorstep in 3–7 days" },
             { icon: "💬", title: "24/7 Support", desc: "Round-the-clock expert customer service" },
             { icon: "🏆", title: "7+ Yrs Experience", desc: "Crafting premium custom neon signs since 2017" },
-          ].map((badge) => (
+          ]).map((badge) => (
             <div key={badge.title} className="flex items-start gap-3">
               <span className="text-2xl flex-shrink-0">{badge.icon}</span>
               <div>
@@ -206,14 +231,14 @@ export function CategoryPageClient({
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
-      <Header />
+      {customHeader !== undefined ? customHeader : <Header />}
 
       <main className="flex-grow">
         {/* Breadcrumb */}
         <div className="bg-white border-b">
           <div className="max-w-7xl mx-auto px-[20px] lg:px-[48px] 3xl:px-[96px] py-3 flex items-center gap-2 text-sm text-gray-500 font-['Open_Sans']">
-            <Link href="/" className="hover:text-[#ff2d78] transition-colors">
-              Home
+            <Link href={isSpanish ? "/es" : "/"} className="hover:text-[#ff2d78] transition-colors">
+              {isSpanish ? "Inicio" : "Home"}
             </Link>
             <span>/</span>
             <span className="font-semibold text-gray-900">
@@ -316,38 +341,41 @@ export function CategoryPageClient({
         <section className="w-full px-[20px] lg:px-[48px] 3xl:px-[96px] py-10">
           <div className="mb-6">
             <h2 className="font-poppins font-semibold text-2xl lg:text-3xl text-gray-900">
-              Browse Products
+              {isSpanish ? "Catálogo de Productos" : "Browse Products"}
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 font-opensans">
-            {products.map((p) => (
-              <Link
-                key={p.id}
-                href={`/${categorySlug}/${p.id}`}
-                className="flex flex-col items-center justify-start group text-center cursor-pointer"
-              >
-                {/* Image Container with premium scale-on-hover effect */}
-                <div className="browse-item-hover relative w-full aspect-square rounded-xl transition-all duration-300 ease-in-out flex items-center justify-center overflow-hidden p-5 bg-slate-50/50">
-                  <div className="relative w-full h-full">
-                    <Image
-                      alt={p.name}
-                      src={p.image}
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                      unoptimized
-                      className="object-contain transition-all duration-500 ease-in-out group-hover:scale-105"
-                    />
+            {products.map((p) => {
+              const displayName = isSpanish ? getSpanishProductName(p.id, p.name) : p.name;
+              return (
+                <Link
+                  key={p.id}
+                  href={isSpanish ? `/es/cotizacion` : `/${categorySlug}/${p.id}`}
+                  className="flex flex-col items-center justify-start group text-center cursor-pointer"
+                >
+                  {/* Image Container with premium scale-on-hover effect */}
+                  <div className="browse-item-hover relative w-full aspect-square rounded-xl transition-all duration-300 ease-in-out flex items-center justify-center overflow-hidden p-5 bg-slate-50/50">
+                    <div className="relative w-full h-full">
+                      <Image
+                        alt={displayName}
+                        src={p.image}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                        unoptimized
+                        className="object-contain transition-all duration-500 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
                   </div>
-                </div>
-                {/* Product Name */}
-                <div className="mt-3 flex items-center justify-center min-h-[40px]">
-                  <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-[#ff2d78] transition-colors">
-                    {p.name}
-                  </h3>
-                </div>
-              </Link>
-            ))}
+                  {/* Product Name */}
+                  <div className="mt-3 flex items-center justify-center min-h-[40px]">
+                    <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-[#ff2d78] transition-colors">
+                      {displayName}
+                    </h3>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
 
@@ -435,7 +463,7 @@ export function CategoryPageClient({
           <section className="py-10 px-[20px] lg:px-[48px] 3xl:px-[96px] bg-white text-center">
             <div className="max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold font-poppins mb-6">
-                Customer Highlights
+                {isSpanish ? "Opiniones de Clientes" : "Customer Highlights"}
               </h3>
               <div className="flex justify-center items-center gap-1.5 mb-2">
                 {[1, 2, 3, 4, 5].map((star) => (
@@ -461,8 +489,8 @@ export function CategoryPageClient({
         )}
       </main>
 
-      <DynamicCategorySeo title={title} subtitle={heroSubtitle} products={products} />
-      <Footer />
+      {!isSpanish && <DynamicCategorySeo title={title} subtitle={heroSubtitle} products={products} />}
+      {customFooter !== undefined ? customFooter : <Footer />}
     </div>
   );
 }

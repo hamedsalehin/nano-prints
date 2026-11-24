@@ -48,8 +48,28 @@ const categories = [
   },
 ];
 
-export function CategoryCarousel() {
+interface CategoryCarouselProps {
+  isSpanish?: boolean;
+}
+
+export function CategoryCarousel({ isSpanish = false }: CategoryCarouselProps = {}) {
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const displayCategories = categories.map((c) => {
+    if (!isSpanish) return c;
+    const esNames: Record<string, { name: string; href: string }> = {
+      "Signs": { name: "Letreros y Fachadas", href: "/es/letreros-comerciales" },
+      "Business Cards": { name: "Tarjetas de Presentación", href: "/es/cotizacion" },
+      "Banners": { name: "Banners y Lonas", href: "/es/banners-y-pancartas" },
+      "Retractable Banners": { name: "Banners Retráctiles", href: "/es/banners-y-pancartas" },
+      "Flags": { name: "Banderas Publicitarias", href: "/es/banners-y-pancartas" },
+      "Car Magnets": { name: "Magnéticos de Auto", href: "/es/cotizacion" },
+      "Tradeshow": { name: "Expositores de Feria", href: "/es/banners-y-pancartas" },
+      "Custom Decals": { name: "Calcomanías y Vinilos", href: "/es/cotizacion" },
+    };
+    const mapped = esNames[c.name];
+    return mapped ? { ...c, name: mapped.name, href: mapped.href } : c;
+  });
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -65,7 +85,7 @@ export function CategoryCarousel() {
     <section className="pt-3 pb-3 md:pt-6 md:pb-6 bg-white border-b border-pink-50">
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">
         <h2 className="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold mb-2 md:mb-4 tracking-tight pink-cyan-text">
-          Custom Signs for Every Need
+          {isSpanish ? "Letreros a Medida para Cada Necesidad" : "Custom Signs for Every Need"}
         </h2>
 
         <div className="relative">
@@ -96,7 +116,7 @@ export function CategoryCarousel() {
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto hide-scrollbar pb-6 px-1"
           >
-            {categories.map((category) => (
+            {displayCategories.map((category) => (
               <Link
                 key={category.name}
                 href={category.href}

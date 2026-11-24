@@ -53,9 +53,10 @@ export function middleware(request: NextRequest) {
   const forwardedProto = request.headers.get("x-forwarded-proto");
   const isHttp = forwardedProto === "http" || (!forwardedProto && request.nextUrl.protocol === "http:");
   const isWww = host.startsWith("www.");
+  const isLocalhost = host === "localhost" || host === "127.0.0.1" || host.startsWith("192.168.") || host.startsWith("10.");
 
-  // If incoming request arrives over HTTP or on a www subdomain, enforce canonical HTTPS non-www
-  if (isHttp || isWww) {
+  // If incoming request arrives over HTTP or on a www subdomain, enforce canonical HTTPS non-www (skip on local dev)
+  if (!isLocalhost && (isHttp || isWww)) {
     const cleanHost = host.replace(/^www\./, "");
     const targetHost = cleanHost.includes("nano-signs.com") ? "nano-signs.com" : (cleanHost || "nano-signs.com");
     const targetUrl = `https://${targetHost}${pathname}${search}`;

@@ -48,16 +48,33 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export function CustomerFavorites() {
+interface CustomerFavoritesProps {
+  isSpanish?: boolean;
+}
+
+export function CustomerFavorites({ isSpanish = false }: CustomerFavoritesProps = {}) {
+  const displayFavorites = favorites.map((item) => {
+    if (!isSpanish) return item;
+    const esNames: Record<string, { name: string; href: string }> = {
+      "Retractable Banners": { name: "Banners Retráctiles", href: "/es/banners-y-pancartas" },
+      "Feather Flags": { name: "Banderas Feather", href: "/es/banners-y-pancartas" },
+      "Programmable LED Signs": { name: "Pantallas LED Programables", href: "/es/letreros-led-y-neon" },
+      "Real Estate Panels": { name: "Paneles Inmobiliarios", href: "/es/letreros-comerciales" },
+      "Car Magnets": { name: "Magnéticos de Auto", href: "/es/cotizacion" },
+    };
+    const mapped = esNames[item.name];
+    return mapped ? { ...item, name: mapped.name, href: mapped.href } : item;
+  });
+
   return (
     <section className="py-3 md:py-6 bg-white">
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">
         <h2 className="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold mb-4 md:mb-6 tracking-tight pink-cyan-text">
-          Favorite Custom Banners &amp; Signs
+          {isSpanish ? "Letreros y Banners Favoritos de Clientes" : "Favorite Custom Banners & Signs"}
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {favorites.map((item) => (
+          {displayFavorites.map((item) => (
             <Link
               key={item.name}
               href={item.href}

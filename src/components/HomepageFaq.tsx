@@ -41,8 +41,46 @@ const homepageFaqs: FAQItem[] = [
   },
 ];
 
-export function HomepageFaq() {
+interface HomepageFaqProps {
+  isSpanish?: boolean;
+}
+
+const spanishHomepageFaqs: FAQItem[] = [
+  {
+    question: "¿Qué tipos de letreros comerciales y banners fabrican en Fort Lauderdale?",
+    answer:
+      "En Nano Signs nos especializamos en señalización comercial completa: letras tridimensionales iluminadas (channel letters), pantallas LED programables por WiFi, letreros de neón a medida, banners vinílicos para exterior, placas de acrílico, yard signs para jardín, gráficos vehiculares y material impreso para todo el condado de Broward.",
+  },
+  {
+    question: "¿En cuánto tiempo entregan un letrero o banner impreso?",
+    answer:
+      "Ofrecemos tiempos de entrega rápidos: la mayoría de banners de vinil, letreros coroplast y papelería se completan en 24 a 48 horas. Contamos además con opciones urgentes para entregas el mismo día o al día siguiente en proyectos con fecha límite.",
+  },
+  {
+    question: "¿Necesito crear una cuenta para solicitar una cotización o prueba gráfica?",
+    answer:
+      "¡No! Puede ingresar medidas, especificaciones y subir su logotipo en nuestra página de cotización en pocos segundos sin necesidad de registrarse. Nuestro equipo le enviará presupuesto y asesoría técnica en menos de 4 horas.",
+  },
+  {
+    question: "¿Puedo subir mi propio diseño o archivo de logotipo?",
+    answer:
+      "Sí. Puede adjuntar archivos en formato PDF, AI, PNG o JPG directamente en el formulario o enviarlos a info@nano-signs.com. Realizamos una revisión gratuita de resolución y color antes de comenzar la producción.",
+  },
+  {
+    question: "¿Los letreros y banners exteriores resisten el clima de Florida?",
+    answer:
+      "Totalmente. Todos nuestros letreros exteriores, magnéticos y banners utilizan tintas con protección UV contra rayos solares, aluminio antioxidante y vinilos de alto calibre diseñados para soportar el calor, la lluvia tropical y la humedad.",
+  },
+  {
+    question: "¿Dónde está ubicado Nano Signs y puedo recoger mi pedido en persona?",
+    answer:
+      "Nuestro taller se encuentra en 4567 Powerline Rd (4567 NW 9th Ave), Oakland Park / Fort Lauderdale, FL 33309. Puede recoger su pedido directamente en tienda o solicitar envío local e instalación profesional.",
+  },
+];
+
+export function HomepageFaq({ isSpanish = false }: HomepageFaqProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const activeFaqs = isSpanish ? spanishHomepageFaqs : homepageFaqs;
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -52,7 +90,7 @@ export function HomepageFaq() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": homepageFaqs.map((faq) => ({
+    "mainEntity": activeFaqs.map((faq) => ({
       "@type": "Question",
       "name": faq.question,
       "acceptedAnswer": {
@@ -71,18 +109,22 @@ export function HomepageFaq() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-50 text-[#ff2d78] rounded-full text-xs font-extrabold uppercase tracking-wider">
-            <HelpCircle className="w-4 h-4" /> Frequently Asked Questions
+            <HelpCircle className="w-4 h-4" /> {isSpanish ? "Preguntas Frecuentes" : "Frequently Asked Questions"}
           </div>
           <h2 className="text-2xl md:text-3xl font-black font-poppins text-slate-900">
-            Got Questions About Custom Signage &amp; Printing?
+            {isSpanish
+              ? "Preguntas Frecuentes sobre Letreros e Imprenta"
+              : "Got Questions About Custom Signage & Printing?"}
           </h2>
           <p className="text-sm text-slate-600 font-opensans max-w-xl mx-auto">
-            Everything you need to know about ordering custom signs, banners, turnarounds, and artwork prep in Fort Lauderdale.
+            {isSpanish
+              ? "Respuestas rápidas sobre tiempos de entrega, materiales, preparación de artes y retiro en nuestro taller de Fort Lauderdale."
+              : "Everything you need to know about ordering custom signs, banners, turnarounds, and artwork prep in Fort Lauderdale."}
           </p>
         </div>
 
         <div className="space-y-3 font-opensans">
-          {homepageFaqs.map((faq, index) => {
+          {activeFaqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div

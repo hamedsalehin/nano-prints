@@ -23,8 +23,7 @@ export default function Home() {
         href="/images/hero-image-mobile.webp"
         type="image/webp"
         media="(max-width: 768px)"
-        // @ts-expect-error fetchpriority attribute
-        fetchpriority="high"
+        fetchPriority="high"
       />
       <link
         rel="preload"
@@ -32,8 +31,7 @@ export default function Home() {
         href="/images/hero-image.webp"
         type="image/webp"
         media="(min-width: 769px)"
-        // @ts-expect-error fetchpriority attribute
-        fetchpriority="high"
+        fetchPriority="high"
       />
       <Header />
       <HeroSection />

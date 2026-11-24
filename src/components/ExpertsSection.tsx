@@ -1,13 +1,17 @@
 import Image from "next/image";
 
-export function ExpertsSection() {
+interface ExpertsSectionProps {
+  isSpanish?: boolean;
+}
+
+export function ExpertsSection({ isSpanish = false }: ExpertsSectionProps = {}) {
   return (
     <section className="py-6 md:py-10 relative">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
           src="/images/experts_section_image.jpeg"
-          alt="Local print shop and custom signage facility"
+          alt={isSpanish ? "Fábrica e imprenta de letreros en Fort Lauderdale" : "Local print shop and custom signage facility"}
           fill
           sizes="100vw"
           quality={85}
@@ -24,16 +28,20 @@ export function ExpertsSection() {
           className="rounded-2xl p-8 md:p-12 max-w-2xl mx-auto text-center bg-[rgba(255,255,255,0.97)] shadow-[0_0_40px_rgba(255,45,120,0.25),0_0_80px_rgba(0,229,255,0.12)]"
         >
           <h2 className="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
-            Premium Custom Signage, LED Signs &amp; Banners in Fort Lauderdale
+            {isSpanish
+              ? "Fabricación de Letreros Comerciales, Pantallas LED y Banners en Fort Lauderdale"
+              : "Premium Custom Signage, LED Signs & Banners in Fort Lauderdale"}
           </h2>
           <p className="text-gray-600 text-xs sm:text-sm md:text-base mb-6 md:mb-8 leading-relaxed">
-            Broward County&apos;s go-to print shop for fast, professional signage and marketing materials. Design and order online or visit us in person for custom signs, LED signs, retractable banners, business cards, and more. Proudly serving Fort Lauderdale and the greater Broward County area, our custom print and design experts deliver fast turnaround and standout quality to help your brand get noticed.
+            {isSpanish
+              ? "Su taller directo en el condado de Broward para letreros de fachada, banners retráctiles, pantallas electrónicas programables y material comercial. Visite nuestra sala de muestras en 4567 Powerline Rd o solicite cotización en línea con respuesta garantizada."
+              : "Broward County's go-to print shop for fast, professional signage and marketing materials. Design and order online or visit us in person for custom signs, LED signs, retractable banners, business cards, and more. Proudly serving Fort Lauderdale and the greater Broward County area, our custom print and design experts deliver fast turnaround and standout quality to help your brand get noticed."}
           </p>
           <a
             href="tel:305-967-1005"
             className="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 font-bold rounded-full text-white transition-all duration-300 hover:scale-105 hover:opacity-90 bg-[linear-gradient(135deg,#ff2d78,#00e5ff)] shadow-[0_0_20px_rgba(255,45,120,0.45),0_0_40px_rgba(0,229,255,0.2)]"
           >
-            Call for a Sign Quote: 305-967-1005
+            {isSpanish ? "Llamar para Cotizar: (305) 967-1005" : "Call for a Sign Quote: 305-967-1005"}
           </a>
         </div>
       </div>

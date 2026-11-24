@@ -64,7 +64,31 @@ const products = [
   },
 ];
 
-export function ProductsGrid() {
+interface ProductsGridProps {
+  isSpanish?: boolean;
+}
+
+export function ProductsGrid({ isSpanish = false }: ProductsGridProps = {}) {
+  const displayProducts = products.map((item) => {
+    if (!isSpanish) return item;
+    const esMap: Record<string, { name: string; href: string }> = {
+      "Tablecloths": { name: "Manteles Impresos", href: "/es/banners-y-pancartas" },
+      "Car Magnets": { name: "Magnéticos de Vehículo", href: "/es/cotizacion" },
+      "Retractable Banners": { name: "Banners Retráctiles", href: "/es/banners-y-pancartas" },
+      "Backdrop Banners": { name: "Banners de Fondo (Backdrops)", href: "/es/banners-y-pancartas" },
+      "Vinyl Decals": { name: "Vinilos para Vitrina", href: "/es/cotizacion" },
+      "Flags": { name: "Banderas Publicitarias", href: "/es/banners-y-pancartas" },
+      "Fabric Banners": { name: "Banners de Tela Sublimada", href: "/es/banners-y-pancartas" },
+      "Event Tents": { name: "Carpas para Eventos", href: "/es/banners-y-pancartas" },
+      "Business Cards": { name: "Tarjetas de Presentación", href: "/es/cotizacion" },
+      "Labels and Stickers": { name: "Etiquetas y Stickers", href: "/es/cotizacion" },
+      "Neon Sign": { name: "Letreros de Neón LED", href: "/es/letreros-led-y-neon" },
+      "Programmable LED Sign": { name: "Pantallas LED Programables", href: "/es/letreros-led-y-neon" },
+    };
+    const mapped = esMap[item.name];
+    return mapped ? { ...item, name: mapped.name, href: mapped.href } : item;
+  });
+
   return (
     <section
       className="py-4 md:py-6"
@@ -74,11 +98,11 @@ export function ProductsGrid() {
     >
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">
         <h2 className="font-poppins text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold mb-4 md:mb-6 tracking-tight pink-cyan-text">
-          Custom Signage, LED Signs &amp; Banners
+          {isSpanish ? "Letreros Comerciales, Pantallas LED y Banners" : "Custom Signage, LED Signs & Banners"}
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {products.map((product) => {
+          {displayProducts.map((product) => {
             const isExternal = product.href.startsWith("http");
             return (
               <Link

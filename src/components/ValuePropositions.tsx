@@ -47,12 +47,49 @@ const valueProps = [
   },
 ];
 
-export function ValuePropositions() {
+interface ValuePropositionsProps {
+  isSpanish?: boolean;
+}
+
+export function ValuePropositions({ isSpanish = false }: ValuePropositionsProps = {}) {
+  const displayProps = valueProps.map((prop) => {
+    if (!isSpanish) return prop;
+    const esMap: Record<string, { title: string; description: string; link?: string }> = {
+      "Award-Winning Support": {
+        title: "Atención al Cliente Destacada",
+        description: "Servicio personalizado y respuesta técnica en cada paso de su proyecto.",
+      },
+      "Tax Exempt Savings": {
+        title: "Ahorro Exento de Impuestos",
+        description: "Aplique exención de impuestos en pedidos calificados para optimizar su presupuesto.",
+      },
+      "Expert Design Services": {
+        title: "Diseño Gráfico Profesional",
+        description: "Nuestro equipo prepara y adapta sus archivos de logotipo sin complicaciones.",
+      },
+      "Exclusive Corporate Pricing": {
+        title: "Precios Corporativos por Volumen",
+        description: "Descuentos por mayoreo en señalización continua para franquicias y empresas.",
+        link: "Más Información",
+      },
+      "100% Satisfaction Guaranteed": {
+        title: "Garantía de Satisfacción 100%",
+        description: "Supervisamos cada detalle en nuestro taller de Oakland Park para asegurar calidad total.",
+      },
+      "Free Artwork Check": {
+        title: "Revisión Gratuita de Archivos",
+        description: "Verificamos resolución, sangrados y colores antes de pasar a producción.",
+      },
+    };
+    const mapped = esMap[prop.title];
+    return mapped ? { ...prop, ...mapped } : prop;
+  });
+
   return (
     <section className="py-4 md:py-6 bg-[linear-gradient(160deg,#fdf0f8_0%,#f0faff_100%)]">
       <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {valueProps.map((prop) => (
+          {displayProps.map((prop) => (
             <div
               key={prop.title}
               className="bg-white rounded-2xl p-6 flex items-start gap-4 value-card-hover shadow-sm"
