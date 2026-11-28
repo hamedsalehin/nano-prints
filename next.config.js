@@ -88,6 +88,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/custom-decals/vehicle-graphics",
+        destination: "/custom-decals",
+        permanent: true,
+      },
+      {
         source: "/sign-holders",
         destination: "/sign-accessories",
         permanent: true,

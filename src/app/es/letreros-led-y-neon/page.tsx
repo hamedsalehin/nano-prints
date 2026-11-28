@@ -6,7 +6,7 @@ import SpanishQuoteForm from "@/components/SpanishQuoteForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Letreros LED Programables y Pantallas Electrónicas en Fort Lauderdale | Nano Signs",
+  title: "Letreros LED Programables y Pantallas Electrónicas | Nano Signs FL",
   description:
     "Pantallas LED de alto brillo y letreros programables por WiFi para negocios en South Florida. Mensajes dinámicos y control móvil con máxima visibilidad.",
   alternates: {

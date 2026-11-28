@@ -6,7 +6,7 @@ import SpanishQuoteForm from "@/components/SpanishQuoteForm";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Taller de Letreros e Imprenta en Fort Lauderdale y Oakland Park | Nano Signs",
+  title: "Letreros e Imprenta en Fort Lauderdale | Nano Signs",
   description:
     "Taller de letreros comerciales, banners, pantallas LED y rotulación en Fort Lauderdale, FL 33309 (servimos Oakland Park). Presupuesto sin compromiso.",
   alternates: {

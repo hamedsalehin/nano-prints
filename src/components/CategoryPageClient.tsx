@@ -250,6 +250,8 @@ export function CategoryPageClient({
         {/* Hero — conditional on variant */}
         {heroVariant === "neon" ? NeonHero : (
           <section className="relative w-full lg:px-[48px] 3xl:px-[96px] pt-1">
+            {/* Visually-hidden H1 for crawlers — ensures exactly one H1 in page source */}
+            <h1 className="sr-only">{title}</h1>
             <div className="relative overflow-hidden rounded-xl">
               <picture>
                 {tabletHeroImage && (
@@ -271,9 +273,9 @@ export function CategoryPageClient({
               <div className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-[48px] z-10">
                 <div className="bg-white rounded-xl shadow-xl p-10 flex flex-col items-center justify-center w-[450px] border border-gray-100">
                   <div className="text-center font-poppins mb-6">
-                    <h1 className="text-3xl font-extrabold text-gray-900 mb-2 leading-none">
+                    <h2 className="text-3xl font-extrabold text-gray-900 mb-2 leading-none">
                       {title}
-                    </h1>
+                    </h2>
                     <p className="text-lg text-gray-700 font-semibold leading-normal">
                       {heroSubtitle}
                     </p>
